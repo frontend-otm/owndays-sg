@@ -1,0 +1,1977 @@
+<html lang="en-US" data-reactroot="">
+  <plasmo-csui id="plasmo-inspector"></plasmo-csui>
+
+  <head>
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      rel="stylesheet"
+    />
+    <link href="//www.google-analytics.com" rel="preconnect" />
+    <link href="//www.google-analytics.com" rel="dns-prefetch" />
+    <link href="//www.googletagmanager.com" rel="preconnect" />
+    <link href="//www.googletagmanager.com" rel="dns-prefetch" />
+    <link href="//static.lenskart.com" rel="preconnect" />
+    <link href="//static.lenskart.com" rel="dns-prefetch" />
+    <meta
+      content="pfd8x7ajms35j8pe7h6nitj5b95nqw"
+      name="facebook-domain-verification"
+    />
+    <link
+      as="style"
+      charset="UTF-8"
+      href="https://static.lenskart.com/owndays/cms/css/progressive-cp.css"
+      media="all"
+      rel="preload"
+      type="text/css"
+    />
+    <title>
+      OWNDAYS PROGRESSIVE GLASSES | OWNDAYS ONLINE STORE - OPTICAL SHOP
+    </title>
+    <meta
+      content="Free Enhanced Progressive Lens with spectacle purchase for all customers; just one pair of glasses to see far, intermediate and reading zones"
+      name="description"
+    />
+    <meta
+      content="Free Progressive lenses,Progressive lens price Singapore,Progressive lens Singapore,Progressive glasses,Spectacle frames,What are progressive lenses,Best progressive lenses Singapore,OWNDAYS"
+      name="keywords"
+    />
+    <meta
+      content="https://static.lenskart.com/media/owndays/img/progressive-cp/ogp-10-2024.webp"
+      property="og:image"
+    />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta
+      content="https://static.lenskart.com/media/owndays/img/progressive-cp/ogp-10-2024.webp"
+      name="twitter:image"
+    />
+    <meta content="OWNDAYS" name="author" />
+    <meta content="OWNDAYS" name="publisher" />
+    <link
+      href="https://www.owndays.com/sg/en/news/progressive-cp"
+      rel="canonical"
+    />
+    <title data-react-helmet="true"></title>
+    <meta content="on" http-equiv="x-dns-prefetch-control" />
+    <link href="/sg/en/favicon.ico" rel="icon" type="image/x-icon" />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      color="#5bbad5"
+      href="https://static.lenskart.com/media/owndays/favicon/safari-pinned-tab.svg"
+      rel="mask-icon"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#ffffff" id="themeColor" name="theme-color" />
+    <link href="/sg/en/manifest.json" rel="manifest" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      charset="UTF-8"
+      href="https://static.lenskart.com/owndays/cms/css/progressive-cp.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      async=""
+      src="https://scripts.clarity.ms/0.8.24/clarity.js"
+    ></script>
+    <script async="" src="https://tags.srv.stackadapt.com/events.js"></script>
+    <script async="" src="https://www.clarity.ms/tag/qx92mwqclb"></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CTTO0KRC77UDUQAR23O0&amp;lib=ttq"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=AW-723115492&amp;cx=c&amp;gtm=45He58f1v9165206974za200&amp;tag_exp=101509157~103116026~103200004~103233427~104573694~104684208~104684211~105033763~105033765~105103161~105103163~105231383~105231385"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-V9YREND482&amp;cx=c&amp;gtm=45He58f1v9165206974za200&amp;tag_exp=101509157~103116026~103200004~103233427~104573694~104684208~104684211~105033763~105033765~105103161~105103163~105231383~105231385"
+    ></script>
+    <script src="//bat.bing.com/bat.js" async=""></script>
+    <script
+      src="https://connect.facebook.net/signals/config/1510426245838375?v=2.9.224&amp;r=stable&amp;domain=www.owndays.com&amp;hme=2e9ee56babe122798b967566f46100108daa710154b06378259c746cb66ac325&amp;ex_m=83%2C143%2C124%2C18%2C117%2C58%2C40%2C118%2C64%2C57%2C131%2C72%2C13%2C82%2C26%2C112%2C103%2C62%2C65%2C111%2C128%2C91%2C133%2C7%2C3%2C4%2C6%2C5%2C2%2C73%2C81%2C134%2C208%2C155%2C52%2C213%2C210%2C211%2C45%2C170%2C25%2C61%2C217%2C216%2C158%2C28%2C51%2C8%2C54%2C77%2C78%2C79%2C84%2C107%2C27%2C24%2C110%2C106%2C105%2C125%2C63%2C127%2C126%2C41%2C108%2C50%2C100%2C12%2C130%2C37%2C199%2C201%2C165%2C21%2C22%2C23%2C15%2C16%2C36%2C33%2C34%2C68%2C74%2C76%2C89%2C116%2C119%2C38%2C90%2C19%2C17%2C94%2C59%2C31%2C121%2C120%2C122%2C113%2C20%2C30%2C49%2C88%2C129%2C29%2C180%2C151%2C257%2C197%2C141%2C183%2C176%2C86%2C109%2C67%2C98%2C44%2C39%2C96%2C97%2C102%2C48%2C14%2C104%2C95%2C55%2C43%2C46%2C0%2C80%2C132%2C1%2C101%2C11%2C99%2C9%2C47%2C75%2C53%2C123%2C56%2C93%2C71%2C70%2C42%2C114%2C69%2C66%2C60%2C92%2C85%2C35%2C115%2C32%2C87%2C10%2C135%2C195%2C218%2C220%2C259%2C198%2C144%2C188%2C172%2C153%2C256%2C138%2C173%2C202%2C191%2C140%2C161%2C145%2C175%2C178%2C152%2C186"
+      async=""
+    ></script>
+    <script
+      src="https://connect.facebook.net/signals/config/297844910867676?v=2.9.224&amp;r=stable&amp;domain=www.owndays.com&amp;hme=2e9ee56babe122798b967566f46100108daa710154b06378259c746cb66ac325&amp;ex_m=83%2C143%2C124%2C18%2C117%2C58%2C40%2C118%2C64%2C57%2C131%2C72%2C13%2C82%2C26%2C112%2C103%2C62%2C65%2C111%2C128%2C91%2C133%2C7%2C3%2C4%2C6%2C5%2C2%2C73%2C81%2C134%2C208%2C155%2C52%2C213%2C210%2C211%2C45%2C170%2C25%2C61%2C217%2C216%2C158%2C28%2C51%2C8%2C54%2C77%2C78%2C79%2C84%2C107%2C27%2C24%2C110%2C106%2C105%2C125%2C63%2C127%2C126%2C41%2C108%2C50%2C100%2C12%2C130%2C37%2C199%2C201%2C165%2C21%2C22%2C23%2C15%2C16%2C36%2C33%2C34%2C68%2C74%2C76%2C89%2C116%2C119%2C38%2C90%2C19%2C17%2C94%2C59%2C31%2C121%2C120%2C122%2C113%2C20%2C30%2C49%2C88%2C129%2C29%2C180%2C151%2C257%2C197%2C141%2C183%2C176%2C86%2C109%2C67%2C98%2C44%2C39%2C96%2C97%2C102%2C48%2C14%2C104%2C95%2C55%2C43%2C46%2C0%2C80%2C132%2C1%2C101%2C11%2C99%2C9%2C47%2C75%2C53%2C123%2C56%2C93%2C71%2C70%2C42%2C114%2C69%2C66%2C60%2C92%2C85%2C35%2C115%2C32%2C87%2C10%2C135"
+      async=""
+    ></script>
+    <script
+      async=""
+      src="https://connect.facebook.net/en_US/fbevents.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C3QE7P84C3SCJI4REVE0&amp;lib=ttq"
+    ></script>
+    <script
+      async=""
+      src="//www.googletagmanager.com/gtm.js?id=GTM-5GSLLFKQ"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://stats.g.doubleclick.net/dc.js"
+    ></script>
+    <script
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      async=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+    ></script>
+    <script async="">
+      !(function (e, t, a, n, c, o, s) {
+        (e.GoogleAnalyticsObject = c),
+          (e[c] =
+            e[c] ||
+            function () {
+              (e[c].q = e[c].q || []).push(arguments);
+            }),
+          (e[c].l = 1 * new Date()),
+          (o = t.createElement(a)),
+          (s = t.getElementsByTagName(a)[0]),
+          (o.async = 1),
+          (o.src = n),
+          s.parentNode.insertBefore(o, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      ),
+        ga("create", "UA-131075285-1", "auto");
+    </script>
+    <script src="//www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript">
+      function gaTrackEvent(e, t, n) {
+        _gaq.push(["_trackEvent", e, t, n]);
+      }
+      function crumbleCookie(e) {
+        for (
+          var t = document.cookie.split(";"), n = {}, i = 0;
+          i < t.length;
+          i++
+        ) {
+          var u = t[i].substring(0, t[i]?.indexOf("=")).trim(),
+            a = t[i].substring(t[i]?.indexOf("=") + 1, t[i].length).trim();
+          n[u] = a;
+        }
+        return e ? (n[e] ? n[e] : null) : n;
+      }
+      function gaCookies() {
+        var e = function () {
+            var e;
+            if (!crumbleCookie("__utma")) return null;
+            e = crumbleCookie("__utma").split(".");
+            var t = e[0],
+              n = e[1],
+              i = e[2],
+              u = e[3],
+              a = e[4],
+              r = e[5];
+            return {
+              cookie: e,
+              domainhash: t,
+              uniqueid: n,
+              ftime: i,
+              ltime: u,
+              stime: a,
+              sessions: r,
+            };
+          },
+          t = function () {
+            var e;
+            if (!crumbleCookie("__utmb")) return null;
+            e = crumbleCookie("__utmb").split(".");
+            var t = e[1];
+            return { cookie: e, gifrequest: t };
+          },
+          n = function () {
+            var e;
+            if (!crumbleCookie("__utmv")) return null;
+            e = crumbleCookie("__utmv").split(".");
+            var t = e[1];
+            return { cookie: e, value: t };
+          },
+          i = function () {
+            var e, t, n, i, u, a, r;
+            if (!crumbleCookie("__utmz")) return null;
+            e = crumbleCookie("__utmz").split(".");
+            for (var s = e[4].split("|"), o = 0; o < s.length; o++) {
+              var c = s[o].substring(0, s[o]?.indexOf("=")),
+                m = decodeURIComponent(
+                  s[o].substring(s[o]?.indexOf("=") + 1, s[o].length)
+                );
+              switch (((m = m.replace(/^(|)$/g, "")), c)) {
+                case "utmcsr":
+                  t = m;
+                  break;
+                case "utmcmd":
+                  n = m;
+                  break;
+                case "utmccn":
+                  i = m;
+                  break;
+                case "utmctr":
+                  u = m;
+                  break;
+                case "utmcct":
+                  a = m;
+                  break;
+                case "utmgclid":
+                  r = m;
+              }
+            }
+            return {
+              cookie: e,
+              source: t,
+              medium: n,
+              name: i,
+              term: u,
+              content: a,
+              gclid: r,
+            };
+          };
+        (this.getDomainHash = function () {
+          return e() && e().domainhash ? e().domainhash : null;
+        }),
+          (this.getUniqueId = function () {
+            return e() && e().uniqueid ? e().uniqueid : null;
+          }),
+          (this.getInitialVisitTime = function () {
+            return e() && e().ftime ? e().ftime : null;
+          }),
+          (this.getPreviousVisitTime = function () {
+            return e() && e().ltime ? e().ltime : null;
+          }),
+          (this.getCurrentVisitTime = function () {
+            return e() && e().stime ? e().stime : null;
+          }),
+          (this.getSessionCounter = function () {
+            return e() && e().sessions ? e().sessions : null;
+          }),
+          (this.getGifRequests = function () {
+            return t() && t().gifrequest ? t().gifrequest : null;
+          }),
+          (this.getUserDefinedValue = function () {
+            return n() && n().value ? decodeURIComponent(n().value) : null;
+          }),
+          (this.getCampaignSource = function () {
+            return i() && i().source ? i().source : null;
+          }),
+          (this.getCampaignMedium = function () {
+            return i() && i().medium ? i().medium : null;
+          }),
+          (this.getCampaignName = function () {
+            return i() && i().name ? i().name : null;
+          }),
+          (this.getCampaignTerm = function () {
+            return i() && i().term ? i().term : null;
+          }),
+          (this.getCampaignContent = function () {
+            return i() && i().content ? i().content : null;
+          }),
+          (this.getGclid = function () {
+            return i() && i().gclid ? i().gclid : null;
+          });
+      }
+      var _gaq = _gaq || [],
+        gac = new gaCookies();
+      _gaq.push(["_setAccount", "UA-131075285-1"], ["_setAllowLinker", !0]),
+        _gaq.push(["_setDomainName", "lenskart.com"]),
+        _gaq.push(
+          ["ninja._setAccount", "UA-131075285-1"],
+          ["ninja._setAllowLinker", !0]
+        ),
+        _gaq.push(["ninja._setDomainName", "lenskart.com"]),
+        _gaq.push(["_initData"]),
+        _gaq.push(function () {
+          var e = _gat._getTrackerByName();
+          (UniqueId = gac.getUniqueId()),
+            e._setCustomVar(1, "Visitor", UniqueId, 1);
+          var t = _gat._getTrackerByName("ninja");
+          t._setCustomVar(1, "Visitor", UniqueId, 1);
+          var n = gac.getSessionCounter(),
+            i = gac.getCampaignSource(),
+            u = gac.getCampaignMedium(),
+            a = gac.getCampaignTerm(),
+            r = gac.getCampaignName(),
+            s = gac.getCampaignContent(),
+            o = gac.getGclid();
+          null != o && ((i = "google"), (u = "cpc")),
+            1 == n &&
+              (e._setCustomVar(
+                2,
+                "FT",
+                i + "|" + u + "|" + a + "|" + r + "|" + s,
+                1
+              ),
+              t._setCustomVar(
+                2,
+                "FT",
+                i + "|" + u + "|" + a + "|" + r + "|" + s,
+                1
+              ));
+        }),
+        _gaq.push(
+          ["_setSiteSpeedSampleRate", 100],
+          ["ninja._setSiteSpeedSampleRate", 100]
+        ),
+        _gaq.push(["_trackPageview"], ["ninja._trackPageview"]),
+        (function () {
+          var e = document.createElement("script");
+          (e.type = "text/javascript"),
+            (e.async = !0),
+            (e.src =
+              ("https:" == document.location.protocol
+                ? "https://"
+                : "http://") + "stats.g.doubleclick.net/dc.js");
+          var t = document.getElementsByTagName("script")[0];
+          t.parentNode.insertBefore(e, t);
+        })();
+    </script>
+    <noscript
+      ><img
+        alt="img"
+        height="1"
+        src="https://www.facebook.com/tr?id=297844910867676&amp;ev=PageView&amp;noscript=1"
+        style="display: none"
+        width="1"
+    /></noscript>
+    <meta content="638381491" property="fb:admins" />
+    <meta content="392248067537088" property="fb:app_id" />
+    <meta content="5B6622CBA13393D54072EF6C8482D676" name="msvalidate.01" />
+    <script
+      charset="UTF-8"
+      src="https://static.lenskart.com/media/desktop/js/vendor/desktop-ga-c3197c2d1dcaf8ecde841b36bbdf37fa.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5GSLLFKQ");
+    </script>
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        (ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+        ]),
+          (ttq.setAndDefer = function (t, e) {
+            t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          });
+        for (var i = 0; i < ttq.methods.length; i++)
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        (ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+            ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        }),
+          (ttq.load = function (e, n) {
+            var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+            (ttq._i = ttq._i || {}),
+              (ttq._i[e] = []),
+              (ttq._i[e]._u = i),
+              (ttq._t = ttq._t || {}),
+              (ttq._t[e] = +new Date()),
+              (ttq._o = ttq._o || {}),
+              (ttq._o[e] = n || {});
+            var o = document.createElement("script");
+            (o.type = "text/javascript"),
+              (o.async = !0),
+              (o.src = i + "?sdkid=" + e + "&lib=" + t);
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(o, a);
+          });
+
+        ttq.load("C3QE7P84C3SCJI4REVE0");
+        ttq.page();
+      })(window, document, "ttq");
+    </script>
+    <script type="text/javascript">
+      var dtm = dtm || {};
+      dtm.pageName = "baseAbort";
+      function initSatellite() {
+        try {
+          _satellite.pageBottom();
+        } catch (e) {
+          //ignore
+        }
+      }
+      initSatellite();
+    </script>
+    <script>
+      window.fwSettings = {
+        widget_id: 13000000125,
+      };
+      !(function () {
+        if ("function" != typeof window.FreshworksWidget) {
+          var n = function () {
+            n.q.push(arguments);
+          };
+          (n.q = []), (window.FreshworksWidget = n);
+        }
+      })();
+      window.chatBotParams = {
+        orderNo: "",
+        emailId: "",
+        phoneNumber: "",
+        action: "",
+        uniqueId: "",
+        sessionID: "",
+        env: "",
+        apiClient: "",
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script
+      src="https://static.lenskart.com/owndays/media/v2/js/session-relpay-newrelic.js"
+      async=""
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="alternate"
+      hreflang="en-sg"
+      href="https://www.owndays.com/sg/en/news/progressive-cp"
+      data-react-helmet="true"
+    />
+    <script type="application/ld+json" data-react-helmet="true">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.owndays.com/sg/en",
+        "name": "OWNDAYS",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "6222-0588",
+          "contactType": "Customer Service"
+        },
+        "sameAs": [
+          "https://www.facebook.com/owndays.sg",
+          "https://www.instagram.com/owndays_sg/",
+          "https://www.tiktok.com/@owndays_sg",
+          "https://www.youtube.com/channel/UCSu2yqzCpnTtGXi05WtsiZg"
+        ],
+        "logo": "https://static1.lenskart.com/media/owndays/desktop/img/od-logos-new/logo-type-black.png"
+      }
+    </script>
+    <script type="application/ld+json" data-react-helmet="true">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.owndays.com/sg/en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.owndays.com/sg/en/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script
+      src="https://bat.bing.com/p/action/134598098.js"
+      type="text/javascript"
+      async=""
+      data-ueto="ueto_a5bfe1bc6c"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/723115492/?random=1755599153328&amp;cv=11&amp;fst=1755599153328&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be58f1v895293790z89165206974za200zb9165206974zd9165206974xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~105033763~105033765~105102050~105103161~105103163~105231383~105231385&amp;u_w=1440&amp;u_h=900&amp;url=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Fnews%2Fprogressive-cp&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=OWNDAYS%20PROGRESSIVE%20GLASSES%20%7C%20OWNDAYS%20ONLINE%20STORE%20-%20OPTICAL%20SHOP&amp;npa=0&amp;auid=1904098505.1754475860&amp;uaa=arm&amp;uab=64&amp;uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B139.0.7258.128%7CChromium%3B139.0.7258.128&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.6.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/723115492/?random=1755599153334&amp;cv=11&amp;fst=1755599153334&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be58f1v895293790z89165206974za200zb9165206974zd9165206974xea&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~105033763~105033765~105102050~105103161~105103163~105231383~105231385&amp;u_w=1440&amp;u_h=900&amp;url=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Fnews%2Fprogressive-cp&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=OWNDAYS%20PROGRESSIVE%20GLASSES%20%7C%20OWNDAYS%20ONLINE%20STORE%20-%20OPTICAL%20SHOP&amp;npa=0&amp;auid=1904098505.1754475860&amp;uaa=arm&amp;uab=64&amp;uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B139.0.7258.128%7CChromium%3B139.0.7258.128&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.6.0&amp;uaw=0&amp;fledge=1&amp;_tu=Cg&amp;rfmt=3&amp;fmt=4"
+    ></script>
+    <style>
+      /* Tab styling */
+      .od-body-owndays-progressive-cp__container__comparison {
+        position: relative;
+        min-height: 500px; /* Adjust based on your content */
+      }
+
+      .comparison__nav {
+        display: flex;
+      }
+
+      .comparison__nav-item--active {
+        background: #333;
+        color: white;
+      }
+
+      .comparison__desc-wrapper {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .comparison__desc-wrapper[style*="display: block"] {
+        opacity: 1;
+      }
+
+      .od-footer-owndays-progressive-cp .book-online-btn,
+      .od-body-owndays-progressive-cp .book-online-btn {
+        display: flex !important;
+      }
+
+      @media (max-width: 768px) {
+        .od-header-owndays-progressive-cp__custom-breadcrumbs {
+          margin-top: 0;
+        }
+        .od-header-owndays-progressive-cp__container {
+          margin-top: 0;
+        }
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="https://eu1.clevertap-prod.com/a?t=96&amp;type=push&amp;d=N4IgLgngDgpiBcIYDcYDswgDROWAcgIYC2ciACoQOYwAEAagJYwDuMAJtrmACKFiEEoKNRhFSCEAHkA6vh4BBAJoBlWuQBKUgOIaAoipUBJentraAMgsMHaAH1qz5ytVPwWj%2BMyoAqU%2FbQAtI7kPkYAwgoWtCoAElLkXCI0AKoATgA2kgAWYGBQAM7wAPTFLOUAdAD2LGjshBAFFQDGVcTFBVTF6MVorAXFUGlVVGkwBQWMqIHNUFzsKIzNMD7QZCA84wDWYFVzOACuBTBpklQH45gAvjiMnIgAbABaACyBL8%2BBTwCcz1xUkgARgBWb7AwEARkIhG%2BHAATC8XlCABzfOFwgDsMGhcIAzM1cVDmgAGLgFBAQjHA6nfZFw4m4nBQAHwCHEnCEABmQhAGUYgMkbEBgQK7C2gWQcIqxIqEKSw12rSyiFy%2BXJNxAMieGgA0gB9SIAWUS8FALEYxDm8HZIHNYAyzQQAG0ALo4FgFR3W92cr3ADUsKp%2BgN1T0IG21di%2BoQh9hBmNXK5AAA%3D&amp;rn=6&amp;i=1755599154&amp;sn=4&amp;gc=b595b1aa9ed2441a89227eaa23c31ac0&amp;arp=N4IgVg%2BgdiBcIC0DuBeFIA0ICW04gE0AmAOQHMBTAQQFUBhK1dLAEwgBcBnOABlYAteWAG5wiWSN3jAAvphwt8ANgQAWALSqV6hAE4V8gE4cpARgDsAVlWqrADnM8ZQA&amp;tries=1&amp;origin=https%3A%2F%2Fwww.owndays.com&amp;useIP=false&amp;r=1755599154022"
+      class="ct-jp-cb"
+      rel="nofollow"
+      async=""
+    ></script>
+    <link
+      id="sa-css"
+      rel="stylesheet"
+      type="text/css"
+      href="https://tags.srv.stackadapt.com/sa.css"
+      media="all"
+    />
+  </head>
+
+  <body
+    style="background-color: #fff"
+    data-aos-easing="ease"
+    data-aos-duration="400"
+    data-aos-delay="0"
+  >
+    <noscript
+      ><iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5GSLLFKQ"
+        style="display: none; visibility: hidden"
+        title="GTM noscript"
+        width="0"
+      ></iframe
+    ></noscript>
+    <div id="content">
+      <div class="">
+        <div class="od-header-owndays-progressive-cp__custom-breadcrumbs">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--2">
+              <li class="breadcrumb-item"><a href="/sg/en">Homepage</a></li>
+              <li class="breadcrumb-item"><a href="/sg/en/news">News</a></li>
+              <li aria-current="page" class="breadcrumb-item active">
+                Free Enhanced Progressive Lenses
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <!-- <div class="od-header-owndays-progressive-cp">
+          <img
+            alt="OWNDAYS Free Enhanced Progressive Lenses"
+            class="od-header-owndays-progressive-cp__container"
+            src="https://static.lenskart.com/media/owndays/img/progressive-cp/main-pc-08-2024.webp"
+          />
+          <div class="od-header-owndays-progressive-cp__container__desc">
+            <div class="od-header-owndays-progressive-cp__header">
+              <h1 class="od-header-owndays-progressive-cp__header__main">
+                <span class="od-header-owndays-progressive-cp__header--red">FREE</span
+                ><span class="od-header-owndays-progressive-cp__header--black"
+                  >PROGRESSIVE <br />LENSES</span
+                >
+              </h1>
+            </div>
+            <div class="od-header-owndays-progressive-cp__body">
+              <h2 class="od-header-owndays-progressive-cp__body__tag-pc">
+                Progressive glasses from
+                <span class="od-header-owndays-progressive-cp__body__tag-pc__price">$98</span>, now
+                for all customers!
+              </h2>
+              <h2 class="od-header-owndays-progressive-cp__body__tag-sp">
+                Progressive glasses from
+                <span class="od-header-owndays-progressive-cp__body__tag-sp__price">$98</span>
+              </h2>
+              <h2
+                class="od-header-owndays-progressive-cp__body__tag-sp od-header-owndays-progressive-cp__body__tag-sp--now"
+              >
+                Now for all customers!
+              </h2>
+              <h3>One pair of glasses to see far, intermediate and <br />reading zones</h3>
+            </div>
+          </div>
+          <span class="od-header-owndays-progressive-cp__remark"
+            >* Free Enhanced Progressive Lens only, other T&amp;Cs apply</span
+          >
+        </div> -->
+        <a class="od-header-owndays-progressive-cp" href="/stores/sg"
+          ><picture
+            ><source
+              media="(min-width: 1024px)"
+              srcset="
+                https://static.lenskart.com/owndays/img/progressive-cp/v2/progressive-banner-with-text-pc.webp
+              " />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                https://static.lenskart.com/owndays/img/progressive-cp/v2/progressive-banner-with-text-tb.webp
+              " />
+            <img
+              alt="OWNDAYS Free Enhanced Progressive Lenses"
+              src="https://static.lenskart.com/owndays/img/progressive-cp/v2/progressive-banner-with-text-sp.webp" /></picture
+        ></a>
+        <div class="od-body-owndays-progressive-cp">
+          <div class="od-body-owndays-progressive-cp__container__meaning-box">
+            <div class="bg-light-blue"></div>
+            <div
+              class="od-body-owndays-progressive-cp__container__meaning od-body-owndays-progressive-cp__container__meaning--text"
+            >
+              <div class="meaning">
+                <h2 class="meaning__title">
+                  WHAT ARE <br />PROGRESSIVE LENSES
+                </h2>
+                <p class="meaning__desc">
+                  Progressive lenses are multifocal lenses designed to correct
+                  your vision at all viewing distances—far, intermediate and
+                  near. The lenses are characterised by a gradual change of lens
+                  power from top to bottom, without the presence of a boundary
+                  line between viewing zones. They are commonly prescribed for
+                  myopic individuals who develop presbyopia around the age of
+                  40.
+                </p>
+              </div>
+            </div>
+            <div
+              class="od-body-owndays-progressive-cp__container__meaning od-body-owndays-progressive-cp__container__meaning--vdo"
+            >
+              <div class="meaning__vdo-container" onclick="toggleVideo(this)">
+                <div class="meaning__vdo-cover"></div>
+                <video
+                  loop=""
+                  playsinline=""
+                  class="meaning__vdo"
+                  poster="https://static.lenskart.com/media/owndays/img/progressive-cp/thumbnail.webp"
+                >
+                  <source
+                    src="https://static.lenskart.com/media/owndays/img/progressive-cp/video.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+            <div
+              class="od-body-owndays-progressive-cp__container__meaning-presbyopia"
+            >
+              <div class="meaning-presbyopia__desc-box">
+                <h2 class="meaning-presbyopia__desc-title">
+                  UNDERSTANDING <br />PRESBYOPIA
+                </h2>
+                <span class="meaning-presbyopia__desc-detail"
+                  >As we age, our eyes gradually lose their ability to see
+                  things clearly up close. This is due to the reduced elasticity
+                  in the eye muscles and the hardening of the crystalline lens
+                  that diminishes its ability to change shape. As a result, your
+                  vision becomes blurry at the regular reading distance, often
+                  requiring you to hold reading materials further away to focus.
+                  This natural ageing process, known as presbyopia, typically
+                  begins at the age of 40. Although presbyopia cannot be
+                  reversed, it can be effectively corrected using spectacles,
+                  contact lenses or through refractive surgery.</span
+                >
+              </div>
+              <img
+                alt="presbyopia"
+                class="meaning-presbyopia__image"
+                src="https://static.lenskart.com/media/owndays/img/progressive-cp/mean-glasses.webp"
+              />
+            </div>
+            <div
+              class="od-body-owndays-progressive-cp__container__book-online-btn"
+            >
+              <a class="book-online-btn" href="/stores/sg" target="_self"
+                ><span>BOOK AN EYE TEST ONLINE</span
+                ><img
+                  alt="book-an-eye-test-online"
+                  class=""
+                  src="https://static.lenskart.com/media/owndays/img/progressive-cp/arrow-right-circle-icon.svg"
+              /></a>
+            </div>
+          </div>
+          <div class="od-body-owndays-progressive-cp__container__benefits-box">
+            <div class="bg-dark-blue"></div>
+            <div class="od-body-owndays-progressive-cp__container__benefits">
+              <h2 class="benefits__title">
+                BENEFITS OF <br />PROGRESSIVE LENSES
+              </h2>
+              <div
+                class="od-body-owndays-progressive-cp__container__benefits-list"
+              >
+                <div class="benefits__item">
+                  <img
+                    alt="CONVENIENCE"
+                    src="https://static.lenskart.com/media/owndays/img/progressive-cp/icon-benefits-1.svg"
+                  />
+                  <h5>CONVENIENCE</h5>
+                  <span
+                    >You only need 1 pair of spectacles to see far, intermediate
+                    and reading zones</span
+                  >
+                </div>
+                <div class="benefits__item">
+                  <img
+                    alt="COMFORT"
+                    src="https://static.lenskart.com/media/owndays/img/progressive-cp/icon-benefits-2.svg"
+                  />
+                  <h5>COMFORT</h5>
+                  <span
+                    >There is no image-jump that may be experienced with bifocal
+                    lenses</span
+                  >
+                </div>
+                <div class="benefits__item">
+                  <img
+                    alt="AESTHETICS"
+                    src="https://static.lenskart.com/media/owndays/img/progressive-cp/icon-benefits-3.svg"
+                  />
+                  <h5>AESTHETICS</h5>
+                  <span
+                    >Progressive lenses look just like single vision lenses
+                    without the presence of a visible boundary line</span
+                  >
+                </div>
+                <div class="benefits__item">
+                  <img
+                    alt="EASY ADAPTATION"
+                    src="https://static.lenskart.com/media/owndays/img/progressive-cp/icon-benefits-4.svg"
+                  />
+                  <h5>EASY ADAPTATION</h5>
+                  <span
+                    >Modern lens technology has made it possible for you to get
+                    used to wearing progressive lenses quickly</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="od-body-owndays-progressive-cp__container__persons">
+            <h2 class="persons__title">
+              WHO SHOULD WEAR <br />PROGRESSIVE LENSES
+            </h2>
+            <div
+              class="od-body-owndays-progressive-cp__container__persons-list"
+            >
+              <div class="persons__item">
+                <img
+                  alt="40 years old"
+                  src="https://static.lenskart.com/media/owndays/img/progressive-cp/icon-who-1.webp"
+                /><span
+                  >Individuals who are 40 years old and above and have
+                  difficulty seeing both far and near</span
+                >
+              </div>
+              <div class="persons__item">
+                <img
+                  alt="looking afar with their reading glasses being worn"
+                  src="https://static.lenskart.com/media/owndays/img/progressive-cp/icon-who-2.webp"
+                /><span
+                  >Individuals who experience discomfort due to blurry vision
+                  when looking afar with their reading glasses being worn</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="od-body-owndays-progressive-cp__container__types types">
+            <h2>TYPES OF PROGRESSIVE LENSES <br />AVAILABLE AT OWNDAYS</h2>
+            <span
+              >Unlike conventional progressive lenses that utilise either a
+              front surface design or a back surface design, all OWNDAYS
+              progressive lenses feature a double-sided design that offers
+              seamless transitions between the different viewing zones. This
+              provides a more natural and comfortable visual experience.
+              Besides, it offers a wider viewing field and reduces visual
+              distortion when looking through the edges of the lens, making it
+              easier for the wearer to get used to the lenses.</span
+            >
+          </div>
+          <div
+            class="od-body-owndays-progressive-cp__container__comparison-box"
+          >
+            <div class="bg-dark-blue-comparison"></div>
+            <div class="od-body-owndays-progressive-cp__container__comparison">
+              <h5 class="comparison__title">
+                COMPARISON BETWEEN THE TYPES OF <br />PROGRESSIVE LENSES AT
+                OWNDAYS
+              </h5>
+              <nav class="comparison__nav">
+                <div class="comparison__nav-item comparison__nav-item--active">
+                  <strong>ENHANCED</strong>
+                </div>
+                <div class="comparison__nav-item">
+                  <strong>PRESTIGE</strong>
+                </div>
+                <div class="comparison__nav-item">
+                  <strong>PRESTIGE GOLD</strong>
+                </div>
+                <div class="comparison__nav-item">
+                  <strong>PRESTIGE DIAMOND</strong>
+                </div>
+              </nav>
+              <div class="comparison__desc-wrapper">
+                <div class="comparison__desc">
+                  <img
+                    alt="enhanced/prestige/prestige gold/prestige platinum lenses"
+                    class="comparison__desc__header-img"
+                    src="https://static.lenskart.com/media/owndays/img/progressive-cp/progressive-lenses-1-pc.webp"
+                  />
+                  <div class="comparison__desc__detail">
+                    <div class="comparison__desc__detail__rank">
+                      <span>Distance Vision</span>
+                      <div class="circle-box">
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                    <div class="comparison__desc__detail__rank">
+                      <span>Intermediate Vision</span>
+                      <div class="circle-box">
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                    <div class="comparison__desc__detail__rank">
+                      <span>Near Vision</span>
+                      <div class="circle-box">
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                    <div class="comparison__desc__detail__key-differences">
+                      <h3>KEY DIFFERENCES</h3>
+                      <ul>
+                        <li>Easy adaptation</li>
+                        <li>Balanced viewing zones</li>
+                      </ul>
+                    </div>
+                    <div class="comparison__desc__detail__price">
+                      <h3>PRICE</h3>
+                      <div
+                        class="comparison__desc__detail__price__value-box comparison__desc__detail__price__value-box--zero false"
+                      >
+                        <span
+                          class="comparison__desc__detail__price__value comparison__desc__detail__price__value--zero"
+                          >0</span
+                        >
+                      </div>
+                    </div>
+                    <span class="comparison__desc__detail__remark false"
+                      >* T&amp;Cs</span
+                    >
+                  </div>
+                  <span class="comparison__desc__image-text"
+                    >* Images for illustration purposes only</span
+                  >
+                </div>
+              </div>
+              <div class="comparison__desc-wrapper">
+                <div class="comparison__desc">
+                  <img
+                    alt="enhanced/prestige/prestige gold/prestige platinum lenses"
+                    class="comparison__desc__header-img"
+                    src="https://static.lenskart.com/media/owndays/img/progressive-cp/progressive-lenses-2-pc.webp"
+                  />
+                  <div class="comparison__desc__detail">
+                    <div class="comparison__desc__detail__rank">
+                      <span>Distance Vision</span>
+                      <div class="circle-box">
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                    <div class="comparison__desc__detail__rank">
+                      <span>Intermediate Vision</span>
+                      <div class="circle-box">
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                    <div class="comparison__desc__detail__rank">
+                      <span>Near Vision</span>
+                      <div class="circle-box">
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                    <div class="comparison__desc__detail__key-differences">
+                      <h3>KEY DIFFERENCES</h3>
+                      <ul>
+                        <li>Easy adaptation</li>
+                        <li>
+                          Smaller area of distortion at the edges of the lens
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="comparison__desc__detail__price">
+                      <h3>PRICE</h3>
+                      <div
+                        class="comparison__desc__detail__price__value-box false false"
+                      >
+                        <span class="comparison__desc__detail__price__plus"
+                          >+</span
+                        ><span
+                          class="comparison__desc__detail__price__value false"
+                          >200</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <span class="comparison__desc__image-text"
+                    >* Images for illustration purposes only</span
+                  >
+                </div>
+              </div>
+              <div class="comparison__desc-wrapper">
+                <div class="comparison__desc">
+                  <img
+                    alt="enhanced/prestige/prestige gold/prestige platinum lenses"
+                    class="comparison__desc__header-img"
+                    src="https://static.lenskart.com/media/owndays/img/progressive-cp/prestige-gold.webp"
+                  />
+                  <div class="comparison__desc__detail">
+                    <div class="comparison__desc__detail__rank">
+                      <span>Distance Vision</span>
+                      <div class="circle-box">
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                    <div class="comparison__desc__detail__rank">
+                      <span>Intermediate Vision</span>
+                      <div class="circle-box">
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                    <div class="comparison__desc__detail__rank">
+                      <span>Near Vision</span>
+                      <div class="circle-box">
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                    <div class="comparison__desc__detail__key-differences">
+                      <h3>KEY DIFFERENCES</h3>
+                      <ul>
+                        <li>Comfortable vision for any type of activity</li>
+                        <li>
+                          Easy accessibility for intermediate zone allows for
+                          smooth transition
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="comparison__desc__detail__price">
+                      <h3>PRICE</h3>
+                      <div
+                        class="comparison__desc__detail__price__value-box false false"
+                      >
+                        <span class="comparison__desc__detail__price__plus"
+                          >+</span
+                        ><span
+                          class="comparison__desc__detail__price__value false"
+                          >400</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <span class="comparison__desc__image-text"
+                    >* Images for illustration purposes only</span
+                  >
+                </div>
+              </div>
+              <div class="comparison__desc-wrapper">
+                <div class="comparison__desc">
+                  <img
+                    alt="enhanced/prestige/prestige gold/prestige platinum lenses"
+                    class="comparison__desc__header-img"
+                    src="https://static.lenskart.com/media/owndays/img/progressive-cp/progressive-lenses-4-pc.webp"
+                  />
+                  <div class="comparison__desc__detail">
+                    <div class="comparison__desc__detail__rank">
+                      <span>Distance Vision</span>
+                      <div class="circle-box">
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                      </div>
+                    </div>
+                    <div class="comparison__desc__detail__rank">
+                      <span>Intermediate Vision</span>
+                      <div class="circle-box">
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                      </div>
+                    </div>
+                    <div class="comparison__desc__detail__rank">
+                      <span>Near Vision</span>
+                      <div class="circle-box">
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                        <div class="circle circle--selected"></div>
+                      </div>
+                    </div>
+                    <div class="comparison__desc__detail__key-differences">
+                      <h3>KEY DIFFERENCES</h3>
+                      <ul>
+                        <li>Widened intermediate viewing zone</li>
+                        <li>Significantly improved near viewing zone</li>
+                      </ul>
+                    </div>
+                    <div class="comparison__desc__detail__price">
+                      <h3>PRICE</h3>
+                      <div
+                        class="comparison__desc__detail__price__value-box false comparison__desc__detail__price__value-box--600"
+                      >
+                        <span class="comparison__desc__detail__price__plus"
+                          >+</span
+                        ><span
+                          class="comparison__desc__detail__price__value false"
+                          >600</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <span class="comparison__desc__image-text"
+                    >* Images for illustration purposes only</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="od-body-owndays-progressive-cp__container__lens-features lens-features"
+          >
+            <h2>LENS FEATURES</h2>
+            <div class="lens-features__list">
+              <div class="lens-features__item">
+                <img
+                  alt="High index aspheric lenses"
+                  class="lens-features__item-img"
+                  src="https://static.lenskart.com/media/owndays/img/progressive-cp/feature-1.svg"
+                /><span class="lens-features__item-text"
+                  >High index <br />aspheric lenses</span
+                >
+              </div>
+              <div class="lens-features__item">
+                <img
+                  alt="99% UV protection"
+                  class="lens-features__item-img"
+                  src="https://static.lenskart.com/media/owndays/img/progressive-cp/feature-2.svg"
+                /><span class="lens-features__item-text"
+                  >99% UV protection</span
+                >
+              </div>
+              <div class="lens-features__item">
+                <img
+                  alt="Hard multi-coat"
+                  class="lens-features__item-img"
+                  src="https://static.lenskart.com/media/owndays/img/progressive-cp/feature-3.svg"
+                /><span class="lens-features__item-text"
+                  >Hard <br />multi-coat</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="od-footer-owndays-progressive-cp">
+          <div
+            class="od-footer-owndays-progressive-cp__container__free-enhanced-header"
+          >
+            <h1 class="free-enhanced-header">
+              FREE ENHANCED <br />PROGRESSIVE LENSES
+            </h1>
+          </div>
+          <div
+            class="od-footer-owndays-progressive-cp__container__free-enhanced-body-box"
+          >
+            <div
+              class="od-footer-owndays-progressive-cp__container__free-enhanced-body"
+            >
+              <div class="free-enhanced-body__desc-box">
+                <p>
+                  If you have been struggling to see clearly at different
+                  distances or dealing with the hassle of having to switch
+                  between multiple pairs of glasses, there’s no better time to
+                  try out progressive lenses than now!
+                </p>
+                <p>
+                  From 01 November 2024, enjoy FREE Enhanced Progressive Lenses
+                  at OWNDAYS with any purchase of spectacles. This exclusive
+                  offer is available to all customers at all OWNDAYS retails
+                  stores except the premium concept stores at Takashimaya S.C.
+                  and MBS.
+                </p>
+                <div class="free-enhanced-body__remark-box">
+                  <span class="free-enhanced-body__remark-box__text"
+                    >* 2-week processing time is required</span
+                  >
+                  <div
+                    class="free-enhanced-body__remark-box__link-open-modal terms_and_conditions"
+                  >
+                    <span class="free-enhanced-body__remark-box__text"
+                      >* T&amp;Cs apply</span
+                    ><img
+                      alt=""
+                      src="https://static.lenskart.com/media/owndays/img/progressive-cp/icon-external-link.webp"
+                    />
+                  </div>
+                </div>
+              </div>
+              <img
+                alt="FREE ENHANCED PROGRESSIVE LENSES FOR NEW WEARERS"
+                class="free-enhanced-body__img"
+                src="https://static.lenskart.com/media/owndays/img/progressive-cp/img-2.webp"
+              />
+            </div>
+          </div>
+          <div
+            class="od-footer-owndays-progressive-cp__container__book-online-btn"
+          >
+            <a class="book-online-btn" href="/stores/sg" target="_self"
+              ><span>BOOK AN EYE TEST ONLINE</span
+              ><img
+                alt="book-an-eye-test-online"
+                class=""
+                src="https://static.lenskart.com/media/owndays/img/progressive-cp/arrow-right-circle-icon.svg"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function initSprinklrChatBot() {
+        var userInfo =
+          arguments.length > 0 && arguments[0] !== undefined
+            ? arguments[0]
+            : {};
+        var device =
+          arguments.length > 1 && arguments[1] !== undefined
+            ? arguments[1]
+            : false;
+        var loginStatus =
+          arguments.length > 2 && arguments[2] !== undefined
+            ? arguments[2]
+            : false;
+        var telephone = userInfo.telephone,
+          firstName = userInfo.firstName,
+          lastName = userInfo.lastName,
+          email = userInfo.email,
+          orderNo = userInfo.orderNo,
+          countryCode = userInfo.countryCode,
+          platform = userInfo.platform,
+          phoneNumber = userInfo.phoneNumber,
+          emailId = userInfo.emailId;
+        window.sprChatSettings = window.sprChatSettings || {};
+        window.sprChatSettings = _objectSpread(
+          _objectSpread(
+            _objectSpread(
+              {
+                appId: "626fcf8563ac4521314470a6_app_600019149",
+                skin: "MODERN",
+                landingScreen: "LAST_CONVERSATION",
+              },
+              device && {
+                device: "MOBILE",
+              }
+            ),
+            loginStatus && {
+              user: {
+                id: telephone || phoneNumber || "",
+                //mandatory - can send phone number
+                firstName: firstName || "",
+                //optional, can send empty
+                lastName: lastName || "",
+                //optional, can send empty
+                profileImageUrl: "",
+                //optional, can send empty
+                phoneNo: telephone || phoneNumber || "",
+                //optional
+                email: email || emailId || "",
+                //optional
+                hash: generateHash(userInfo), //mandatory - you need to generate your own
+              },
+            }
+          ),
+          loginStatus && {
+            userContext: {
+              _c_628fa2a6e10d7d26ffae932e: orderNo || "",
+              // order_no
+              _c_628fa2e3e10d7d26ffae99c9: "",
+              // unique_id
+              _c_628fa30ee10d7d26ffae9d66: "",
+              // action
+              _c_629059cde7872557aeec559f: "",
+              // customer_id
+              _c_628fa33ae10d7d26ffaea0b0:
+                process.env.BUILD_ENV === "development" ? "preprod" : "prod",
+              // env
+              // "_c_628fa33ae10d7d26ffaea0b0": "", // env
+              _c_628fa36be10d7d26ffaea88b: "",
+              // username
+              _c_628fa39ae10d7d26ffaead3d: "",
+              // External_Conversation_ID
+              _c_628fa3c5e10d7d26ffaeb1a3: "",
+              // External_Customer_ID
+              _c_628fa3f7e10d7d26ffaeb7a9: "",
+              // auth_id
+              _c_628fa430e10d7d26ffaebb90: "",
+              // pincode
+              _c_628fa46ae10d7d26ffaec0e6: "",
+              // auth_code
+              _c_5cc9a7d0e4b01904c8dfc965: "",
+              // language
+              _c_62a1a40fd7c1ad35cd4a6323: platform || "",
+              // device
+              _c_628fa497e10d7d26ffaec4c9: countryCode || "", // country
+              // "_c_628fa497e10d7d26ffaec4c9": ""  // country
+            },
+          }
+        );
+        (function () {
+          var t = window,
+            e = t.sprChat,
+            a = e && !!e.loaded,
+            n = document,
+            _r = function r() {
+              _r.m(arguments);
+            };
+          (_r.q = []),
+            (_r.m = function (t) {
+              _r.q.push(t);
+            }),
+            (t.sprChat = a ? e : _r);
+          var o = function o() {
+            var e = n.createElement("script");
+            (e.type = "text/javascript"),
+              (e.async = !0),
+              (e.src =
+                "https://prod4-live-chat.sprinklr.com/api/livechat/handshake/widget/" +
+                t.sprChatSettings.appId),
+              (e.onerror = function () {
+                t.sprChat.loaded = !1;
+              }),
+              (e.onload = function () {
+                t.sprChat.loaded = !0;
+              });
+            var a = n.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(e, a);
+          };
+          "function" == typeof e
+            ? a
+              ? e("update", t.sprChatSettings)
+              : o()
+            : "loading" !== n.readyState
+            ? o()
+            : n.addEventListener("DOMContentLoaded", o);
+        })();
+      }
+    </script>
+    <script type="text/javascript">
+      // Tab switching functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabContainer = document.querySelector(
+          ".od-body-owndays-progressive-cp__container__comparison"
+        );
+        if (!tabContainer) return;
+
+        const tabItems = tabContainer.querySelectorAll(".comparison__nav-item");
+        const tabWrappers = tabContainer.querySelectorAll(
+          ".comparison__desc-wrapper"
+        );
+
+        // Initialize: hide all tab contents except first one
+        function initializeTabs() {
+          // Hide all tab contents
+          tabWrappers.forEach((wrapper, i) => {
+            wrapper.style.display = i === 0 ? "block" : "none";
+          });
+
+          // Activate first tab
+          if (tabItems.length > 0) {
+            tabItems[0].classList.add("comparison__nav-item--active");
+          }
+        }
+
+        // Switch tab function
+        function switchTab(index) {
+          // Update tab navigation
+          tabItems.forEach((item, i) => {
+            if (i === index) {
+              item.classList.add("comparison__nav-item--active");
+            } else {
+              item.classList.remove("comparison__nav-item--active");
+            }
+          });
+
+          // Update tab content
+          tabWrappers.forEach((wrapper, i) => {
+            wrapper.style.display = i === index ? "block" : "none";
+          });
+        }
+
+        // Add click event to each tab
+        tabItems.forEach((tab, index) => {
+          tab.addEventListener("click", function (e) {
+            e.preventDefault();
+            switchTab(index);
+          });
+
+          // Add keyboard navigation support
+          tab.setAttribute("tabindex", "0");
+          tab.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              switchTab(index);
+            }
+          });
+        });
+
+        // Initialize tabs
+        initializeTabs();
+      });
+
+      (function (w, d, t, r, u) {
+        var f, n, i;
+        (w[u] = w[u] || []),
+          (f = function () {
+            var o = { ti: "134598098" };
+            (o.q = w[u]), (w[u] = new UET(o)), w[u].push("pageLoad");
+          }),
+          (n = d.createElement(t)),
+          (n.src = r),
+          (n.async = 1),
+          (n.onload = n.onreadystatechange =
+            function () {
+              var s = this.readyState;
+              (s && s !== "loaded" && s !== "complete") ||
+                (f(), (n.onload = n.onreadystatechange = null));
+            }),
+          (i = d.getElementsByTagName(t)[0]),
+          i.parentNode.insertBefore(n, i);
+      })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    </script>
+    <script type="text/javascript">
+      window.postpayAsyncInit = function () {
+        postpay.init({
+          merchantId: "id_a09b6ac5a0e44d26bae0b1f4e4954383",
+          sandbox: false,
+          theme: "light",
+          locale: "en",
+        });
+      };
+    </script>
+    <script
+      clientid="owndays"
+      service="in.juspay.hyperpay"
+      src="https://public.releases.juspay.in/hyper-sdk-web/HyperServices.js"
+    ></script>
+    <div style="display: none; visibility: hidden">
+      <script>
+        !(function (b, e, f, g, a, c, d) {
+          b.fbq ||
+            ((a = b.fbq =
+              function () {
+                a.callMethod
+                  ? a.callMethod.apply(a, arguments)
+                  : a.queue.push(arguments);
+              }),
+            b._fbq || (b._fbq = a),
+            (a.push = a),
+            (a.loaded = !0),
+            (a.version = "2.0"),
+            (a.queue = []),
+            (c = e.createElement(f)),
+            (c.async = !0),
+            (c.src = g),
+            (d = e.getElementsByTagName(f)[0]),
+            d.parentNode.insertBefore(c, d));
+        })(
+          window,
+          document,
+          "script",
+          "https://connect.facebook.net/en_US/fbevents.js"
+        );
+        fbq("init", "1510426245838375");
+        fbq("track", "PageView");
+      </script>
+      <noscript></noscript>
+    </div>
+    <style>
+      .wzrk-overlay {
+        display: none !important;
+      }
+    </style>
+    <script type="text/javascript" id="" charset="">
+      var clevertap = {
+        event: [],
+        profile: [],
+        account: [],
+        onUserLogin: [],
+        notifications: [],
+        privacy: [],
+      };
+      clevertap.account.push({ id: "6Z4-46Z-Z96Z" });
+      clevertap.privacy.push({ optOut: !1 });
+      clevertap.privacy.push({ useIP: !1 });
+      (function () {
+        var a = document.createElement("script");
+        a.type = "text/javascript";
+        a.async = !0;
+        a.src =
+          ("https:" == document.location.protocol
+            ? "https://d2r1yp2w7bby2u.cloudfront.net"
+            : "http://static.clevertap.com") + "/js/clevertap.min.js";
+        var b = document.getElementsByTagName("script")[0];
+        b.parentNode.insertBefore(a, b);
+      })();
+    </script>
+    <script
+      id=""
+      text=""
+      charset=""
+      type="text/javascript"
+      src="https://yutoads.com/audience.js"
+    ></script>
+    <script type="text/javascript" id="" charset="">
+      !(function (d, g, e) {
+        d.TiktokAnalyticsObject = e;
+        var a = (d[e] = d[e] || []);
+        a.methods =
+          "page track identify instances debug on off once ready alias group enableCookie disableCookie holdConsent revokeConsent grantConsent".split(
+            " "
+          );
+        a.setAndDefer = function (b, c) {
+          b[c] = function () {
+            b.push([c].concat(Array.prototype.slice.call(arguments, 0)));
+          };
+        };
+        for (d = 0; d < a.methods.length; d++) a.setAndDefer(a, a.methods[d]);
+        a.instance = function (b) {
+          b = a._i[b] || [];
+          for (var c = 0; c < a.methods.length; c++)
+            a.setAndDefer(b, a.methods[c]);
+          return b;
+        };
+        a.load = function (b, c) {
+          var f = "https://analytics.tiktok.com/i18n/pixel/events.js";
+          a._i = a._i || {};
+          a._i[b] = [];
+          a._i[b]._u = f;
+          a._t = a._t || {};
+          a._t[b] = +new Date();
+          a._o = a._o || {};
+          a._o[b] = c || {};
+          c = document.createElement("script");
+          c.type = "text/javascript";
+          c.async = !0;
+          c.src = f + "?sdkid\x3d" + b + "\x26lib\x3d" + e;
+          b = document.getElementsByTagName("script")[0];
+          b.parentNode.insertBefore(c, b);
+        };
+        a.load("CTTO0KRC77UDUQAR23O0");
+        a.page();
+      })(window, document, "ttq");
+    </script>
+    <script type="text/javascript" id="" charset="">
+      (function (a, e, b, f, g, c, d) {
+        a[b] =
+          a[b] ||
+          function () {
+            (a[b].q = a[b].q || []).push(arguments);
+          };
+        c = e.createElement(f);
+        c.async = 1;
+        c.src = "https://www.clarity.ms/tag/" + g;
+        d = e.getElementsByTagName(f)[0];
+        d.parentNode.insertBefore(c, d);
+      })(window, document, "clarity", "script", "qx92mwqclb");
+    </script>
+    <iframe
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe>
+    <script type="text/javascript" id="" charset="">
+      !(function (b, e, f, g, a, c, d) {
+        b.saq ||
+          ((a = b.saq =
+            function () {
+              a.callMethod
+                ? a.callMethod.apply(a, arguments)
+                : a.queue.push(arguments);
+            }),
+          b._saq || (b._saq = a),
+          (a.push = a),
+          (a.loaded = !0),
+          (a.version = "1.0"),
+          (a.queue = []),
+          (c = e.createElement(f)),
+          (c.async = !0),
+          (c.src = g),
+          (d = e.getElementsByTagName(f)[0]),
+          d.parentNode.insertBefore(c, d));
+      })(
+        window,
+        document,
+        "script",
+        "https://tags.srv.stackadapt.com/events.js"
+      );
+      saq("ts", "FLzFqiXLl9dVkW8kXq13NQ");
+    </script>
+    <iframe
+      allow="join-ad-interest-group"
+      data-tagging-id="AW-723115492"
+      data-load-time="1755599153333"
+      height="0"
+      width="0"
+      src="https://td.doubleclick.net/td/rul/723115492?random=1755599153328&amp;cv=11&amp;fst=1755599153328&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be58f1v895293790z89165206974za200zb9165206974zd9165206974xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~105033763~105033765~105102050~105103161~105103163~105231383~105231385&amp;u_w=1440&amp;u_h=900&amp;url=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Fnews%2Fprogressive-cp&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=OWNDAYS%20PROGRESSIVE%20GLASSES%20%7C%20OWNDAYS%20ONLINE%20STORE%20-%20OPTICAL%20SHOP&amp;npa=0&amp;auid=1904098505.1754475860&amp;uaa=arm&amp;uab=64&amp;uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B139.0.7258.128%7CChromium%3B139.0.7258.128&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.6.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config"
+      style="display: none; visibility: hidden"
+    ></iframe
+    ><iframe
+      allow="join-ad-interest-group"
+      data-tagging-id="AW-723115492"
+      data-load-time="1755599153335"
+      height="0"
+      width="0"
+      src="https://td.doubleclick.net/td/rul/723115492?random=1755599153334&amp;cv=11&amp;fst=1755599153334&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be58f1v895293790z89165206974za200zb9165206974zd9165206974xea&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~105033763~105033765~105102050~105103161~105103163~105231383~105231385&amp;u_w=1440&amp;u_h=900&amp;url=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Fnews%2Fprogressive-cp&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=OWNDAYS%20PROGRESSIVE%20GLASSES%20%7C%20OWNDAYS%20ONLINE%20STORE%20-%20OPTICAL%20SHOP&amp;npa=0&amp;auid=1904098505.1754475860&amp;uaa=arm&amp;uab=64&amp;uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B139.0.7258.128%7CChromium%3B139.0.7258.128&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.6.0&amp;uaw=0&amp;fledge=1&amp;_tu=Cg"
+      style="display: none; visibility: hidden"
+    ></iframe>
+    <div
+      id="batBeacon347089034790"
+      style="width: 0px; height: 0px; display: none; visibility: hidden"
+    >
+      <img
+        id="batBeacon335796352349"
+        width="0"
+        height="0"
+        alt=""
+        src="https://bat.bing.com/action/0?ti=134598098&amp;Ver=2&amp;mid=b0649f70-214d-46c2-b312-3f9d66c8fbdd&amp;bo=1&amp;sid=e7f5ffe07c0d11f09739b738373ef6e7&amp;vid=85a6b6e072af11f0a3789f0dcd6edd65&amp;vids=0&amp;msclkid=N&amp;pi=918639831&amp;lg=en-GB&amp;sw=1440&amp;sh=900&amp;sc=30&amp;tl=OWNDAYS%20PROGRESSIVE%20GLASSES%20%7C%20OWNDAYS%20ONLINE%20STORE%20-%20OPTICAL%20SHOP&amp;kw=Free%20Progressive%20lenses,Progressive%20lens%20price%20Singapore,Progressive%20lens%20Singapore,Progressive%20glasses,Spectacle%20frames,What%20are%20progressive%20lenses,Best%20progressive%20lenses%20Singapore,OWNDAYS&amp;p=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Fnews%2Fprogressive-cp&amp;r=&amp;lt=1939&amp;evt=pageLoad&amp;sv=1&amp;cdb=AQAQ&amp;rn=961769"
+        style="width: 0px; height: 0px; display: none; visibility: hidden"
+      />
+    </div>
+    <div
+      id="give-freely-root-mbnbehikldjhnfehhnaidhjhoofhpehk"
+      class="give-freely-root"
+      data-extension-id="mbnbehikldjhnfehhnaidhjhoofhpehk"
+      data-extension-name="CSS Peeper"
+      style="display: block"
+    ></div>
+
+    <style>
+      .meaning__vdo-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        padding-top: 48.85%;
+      }
+
+      .meaning__vdo-container:hover .meaning__vdo-cover {
+        background-color: transparent;
+      }
+
+      .meaning__vdo-container::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background: url("https://static.lenskart.com/media/owndays/img/progressive-cp/play-vdo-icon.svg")
+          no-repeat center center;
+        background-size: contain;
+        cursor: pointer;
+        z-index: 2;
+        transition: opacity 0.3s ease;
+      }
+
+      .meaning__playing {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        padding-top: 48.85%;
+      }
+
+      .meaning__playing::before {
+        display: none !important;
+      }
+
+      .meaning__vdo-cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+
+      .meaning__vdo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @media (max-width: 430px) {
+        .meaning__vdo-container::before {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    </style>
+
+    <script>
+      function toggleVideo(container) {
+        const video = container.querySelector(".meaning__vdo");
+        const cover = container.querySelector(".meaning__vdo-cover");
+
+        if (video.paused) {
+          // Play video
+          video.play();
+          container.classList.add("meaning__playing");
+          container.classList.remove("meaning__vdo-container");
+          if (cover) cover.style.display = "none";
+        } else {
+          // Pause video
+          video.pause();
+          container.classList.remove("meaning__playing");
+          container.classList.add("meaning__vdo-container");
+          if (cover) cover.style.display = "block";
+        }
+      }
+    </script>
+
+    <!-- Terms & Conditions modal (static) -->
+    <div
+      class="terms-and-conditions"
+      id="terms-and-conditions"
+      style="display: none"
+    >
+      <div class="bundle-terms-modal__overlay">
+        <div
+          class="bundle-terms-modal__content"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="terms-and-conditions-title"
+        >
+          <button
+            class="bundle-terms-modal__close"
+            aria-label="Close Terms & Conditions"
+          >
+            <img
+              src="https://static.lenskart.com/media/img/news/owndays-contact-lens-promotion/icon-close.svg"
+              alt="Icon close"
+            />
+          </button>
+          <h2 id="terms-and-conditions-title"></h2>
+          <p id="terms-and-conditions-subtitle"></p>
+          <ul class="bundle-sale-modal-terms"></ul>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .terms-and-conditions {
+        position: fixed;
+        inset: 0;
+        z-index: 1001;
+      }
+
+      .bundle-terms-modal__overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .bundle-terms-modal__content {
+        background: #fff;
+        color: #000;
+        padding: 57px 27px;
+        width: 100%;
+        max-width: 960px;
+        max-height: 90vh;
+        position: relative;
+        font-size: 14px;
+        letter-spacing: 1px;
+        overflow-y: auto;
+        border-radius: 8px;
+      }
+
+      .bundle-terms-modal__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+      }
+
+      .terms-and-conditions h2 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        margin: 0 0 27px;
+      }
+
+      .terms-and-conditions p {
+        font-weight: 700;
+        text-decoration: underline;
+        margin: 0;
+      }
+
+      .bundle-sale-modal-terms {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+        line-height: 1.8;
+      }
+
+      .bundle-sale-modal-terms li {
+        position: relative;
+        padding-left: 20px;
+      }
+
+      .bundle-sale-modal-terms li::before {
+        content: "";
+        position: absolute;
+        top: 11px;
+        left: 4px;
+        width: 4px;
+        height: 4px;
+        background: #000;
+        border-radius: 50%;
+      }
+
+      @media (min-width: 1024px) {
+        .bundle-terms-modal__content {
+          padding: 79px 102px 111px;
+          font-size: 15px;
+        }
+
+        .bundle-terms-modal__close {
+          width: 38px;
+          height: 38px;
+          top: 35px;
+          right: 35px;
+        }
+
+        .bundle-terms-modal__close img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .terms-and-conditions h2 {
+          font-size: 22px;
+          margin-bottom: 60px;
+        }
+      }
+    </style>
+
+    <script>
+      (function () {
+        var modal = document.getElementById("terms-and-conditions");
+        if (!modal) {
+          return;
+        }
+        var overlay = modal.querySelector(".bundle-terms-modal__overlay");
+        var closeBtn = modal.querySelector(".bundle-terms-modal__close");
+        var listEl = modal.querySelector(".bundle-sale-modal-terms");
+        var titleEl = modal.querySelector("#terms-and-conditions-title");
+        var descriptionEl = modal.querySelector(
+          "#terms-and-conditions-subtitle"
+        );
+
+        var termsData = [
+          {
+            title: "Terms & Conditions",
+            description: "",
+            list: [
+              "Offer is subject to the customers’ suitability for progressive lens wear and lens stock availability.",
+              "Offer is valid with every prescription glasses purchase and excludes the lens replacement service.",
+              "$100 discount will be applied for upgrades to Prestige, Prestige Gold, or Prestige Diamond progressive lenses only.",
+              "Regular top up fees apply for other additional lens options.",
+              "The standard warranty coverage of one-time complimentary change of lens degree is not applicable for the free upgrade to Enhanced progressive lenses.",
+              "Free Enhanced progressive lens is offered at all OWNDAYS retail shops in Singapore, except the premium concept stores at Takashimaya S.C. and MBS.",
+              "A two-week processing time is required during the campaign period.",
+              "Offer cannot be used in conjunction with other discounts, vouchers, and/or promotions.",
+              "The management reserves the right to amend the offer and the terms and conditions without prior notice.",
+            ],
+          },
+        ];
+
+        function renderTerms(data) {
+          titleEl.textContent = data.title;
+          descriptionEl.textContent = data.description;
+          listEl.innerHTML = "";
+          if (Array.isArray(data.list)) {
+            data.list.forEach(function (item) {
+              var li = document.createElement("li");
+              li.textContent = item;
+              listEl.appendChild(li);
+            });
+          }
+        }
+
+        function openModalWith(index) {
+          var data = termsData[index] || termsData[0];
+          renderTerms(data);
+          modal.style.display = "block";
+          document.body.style.overflow = "hidden";
+        }
+        function closeModal() {
+          modal.style.display = "none";
+          document.body.style.overflow = "";
+        }
+
+        var buttons = document.querySelectorAll(".terms_and_conditions");
+        Array.prototype.forEach.call(buttons, function (btn, idx) {
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            openModalWith(idx);
+          });
+        });
+
+        // Delegated fallback
+        document.addEventListener("click", function (e) {
+          var t = e.target.closest && e.target.closest(".terms_and_conditions");
+          if (t) {
+            e.preventDefault();
+            openModalWith([].indexOf.call(buttons, t));
+          }
+        });
+
+        overlay.addEventListener("click", function (e) {
+          if (e.target === overlay) {
+            closeModal();
+          }
+        });
+        closeBtn.addEventListener("click", closeModal);
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            closeModal();
+          }
+        });
+      })();
+    </script>
+    <!-- Terms & Conditions modal (static) -->
+  </body>
+</html>
