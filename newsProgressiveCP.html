@@ -576,12 +576,63 @@
         display: flex !important;
       }
 
+      .owndays-progressive-cp__nav{
+        height: 55px;
+        background-color: #EEF0F2;
+        position: relative;
+      }
+      .owndays-progressive-cp__nav-inner{
+        display: flex;
+        justify-content: flex-end;
+      }
+      .owndays-progressive-cp__nav-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
+        padding-inline: 10px;
+        background-color: #BF0000;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        border-top-left-radius: 15px;
+      }
+      .owndays-progressive-cp__nav-btn:hover{
+        background-color: #BF0000;
+        color: #fff;
+        text-decoration: none;
+      }
+      .owndays-progressive-cp__nav.is-fixed .owndays-progressive-cp__nav-inner{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+      }
+
       @media (max-width: 768px) {
         .od-header-owndays-progressive-cp__custom-breadcrumbs {
           margin-top: 0;
         }
         .od-header-owndays-progressive-cp__container {
           margin-top: 0;
+        }
+      }
+      @media (min-width: 768px) {
+        .owndays-progressive-cp__nav{
+          height: 70px;
+        }
+        .owndays-progressive-cp__nav-inner{
+          padding-inline: 20px;
+          max-width: 1220px;
+          margin-inline: auto;
+        }
+        .owndays-progressive-cp__nav-btn{
+          height: 70px;
+          padding-inline: 32px;
+          font-size: 16px;
+          letter-spacing: .64px;
+          border-radius: 20px 20px 0 0;
         }
       }
     </style>
@@ -617,7 +668,7 @@
       ></iframe
     ></noscript>
     <div id="content">
-      <div class="">
+      <div class="owndays-progressive-cp">
         <div class="od-header-owndays-progressive-cp__custom-breadcrumbs">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb--2">
@@ -1240,6 +1291,11 @@
             /></a>
           </div>
         </div>
+        <nav class="owndays-progressive-cp__nav is-fixed">
+          <div class="owndays-progressive-cp__nav-inner">
+              <a class="owndays-progressive-cp__nav-btn" href="/stores/sg">Search For Nearest Stores</a>
+          </div>
+        </nav>
       </div>
     </div>
     <script type="text/javascript">
@@ -1968,6 +2024,26 @@
         document.addEventListener("keydown", function (e) {
           if (e.key === "Escape") {
             closeModal();
+          }
+        });
+
+        // Handle nav sticky behavior
+        window.addEventListener('scroll', function() {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const windowHeight = window.innerHeight;
+          const bib = document.querySelector('.owndays-progressive-cp');
+          const nav = document.querySelector('.owndays-progressive-cp__nav');
+          
+          if (bib && nav) {
+            const documentHeight = bib.offsetHeight;
+            
+            // If the user reaches the bottom of the page
+            if (scrollTop + windowHeight >= documentHeight) {
+              nav.classList.remove('is-fixed');
+            } else {
+              // Reset to sticky or fixed when scrolling up
+              nav.classList.add('is-fixed');
+            }
           }
         });
       })();
