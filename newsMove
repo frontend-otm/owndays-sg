@@ -1,0 +1,2221 @@
+<html lang="en-US" data-reactroot="">
+  <head
+    data-locator-hook-status-message="Unsupported React renderer, only bundle type 1 (development) is supported but 0 (production) is found"
+  >
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      rel="stylesheet"
+    />
+    <link href="//www.google-analytics.com" rel="preconnect" />
+    <link href="//www.google-analytics.com" rel="dns-prefetch" />
+    <link href="//www.googletagmanager.com" rel="preconnect" />
+    <link href="//www.googletagmanager.com" rel="dns-prefetch" />
+    <link href="//static.lenskart.com" rel="preconnect" />
+    <link href="//static.lenskart.com" rel="dns-prefetch" />
+    <meta content="pfd8x7ajms35j8pe7h6nitj5b95nqw" name="facebook-domain-verification" />
+    <link
+      as="style"
+      charset="UTF-8"
+      href="https://static.lenskart.com/owndays/cms/css/move.css"
+      media="all"
+      rel="preload"
+      type="text/css"
+    />
+    <title>OWNDAYS | MOVE | Eyewear for the active | OWNDAYS ONLINE STORE - OPTICAL SHOP</title>
+    <meta
+      content="Designed for a secure fit that stays in place even during active movement. Perfect for everyday life and on-the-go moments."
+      name="description"
+    />
+    <meta
+      content="MOVE,OWNDAYS | MOVE,sports,active,lens,eyeglasses,eyewear,sunglasses,OWNDAYS,Singapore"
+      name="keywords"
+    />
+    <meta
+      content="https://static.lenskart.com/owndays/img/move/ogp_1200x630.webp"
+      property="og:image"
+    />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta
+      content="https://static.lenskart.com/owndays/img/move/ogp_1200x630.webp"
+      name="twitter:image"
+    />
+    <meta content="OWNDAYS" name="author" />
+    <meta content="OWNDAYS" name="publisher" />
+    <link href="https://www.owndays.com/sg/en/news/move" rel="canonical" />
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/static/identify_47d087f9.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/static/main.MTE5NjQzNGRmMQ.js"
+      data-id="C3QE7P84C3SCJI4REVE0"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/static/main.MTE5NjQzNGRmMQ.js"
+      data-id="CTTO0KRC77UDUQAR23O0"
+    ></script>
+    <script async="" src="https://scripts.clarity.ms/0.8.30/clarity.js"></script>
+    <script src="//bat.bing.com/bat.js" async=""></script>
+    <script
+      src="https://connect.facebook.net/signals/config/1510426245838375?v=2.9.230&amp;r=stable&amp;domain=www.owndays.com&amp;hme=b9bd0ece802a749a03b9e6cce99cc9c08631c3fbd102921d036ee87f2341d6cb&amp;ex_m=87%2C149%2C129%2C18%2C122%2C61%2C41%2C123%2C68%2C60%2C136%2C76%2C12%2C86%2C26%2C117%2C108%2C66%2C69%2C116%2C133%2C95%2C138%2C6%2C2%2C3%2C5%2C4%2C1%2C77%2C85%2C139%2C213%2C161%2C55%2C218%2C215%2C216%2C48%2C176%2C25%2C65%2C222%2C221%2C164%2C28%2C54%2C7%2C57%2C81%2C82%2C83%2C88%2C112%2C27%2C24%2C115%2C111%2C110%2C130%2C67%2C132%2C131%2C43%2C113%2C53%2C105%2C11%2C135%2C38%2C204%2C206%2C171%2C21%2C22%2C23%2C15%2C16%2C37%2C33%2C35%2C34%2C72%2C78%2C80%2C93%2C121%2C124%2C39%2C94%2C19%2C17%2C99%2C62%2C31%2C126%2C125%2C127%2C118%2C20%2C30%2C52%2C92%2C134%2C63%2C14%2C29%2C186%2C157%2C264%2C202%2C147%2C189%2C182%2C90%2C114%2C71%2C103%2C47%2C40%2C101%2C102%2C107%2C51%2C13%2C109%2C100%2C58%2C42%2C96%2C46%2C49%2C45%2C84%2C137%2C0%2C106%2C10%2C104%2C8%2C50%2C79%2C56%2C128%2C59%2C98%2C75%2C74%2C44%2C119%2C73%2C70%2C64%2C97%2C89%2C36%2C120%2C32%2C91%2C9%2C140%2C200%2C223%2C225%2C266%2C203%2C150%2C194%2C178%2C159%2C263%2C144%2C179%2C207%2C197%2C146%2C167%2C151%2C181%2C184%2C158%2C192"
+      async=""
+    ></script>
+    <script
+      src="https://connect.facebook.net/signals/config/297844910867676?v=2.9.230&amp;r=stable&amp;domain=www.owndays.com&amp;hme=b9bd0ece802a749a03b9e6cce99cc9c08631c3fbd102921d036ee87f2341d6cb&amp;ex_m=87%2C149%2C129%2C18%2C122%2C61%2C41%2C123%2C68%2C60%2C136%2C76%2C12%2C86%2C26%2C117%2C108%2C66%2C69%2C116%2C133%2C95%2C138%2C6%2C2%2C3%2C5%2C4%2C1%2C77%2C85%2C139%2C213%2C161%2C55%2C218%2C215%2C216%2C48%2C176%2C25%2C65%2C222%2C221%2C164%2C28%2C54%2C7%2C57%2C81%2C82%2C83%2C88%2C112%2C27%2C24%2C115%2C111%2C110%2C130%2C67%2C132%2C131%2C43%2C113%2C53%2C105%2C11%2C135%2C38%2C204%2C206%2C171%2C21%2C22%2C23%2C15%2C16%2C37%2C33%2C35%2C34%2C72%2C78%2C80%2C93%2C121%2C124%2C39%2C94%2C19%2C17%2C99%2C62%2C31%2C126%2C125%2C127%2C118%2C20%2C30%2C52%2C92%2C134%2C63%2C14%2C29%2C186%2C157%2C264%2C202%2C147%2C189%2C182%2C90%2C114%2C71%2C103%2C47%2C40%2C101%2C102%2C107%2C51%2C13%2C109%2C100%2C58%2C42%2C96%2C46%2C49%2C45%2C84%2C137%2C0%2C106%2C10%2C104%2C8%2C50%2C79%2C56%2C128%2C59%2C98%2C75%2C74%2C44%2C119%2C73%2C70%2C64%2C97%2C89%2C36%2C120%2C32%2C91%2C9%2C140"
+      async=""
+    ></script>
+    <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+    <script async="" src="https://tags.srv.stackadapt.com/events.js"></script>
+    <script async="" src="https://www.clarity.ms/tag/qx92mwqclb"></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CTTO0KRC77UDUQAR23O0&amp;lib=ttq"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=AW-723115492&amp;cx=c&amp;gtm=4e59g0"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-V9YREND482&amp;cx=c&amp;gtm=4e59g0"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C3QE7P84C3SCJI4REVE0&amp;lib=ttq"
+    ></script>
+    <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-5GSLLFKQ"></script>
+    <script type="text/javascript" async="" src="https://stats.g.doubleclick.net/dc.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <title data-react-helmet="true"></title>
+    <meta content="on" http-equiv="x-dns-prefetch-control" />
+    <link href="/sg/en/favicon.ico" rel="icon" type="image/x-icon" />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      color="#5bbad5"
+      href="https://static.lenskart.com/media/owndays/favicon/safari-pinned-tab.svg"
+      rel="mask-icon"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#ffffff" id="themeColor" name="theme-color" />
+    <link href="/sg/en/manifest.json" rel="manifest" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+    <link
+      charset="UTF-8"
+      href="https://static.lenskart.com/owndays/cms/css/move.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add Slick Slider CSS and JS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      async=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+    ></script>
+    <script async="">
+      !(function (e, t, a, n, c, o, s) {
+        (e.GoogleAnalyticsObject = c),
+          (e[c] =
+            e[c] ||
+            function () {
+              (e[c].q = e[c].q || []).push(arguments);
+            }),
+          (e[c].l = 1 * new Date()),
+          (o = t.createElement(a)),
+          (s = t.getElementsByTagName(a)[0]),
+          (o.async = 1),
+          (o.src = n),
+          s.parentNode.insertBefore(o, s);
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'),
+        ga('create', 'UA-131075285-1', 'auto');
+    </script>
+    <script src="//www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript">
+      function gaTrackEvent(e, t, n) {
+        _gaq.push(['_trackEvent', e, t, n]);
+      }
+      function crumbleCookie(e) {
+        for (var t = document.cookie.split(';'), n = {}, i = 0; i < t.length; i++) {
+          var u = t[i].substring(0, t[i]?.indexOf('=')).trim(),
+            a = t[i].substring(t[i]?.indexOf('=') + 1, t[i].length).trim();
+          n[u] = a;
+        }
+        return e ? (n[e] ? n[e] : null) : n;
+      }
+      function gaCookies() {
+        var e = function () {
+            var e;
+            if (!crumbleCookie('__utma')) return null;
+            e = crumbleCookie('__utma').split('.');
+            var t = e[0],
+              n = e[1],
+              i = e[2],
+              u = e[3],
+              a = e[4],
+              r = e[5];
+            return {
+              cookie: e,
+              domainhash: t,
+              uniqueid: n,
+              ftime: i,
+              ltime: u,
+              stime: a,
+              sessions: r,
+            };
+          },
+          t = function () {
+            var e;
+            if (!crumbleCookie('__utmb')) return null;
+            e = crumbleCookie('__utmb').split('.');
+            var t = e[1];
+            return { cookie: e, gifrequest: t };
+          },
+          n = function () {
+            var e;
+            if (!crumbleCookie('__utmv')) return null;
+            e = crumbleCookie('__utmv').split('.');
+            var t = e[1];
+            return { cookie: e, value: t };
+          },
+          i = function () {
+            var e, t, n, i, u, a, r;
+            if (!crumbleCookie('__utmz')) return null;
+            e = crumbleCookie('__utmz').split('.');
+            for (var s = e[4].split('|'), o = 0; o < s.length; o++) {
+              var c = s[o].substring(0, s[o]?.indexOf('=')),
+                m = decodeURIComponent(s[o].substring(s[o]?.indexOf('=') + 1, s[o].length));
+              switch (((m = m.replace(/^(|)$/g, '')), c)) {
+                case 'utmcsr':
+                  t = m;
+                  break;
+                case 'utmcmd':
+                  n = m;
+                  break;
+                case 'utmccn':
+                  i = m;
+                  break;
+                case 'utmctr':
+                  u = m;
+                  break;
+                case 'utmcct':
+                  a = m;
+                  break;
+                case 'utmgclid':
+                  r = m;
+              }
+            }
+            return { cookie: e, source: t, medium: n, name: i, term: u, content: a, gclid: r };
+          };
+        (this.getDomainHash = function () {
+          return e() && e().domainhash ? e().domainhash : null;
+        }),
+          (this.getUniqueId = function () {
+            return e() && e().uniqueid ? e().uniqueid : null;
+          }),
+          (this.getInitialVisitTime = function () {
+            return e() && e().ftime ? e().ftime : null;
+          }),
+          (this.getPreviousVisitTime = function () {
+            return e() && e().ltime ? e().ltime : null;
+          }),
+          (this.getCurrentVisitTime = function () {
+            return e() && e().stime ? e().stime : null;
+          }),
+          (this.getSessionCounter = function () {
+            return e() && e().sessions ? e().sessions : null;
+          }),
+          (this.getGifRequests = function () {
+            return t() && t().gifrequest ? t().gifrequest : null;
+          }),
+          (this.getUserDefinedValue = function () {
+            return n() && n().value ? decodeURIComponent(n().value) : null;
+          }),
+          (this.getCampaignSource = function () {
+            return i() && i().source ? i().source : null;
+          }),
+          (this.getCampaignMedium = function () {
+            return i() && i().medium ? i().medium : null;
+          }),
+          (this.getCampaignName = function () {
+            return i() && i().name ? i().name : null;
+          }),
+          (this.getCampaignTerm = function () {
+            return i() && i().term ? i().term : null;
+          }),
+          (this.getCampaignContent = function () {
+            return i() && i().content ? i().content : null;
+          }),
+          (this.getGclid = function () {
+            return i() && i().gclid ? i().gclid : null;
+          });
+      }
+      var _gaq = _gaq || [],
+        gac = new gaCookies();
+      _gaq.push(['_setAccount', 'UA-131075285-1'], ['_setAllowLinker', !0]),
+        _gaq.push(['_setDomainName', 'lenskart.com']),
+        _gaq.push(['ninja._setAccount', 'UA-131075285-1'], ['ninja._setAllowLinker', !0]),
+        _gaq.push(['ninja._setDomainName', 'lenskart.com']),
+        _gaq.push(['_initData']),
+        _gaq.push(function () {
+          var e = _gat._getTrackerByName();
+          (UniqueId = gac.getUniqueId()), e._setCustomVar(1, 'Visitor', UniqueId, 1);
+          var t = _gat._getTrackerByName('ninja');
+          t._setCustomVar(1, 'Visitor', UniqueId, 1);
+          var n = gac.getSessionCounter(),
+            i = gac.getCampaignSource(),
+            u = gac.getCampaignMedium(),
+            a = gac.getCampaignTerm(),
+            r = gac.getCampaignName(),
+            s = gac.getCampaignContent(),
+            o = gac.getGclid();
+          null != o && ((i = 'google'), (u = 'cpc')),
+            1 == n &&
+              (e._setCustomVar(2, 'FT', i + '|' + u + '|' + a + '|' + r + '|' + s, 1),
+              t._setCustomVar(2, 'FT', i + '|' + u + '|' + a + '|' + r + '|' + s, 1));
+        }),
+        _gaq.push(['_setSiteSpeedSampleRate', 100], ['ninja._setSiteSpeedSampleRate', 100]),
+        _gaq.push(['_trackPageview'], ['ninja._trackPageview']),
+        (function () {
+          var e = document.createElement('script');
+          (e.type = 'text/javascript'),
+            (e.async = !0),
+            (e.src =
+              ('https:' == document.location.protocol ? 'https://' : 'http://') +
+              'stats.g.doubleclick.net/dc.js');
+          var t = document.getElementsByTagName('script')[0];
+          t.parentNode.insertBefore(e, t);
+        })();
+    </script>
+    <noscript
+      ><img
+        alt="img"
+        height="1"
+        src="https://www.facebook.com/tr?id=297844910867676&amp;ev=PageView&amp;noscript=1"
+        style="display: none"
+        width="1"
+    /></noscript>
+    <meta content="638381491" property="fb:admins" />
+    <meta content="392248067537088" property="fb:app_id" />
+    <meta content="5B6622CBA13393D54072EF6C8482D676" name="msvalidate.01" />
+    <script
+      charset="UTF-8"
+      src="https://static.lenskart.com/media/desktop/js/vendor/desktop-ga-c3197c2d1dcaf8ecde841b36bbdf37fa.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5GSLLFKQ');
+    </script>
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        (ttq.methods = [
+          'page',
+          'track',
+          'identify',
+          'instances',
+          'debug',
+          'on',
+          'off',
+          'once',
+          'ready',
+          'alias',
+          'group',
+          'enableCookie',
+          'disableCookie',
+        ]),
+          (ttq.setAndDefer = function (t, e) {
+            t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          });
+        for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+        (ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+            ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        }),
+          (ttq.load = function (e, n) {
+            var i = 'https://analytics.tiktok.com/i18n/pixel/events.js';
+            (ttq._i = ttq._i || {}),
+              (ttq._i[e] = []),
+              (ttq._i[e]._u = i),
+              (ttq._t = ttq._t || {}),
+              (ttq._t[e] = +new Date()),
+              (ttq._o = ttq._o || {}),
+              (ttq._o[e] = n || {});
+            var o = document.createElement('script');
+            (o.type = 'text/javascript'), (o.async = !0), (o.src = i + '?sdkid=' + e + '&lib=' + t);
+            var a = document.getElementsByTagName('script')[0];
+            a.parentNode.insertBefore(o, a);
+          });
+
+        ttq.load('C3QE7P84C3SCJI4REVE0');
+        ttq.page();
+      })(window, document, 'ttq');
+    </script>
+    <script type="text/javascript">
+      var dtm = dtm || {};
+      dtm.pageName = 'baseAbort';
+      function initSatellite() {
+        try {
+          _satellite.pageBottom();
+        } catch (e) {
+          //ignore
+        }
+      }
+      initSatellite();
+    </script>
+    <script>
+      window.fwSettings = {
+        widget_id: 13000000125,
+      };
+      !(function () {
+        if ('function' != typeof window.FreshworksWidget) {
+          var n = function () {
+            n.q.push(arguments);
+          };
+          (n.q = []), (window.FreshworksWidget = n);
+        }
+      })();
+      window.chatBotParams = {
+        orderNo: '',
+        emailId: '',
+        phoneNumber: '',
+        action: '',
+        uniqueId: '',
+        sessionID: '',
+        env: '',
+        apiClient: '',
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/723115492/?random=1758174984589&amp;cv=11&amp;fst=1758174984589&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be59g0v895293790z89165206974za200zb9165206974zd9165206974xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528500~104630779~104630781~104684208~104684211~104948813~105367987~105367989~105426769~105426771~115480710~115688283~115688285&amp;u_w=1728&amp;u_h=1117&amp;url=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Fnews%2Fmove&amp;frm=0&amp;tiba=OWNDAYS%20%7C%20MOVE%20%7C%20Eyewear%20for%20the%20active%20%7C%20OWNDAYS%20ONLINE%20STORE%20-%20OPTICAL%20SHOP&amp;hn=www.googleadservices.com&amp;npa=0&amp;auid=560703537.1755591911&amp;uaa=arm&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.133%7CNot%253DA%253FBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B140.0.7339.133&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.6.1&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/723115492/?random=1758174984599&amp;cv=11&amp;fst=1758174984599&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be59g0v895293790z89165206974za200zb9165206974zd9165206974xea&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528500~104630779~104630781~104684208~104684211~104948813~105367987~105367989~105426769~105426771~115480710~115688283~115688285&amp;u_w=1728&amp;u_h=1117&amp;url=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Fnews%2Fmove&amp;frm=0&amp;tiba=OWNDAYS%20%7C%20MOVE%20%7C%20Eyewear%20for%20the%20active%20%7C%20OWNDAYS%20ONLINE%20STORE%20-%20OPTICAL%20SHOP&amp;hn=www.googleadservices.com&amp;npa=0&amp;auid=560703537.1755591911&amp;uaa=arm&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.133%7CNot%253DA%253FBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B140.0.7339.133&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.6.1&amp;uaw=0&amp;_tu=CA&amp;rfmt=3&amp;fmt=4"
+    ></script>
+    <script
+      src="https://static.lenskart.com/owndays/media/v2/js/session-relpay-newrelic.js"
+      async=""
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="alternate"
+      hreflang="en-sg"
+      href="https://www.owndays.com/sg/en/news/move"
+      data-react-helmet="true"
+    />
+    <script type="application/ld+json" data-react-helmet="true">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.owndays.com/sg/en",
+        "name": "OWNDAYS",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "6222-0588",
+          "contactType": "Customer Service"
+        },
+        "sameAs": [
+          "https://www.facebook.com/owndays.sg",
+          "https://www.instagram.com/owndays_sg/",
+          "https://www.tiktok.com/@owndays_sg",
+          "https://www.youtube.com/channel/UCSu2yqzCpnTtGXi05WtsiZg"
+        ],
+        "logo": "https://static1.lenskart.com/media/owndays/desktop/img/od-logos-new/logo-type-black.png"
+      }
+    </script>
+    <script type="application/ld+json" data-react-helmet="true">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.owndays.com/sg/en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.owndays.com/sg/en/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://eu1.clevertap-prod.com/a?t=96&amp;type=page&amp;d=N4IglgJiBcIGwC0AsBaJiUIJyJAGhAHMYQBjLARgCMAzOADhpqQHYBmJAU3oEN6KArHE5Ue5KgPIskAJnwgAzjAosB%2FaTiQEADsWgyCPGjFAAbMFRIB3ESgUQA1igBuMgHRs3ABnnaATgD2AC4BpAGmJAAWQUHaSgC%2BBKS6UTFx0AD0GVY5bgFWAHYQPACeCm5hALYZCoQZnAUZBZxWChmVAc6c8gDqCABKANIA%2BgDCAIIAsgAKJiBWYJXaMF4EC0GmpDAA2gC6awpb0KvzNEfAifOhJpeFEIcra0VnN08Q19AX8fFAAAA%3D%3D&amp;rn=4&amp;i=1758174984&amp;sn=0&amp;gc=c91bf68ff4734e8a8156ebac9b5c9742&amp;arp=N4IgVg%2BgdiBcIC0DuBeFIA0ICW04gE0BbABygGMkBBAIStXSwBMIAXAZzgAZmALbrADc4AJiyRO8YAF9MOJvgBsCACwBaFcrUIAnMrkAnNpICMAdgCsVnSZsBmaUAA%3D%3D&amp;tries=1&amp;origin=https%3A%2F%2Fwww.owndays.com&amp;useIP=false&amp;r=1758174984983"
+      class="ct-jp-cb"
+      rel="nofollow"
+      async=""
+    ></script>
+    <script
+      src="https://bat.bing.com/p/action/134598098.js"
+      type="text/javascript"
+      async=""
+      data-ueto="ueto_af18a88588"
+    ></script>
+    <link
+      id="sa-css"
+      rel="stylesheet"
+      type="text/css"
+      href="https://tags.srv.stackadapt.com/sa.css"
+      media="all"
+    />
+
+    <!-- animation -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Remove any pre-rendered AOS state classes so animations can trigger
+        try {
+          document.querySelectorAll('.aos-init, .aos-animate').forEach(function (el) {
+            el.classList.remove('aos-init');
+            el.classList.remove('aos-animate');
+          });
+        } catch (e) {}
+
+        if (window.AOS && typeof window.AOS.init === 'function') {
+          window.AOS.init({
+            duration: 1000,
+            easing: 'ease',
+            once: true,
+            startEvent: 'DOMContentLoaded',
+          });
+
+          // After all assets load, force a hard refresh to recalc positions
+          window.addEventListener('load', function () {
+            if (window.AOS && typeof window.AOS.refreshHard === 'function') {
+              window.AOS.refreshHard();
+            } else if (window.AOS && typeof window.AOS.refresh === 'function') {
+              window.AOS.refresh();
+            }
+          });
+        }
+      });
+    </script>
+  </head>
+
+  <body
+    style="background-color: #fff"
+    data-aos-easing="ease"
+    data-aos-duration="1000"
+    data-aos-delay="0"
+  >
+    <noscript
+      ><iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5GSLLFKQ"
+        style="display: none; visibility: hidden"
+        title="GTM noscript"
+        width="0"
+      ></iframe
+    ></noscript>
+    <div id="content">
+      <div class="">
+        <div class="base-move">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--2">
+              <li class="breadcrumb-item"><a href="/sg/en">Homepage</a></li>
+              <li class="breadcrumb-item"><a href="/sg/en/news">News</a></li>
+              <li aria-current="page" class="breadcrumb-item active">OWNDAYS | MOVE</li>
+            </ol>
+          </nav>
+          <section class="header-move__main">
+            <div class="header-move__main__bg">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="https://static.lenskart.com/owndays/img/move/main_pc.webp"
+                />
+                <img
+                  alt="OWNDAYS | MOVE | Eyewear for the active"
+                  loading="lazy"
+                  src="https://static.lenskart.com/owndays/img/move/main_sp.webp"
+                />
+              </picture>
+            </div>
+            <div class="header-move__main__text">
+              <div class="base-move__container">
+                <h1>
+                  <img
+                    alt="OWNDAYS | MOVE | Eyewear for the active"
+                    loading="lazy"
+                    src="https://static.lenskart.com/owndays/img/move/move_logo.svg"
+                  />
+                </h1>
+                <h2>Eyewear for the active.</h2>
+              </div>
+            </div>
+          </section>
+          <section class="header-move__about">
+            <div class="header-move__about__bg">
+              <video autoplay loop playsinline muted>
+                <source
+                  media="(min-width:768px)"
+                  src="https://static.lenskart.com/owndays/img/move/video-pc.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="https://static.lenskart.com/owndays/img/move/video-sp.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="header-move__about__text">
+              <div class="header-move__about__container">
+                <p>
+                  Designed for a secure fit that stays in place even during active movement. Perfect
+                  for everyday life and on-the-go moments.
+                </p>
+              </div>
+            </div>
+            <a
+              class="header-move__about__play"
+              data-fancybox="etc"
+              href="https://youtu.be/FwwAcfYCZlQ"
+              >Play</a
+            >
+          </section>
+          <section class="header-move__navs">
+            <div class="base-move__container">
+              <ul>
+                <li><a href="#active">ACTIVE</a></li>
+                <li><a href="#basic">BASIC</a></li>
+                <li><a href="#optional-lenses">OPTIONAL LENSES</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="body-move__styles">
+            <div id="active">
+              <h2 data-aos="true" class="body-move__styles__heading" data-key="active">
+                <strong>ACTIVE</strong
+                ><span><span>Designed for a secure fit even when you are on the move</span></span>
+              </h2>
+              <div class="body-move__styles__top" data-key="active">
+                <picture class="body-move__styles__top-cover">
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      https://static.lenskart.com/owndays/img/move/active/active-cover-1_pc.webp
+                    "
+                  />
+                  <img
+                    alt="A Comfortable Fit That Lasts"
+                    loading="lazy"
+                    src="https://static.lenskart.com/owndays/img/move/active/active-cover-1_sp.webp"
+                  />
+                </picture>
+                <div class="body-move__styles__top-content" data-key="active">
+                  <h3 data-aos="true" class="body-move__styles__top-content-title">
+                    <small>4-level adjustment - temple ends</small
+                    ><span><span>A Comfortable Fit That Lasts</span></span>
+                  </h3>
+                  <p class="body-move__styles__top-content-text">
+                    The adjustable temple ends allow you to adjust the fit of the glasses according
+                    to the occasion. You can choose to wear them snugly for a more secure fit or
+                    loosely for a more relaxed feel.
+                  </p>
+                  <img
+                    alt="Wear and it's a perfect Fit!"
+                    class="body-move__styles__top-content-img"
+                    loading="lazy"
+                    src="https://static.lenskart.com/owndays/img/move/active/fit-1.webp"
+                  />
+                </div>
+              </div>
+              <div class="body-move__styles__recommend">
+                <div class="base-move__container">
+                  <div class="body-move__styles__recommend-grid">
+                    <div class="body-move__styles__recommend-img">
+                      <img
+                        alt="4 levels of adjustability"
+                        loading="lazy"
+                        src="https://static.lenskart.com/owndays/img/move/products/gif/MV2003N-5S.gif"
+                      /><span
+                        >4 levels <br />of<br />
+                        adjustability</span
+                      >
+                    </div>
+                    <div class="body-move__styles__recommend-content">
+                      <h4 data-aos="true">
+                        <span
+                          ><span
+                            >Temples can be adjusted at two points<br />
+                            in four different ways</span
+                          ></span
+                        ><span><span>Customise the fit around the ears</span></span>
+                      </h4>
+                      <h5>Recommended For</h5>
+                      <ul>
+                        <li>I want to improve the fit</li>
+                        <li>I want to look smart</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="body-move__styles__recommend-perfect">
+                <div class="base-move__container">
+                  <h3 class="body-move__styles__recommend-perfect__title">
+                    Perfect fit for every occasion!
+                  </h3>
+                  <ul class="body-move__styles__recommend-perfect__list">
+                    <li data-aos="fade-up" data-aos-delay="0">
+                      <div class="body-move__styles__recommend-perfect__item-img">
+                        <img
+                          alt="Daily Use and Helmet Wear"
+                          src="https://static.lenskart.com/owndays/img/move/active/active-slide-1.webp"
+                        /><img
+                          alt="1st stage"
+                          src="https://static.lenskart.com/owndays/img/move/active/active-slide-small-1.webp"
+                        />
+                      </div>
+                      <span class="body-move__styles__recommend-perfect__item-tag"
+                        >Recommended Usage</span
+                      >
+                      <p class="body-move__styles__recommend-perfect__item-text">
+                        Daily Use and Helmet Wear
+                      </p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                      <div class="body-move__styles__recommend-perfect__item-img">
+                        <img
+                          alt="Off Days/Leisure Time"
+                          src="https://static.lenskart.com/owndays/img/move/active/active-slide-2.webp"
+                        /><img
+                          alt="2nd stage"
+                          src="https://static.lenskart.com/owndays/img/move/active/active-slide-small-2.webp"
+                        />
+                      </div>
+                      <span class="body-move__styles__recommend-perfect__item-tag"
+                        >Recommended Usage</span
+                      >
+                      <p class="body-move__styles__recommend-perfect__item-text">
+                        Off Days/Leisure Time
+                      </p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="300">
+                      <div class="body-move__styles__recommend-perfect__item-img">
+                        <img
+                          alt="Office Work/Close-up Tasks"
+                          src="https://static.lenskart.com/owndays/img/move/active/active-slide-3.webp"
+                        /><img
+                          alt="3rd stage"
+                          src="https://static.lenskart.com/owndays/img/move/active/active-slide-small-3.webp"
+                        />
+                      </div>
+                      <span class="body-move__styles__recommend-perfect__item-tag"
+                        >Recommended Usage</span
+                      >
+                      <p class="body-move__styles__recommend-perfect__item-text">
+                        Office Work/Close-up Tasks
+                      </p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="400">
+                      <div class="body-move__styles__recommend-perfect__item-img">
+                        <img
+                          alt="Running, gym and other intense workouts"
+                          src="https://static.lenskart.com/owndays/img/move/active/active-slide-4.webp"
+                        /><img
+                          alt="4th stage"
+                          src="https://static.lenskart.com/owndays/img/move/active/active-slide-small-4.webp"
+                        />
+                      </div>
+                      <span class="body-move__styles__recommend-perfect__item-tag"
+                        >Recommended Usage</span
+                      >
+                      <p class="body-move__styles__recommend-perfect__item-text">
+                        Running, gym and other intense workouts
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="body-move__styles__products" data-product-number="MV2003N-5S">
+                <div class="body-move__styles__product-bg" data-product-number="MV2003N-5S">
+                  <div class="body-move__styles__product" data-aos="fade-up">
+                    <div class="body-move__styles__product-layout">
+                      <!-- Slider Wrapper -->
+                      <div class="body-move__styles__product-list">
+                        <ul>
+                          <li>
+                            <img
+                              alt="MV2003N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2003N-5S/MV2003N-5S_C1_01.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2003N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2003N-5S/MV2003N-5S_C1_02.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2003N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2003N-5S/MV2003N-5S_C1_03.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2003N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2003N-5S/MV2003N-5S_C1_04.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2003N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2003N-5S/MV2003N-5S_C1_05.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2003N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2003N-5S/MV2003N-5S_C1_06.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2003N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2003N-5S/MV2003N-5S_C1_07.webp"
+                            />
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Slider Wrapper -->
+                      <div class="body-move__styles__product-details">
+                        <div class="body-move__styles__product-details-content">
+                          <div class="body-move__styles__product-details-info">
+                            <p class="body-move__styles__product-details-code">
+                              <span>MV2003N-5S</span><span>C1</span>
+                            </p>
+                            <p class="body-move__styles__product-details-price">
+                              <small>S$</small><strong>178</strong>
+                            </p>
+                          </div>
+                          <div class="body-move__styles__product-details-colors">
+                            <li data-color-selected="true">
+                              <button data-color="matte-black"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="matte-grey"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="matte-khaki"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="matte-navy"></button>
+                            </li>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="body-move__styles__product-slide-count">6 / 7</div>
+                    </div>
+                    <div class="body-move__styles__product-button">
+                      <a
+                        class="base-move__btn base-move__btn--primary"
+                        href="/sg/en/move-mv2003n-5s-c1-eyeglasses.html"
+                        >More Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- add - 1 -->
+              <div class="body-move__styles__products" data-product-number="MV2004N-5S">
+                <div class="body-move__styles__product-bg" data-product-number="MV2004N-5S">
+                  <div class="body-move__styles__product" data-aos="fade-up">
+                    <div class="body-move__styles__product-layout">
+                      <!-- Slider Wrapper -->
+                      <div class="body-move__styles__product-list">
+                        <ul>
+                          <li>
+                            <img
+                              alt="MV2004N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2004N-5S/MV2004N-5S_C1_01.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2004N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2004N-5S/MV2004N-5S_C1_02.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2004N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2004N-5S/MV2004N-5S_C1_03.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2004N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2004N-5S/MV2004N-5S_C1_04.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2004N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2004N-5S/MV2004N-5S_C1_05.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2004N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2004N-5S/MV2004N-5S_C1_06.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2004N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2004N-5S/MV2004N-5S_C1_07.webp"
+                            />
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Slider Wrapper -->
+                      <div class="body-move__styles__product-details">
+                        <div class="body-move__styles__product-details-content">
+                          <div class="body-move__styles__product-details-info">
+                            <p class="body-move__styles__product-details-code">
+                              <span>MV2004N-5S</span><span>C1</span>
+                            </p>
+                            <p class="body-move__styles__product-details-price">
+                              <small>S$</small><strong>178</strong>
+                            </p>
+                          </div>
+                          <div class="body-move__styles__product-details-colors">
+                            <li data-color-selected="true">
+                              <button data-color="matte-black"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="matte-khaki"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="light-brown"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="white"></button>
+                            </li>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="body-move__styles__product-slide-count">6 / 7</div>
+                    </div>
+                    <div class="body-move__styles__product-button">
+                      <a
+                        class="base-move__btn base-move__btn--primary"
+                        href="/sg/en/move-mv2004n-5s-c1-eyeglasses.html"
+                        >More Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="body-move__styles__top">
+                <picture class="body-move__styles__top-cover">
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      https://static.lenskart.com/owndays/img/move/active/active-cover-2_pc.webp
+                    "
+                  />
+                  <img
+                    alt="A comfortable fit tailored to your face width"
+                    loading="lazy"
+                    src="https://static.lenskart.com/owndays/img/move/active/active-cover-2_sp.webp"
+                  />
+                </picture>
+                <div class="body-move__styles__top-content" data-key="">
+                  <h3 data-aos="true" class="body-move__styles__top-content-title">
+                    <small>2-step adjustment - temple arm width</small
+                    ><span
+                      ><span>A comfortable fit tailored to</span><span>your face width</span></span
+                    >
+                  </h3>
+                  <p class="body-move__styles__top-content-text">
+                    The temples can be adjusted to 2 different widths to give you a customised fit.
+                    Whether you prefer a snug fit or a more relaxed fit, this is the perfect eyewear
+                    for both day-to-day and active use.
+                  </p>
+                  <img
+                    alt="Adjust for a Perfect Fit!"
+                    class="body-move__styles__top-content-img"
+                    loading="lazy"
+                    src="https://static.lenskart.com/owndays/img/move/active/fit-2.webp"
+                  />
+                </div>
+              </div>
+              <div class="body-move__styles__recommend">
+                <div class="base-move__container">
+                  <div class="body-move__styles__recommend-grid">
+                    <div class="body-move__styles__recommend-img">
+                      <img
+                        alt="OWNDAYS’ unique slide structure, adjust the temple width in two steps"
+                        loading="lazy"
+                        src="https://static.lenskart.com/owndays/img/move/products/gif/MV2005N-5S.gif"
+                      />
+                    </div>
+                    <div class="body-move__styles__recommend-content">
+                      <h4 data-aos="true">
+                        <span><span>OWNDAYS’ unique slide structure</span></span
+                        ><span><span>Adjust the temple width in two steps</span></span>
+                      </h4>
+                      <h5>Recommended For</h5>
+                      <ul>
+                        <li>I want to choose based on comfort</li>
+                        <li>I want a subtle active vibe</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- add - 2 -->
+              <div class="body-move__styles__products" data-product-number="MV2005N-5S">
+                <div class="body-move__styles__product-bg" data-product-number="MV2005N-5S">
+                  <div class="body-move__styles__product" data-aos="fade-up">
+                    <div class="body-move__styles__product-layout">
+                      <!-- Slider Wrapper -->
+                      <div class="body-move__styles__product-list">
+                        <ul>
+                          <li>
+                            <img
+                              alt="MV2005N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2005N-5S/MV2005N-5S_C1_01.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2005N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2005N-5S/MV2005N-5S_C1_02.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2005N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2005N-5S/MV2005N-5S_C1_03.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2005N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2005N-5S/MV2005N-5S_C1_04.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2005N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2005N-5S/MV2005N-5S_C1_05.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2005N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2005N-5S/MV2005N-5S_C1_06.webp"
+                            />
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Slider Wrapper -->
+                      <div class="body-move__styles__product-details">
+                        <div class="body-move__styles__product-details-content">
+                          <div class="body-move__styles__product-details-info">
+                            <p class="body-move__styles__product-details-code">
+                              <span>MV2005N-5S</span><span>C1</span>
+                            </p>
+                            <p class="body-move__styles__product-details-price">
+                              <small>S$</small><strong>178</strong>
+                            </p>
+                          </div>
+                          <div class="body-move__styles__product-details-colors">
+                            <li data-color-selected="true">
+                              <button data-color="matte-black"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="matte-grey"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="dark-green"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="black-2a"></button>
+                            </li>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="body-move__styles__product-slide-count">6 / 7</div>
+                    </div>
+                    <div class="body-move__styles__product-button">
+                      <a
+                        class="base-move__btn base-move__btn--primary"
+                        href="/sg/en/move-mv2005n-5s-c1-eyeglasses.html"
+                        >More Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- add - 3 -->
+              <div class="body-move__styles__products" data-product-number="MV2006N-5S">
+                <div class="body-move__styles__product-bg" data-product-number="MV2006N-5S">
+                  <div class="body-move__styles__product" data-aos="fade-up">
+                    <div class="body-move__styles__product-layout">
+                      <!-- Slider Wrapper -->
+                      <div class="body-move__styles__product-list">
+                        <ul>
+                          <li>
+                            <img
+                              alt="MV2006N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2006N-5S/MV2006N-5S_C1_01.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2006N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2006N-5S/MV2006N-5S_C1_02.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2006N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2006N-5S/MV2006N-5S_C1_03.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2006N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2006N-5S/MV2006N-5S_C1_04.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2006N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2006N-5S/MV2006N-5S_C1_05.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2006N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2006N-5S/MV2006N-5S_C1_06.webp"
+                            />
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Slider Wrapper -->
+                      <div class="body-move__styles__product-details">
+                        <div class="body-move__styles__product-details-content">
+                          <div class="body-move__styles__product-details-info">
+                            <p class="body-move__styles__product-details-code">
+                              <span>MV2006N-5S</span><span>C1</span>
+                            </p>
+                            <p class="body-move__styles__product-details-price">
+                              <small>S$</small><strong>178</strong>
+                            </p>
+                          </div>
+                          <div class="body-move__styles__product-details-colors">
+                            <li data-color-selected="true"><button data-color="black"></button></li>
+                            <li data-color-selected="false"><button data-color="grey"></button></li>
+                            <li data-color-selected="false">
+                              <button data-color="matte-navy"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="dark-green"></button>
+                            </li>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="body-move__styles__product-slide-count">6 / 7</div>
+                    </div>
+                    <div class="body-move__styles__product-button">
+                      <a
+                        class="base-move__btn base-move__btn--primary"
+                        href="/sg/en/move-mv2006n-5s-c1-eyeglasses.html"
+                        >More Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="basic">
+              <div class="base-move__hide--pc">
+                <h2 data-aos="true" class="body-move__styles__heading" data-key="basic">
+                  <strong>BASIC</strong
+                  ><span><span>Suitable for daily life and sports use</span></span>
+                </h2>
+              </div>
+              <div class="body-move__styles__top" data-key="basic">
+                <picture class="body-move__styles__top-cover">
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="https://static.lenskart.com/owndays/img/move/basic/basic-cover_pc.webp"
+                  />
+                  <img
+                    alt="Suitable for daily life and sports use"
+                    loading="lazy"
+                    src="https://static.lenskart.com/owndays/img/move/basic/basic-cover_sp.webp"
+                  />
+                </picture>
+                <div class="body-move__styles__top-content" data-key="basic">
+                  <div class="body-move__styles__heading--basic">
+                    <h2 data-aos="true" class="body-move__styles__heading" data-key="basic">
+                      <strong>BASIC</strong
+                      ><span><span>Suitable for daily life and sports use</span></span>
+                    </h2>
+                  </div>
+                  <p class="body-move__styles__top-content-text">
+                    Featuring rubber temple ends and nose pads that provide a secure fit, this basic
+                    model is functional and perfect for everyday use.
+                  </p>
+                </div>
+              </div>
+              <div class="body-move__styles__features">
+                <div class="base-move__container">
+                  <h3 class="body-move__styles__features-title">FEATURES</h3>
+                  <ul class="body-move__styles__features-list">
+                    <li
+                      class="body-move__styles__features-item"
+                      data-aos="fade-up"
+                      data-aos-delay="0"
+                    >
+                      <img
+                        alt="Rubber temple ends for a more secure fit"
+                        class="body-move__styles__features-icon"
+                        loading="lazy"
+                        src="https://static.lenskart.com/owndays/img/move/basic/feature-1.webp"
+                      />
+                      <div class="body-move__styles__features-details">
+                        <small>#01</small>
+                        <p>Rubber temple ends for a more secure fit</p>
+                      </div>
+                    </li>
+                    <li
+                      class="body-move__styles__features-item"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        alt="Rubber temples for a comfortable fit"
+                        class="body-move__styles__features-icon"
+                        loading="lazy"
+                        src="https://static.lenskart.com/owndays/img/move/basic/feature-2.webp"
+                      />
+                      <div class="body-move__styles__features-details">
+                        <small>#02</small>
+                        <p>Rubber temples for a comfortable fit</p>
+                      </div>
+                    </li>
+                    <li
+                      class="body-move__styles__features-item"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
+                      <img
+                        alt="Made of G850, a lightweight and eco-friendly material"
+                        class="body-move__styles__features-icon"
+                        loading="lazy"
+                        src="https://static.lenskart.com/owndays/img/move/basic/feature-3.webp"
+                      />
+                      <div class="body-move__styles__features-details">
+                        <small>#03</small>
+                        <p>Made of G850, a lightweight and eco-friendly material</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- add - 4 -->
+              <div class="body-move__styles__products" data-product-number="MV2001N-5S">
+                <div class="body-move__styles__product-bg" data-product-number="MV2001N-5S">
+                  <div class="body-move__styles__product" data-aos="fade-up">
+                    <div class="body-move__styles__product-layout">
+                      <!-- Slider Wrapper -->
+                      <div class="body-move__styles__product-list">
+                        <ul>
+                          <li>
+                            <img
+                              alt="MV2001N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2001N-5S/MV2001N-5S_C1_01.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2001N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2001N-5S/MV2001N-5S_C1_02.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2001N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2001N-5S/MV2001N-5S_C1_03.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2001N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2001N-5S/MV2001N-5S_C1_04.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2001N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2001N-5S/MV2001N-5S_C1_05.webp"
+                            />
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Slider Wrapper -->
+                      <div class="body-move__styles__product-details">
+                        <div class="body-move__styles__product-details-content">
+                          <div class="body-move__styles__product-details-info">
+                            <p class="body-move__styles__product-details-code">
+                              <span>MV2001N-5S</span><span>C1</span>
+                            </p>
+                            <p class="body-move__styles__product-details-price">
+                              <small>S$</small><strong>178</strong>
+                            </p>
+                          </div>
+                          <div class="body-move__styles__product-details-colors">
+                            <li data-color-selected="true">
+                              <button data-color="matte-black"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="black"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="light-brown"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="black"></button>
+                            </li>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="body-move__styles__product-slide-count">6 / 7</div>
+                    </div>
+                    <div class="body-move__styles__product-button">
+                      <a
+                        class="base-move__btn base-move__btn--primary"
+                        href="/sg/en/move-mv2001n-5s-c1-eyeglasses.html"
+                      >
+                        More Details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- add - 5 -->
+              <div class="body-move__styles__products" data-product-number="MV2002N-5S">
+                <div class="body-move__styles__product-bg" data-product-number="MV2002N-5S">
+                  <div class="body-move__styles__product" data-aos="fade-up">
+                    <div class="body-move__styles__product-layout">
+                      <!-- Slider Wrapper -->
+                      <div class="body-move__styles__product-list">
+                        <ul>
+                          <li>
+                            <img
+                              alt="MV2002N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2002N-5S/MV2002N-5S_C1_01.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2002N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2002N-5S/MV2002N-5S_C1_02.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2002N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2002N-5S/MV2002N-5S_C1_03.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2002N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2002N-5S/MV2002N-5S_C1_04.webp"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              alt="MV2002N-5S"
+                              src="https://static.lenskart.com/owndays/img/move/products/MV2002N-5S/MV2002N-5S_C1_05.webp"
+                            />
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Slider Wrapper -->
+                      <div class="body-move__styles__product-details">
+                        <div class="body-move__styles__product-details-content">
+                          <div class="body-move__styles__product-details-info">
+                            <p class="body-move__styles__product-details-code">
+                              <span>MV2002N-5S</span><span>C1</span>
+                            </p>
+                            <p class="body-move__styles__product-details-price">
+                              <small>S$</small><strong>178</strong>
+                            </p>
+                          </div>
+                          <div class="body-move__styles__product-details-colors">
+                            <li data-color-selected="true">
+                              <button data-color="matte-black"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="grey"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="light-brown"></button>
+                            </li>
+                            <li data-color-selected="false">
+                              <button data-color="dark-green"></button>
+                            </li>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="body-move__styles__product-slide-count">6 / 7</div>
+                    </div>
+                    <div class="body-move__styles__product-button">
+                      <a
+                        class="base-move__btn base-move__btn--primary"
+                        href="/sg/en/move-mv2002n-5s-c1-eyeglasses.html"
+                      >
+                        More Details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="footer-move__recommended" id="optional-lenses">
+            <div class="base-move__container">
+              <h2>
+                <small>Enhance Your Comfort While Playing Sports</small
+                ><span>Recommended Optional Lenses</span>
+              </h2>
+              <ul>
+                <li>
+                  <img
+                    alt="Colour Lenses"
+                    src="https://static.lenskart.com/owndays/img/move/optional-lenses/color.webp"
+                  />
+                  <h3>Colour Lenses</h3>
+                  <p>
+                    Pair them with your favourite spectacle frame to elevate your style or use them
+                    as sunglasses
+                  </p>
+                  <a href="/sg/en/services/lens#color">More Details</a>
+                </li>
+                <li>
+                  <img
+                    alt="Transitions Lenses"
+                    src="https://static.lenskart.com/owndays/img/move/optional-lenses/transition.webp"
+                  />
+                  <h3>Transitions Lenses</h3>
+                  <p>
+                    Lens colour changes based on amount of UV, allowing your spectacles to double as
+                    sunglasses
+                  </p>
+                  <a href="/sg/en/services/lens#transitions-light">More Details</a>
+                </li>
+                <li>
+                  <img
+                    alt="Blue Light Lenses"
+                    src="https://static.lenskart.com/owndays/img/move/optional-lenses/blue.webp"
+                  />
+                  <h3>Blue Light Lenses</h3>
+                  <p>Protect your eyes from blue light when using the computer or smartphone</p>
+                  <a href="/sg/en/services/lens#blue-light-lenses">More Details</a>
+                </li>
+                <li>
+                  <img
+                    alt="Polarised Lenses"
+                    src="https://static.lenskart.com/owndays/img/move/optional-lenses/polarised.webp"
+                  />
+                  <h3>Polarised Lenses</h3>
+                  <p>
+                    Reduce glare on shiny surfaces like water, making them perfect for the outdoors
+                  </p>
+                  <a href="/sg/en/services/lens#polarised">More Details</a>
+                </li>
+                <li>
+                  <img
+                    alt="Anti-Fog Lenses"
+                    src="https://static.lenskart.com/owndays/img/move/optional-lenses/antifog.webp"
+                  />
+                  <h3>Anti-Fog Lenses</h3>
+                  <p>
+                    With a special coating that prevents the lenses from fogging up, keeping your
+                    vision crystal clear at all times
+                  </p>
+                  <a href="/sg/en/services/lens#antifog">More Details</a>
+                </li>
+                <li>
+                  <img
+                    alt="Progressive Lenses"
+                    src="https://static.lenskart.com/owndays/img/move/optional-lenses/progressive.webp"
+                  />
+                  <h3>Progressive Lenses</h3>
+                  <p>Just one pair of glasses to see far, intermediate and reading zones</p>
+                  <a href="/sg/en/services/lens#progressive">More Details</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="footer-move__navs-sticky">
+            <div class="footer-move__navs-sticky__inner" style="position: fixed">
+              <div class="base-move__container">
+                <div class="footer-move__navs-sticky__actions">
+                  <div class="base-move__hide--pc">
+                    <a
+                      class="base-move__btn base-move__btn--primary"
+                      href="/sg/en/eyeglasses/brands/move.html"
+                      >See All Products</a
+                    >
+                  </div>
+                  <div class="base-move__hide--sp">
+                    <a
+                      class="base-move__btn base-move__btn--primary"
+                      href="/sg/en/eyeglasses/brands/move.html"
+                      >See All Products</a
+                    >
+                  </div>
+                  <a class="base-move__btn base-move__btn--secondary" href="/stores/sg"
+                    >Search Nearby Stores</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <style>
+      .wzrk-overlay {
+        display: none !important;
+      }
+
+      /* Mirror React BodyMove slider sizing/smoothness */
+      .body-move__styles__product-list ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .body-move__styles__product-list li {
+        max-width: 580px;
+        margin: 0 15px;
+        padding: 0;
+      }
+
+      /* Center padding similar to site for nice centering on smaller desktops */
+      @media (max-width: 1279px) {
+        .body-move__styles__product-list .slick-list {
+          padding: 0 6% !important;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .body-move__styles__product-list .slick-list {
+          padding: 0 !important;
+        }
+      }
+
+      @media (min-width: 1279px) {
+        .body-move__styles__product-list {
+          width: calc(100% + 1440px);
+          margin: 0 -660px !important;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .iGBykG p {
+          margin-bottom: 0;
+        }
+      }
+
+      /* Update arrow styles to use background images */
+      .move-arrow {
+        position: absolute;
+        bottom: -60px;
+        z-index: 2;
+        width: 40px;
+        height: 40px;
+        border-radius: 10rem;
+        border: 1px solid #000;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-indent: -9999px;
+        background-size: 18px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .move-arrow--prev {
+        right: 222px;
+        bottom: 20px;
+        background-image: url('https://static.lenskart.com/owndays/img/move/icon-arrow-prev.svg');
+        background-size: 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .move-arrow--next {
+        right: 170px;
+        bottom: 20px;
+        background-image: url('https://static.lenskart.com/owndays/img/move/icon-arrow-next.svg');
+        background-size: 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .move-arrow svg {
+        display: none;
+      }
+
+      .move-arrow:disabled {
+        opacity: 0.3;
+        cursor: default;
+      }
+
+      .body-move__styles__product-list img {
+        width: 100%;
+        max-width: 580px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .header-move__navs ul a {
+          display: flex !important;
+        }
+
+        .base-move__btn {
+          display: flex !important;
+        }
+
+        .body-move__styles__product-button .base-move__btn {
+          display: flex !important;
+        }
+      }
+
+      .footer-move__navs-sticky__actions a.base-move__btn {
+        display: flex !important;
+      }
+    </style>
+    <script type="text/javascript" id="" charset="">
+      var clevertap = {
+        event: [],
+        profile: [],
+        account: [],
+        onUserLogin: [],
+        notifications: [],
+        privacy: [],
+      };
+      clevertap.account.push({ id: '6Z4-46Z-Z96Z' });
+      clevertap.privacy.push({ optOut: !1 });
+      clevertap.privacy.push({ useIP: !1 });
+      (function () {
+        var a = document.createElement('script');
+        a.type = 'text/javascript';
+        a.async = !0;
+        a.src =
+          ('https:' == document.location.protocol
+            ? 'https://d2r1yp2w7bby2u.cloudfront.net'
+            : 'http://static.clevertap.com') + '/js/clevertap.min.js';
+        var b = document.getElementsByTagName('script')[0];
+        b.parentNode.insertBefore(a, b);
+      })();
+    </script>
+    <script
+      id=""
+      text=""
+      charset=""
+      type="text/javascript"
+      src="https://yutoads.com/audience.js"
+    ></script>
+    <script type="text/javascript" id="" charset="">
+      !(function (d, g, e) {
+        d.TiktokAnalyticsObject = e;
+        var a = (d[e] = d[e] || []);
+        a.methods =
+          'page track identify instances debug on off once ready alias group enableCookie disableCookie holdConsent revokeConsent grantConsent'.split(
+            ' '
+          );
+        a.setAndDefer = function (b, c) {
+          b[c] = function () {
+            b.push([c].concat(Array.prototype.slice.call(arguments, 0)));
+          };
+        };
+        for (d = 0; d < a.methods.length; d++) a.setAndDefer(a, a.methods[d]);
+        a.instance = function (b) {
+          b = a._i[b] || [];
+          for (var c = 0; c < a.methods.length; c++) a.setAndDefer(b, a.methods[c]);
+          return b;
+        };
+        a.load = function (b, c) {
+          var f = 'https://analytics.tiktok.com/i18n/pixel/events.js';
+          a._i = a._i || {};
+          a._i[b] = [];
+          a._i[b]._u = f;
+          a._t = a._t || {};
+          a._t[b] = +new Date();
+          a._o = a._o || {};
+          a._o[b] = c || {};
+          c = document.createElement('script');
+          c.type = 'text/javascript';
+          c.async = !0;
+          c.src = f + '?sdkid\x3d' + b + '\x26lib\x3d' + e;
+          b = document.getElementsByTagName('script')[0];
+          b.parentNode.insertBefore(c, b);
+        };
+        a.load('CTTO0KRC77UDUQAR23O0');
+        a.page();
+      })(window, document, 'ttq');
+    </script>
+    <script type="text/javascript" id="" charset="">
+      (function (a, e, b, f, g, c, d) {
+        a[b] =
+          a[b] ||
+          function () {
+            (a[b].q = a[b].q || []).push(arguments);
+          };
+        c = e.createElement(f);
+        c.async = 1;
+        c.src = 'https://www.clarity.ms/tag/' + g;
+        d = e.getElementsByTagName(f)[0];
+        d.parentNode.insertBefore(c, d);
+      })(window, document, 'clarity', 'script', 'qx92mwqclb');
+    </script>
+    <script type="text/javascript" id="" charset="">
+      !(function (b, e, f, g, a, c, d) {
+        b.saq ||
+          ((a = b.saq =
+            function () {
+              a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments);
+            }),
+          b._saq || (b._saq = a),
+          (a.push = a),
+          (a.loaded = !0),
+          (a.version = '1.0'),
+          (a.queue = []),
+          (c = e.createElement(f)),
+          (c.async = !0),
+          (c.src = g),
+          (d = e.getElementsByTagName(f)[0]),
+          d.parentNode.insertBefore(c, d));
+      })(window, document, 'script', 'https://tags.srv.stackadapt.com/events.js');
+      saq('ts', 'FLzFqiXLl9dVkW8kXq13NQ');
+    </script>
+    <iframe height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    <script type="text/javascript">
+      function initSprinklrChatBot() {
+        var userInfo = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+        var device = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+        var loginStatus = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+        var telephone = userInfo.telephone,
+          firstName = userInfo.firstName,
+          lastName = userInfo.lastName,
+          email = userInfo.email,
+          orderNo = userInfo.orderNo,
+          countryCode = userInfo.countryCode,
+          platform = userInfo.platform,
+          phoneNumber = userInfo.phoneNumber,
+          emailId = userInfo.emailId;
+        window.sprChatSettings = window.sprChatSettings || {};
+        window.sprChatSettings = _objectSpread(
+          _objectSpread(
+            _objectSpread(
+              {
+                appId: '626fcf8563ac4521314470a6_app_600019149',
+                skin: 'MODERN',
+                landingScreen: 'LAST_CONVERSATION',
+              },
+              device && {
+                device: 'MOBILE',
+              }
+            ),
+            loginStatus && {
+              user: {
+                id: telephone || phoneNumber || '',
+                //mandatory - can send phone number
+                firstName: firstName || '',
+                //optional, can send empty
+                lastName: lastName || '',
+                //optional, can send empty
+                profileImageUrl: '',
+                //optional, can send empty
+                phoneNo: telephone || phoneNumber || '',
+                //optional
+                email: email || emailId || '',
+                //optional
+                hash: generateHash(userInfo), //mandatory - you need to generate your own
+              },
+            }
+          ),
+          loginStatus && {
+            userContext: {
+              _c_628fa2a6e10d7d26ffae932e: orderNo || '',
+              // order_no
+              _c_628fa2e3e10d7d26ffae99c9: '',
+              // unique_id
+              _c_628fa30ee10d7d26ffae9d66: '',
+              // action
+              _c_629059cde7872557aeec559f: '',
+              // customer_id
+              _c_628fa33ae10d7d26ffaea0b0:
+                false && process.env.BUILD_ENV === 'development' ? 'preprod' : 'prod',
+              // env
+              // "_c_628fa33ae10d7d26ffaea0b0": "", // env
+              _c_628fa36be10d7d26ffaea88b: '',
+              // username
+              _c_628fa39ae10d7d26ffaead3d: '',
+              // External_Conversation_ID
+              _c_628fa3c5e10d7d26ffaeb1a3: '',
+              // External_Customer_ID
+              _c_628fa3f7e10d7d26ffaeb7a9: '',
+              // auth_id
+              _c_628fa430e10d7d26ffaebb90: '',
+              // pincode
+              _c_628fa46ae10d7d26ffaec0e6: '',
+              // auth_code
+              _c_5cc9a7d0e4b01904c8dfc965: '',
+              // language
+              _c_62a1a40fd7c1ad35cd4a6323: platform || '',
+              // device
+              _c_628fa497e10d7d26ffaec4c9: countryCode || '', // country
+              // "_c_628fa497e10d7d26ffaec4c9": ""  // country
+            },
+          }
+        );
+        (function () {
+          var t = window,
+            e = t.sprChat,
+            a = e && !!e.loaded,
+            n = document,
+            _r = function r() {
+              _r.m(arguments);
+            };
+          (_r.q = []),
+            (_r.m = function (t) {
+              _r.q.push(t);
+            }),
+            (t.sprChat = a ? e : _r);
+          var o = function o() {
+            var e = n.createElement('script');
+            (e.type = 'text/javascript'),
+              (e.async = !0),
+              (e.src =
+                'https://prod4-live-chat.sprinklr.com/api/livechat/handshake/widget/' +
+                t.sprChatSettings.appId),
+              (e.onerror = function () {
+                t.sprChat.loaded = !1;
+              }),
+              (e.onload = function () {
+                t.sprChat.loaded = !0;
+              });
+            var a = n.getElementsByTagName('script')[0];
+            a.parentNode.insertBefore(e, a);
+          };
+          'function' == typeof e
+            ? a
+              ? e('update', t.sprChatSettings)
+              : o()
+            : 'loading' !== n.readyState
+            ? o()
+            : n.addEventListener('DOMContentLoaded', o);
+        })();
+      }
+    </script>
+    <script type="text/javascript">
+      (function (w, d, t, r, u) {
+        var f, n, i;
+        (w[u] = w[u] || []),
+          (f = function () {
+            var o = { ti: '134598098' };
+            (o.q = w[u]), (w[u] = new UET(o)), w[u].push('pageLoad');
+          }),
+          (n = d.createElement(t)),
+          (n.src = r),
+          (n.async = 1),
+          (n.onload = n.onreadystatechange =
+            function () {
+              var s = this.readyState;
+              (s && s !== 'loaded' && s !== 'complete') ||
+                (f(), (n.onload = n.onreadystatechange = null));
+            }),
+          (i = d.getElementsByTagName(t)[0]),
+          i.parentNode.insertBefore(n, i);
+      })(window, document, 'script', '//bat.bing.com/bat.js', 'uetq');
+    </script>
+    <script type="text/javascript">
+      window.postpayAsyncInit = function () {
+        postpay.init({
+          merchantId: 'id_a09b6ac5a0e44d26bae0b1f4e4954383',
+          sandbox: false,
+          theme: 'light',
+          locale: 'en',
+        });
+      };
+    </script>
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      // Initialize Fancybox for video lightbox
+      document.addEventListener('DOMContentLoaded', function () {
+        Fancybox.bind('[data-fancybox]', {
+          // Custom options for video
+          contentClick: 'close',
+          contentClick: function (instance, slide) {
+            // Pause video when lightbox is closed
+            if (slide && slide.type === 'video') {
+              const iframe = slide.content.querySelector('iframe');
+              if (iframe) {
+                const iframeSrc = iframe.src;
+                iframe.src = iframeSrc; // Reset video when closed
+              }
+            }
+          },
+        });
+      });
+    </script>
+
+    <script
+      clientid="owndays"
+      service="in.juspay.hyperpay"
+      src="https://public.releases.juspay.in/hyper-sdk-web/HyperServices.js"
+    ></script>
+    <div style="display: none; visibility: hidden">
+      <script>
+        !(function (b, e, f, g, a, c, d) {
+          b.fbq ||
+            ((a = b.fbq =
+              function () {
+                a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments);
+              }),
+            b._fbq || (b._fbq = a),
+            (a.push = a),
+            (a.loaded = !0),
+            (a.version = '2.0'),
+            (a.queue = []),
+            (c = e.createElement(f)),
+            (c.async = !0),
+            (c.src = g),
+            (d = e.getElementsByTagName(f)[0]),
+            d.parentNode.insertBefore(c, d));
+        })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1510426245838375');
+        fbq('track', 'PageView');
+      </script>
+      <noscript></noscript>
+    </div>
+    <div
+      id="batBeacon482845594541"
+      style="width: 0px; height: 0px; display: none; visibility: hidden"
+    >
+      <img
+        id="batBeacon289435604202"
+        width="0"
+        height="0"
+        alt=""
+        src="https://bat.bing.com/action/0?ti=134598098&amp;Ver=2&amp;mid=25683f45-b5e3-4672-8d6e-45103a50a217&amp;bo=1&amp;sid=b83847a0939111f0b6c5f99754eff5f1&amp;vid=05a57a007cd611f0b21033cb40c78cef&amp;vids=0&amp;msclkid=N&amp;pi=918639831&amp;lg=en-GB&amp;sw=1728&amp;sh=1117&amp;sc=30&amp;tl=OWNDAYS%20%7C%20MOVE%20%7C%20Eyewear%20for%20the%20active%20%7C%20OWNDAYS%20ONLINE%20STORE%20-%20OPTICAL%20SHOP&amp;kw=MOVE,OWNDAYS%20%7C%20MOVE,sports,active,lens,eyewear,sunglasses,OWNDAYS,Singapore&amp;p=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Fnews%2Fmove&amp;r=&amp;lt=1918&amp;evt=pageLoad&amp;sv=2&amp;cdb=AQAQ&amp;rn=803306"
+        style="width: 0px; height: 0px; display: none; visibility: hidden"
+      />
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('.header-move__navs a');
+
+        // Add click event to each link
+        navLinks.forEach(link => {
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.textContent.trim().toLowerCase().replace(' ', '-');
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+              targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              });
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.body-move__styles__product-list ul').each(function () {
+          var $ul = $(this);
+          var $layout = $ul.closest('.body-move__styles__product-layout');
+          var $count = $layout.find('.body-move__styles__product-slide-count');
+
+          // Store references to arrows
+          var $prevArrow = $layout.find('.move-arrow--prev');
+          var $nextArrow = $layout.find('.move-arrow--next');
+
+          // If arrows don't exist, create them
+          if ($prevArrow.length === 0 || $nextArrow.length === 0) {
+            $prevArrow = $('<button/>', {
+              class: 'move-arrow move-arrow--prev',
+              'aria-label': 'Previous',
+            }).append(
+              '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>'
+            );
+
+            $nextArrow = $('<button/>', {
+              class: 'move-arrow move-arrow--next',
+              'aria-label': 'Next',
+            }).append(
+              '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>'
+            );
+
+            $layout.append($prevArrow, $nextArrow);
+          }
+
+          var settings = {
+            infinite: false,
+            dots: false,
+            variableWidth: true,
+            centerMode: true,
+            arrows: true, // Enable arrows by default
+            prevArrow: $prevArrow, // Use our custom arrows
+            nextArrow: $nextArrow,
+            adaptiveHeight: true,
+            waitForAnimate: false,
+            swipeToSlide: true,
+            touchThreshold: 12,
+            responsive: [
+              {
+                breakpoint: 767,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  centerMode: false,
+                  variableWidth: false,
+                  infinite: true,
+                  arrows: false,
+                  dots: false,
+                  adaptiveHeight: true,
+                },
+              },
+            ],
+          };
+
+          // Add custom slider styles
+          var style = document.createElement('style');
+          style.textContent = `
+            .slick-disabled {
+              cursor: default;
+              pointer-events: none;
+            }
+
+            .slick-disabled.move-arrow--prev{
+              border: 1px solid #fff;
+              filter: invert(1);
+            }
+            /* Mobile slider styles */
+            @media (max-width: 767px) {
+              .move-arrow {
+                display: none !important;
+              }
+              .body-move__styles__product-list .slick-slide {
+                margin: 0 7px !important;
+                transition: padding 0.3s ease;
+              }
+              .body-move__styles__product-list > .slick-list .slick-slide {
+                width: 330px !important;
+                height: 200px;
+                padding: 0 10px;
+              }
+                .body-move__styles__product-list img {
+                width: 100%;
+                max-width: 310px;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+                }
+          `;
+          document.head.appendChild(style);
+
+          // Initialize the slider
+          $ul.slick(settings);
+
+          // Update counter and arrow states
+          function updateCounter() {
+            var currentSlide = $ul.slick('slickCurrentSlide') + 1;
+            var totalSlides = $ul.slick('getSlick').slideCount;
+            $count.text(currentSlide + ' / ' + totalSlides);
+
+            // Update arrow states
+            if (currentSlide === 1) {
+              $prevArrow.addClass('slick-disabled');
+            } else {
+              $prevArrow.removeClass('slick-disabled');
+            }
+
+            if (currentSlide === totalSlides) {
+              $nextArrow.addClass('slick-disabled');
+            } else {
+              $nextArrow.removeClass('slick-disabled');
+            }
+          }
+
+          // Set up event listeners
+          $ul.on('init afterChange', updateCounter);
+          $prevArrow.add($nextArrow).on('click', updateCounter);
+
+          // Initialize the counter
+          updateCounter();
+        });
+      });
+    </script>
+    <script>
+      // Color switching to mirror BodyMove.jsx behavior
+      $(function () {
+        $('.body-move__styles__products').each(function () {
+          var $product = $(this);
+          var productNumber = $product.attr('data-product-number');
+          var $layout = $product.find('.body-move__styles__product-layout');
+          var $ul = $layout.find('.body-move__styles__product-list ul');
+          var $count = $layout.find('.body-move__styles__product-slide-count');
+          var $codeSpan = $layout.find('.body-move__styles__product-details-code span:last-child');
+          var $prevArrow = $layout.find('.move-arrow--prev');
+          var $nextArrow = $layout.find('.move-arrow--next');
+
+          function pad2(n) {
+            return String(n).padStart(2, '0');
+          }
+
+          $product
+            .find('.body-move__styles__product-details-colors li button')
+            .each(function (idx) {
+              $(this).on('click', function () {
+                var colorCode = 'C' + (idx + 1); // index → C1/C2/C3/C4 like React
+                var $slides = $ul.find('li img');
+                var total = $slides.length;
+
+                // swap all slide images to the selected color
+                $slides.each(function (i, img) {
+                  var number = pad2(i + 1);
+                  var newSrc =
+                    'https://static.lenskart.com/owndays/img/move/products/' +
+                    productNumber +
+                    '/' +
+                    productNumber +
+                    '_' +
+                    colorCode +
+                    '_' +
+                    number +
+                    '.webp';
+                  // pre-load then swap to avoid flicker
+                  var testImg = new Image();
+                  testImg.onload = function () {
+                    img.src = newSrc;
+                  };
+                  testImg.onerror = function () {
+                    img.src = img.src;
+                  };
+                  testImg.src = newSrc;
+                });
+
+                // update product code display
+                if ($codeSpan.length) {
+                  $codeSpan.text(colorCode);
+                }
+
+                // update selected state
+                var $lis = $product.find('.body-move__styles__product-details-colors li');
+                $lis.attr('data-color-selected', 'false');
+                $lis.eq(idx).attr('data-color-selected', 'true');
+
+                // reset slider to first and refresh counter/arrows
+                try {
+                  $ul.slick('slickGoTo', 0, true);
+                } catch (e) {}
+                if ($count.length) {
+                  $count.text('1 / ' + total);
+                }
+                if ($prevArrow.length) {
+                  $prevArrow.addClass('slick-disabled');
+                }
+                if ($nextArrow.length && total > 1) {
+                  $nextArrow.removeClass('slick-disabled');
+                }
+              });
+            });
+        });
+      });
+    </script>
+  </body>
+</html>
