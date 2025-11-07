@@ -877,6 +877,11 @@
             margin-bottom: 24px;
             padding: 0 16px;
             overflow-x: auto;
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        .faq-mobile-tabs::-webkit-scrollbar {
+            display: none;  /* Chrome, Safari and Opera */
         }
 
         .faq-mobile-tab {
