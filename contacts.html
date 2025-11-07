@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1113,15 +1113,86 @@
                 margin-bottom: 40px;
             }
         }
+
+        /* Breadcrumb Styles */
+        .breadcrumb {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumb.breadcrumb--2 {
+            background-color: #fff;
+            border-top: 1px solid rgba(84, 96, 115, 0.1);
+            border-bottom: 1px solid rgba(84, 96, 115, 0.1);
+            padding: 10px 20px;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+
+        .breadcrumb.breadcrumb--2 > li + li::before {
+            content: '>';
+            padding: 0 15px;
+            color: #ccc;
+        }
+
+        .breadcrumb-item {
+            display: flex;
+            align-items: center;
+            opacity: 0.3;
+            font-family: 'Founders Grotesk', sans-serif;
+        }
+
+        .breadcrumb-item a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .breadcrumb-item a:hover {
+            text-decoration: none;
+        }
+
+        .breadcrumb-item.active {
+            color: #000;
+            opacity: 1;
+        }
+
+        @media (min-width: 1024px) {
+            .breadcrumb.breadcrumb--2 {
+                padding: 10px 50px;
+            }
+        }
+
+        .breadcrumb.breadcrumb--2 > li {
+            display: flex;
+        }
     </style>
 </head>
 <body>
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb--2">
+            <li class="breadcrumb-item">
+                <a href="/sg/en">Homepage</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                Contacts
+            </li>
+        </ol>
+    </nav>
+
     <!-- Header Contacts Section -->
     <div class="header-contacts__main">
         <div class="header-contacts__hero-section">
             <div class="header-contacts__hero-image">
                 <button class="header-contacts__hero-button" onclick="window.location.href='/sg/en/contacts/clear-contactlens'">EXPLORE PRODUCTS</button>
-            </div> 
+            </div>
         </div>
         <div class="header-contacts__carousel">
             <div class="header-contacts__carousel-desktop">
