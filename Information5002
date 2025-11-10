@@ -1,0 +1,1058 @@
+<html lang="en-US" data-reactroot="">
+  <head>
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      rel="stylesheet"
+    />
+    <link href="//www.google-analytics.com" rel="preconnect" />
+    <link href="//www.google-analytics.com" rel="dns-prefetch" />
+    <link href="//www.googletagmanager.com" rel="preconnect" />
+    <link href="//www.googletagmanager.com" rel="dns-prefetch" />
+    <link href="//static.lenskart.com" rel="preconnect" />
+    <link href="//static.lenskart.com" rel="dns-prefetch" />
+    <meta
+      content="pfd8x7ajms35j8pe7h6nitj5b95nqw"
+      name="facebook-domain-verification"
+    />
+    <link
+      as="style"
+      charset="UTF-8"
+      href="https://static.lenskart.com/owndays/cms/css/information-5002.css"
+      media="all"
+      rel="preload"
+      type="text/css"
+    />
+    <title>Announcement on Product Line Changes</title>
+    <meta
+      content="OWNDAYS through the rebranding, we have restructured our product range to make our eyewear even more attractive and easier to understand for our customers."
+      name="description"
+    />
+    <meta
+      content="eyewear,eyeframe,sunglasses,rebranding,products,in-house,sub-brands,collaborations,Singapore,OWNDAYS,2024,air,sun,essential"
+      name="keywords"
+    />
+    <meta
+      content="https://static.lenskart.com/media/owndays/img/imformation/5002/ogp_1200x630.jpg"
+      property="og:image"
+    />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta
+      content="https://static.lenskart.com/media/owndays/img/imformation/5002/ogp_1200x630.jpg"
+      name="twitter:image"
+    />
+    <meta content="OWNDAYS" name="author" />
+    <meta content="OWNDAYS" name="publisher" />
+    <link
+      href="https://www.owndays.com/sg/en/information/5002"
+      rel="canonical"
+    />
+    <title data-react-helmet="true"></title>
+    <meta content="on" http-equiv="x-dns-prefetch-control" />
+    <link href="/sg/en/favicon.ico" rel="icon" type="image/x-icon" />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      color="#5bbad5"
+      href="https://static.lenskart.com/media/owndays/favicon/safari-pinned-tab.svg"
+      rel="mask-icon"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#ffffff" id="themeColor" name="theme-color" />
+    <link href="/sg/en/manifest.json" rel="manifest" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      charset="UTF-8"
+      href="https://static.lenskart.com/owndays/cms/css/information-5002.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      async=""
+      src="https://scripts.clarity.ms/0.8.30/clarity.js"
+    ></script>
+    <script async="" src="https://tags.srv.stackadapt.com/events.js"></script>
+    <script async="" src="https://www.clarity.ms/tag/qx92mwqclb"></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CTTO0KRC77UDUQAR23O0&amp;lib=ttq"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=AW-723115492&amp;cx=c&amp;gtm=4e5991"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-V9YREND482&amp;cx=c&amp;gtm=4e5991"
+    ></script>
+    <script src="//bat.bing.com/bat.js" async=""></script>
+    <script
+      src="https://connect.facebook.net/signals/config/1510426245838375?v=2.9.229&amp;r=stable&amp;domain=www.owndays.com&amp;hme=4da26a2e1598cd081171e9b8b0e3bd97fd7c10093fe0828a931452a008126d2c&amp;ex_m=87%2C149%2C129%2C18%2C122%2C61%2C41%2C123%2C68%2C60%2C136%2C76%2C12%2C86%2C26%2C117%2C108%2C66%2C69%2C116%2C133%2C95%2C138%2C6%2C2%2C3%2C5%2C4%2C1%2C77%2C85%2C139%2C213%2C161%2C55%2C218%2C215%2C216%2C48%2C176%2C25%2C65%2C222%2C221%2C164%2C28%2C54%2C7%2C57%2C81%2C82%2C83%2C88%2C112%2C27%2C24%2C115%2C111%2C110%2C130%2C67%2C132%2C131%2C43%2C113%2C53%2C105%2C11%2C135%2C38%2C204%2C206%2C171%2C21%2C22%2C23%2C15%2C16%2C37%2C33%2C35%2C34%2C72%2C78%2C80%2C93%2C121%2C124%2C39%2C94%2C19%2C17%2C99%2C62%2C31%2C126%2C125%2C127%2C118%2C20%2C30%2C52%2C92%2C134%2C63%2C14%2C29%2C186%2C157%2C263%2C202%2C147%2C189%2C182%2C90%2C114%2C71%2C103%2C47%2C40%2C101%2C102%2C107%2C51%2C13%2C109%2C100%2C58%2C42%2C96%2C46%2C49%2C45%2C84%2C137%2C0%2C106%2C10%2C104%2C8%2C50%2C79%2C56%2C128%2C59%2C98%2C75%2C74%2C44%2C119%2C73%2C70%2C64%2C97%2C89%2C36%2C120%2C32%2C91%2C9%2C140%2C200%2C223%2C225%2C265%2C203%2C150%2C194%2C178%2C159%2C262%2C144%2C179%2C207%2C197%2C146%2C167%2C151%2C181%2C184%2C158%2C192"
+      async=""
+    ></script>
+    <script
+      src="https://connect.facebook.net/signals/config/297844910867676?v=2.9.229&amp;r=stable&amp;domain=www.owndays.com&amp;hme=4da26a2e1598cd081171e9b8b0e3bd97fd7c10093fe0828a931452a008126d2c&amp;ex_m=87%2C149%2C129%2C18%2C122%2C61%2C41%2C123%2C68%2C60%2C136%2C76%2C12%2C86%2C26%2C117%2C108%2C66%2C69%2C116%2C133%2C95%2C138%2C6%2C2%2C3%2C5%2C4%2C1%2C77%2C85%2C139%2C213%2C161%2C55%2C218%2C215%2C216%2C48%2C176%2C25%2C65%2C222%2C221%2C164%2C28%2C54%2C7%2C57%2C81%2C82%2C83%2C88%2C112%2C27%2C24%2C115%2C111%2C110%2C130%2C67%2C132%2C131%2C43%2C113%2C53%2C105%2C11%2C135%2C38%2C204%2C206%2C171%2C21%2C22%2C23%2C15%2C16%2C37%2C33%2C35%2C34%2C72%2C78%2C80%2C93%2C121%2C124%2C39%2C94%2C19%2C17%2C99%2C62%2C31%2C126%2C125%2C127%2C118%2C20%2C30%2C52%2C92%2C134%2C63%2C14%2C29%2C186%2C157%2C263%2C202%2C147%2C189%2C182%2C90%2C114%2C71%2C103%2C47%2C40%2C101%2C102%2C107%2C51%2C13%2C109%2C100%2C58%2C42%2C96%2C46%2C49%2C45%2C84%2C137%2C0%2C106%2C10%2C104%2C8%2C50%2C79%2C56%2C128%2C59%2C98%2C75%2C74%2C44%2C119%2C73%2C70%2C64%2C97%2C89%2C36%2C120%2C32%2C91%2C9%2C140"
+      async=""
+    ></script>
+    <script
+      async=""
+      src="https://connect.facebook.net/en_US/fbevents.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C3QE7P84C3SCJI4REVE0&amp;lib=ttq"
+    ></script>
+    <script
+      async=""
+      src="//www.googletagmanager.com/gtm.js?id=GTM-5GSLLFKQ"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://stats.g.doubleclick.net/dc.js"
+    ></script>
+    <script
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      async=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+    ></script>
+    <script async="">
+      !(function (e, t, a, n, c, o, s) {
+        (e.GoogleAnalyticsObject = c),
+          (e[c] =
+            e[c] ||
+            function () {
+              (e[c].q = e[c].q || []).push(arguments);
+            }),
+          (e[c].l = 1 * new Date()),
+          (o = t.createElement(a)),
+          (s = t.getElementsByTagName(a)[0]),
+          (o.async = 1),
+          (o.src = n),
+          s.parentNode.insertBefore(o, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      ),
+        ga("create", "UA-131075285-1", "auto");
+    </script>
+    <script src="//www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript">
+      function gaTrackEvent(e, t, n) {
+        _gaq.push(["_trackEvent", e, t, n]);
+      }
+      function crumbleCookie(e) {
+        for (
+          var t = document.cookie.split(";"), n = {}, i = 0;
+          i < t.length;
+          i++
+        ) {
+          var u = t[i].substring(0, t[i]?.indexOf("=")).trim(),
+            a = t[i].substring(t[i]?.indexOf("=") + 1, t[i].length).trim();
+          n[u] = a;
+        }
+        return e ? (n[e] ? n[e] : null) : n;
+      }
+      function gaCookies() {
+        var e = function () {
+            var e;
+            if (!crumbleCookie("__utma")) return null;
+            e = crumbleCookie("__utma").split(".");
+            var t = e[0],
+              n = e[1],
+              i = e[2],
+              u = e[3],
+              a = e[4],
+              r = e[5];
+            return {
+              cookie: e,
+              domainhash: t,
+              uniqueid: n,
+              ftime: i,
+              ltime: u,
+              stime: a,
+              sessions: r,
+            };
+          },
+          t = function () {
+            var e;
+            if (!crumbleCookie("__utmb")) return null;
+            e = crumbleCookie("__utmb").split(".");
+            var t = e[1];
+            return { cookie: e, gifrequest: t };
+          },
+          n = function () {
+            var e;
+            if (!crumbleCookie("__utmv")) return null;
+            e = crumbleCookie("__utmv").split(".");
+            var t = e[1];
+            return { cookie: e, value: t };
+          },
+          i = function () {
+            var e, t, n, i, u, a, r;
+            if (!crumbleCookie("__utmz")) return null;
+            e = crumbleCookie("__utmz").split(".");
+            for (var s = e[4].split("|"), o = 0; o < s.length; o++) {
+              var c = s[o].substring(0, s[o]?.indexOf("=")),
+                m = decodeURIComponent(
+                  s[o].substring(s[o]?.indexOf("=") + 1, s[o].length)
+                );
+              switch (((m = m.replace(/^(|)$/g, "")), c)) {
+                case "utmcsr":
+                  t = m;
+                  break;
+                case "utmcmd":
+                  n = m;
+                  break;
+                case "utmccn":
+                  i = m;
+                  break;
+                case "utmctr":
+                  u = m;
+                  break;
+                case "utmcct":
+                  a = m;
+                  break;
+                case "utmgclid":
+                  r = m;
+              }
+            }
+            return {
+              cookie: e,
+              source: t,
+              medium: n,
+              name: i,
+              term: u,
+              content: a,
+              gclid: r,
+            };
+          };
+        (this.getDomainHash = function () {
+          return e() && e().domainhash ? e().domainhash : null;
+        }),
+          (this.getUniqueId = function () {
+            return e() && e().uniqueid ? e().uniqueid : null;
+          }),
+          (this.getInitialVisitTime = function () {
+            return e() && e().ftime ? e().ftime : null;
+          }),
+          (this.getPreviousVisitTime = function () {
+            return e() && e().ltime ? e().ltime : null;
+          }),
+          (this.getCurrentVisitTime = function () {
+            return e() && e().stime ? e().stime : null;
+          }),
+          (this.getSessionCounter = function () {
+            return e() && e().sessions ? e().sessions : null;
+          }),
+          (this.getGifRequests = function () {
+            return t() && t().gifrequest ? t().gifrequest : null;
+          }),
+          (this.getUserDefinedValue = function () {
+            return n() && n().value ? decodeURIComponent(n().value) : null;
+          }),
+          (this.getCampaignSource = function () {
+            return i() && i().source ? i().source : null;
+          }),
+          (this.getCampaignMedium = function () {
+            return i() && i().medium ? i().medium : null;
+          }),
+          (this.getCampaignName = function () {
+            return i() && i().name ? i().name : null;
+          }),
+          (this.getCampaignTerm = function () {
+            return i() && i().term ? i().term : null;
+          }),
+          (this.getCampaignContent = function () {
+            return i() && i().content ? i().content : null;
+          }),
+          (this.getGclid = function () {
+            return i() && i().gclid ? i().gclid : null;
+          });
+      }
+      var _gaq = _gaq || [],
+        gac = new gaCookies();
+      _gaq.push(["_setAccount", "UA-131075285-1"], ["_setAllowLinker", !0]),
+        _gaq.push(["_setDomainName", "lenskart.com"]),
+        _gaq.push(
+          ["ninja._setAccount", "UA-131075285-1"],
+          ["ninja._setAllowLinker", !0]
+        ),
+        _gaq.push(["ninja._setDomainName", "lenskart.com"]),
+        _gaq.push(["_initData"]),
+        _gaq.push(function () {
+          var e = _gat._getTrackerByName();
+          (UniqueId = gac.getUniqueId()),
+            e._setCustomVar(1, "Visitor", UniqueId, 1);
+          var t = _gat._getTrackerByName("ninja");
+          t._setCustomVar(1, "Visitor", UniqueId, 1);
+          var n = gac.getSessionCounter(),
+            i = gac.getCampaignSource(),
+            u = gac.getCampaignMedium(),
+            a = gac.getCampaignTerm(),
+            r = gac.getCampaignName(),
+            s = gac.getCampaignContent(),
+            o = gac.getGclid();
+          null != o && ((i = "google"), (u = "cpc")),
+            1 == n &&
+              (e._setCustomVar(
+                2,
+                "FT",
+                i + "|" + u + "|" + a + "|" + r + "|" + s,
+                1
+              ),
+              t._setCustomVar(
+                2,
+                "FT",
+                i + "|" + u + "|" + a + "|" + r + "|" + s,
+                1
+              ));
+        }),
+        _gaq.push(
+          ["_setSiteSpeedSampleRate", 100],
+          ["ninja._setSiteSpeedSampleRate", 100]
+        ),
+        _gaq.push(["_trackPageview"], ["ninja._trackPageview"]),
+        (function () {
+          var e = document.createElement("script");
+          (e.type = "text/javascript"),
+            (e.async = !0),
+            (e.src =
+              ("https:" == document.location.protocol
+                ? "https://"
+                : "http://") + "stats.g.doubleclick.net/dc.js");
+          var t = document.getElementsByTagName("script")[0];
+          t.parentNode.insertBefore(e, t);
+        })();
+    </script>
+    <noscript
+      ><img
+        alt="img"
+        height="1"
+        src="https://www.facebook.com/tr?id=297844910867676&amp;ev=PageView&amp;noscript=1"
+        style="display: none"
+        width="1"
+    /></noscript>
+    <meta content="638381491" property="fb:admins" />
+    <meta content="392248067537088" property="fb:app_id" />
+    <meta content="5B6622CBA13393D54072EF6C8482D676" name="msvalidate.01" />
+    <script
+      charset="UTF-8"
+      src="https://static.lenskart.com/media/desktop/js/vendor/desktop-ga-c3197c2d1dcaf8ecde841b36bbdf37fa.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5GSLLFKQ");
+    </script>
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        (ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+        ]),
+          (ttq.setAndDefer = function (t, e) {
+            t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          });
+        for (var i = 0; i < ttq.methods.length; i++)
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        (ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+            ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        }),
+          (ttq.load = function (e, n) {
+            var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+            (ttq._i = ttq._i || {}),
+              (ttq._i[e] = []),
+              (ttq._i[e]._u = i),
+              (ttq._t = ttq._t || {}),
+              (ttq._t[e] = +new Date()),
+              (ttq._o = ttq._o || {}),
+              (ttq._o[e] = n || {});
+            var o = document.createElement("script");
+            (o.type = "text/javascript"),
+              (o.async = !0),
+              (o.src = i + "?sdkid=" + e + "&lib=" + t);
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(o, a);
+          });
+
+        ttq.load("C3QE7P84C3SCJI4REVE0");
+        ttq.page();
+      })(window, document, "ttq");
+    </script>
+    <script type="text/javascript">
+      var dtm = dtm || {};
+      dtm.pageName = "baseAbort";
+      function initSatellite() {
+        try {
+          _satellite.pageBottom();
+        } catch (e) {
+          //ignore
+        }
+      }
+      initSatellite();
+    </script>
+    <script>
+      window.fwSettings = {
+        widget_id: 13000000125,
+      };
+      !(function () {
+        if ("function" != typeof window.FreshworksWidget) {
+          var n = function () {
+            n.q.push(arguments);
+          };
+          (n.q = []), (window.FreshworksWidget = n);
+        }
+      })();
+      window.chatBotParams = {
+        orderNo: "",
+        emailId: "",
+        phoneNumber: "",
+        action: "",
+        uniqueId: "",
+        sessionID: "",
+        env: "",
+        apiClient: "",
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script
+      src="https://static.lenskart.com/owndays/media/v2/js/session-relpay-newrelic.js"
+      async=""
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="alternate"
+      hreflang="en-sg"
+      href="https://www.owndays.com/sg/en/information/5002"
+      data-react-helmet="true"
+    />
+    <script type="application/ld+json" data-react-helmet="true">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.owndays.com/sg/en",
+        "name": "OWNDAYS",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "6222-0588",
+          "contactType": "Customer Service"
+        },
+        "sameAs": [
+          "https://www.facebook.com/owndays.sg",
+          "https://www.instagram.com/owndays_sg/",
+          "https://www.tiktok.com/@owndays_sg",
+          "https://www.youtube.com/channel/UCSu2yqzCpnTtGXi05WtsiZg"
+        ],
+        "logo": "https://static1.lenskart.com/media/owndays/desktop/img/od-logos-new/logo-type-black.png"
+      }
+    </script>
+    <script type="application/ld+json" data-react-helmet="true">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.owndays.com/sg/en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.owndays.com/sg/en/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/723115492/?random=1757589831680&amp;cv=11&amp;fst=1757589831680&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be5991v895293790z89165206974za200zb9165206974zd9165206974xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527907~104528500~104684208~104684211~104948813~105367987~105367989~105426769~105426771~115616985&amp;u_w=1792&amp;u_h=1120&amp;url=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Finformation%2F5002&amp;frm=0&amp;tiba=Announcement%20on%20Product%20Line%20Changes&amp;hn=www.googleadservices.com&amp;npa=0&amp;auid=269799165.1757486201&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.133%7CNot%253DA%253FBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B140.0.7339.133&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.6.1&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/723115492/?random=1757589831693&amp;cv=11&amp;fst=1757589831693&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be5991v895293790z89165206974za200zb9165206974zd9165206974xea&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527907~104528500~104684208~104684211~104948813~105367987~105367989~105426769~105426771~115616985&amp;u_w=1792&amp;u_h=1120&amp;url=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Finformation%2F5002&amp;frm=0&amp;tiba=Announcement%20on%20Product%20Line%20Changes&amp;hn=www.googleadservices.com&amp;npa=0&amp;auid=269799165.1757486201&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.133%7CNot%253DA%253FBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B140.0.7339.133&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.6.1&amp;uaw=0&amp;_tu=CA&amp;rfmt=3&amp;fmt=4"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://eu1.clevertap-prod.com/a?t=96&amp;type=push&amp;d=N4IgLgngDgpiBcIYDcYDswgDROWAcgIYC2ciA7gF4BOA1gPoBmMYAxgBba5gAihYhBKEzwALAF8cASwAmCEADYAWqIC0o5aqUBOZVwDm8gEYBWbSaMBGQoW0wZAJlGjrADm0OHAdhg2HAZlZ%2Fa1YABi4oQ3hLHEJGIRAAGykjeXIYI1UAZxlaVWQHADoihwjqAHswctZyxPl2MDAoLJBJEAB1JQAlAGl6AGEAQQBZAAUE8iliKARQnEmwRNYEAG0AXXms5fg5kHJGbeA28mqhY7QZLdn5i4Ozm5lT%2BCPxcSAAA%3D%3D&amp;rn=3&amp;i=1757589831&amp;sn=1&amp;gc=b595b1aa9ed2441a89227eaa23c31ac0&amp;arp=N4IgVg%2BgdiBcIC0DuBeFIA0ICW04gE0AmAOQHMBTAQQFUBhK1dLAEwgBcBnOABlYAteWAG5wiWSN3jAAvphwt8ANgQAWALSqV6hAE4V8gE4cpARgDsAVlWqrADnM8ZQA&amp;tries=1&amp;origin=https%3A%2F%2Fwww.owndays.com&amp;useIP=false&amp;r=1757589831737"
+      class="ct-jp-cb"
+      rel="nofollow"
+      async=""
+    ></script>
+    <script
+      src="https://bat.bing.com/p/action/134598098.js"
+      type="text/javascript"
+      async=""
+      data-ueto="ueto_8277ba917b"
+    ></script>
+    <link
+      id="sa-css"
+      rel="stylesheet"
+      type="text/css"
+      href="https://tags.srv.stackadapt.com/sa.css"
+      media="all"
+    />
+  </head>
+
+  <body
+    style="background-color: #fff"
+    data-aos-easing="ease"
+    data-aos-duration="400"
+    data-aos-delay="0"
+  >
+    <noscript
+      ><iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5GSLLFKQ"
+        style="display: none; visibility: hidden"
+        title="GTM noscript"
+        width="0"
+      ></iframe
+    ></noscript>
+    <div id="content">
+      <div class="">
+        <div
+          class="message-toast pos-fix"
+          style="bottom: -999px; right: -999px; text-align: end"
+        ></div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb breadcrumb--2">
+            <li class="breadcrumb-item"><a href="/sg/en">Homepage</a></li>
+            <li class="breadcrumb-item">
+              <a href="/sg/en/information">See all the Information</a>
+            </li>
+            <li aria-current="page" class="breadcrumb-item active">
+              Announcement on Product Line Changes
+            </li>
+          </ol>
+        </nav>
+        <main class="information-details">
+          <div class="information-details__header">
+            <div class="information-details__container">
+              <p class="days">2024.10.31 ｜ Press Release</p>
+              <h1>Announcement on Product Line Changes</h1>
+            </div>
+          </div>
+          <div class="information-details__container">
+            <div class="information-details__body">
+              <div class="information-details__contents">
+                <div class="mb-50">
+                  <p>
+                    Through the rebranding, we have restructured our product
+                    range to make our eyewear even more attractive and easier to
+                    understand for our customers.
+                  </p>
+                </div>
+                <h2>In-House Brands</h2>
+                <div class="mb-50">
+                  <p>
+                    This product range is designed for those seeking the best
+                    items for everyday use, with an emphasis on functionality
+                    and cost-effectiveness. They are designed for simplicity,
+                    high quality, and convenience.
+                  </p>
+                </div>
+                <h2>Sub-Brands</h2>
+                <div class="mb-50">
+                  <p>
+                    This product group stands out for its design and unique
+                    concept. A wide variety of designs are available, perfect
+                    for those who want to focus on eyewear as a fashion
+                    statement.
+                  </p>
+                </div>
+                <h2>Collaborations</h2>
+                <div class="mb-50">
+                  <p>
+                    OWNDAYS collaborates with brands from various industries to
+                    create unique items that blend the character of both
+                    companies. By collaborating with brands that have distinct
+                    backgrounds and values, OWNDAYS offers collections that
+                    appeal to an even broader range of styles.
+                  </p>
+                  <img
+                    alt="OWNDAYS Announcement on Product Line Changes"
+                    class="product-line-change__image"
+                    src="https://static1.lenskart.com/media/owndays/img/information/5002/image.webp"
+                  />
+                </div>
+              </div>
+            </div>
+            <ul class="information-details__sns">
+              <li>
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://www.owndays.com/sg/en/information/5002"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><svg
+                    fill="#999"
+                    height="22"
+                    viewBox="0 0 448 512"
+                    width="22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/intent/tweet?url=https://www.owndays.com/sg/en/information/5002"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><svg
+                    fill="#999"
+                    height="22"
+                    viewBox="0 0 512 512"
+                    width="22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="http://line.me/R/msg/text/?https://www.owndays.com/sg/en/information/5002"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><svg
+                    fill="#999"
+                    height="22"
+                    viewBox="0 0 512 512"
+                    width="22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M311 196.8v81.3c0 2.1-1.6 3.7-3.7 3.7h-13c-1.3 0-2.4-.7-3-1.5l-37.3-50.3v48.2c0 2.1-1.6 3.7-3.7 3.7h-13c-2.1 0-3.7-1.6-3.7-3.7V196.9c0-2.1 1.6-3.7 3.7-3.7h12.9c1.1 0 2.4 .6 3 1.6l37.3 50.3V196.9c0-2.1 1.6-3.7 3.7-3.7h13c2.1-.1 3.8 1.6 3.8 3.5zm-93.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 2.1 1.6 3.7 3.7 3.7h13c2.1 0 3.7-1.6 3.7-3.7V196.8c0-1.9-1.6-3.7-3.7-3.7zm-31.4 68.1H150.3V196.8c0-2.1-1.6-3.7-3.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 1 .3 1.8 1 2.5c.7 .6 1.5 1 2.5 1h52.2c2.1 0 3.7-1.6 3.7-3.7v-13c0-1.9-1.6-3.7-3.5-3.7zm193.7-68.1H327.3c-1.9 0-3.7 1.6-3.7 3.7v81.3c0 1.9 1.6 3.7 3.7 3.7h52.2c2.1 0 3.7-1.6 3.7-3.7V265c0-2.1-1.6-3.7-3.7-3.7H344V247.7h35.5c2.1 0 3.7-1.6 3.7-3.7V230.9c0-2.1-1.6-3.7-3.7-3.7H344V213.5h35.5c2.1 0 3.7-1.6 3.7-3.7v-13c-.1-1.9-1.7-3.7-3.7-3.7zM512 93.4V419.4c-.1 51.2-42.1 92.7-93.4 92.6H92.6C41.4 511.9-.1 469.8 0 418.6V92.6C.1 41.4 42.2-.1 93.4 0H419.4c51.2 .1 92.7 42.1 92.6 93.4zM441.6 233.5c0-83.4-83.7-151.3-186.4-151.3s-186.4 67.9-186.4 151.3c0 74.7 66.3 137.4 155.9 149.3c21.8 4.7 19.3 12.7 14.4 42.1c-.8 4.7-3.8 18.4 16.1 10.1s107.3-63.2 146.5-108.2c27-29.7 39.9-59.8 39.9-93.1z"
+                    ></path></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="information-details__footer">
+            <div
+              class="information-details__container information-details__container--lg"
+            >
+              <div class="information-details__footer-inner">
+                <a href="/sg/en/information"
+                  ><svg
+                    fill="#999"
+                    height="18"
+                    viewBox="0 0 320 512"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                    ></path></svg
+                  >Back to list</a
+                >
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script charset="UTF-8" src="/sg/en/main.2e7a9313336c6f88dcc8.js"></script>
+    <script type="text/javascript">
+      function initSprinklrChatBot() {
+        var userInfo =
+          arguments.length > 0 && arguments[0] !== undefined
+            ? arguments[0]
+            : {};
+        var device =
+          arguments.length > 1 && arguments[1] !== undefined
+            ? arguments[1]
+            : false;
+        var loginStatus =
+          arguments.length > 2 && arguments[2] !== undefined
+            ? arguments[2]
+            : false;
+        var telephone = userInfo.telephone,
+          firstName = userInfo.firstName,
+          lastName = userInfo.lastName,
+          email = userInfo.email,
+          orderNo = userInfo.orderNo,
+          countryCode = userInfo.countryCode,
+          platform = userInfo.platform,
+          phoneNumber = userInfo.phoneNumber,
+          emailId = userInfo.emailId;
+        window.sprChatSettings = window.sprChatSettings || {};
+        window.sprChatSettings = _objectSpread(
+          _objectSpread(
+            _objectSpread(
+              {
+                appId: "626fcf8563ac4521314470a6_app_600019149",
+                skin: "MODERN",
+                landingScreen: "LAST_CONVERSATION",
+              },
+              device && {
+                device: "MOBILE",
+              }
+            ),
+            loginStatus && {
+              user: {
+                id: telephone || phoneNumber || "",
+                //mandatory - can send phone number
+                firstName: firstName || "",
+                //optional, can send empty
+                lastName: lastName || "",
+                //optional, can send empty
+                profileImageUrl: "",
+                //optional, can send empty
+                phoneNo: telephone || phoneNumber || "",
+                //optional
+                email: email || emailId || "",
+                //optional
+                hash: generateHash(userInfo), //mandatory - you need to generate your own
+              },
+            }
+          ),
+          loginStatus && {
+            userContext: {
+              _c_628fa2a6e10d7d26ffae932e: orderNo || "",
+              // order_no
+              _c_628fa2e3e10d7d26ffae99c9: "",
+              // unique_id
+              _c_628fa30ee10d7d26ffae9d66: "",
+              // action
+              _c_629059cde7872557aeec559f: "",
+              // customer_id
+              _c_628fa33ae10d7d26ffaea0b0:
+                process.env.BUILD_ENV === "development" ? "preprod" : "prod",
+              // env
+              // "_c_628fa33ae10d7d26ffaea0b0": "", // env
+              _c_628fa36be10d7d26ffaea88b: "",
+              // username
+              _c_628fa39ae10d7d26ffaead3d: "",
+              // External_Conversation_ID
+              _c_628fa3c5e10d7d26ffaeb1a3: "",
+              // External_Customer_ID
+              _c_628fa3f7e10d7d26ffaeb7a9: "",
+              // auth_id
+              _c_628fa430e10d7d26ffaebb90: "",
+              // pincode
+              _c_628fa46ae10d7d26ffaec0e6: "",
+              // auth_code
+              _c_5cc9a7d0e4b01904c8dfc965: "",
+              // language
+              _c_62a1a40fd7c1ad35cd4a6323: platform || "",
+              // device
+              _c_628fa497e10d7d26ffaec4c9: countryCode || "", // country
+              // "_c_628fa497e10d7d26ffaec4c9": ""  // country
+            },
+          }
+        );
+        (function () {
+          var t = window,
+            e = t.sprChat,
+            a = e && !!e.loaded,
+            n = document,
+            _r = function r() {
+              _r.m(arguments);
+            };
+          (_r.q = []),
+            (_r.m = function (t) {
+              _r.q.push(t);
+            }),
+            (t.sprChat = a ? e : _r);
+          var o = function o() {
+            var e = n.createElement("script");
+            (e.type = "text/javascript"),
+              (e.async = !0),
+              (e.src =
+                "https://prod4-live-chat.sprinklr.com/api/livechat/handshake/widget/" +
+                t.sprChatSettings.appId),
+              (e.onerror = function () {
+                t.sprChat.loaded = !1;
+              }),
+              (e.onload = function () {
+                t.sprChat.loaded = !0;
+              });
+            var a = n.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(e, a);
+          };
+          "function" == typeof e
+            ? a
+              ? e("update", t.sprChatSettings)
+              : o()
+            : "loading" !== n.readyState
+            ? o()
+            : n.addEventListener("DOMContentLoaded", o);
+        })();
+      }
+    </script>
+    <script type="text/javascript">
+      (function (w, d, t, r, u) {
+        var f, n, i;
+        (w[u] = w[u] || []),
+          (f = function () {
+            var o = { ti: "134598098" };
+            (o.q = w[u]), (w[u] = new UET(o)), w[u].push("pageLoad");
+          }),
+          (n = d.createElement(t)),
+          (n.src = r),
+          (n.async = 1),
+          (n.onload = n.onreadystatechange =
+            function () {
+              var s = this.readyState;
+              (s && s !== "loaded" && s !== "complete") ||
+                (f(), (n.onload = n.onreadystatechange = null));
+            }),
+          (i = d.getElementsByTagName(t)[0]),
+          i.parentNode.insertBefore(n, i);
+      })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    </script>
+    <script type="text/javascript">
+      window.postpayAsyncInit = function () {
+        postpay.init({
+          merchantId: "id_a09b6ac5a0e44d26bae0b1f4e4954383",
+          sandbox: false,
+          theme: "light",
+          locale: "en",
+        });
+      };
+    </script>
+    <script
+      clientid="owndays"
+      service="in.juspay.hyperpay"
+      src="https://public.releases.juspay.in/hyper-sdk-web/HyperServices.js"
+    ></script>
+    <div style="display: none; visibility: hidden">
+      <script>
+        !(function (b, e, f, g, a, c, d) {
+          b.fbq ||
+            ((a = b.fbq =
+              function () {
+                a.callMethod
+                  ? a.callMethod.apply(a, arguments)
+                  : a.queue.push(arguments);
+              }),
+            b._fbq || (b._fbq = a),
+            (a.push = a),
+            (a.loaded = !0),
+            (a.version = "2.0"),
+            (a.queue = []),
+            (c = e.createElement(f)),
+            (c.async = !0),
+            (c.src = g),
+            (d = e.getElementsByTagName(f)[0]),
+            d.parentNode.insertBefore(c, d));
+        })(
+          window,
+          document,
+          "script",
+          "https://connect.facebook.net/en_US/fbevents.js"
+        );
+        fbq("init", "1510426245838375");
+        fbq("track", "PageView");
+      </script>
+      <noscript></noscript>
+    </div>
+    <style>
+      .wzrk-overlay {
+        display: none !important;
+      }
+      a:hover{
+            text-decoration: none !important;
+        }
+    </style>
+    <script type="text/javascript" id="" charset="">
+      var clevertap = {
+        event: [],
+        profile: [],
+        account: [],
+        onUserLogin: [],
+        notifications: [],
+        privacy: [],
+      };
+      clevertap.account.push({ id: "6Z4-46Z-Z96Z" });
+      clevertap.privacy.push({ optOut: !1 });
+      clevertap.privacy.push({ useIP: !1 });
+      (function () {
+        var a = document.createElement("script");
+        a.type = "text/javascript";
+        a.async = !0;
+        a.src =
+          ("https:" == document.location.protocol
+            ? "https://d2r1yp2w7bby2u.cloudfront.net"
+            : "http://static.clevertap.com") + "/js/clevertap.min.js";
+        var b = document.getElementsByTagName("script")[0];
+        b.parentNode.insertBefore(a, b);
+      })();
+    </script>
+    <script
+      id=""
+      text=""
+      charset=""
+      type="text/javascript"
+      src="https://yutoads.com/audience.js"
+    ></script>
+    <script type="text/javascript" id="" charset="">
+      !(function (d, g, e) {
+        d.TiktokAnalyticsObject = e;
+        var a = (d[e] = d[e] || []);
+        a.methods =
+          "page track identify instances debug on off once ready alias group enableCookie disableCookie holdConsent revokeConsent grantConsent".split(
+            " "
+          );
+        a.setAndDefer = function (b, c) {
+          b[c] = function () {
+            b.push([c].concat(Array.prototype.slice.call(arguments, 0)));
+          };
+        };
+        for (d = 0; d < a.methods.length; d++) a.setAndDefer(a, a.methods[d]);
+        a.instance = function (b) {
+          b = a._i[b] || [];
+          for (var c = 0; c < a.methods.length; c++)
+            a.setAndDefer(b, a.methods[c]);
+          return b;
+        };
+        a.load = function (b, c) {
+          var f = "https://analytics.tiktok.com/i18n/pixel/events.js";
+          a._i = a._i || {};
+          a._i[b] = [];
+          a._i[b]._u = f;
+          a._t = a._t || {};
+          a._t[b] = +new Date();
+          a._o = a._o || {};
+          a._o[b] = c || {};
+          c = document.createElement("script");
+          c.type = "text/javascript";
+          c.async = !0;
+          c.src = f + "?sdkid\x3d" + b + "\x26lib\x3d" + e;
+          b = document.getElementsByTagName("script")[0];
+          b.parentNode.insertBefore(c, b);
+        };
+        a.load("CTTO0KRC77UDUQAR23O0");
+        a.page();
+      })(window, document, "ttq");
+    </script>
+    <script type="text/javascript" id="" charset="">
+      (function (a, e, b, f, g, c, d) {
+        a[b] =
+          a[b] ||
+          function () {
+            (a[b].q = a[b].q || []).push(arguments);
+          };
+        c = e.createElement(f);
+        c.async = 1;
+        c.src = "https://www.clarity.ms/tag/" + g;
+        d = e.getElementsByTagName(f)[0];
+        d.parentNode.insertBefore(c, d);
+      })(window, document, "clarity", "script", "qx92mwqclb");
+    </script>
+    <iframe
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe>
+    <script type="text/javascript" id="" charset="">
+      !(function (b, e, f, g, a, c, d) {
+        b.saq ||
+          ((a = b.saq =
+            function () {
+              a.callMethod
+                ? a.callMethod.apply(a, arguments)
+                : a.queue.push(arguments);
+            }),
+          b._saq || (b._saq = a),
+          (a.push = a),
+          (a.loaded = !0),
+          (a.version = "1.0"),
+          (a.queue = []),
+          (c = e.createElement(f)),
+          (c.async = !0),
+          (c.src = g),
+          (d = e.getElementsByTagName(f)[0]),
+          d.parentNode.insertBefore(c, d));
+      })(
+        window,
+        document,
+        "script",
+        "https://tags.srv.stackadapt.com/events.js"
+      );
+      saq("ts", "FLzFqiXLl9dVkW8kXq13NQ");
+    </script>
+    <div
+      id="batBeacon49931680319"
+      style="width: 0px; height: 0px; display: none; visibility: hidden"
+    >
+      <img
+        id="batBeacon545436586402"
+        width="0"
+        height="0"
+        alt=""
+        src="https://bat.bing.com/action/0?ti=134598098&amp;Ver=2&amp;mid=4fe95478-fafa-4fe7-9fdd-3d617dc74fe3&amp;bo=1&amp;sid=5f4094008c0311f0bacb17249e09362b&amp;vid=85a6b6e072af11f0a3789f0dcd6edd65&amp;vids=0&amp;msclkid=N&amp;pi=918639831&amp;lg=en-GB&amp;sw=1792&amp;sh=1120&amp;sc=24&amp;tl=Announcement%20on%20Product%20Line%20Changes&amp;kw=eyewear,eyeframe,sunglasses,rebranding,products,in-house,sub-brands,collaborations,Singapore,OWNDAYS,2024,air,sun,essential&amp;p=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Finformation%2F5002&amp;r=&amp;lt=4731&amp;evt=pageLoad&amp;sv=2&amp;cdb=AQAQ&amp;rn=788955"
+        style="width: 0px; height: 0px; display: none; visibility: hidden"
+      />
+    </div>
+  </body>
+</html>
