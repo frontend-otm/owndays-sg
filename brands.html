@@ -814,6 +814,11 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
             } else if (sliderEl && typeof jq?.fn?.slick !== "function") {
               console.error("brands: Slick not loaded or jQuery.fn.slick missing.");
             }
+
+            setTimeout(() => {
+              // Scroll card to top of window
+              card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
           });
         });
 
