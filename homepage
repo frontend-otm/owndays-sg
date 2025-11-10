@@ -18,6 +18,9 @@
           "type": "TYPE_BANNER_CAROUSEL",
           "data": [
             {
+              "html": "<a class='getGaData' data-event='Banner Clicks' data-category='Banner Clicks' data-action='CAROUSEL' data-label='home-online-exclusive-sale' href='/sg/en/megadraw' data-creative-name='TYPE_BANNER' data-promotion-id='home-online-exclusive-sale' data-promotion-name='home new carousel online exclusive sale'><img title='Grand Draw' class='mySlides' src='https://static5.lenskart.com/media/uploads/Desktop-Banner-home-hero-0711.png' style='width:100%'/></a>"
+            },
+            {
               "html": "<a class='getGaData' data-event='Banner Clicks' data-category='Banner Clicks' data-action='CAROUSEL' data-label='home-online-exclusive-sale' href='/sg/en/campaign/the-seasonal-save-sale.html' data-creative-name='TYPE_BANNER' data-promotion-id='home-online-exclusive-sale' data-promotion-name='home new carousel online exclusive sale'><img title='Online Exclusive Sale' class='mySlides' src='https://static5.lenskart.com/media/uploads/5000_2000banner-for-the-seasonal-save-promo.png' style='width:100%'/></a>"
             },
             {
@@ -46,7 +49,7 @@
           "type": "TYPE_BANNER",
           "data": [
             {
-              "html": "<center><div class='perfect-fit-sect flex w100 mt35 justcenter'><div class='mar4p'><a href='/sg/en/campaign/sunglasses-bundledeal.html'><img src='https://static.lenskart.com/media/desktop/img/DesignStudioIcons/OD_Male.webp'/></a></div><div class=''><a href='/sg/en/promo/buy-one-get-one'><img src='https://static5.lenskart.com/media/uploads/828px_x_414_px__23102025_rat.png'/></a></div><div class='mar3p'><a href='/sg/en/campaign/2ndpair-discount.html'><img src='https://static.lenskart.com/media/desktop/img/DesignStudioIcons/OD_Kids.webp'/></a></div></div></center>",
+              "html": "<center><div class='perfect-fit-sect flex w100 mt35 justcenter'><div class='mar4p'><a href='/sg/en/campaign/sunglasses-bundledeal.html'><img src='https://static.lenskart.com/media/desktop/img/DesignStudioIcons/OD_Male.webp'/></a></div><div class=''><a href='/sg/en/campaign/outlet.html'><img src='https://static5.lenskart.com/media/uploads/Outlet_banner.png'/></a></div><div class='mar3p'><a href='/sg/en/campaign/2ndpair-discount.html'><img src='https://static.lenskart.com/media/desktop/img/DesignStudioIcons/OD_Kids.webp'/></a></div></div></center>",
               "css": "<style>.mar4p{margin-left: 70px} .mar3p{margin-right: 70px} h4 { display: flex; flex-direction: row; width:100%;color:black;} h4:before, h4:after { content: ''; flex: 1 1; border-bottom: 1px solid #cfcdcd; margin: auto 15px; } .flex {display:flex} .mt35{margin-top:35px} .mt70{margin-top:80px} .w80 {width:80%} .pt15 {padding-top:15px;} .pb15 {padding-bottom:15px;} .pl15 {padding-left:15px;} .pr15 {padding-right:15px;} .font-head {font-family:'Plus Jakarta Sans-Medium';letter-spacing:0.5px;font-size:30px;} .w92 {width:92%} .w50 {width:50%} .pl7 {padding-left:7.5px} .pr7 {padding-right:7.5px} .w100 {width:100%} .catSlider_btn {display:none} .catSlider {border:0} .bottom-b {border-bottom: 1px solid #cfcdcd;} .catSlider {width:100%;margin-left:5%} .justcenter, .our-brands-sect {justify-content:center} .dropdown {width:16%} .home {width:100%;max-width:1920px;margin: 0 auto;} .mrt2p {margin-top:2%} .mb70 {margin-bottom:70px}</style>"
             }
           ]
