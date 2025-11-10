@@ -1,0 +1,3583 @@
+<html lang="en-US" data-reactroot="">
+  <head>
+    <style>
+      #more-details-btn {
+      display: flex !important;
+    }
+    /* to remove double line for hovering */
+      a:hover{
+            text-decoration: none !important;
+        }
+      .LGLeeN-keyboard-shortcuts-view {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+
+      .LGLeeN-keyboard-shortcuts-view table,
+      .LGLeeN-keyboard-shortcuts-view tbody,
+      .LGLeeN-keyboard-shortcuts-view td,
+      .LGLeeN-keyboard-shortcuts-view tr {
+        background: inherit;
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .LGLeeN-keyboard-shortcuts-view table {
+        display: table;
+      }
+
+      .LGLeeN-keyboard-shortcuts-view tr {
+        display: table-row;
+      }
+
+      .LGLeeN-keyboard-shortcuts-view td {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: table-cell;
+        color: light-dark(#000, #fff);
+        padding: 6px;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+
+      .LGLeeN-keyboard-shortcuts-view td:first-child {
+        text-align: end;
+      }
+
+      .LGLeeN-keyboard-shortcuts-view td kbd {
+        background-color: light-dark(#e8eaed, #3c4043);
+        border-radius: 2px;
+        border: none;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        color: inherit;
+        display: inline-block;
+        font-family: Google Sans Text, Roboto, Arial, sans-serif;
+        line-height: 16px;
+        margin: 0 2px;
+        min-height: 20px;
+        min-width: 20px;
+        padding: 2px 4px;
+        position: relative;
+        text-align: center;
+      }
+    </style>
+    <style>
+      .gm-control-active > img {
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        display: none;
+        left: 50%;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      .gm-control-active > img:nth-child(1) {
+        display: block;
+      }
+
+      .gm-control-active:focus > img:nth-child(1),
+      .gm-control-active:hover > img:nth-child(1),
+      .gm-control-active:active > img:nth-child(1),
+      .gm-control-active:disabled > img:nth-child(1) {
+        display: none;
+      }
+
+      .gm-control-active:focus > img:nth-child(2),
+      .gm-control-active:hover > img:nth-child(2) {
+        display: block;
+      }
+
+      .gm-control-active:active > img:nth-child(3) {
+        display: block;
+      }
+
+      .gm-control-active:disabled > img:nth-child(4) {
+        display: block;
+      }
+
+      sentinel {
+      }
+    </style>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400,500,700&amp;lang=en"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&amp;lang=en"
+    />
+    <style>
+      .gm-style .gm-style-cc a,
+      .gm-style .gm-style-cc button,
+      .gm-style .gm-style-cc span,
+      .gm-style .gm-style-mtc div {
+        font-size: 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .gm-style .gm-style-cc a,
+      .gm-style .gm-style-cc button,
+      .gm-style .gm-style-cc span {
+        outline-offset: 3px;
+      }
+
+      sentinel {
+      }
+    </style>
+    <style>
+      @media print {
+        .gm-style .gmnoprint,
+        .gmnoprint {
+          display: none;
+        }
+      }
+
+      @media screen {
+        .gm-style .gmnoscreen,
+        .gmnoscreen {
+          display: none;
+        }
+      }
+    </style>
+    <style>
+      .gm-style-moc {
+        background-color: rgba(0, 0, 0, 0.59);
+        pointer-events: none;
+        text-align: center;
+        -webkit-transition: opacity ease-in-out;
+        transition: opacity ease-in-out;
+      }
+
+      .gm-style-mot {
+        color: white;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 22px;
+        margin: 0;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+      }
+
+      sentinel {
+      }
+    </style>
+    <style>
+      .gm-style img {
+        max-width: none;
+      }
+
+      .gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }
+    </style>
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      rel="stylesheet"
+    />
+    <link href="//www.google-analytics.com" rel="preconnect" />
+    <link href="//www.google-analytics.com" rel="dns-prefetch" />
+    <link href="//www.googletagmanager.com" rel="preconnect" />
+    <link href="//www.googletagmanager.com" rel="dns-prefetch" />
+    <link href="//static.lenskart.com" rel="preconnect" />
+    <link href="//static.lenskart.com" rel="dns-prefetch" />
+    <meta
+      content="pfd8x7ajms35j8pe7h6nitj5b95nqw"
+      name="facebook-domain-verification"
+    />
+    <link
+      as="style"
+      charset="UTF-8"
+      href="https://static.lenskart.com/owndays/cms/css/information-1048.css"
+      media="all"
+      rel="preload"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      
+      href="https://static.lenskart.com/owndays/cms/css/information-1048-msite.css"
+      media="screen and (max-width: 600px)"
+     
+    />
+    <title>Thu. 19 Dec. 2024 OWNDAYS Le Quest Outlet Store New Open!</title>
+    <meta
+      content="Thu. 19 Dec. 2024 OWNDAYS Le Quest Outlet Store New Open!, The simple price system with the speedy process, we will be able to give you the glasses after 20 minutes. We will also be able to do the lenses replacement for spectacles that you purchased at other store. Anything about glasses spectacles just let OWNDAYS to serve you."
+      name="description"
+    />
+    <meta
+      content="Le Quest Outlet Store,New Open,spectacles,glasses,optical shop,eye glasses,sunglasses,eyewear,pc lenses,frame"
+      name="keywords"
+    />
+    <meta
+      content="https://static1.lenskart.com/owndays/img/information/shops/1048/ogp_1200x630.jpg"
+      property="og:image"
+    />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta
+      content="https://static1.lenskart.com/owndays/img/information/shops/1048/ogp_1200x630.jpg"
+      name="twitter:image"
+    />
+    <meta content="OWNDAYS" name="author" />
+    <meta content="OWNDAYS" name="publisher" />
+    <link
+      href="https://www.owndays.com/sg/en/information/1048"
+      rel="canonical"
+    />
+    <title data-react-helmet="true"></title>
+    <meta content="on" http-equiv="x-dns-prefetch-control" />
+    <link href="/sg/en/favicon.ico" rel="icon" type="image/x-icon" />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      color="#5bbad5"
+      href="https://static.lenskart.com/media/owndays/favicon/safari-pinned-tab.svg"
+      rel="mask-icon"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#ffffff" id="themeColor" name="theme-color" />
+    <link href="/sg/en/manifest.json" rel="manifest" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      charset="UTF-8"
+      href="https://static.lenskart.com/owndays/cms/css/information-1048.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      async=""
+      src="https://scripts.clarity.ms/0.8.30/clarity.js"
+    ></script>
+    <script async="" src="https://tags.srv.stackadapt.com/events.js"></script>
+    <script async="" src="https://www.clarity.ms/tag/qx92mwqclb"></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CTTO0KRC77UDUQAR23O0&amp;lib=ttq"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=AW-723115492&amp;cx=c&amp;gtm=4e5991"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-V9YREND482&amp;cx=c&amp;gtm=4e5991"
+    ></script>
+    <script src="//bat.bing.com/bat.js" async=""></script>
+    <script
+      src="https://connect.facebook.net/signals/config/1510426245838375?v=2.9.229&amp;r=stable&amp;domain=www.owndays.com&amp;hme=4da26a2e1598cd081171e9b8b0e3bd97fd7c10093fe0828a931452a008126d2c&amp;ex_m=87%2C149%2C129%2C18%2C122%2C61%2C41%2C123%2C68%2C60%2C136%2C76%2C12%2C86%2C26%2C117%2C108%2C66%2C69%2C116%2C133%2C95%2C138%2C6%2C2%2C3%2C5%2C4%2C1%2C77%2C85%2C139%2C213%2C161%2C55%2C218%2C215%2C216%2C48%2C176%2C25%2C65%2C222%2C221%2C164%2C28%2C54%2C7%2C57%2C81%2C82%2C83%2C88%2C112%2C27%2C24%2C115%2C111%2C110%2C130%2C67%2C132%2C131%2C43%2C113%2C53%2C105%2C11%2C135%2C38%2C204%2C206%2C171%2C21%2C22%2C23%2C15%2C16%2C37%2C33%2C35%2C34%2C72%2C78%2C80%2C93%2C121%2C124%2C39%2C94%2C19%2C17%2C99%2C62%2C31%2C126%2C125%2C127%2C118%2C20%2C30%2C52%2C92%2C134%2C63%2C14%2C29%2C186%2C157%2C263%2C202%2C147%2C189%2C182%2C90%2C114%2C71%2C103%2C47%2C40%2C101%2C102%2C107%2C51%2C13%2C109%2C100%2C58%2C42%2C96%2C46%2C49%2C45%2C84%2C137%2C0%2C106%2C10%2C104%2C8%2C50%2C79%2C56%2C128%2C59%2C98%2C75%2C74%2C44%2C119%2C73%2C70%2C64%2C97%2C89%2C36%2C120%2C32%2C91%2C9%2C140%2C200%2C223%2C225%2C265%2C203%2C150%2C194%2C178%2C159%2C262%2C144%2C179%2C207%2C197%2C146%2C167%2C151%2C181%2C184%2C158%2C192"
+      async=""
+    ></script>
+    <script
+      src="https://connect.facebook.net/signals/config/297844910867676?v=2.9.229&amp;r=stable&amp;domain=www.owndays.com&amp;hme=4da26a2e1598cd081171e9b8b0e3bd97fd7c10093fe0828a931452a008126d2c&amp;ex_m=87%2C149%2C129%2C18%2C122%2C61%2C41%2C123%2C68%2C60%2C136%2C76%2C12%2C86%2C26%2C117%2C108%2C66%2C69%2C116%2C133%2C95%2C138%2C6%2C2%2C3%2C5%2C4%2C1%2C77%2C85%2C139%2C213%2C161%2C55%2C218%2C215%2C216%2C48%2C176%2C25%2C65%2C222%2C221%2C164%2C28%2C54%2C7%2C57%2C81%2C82%2C83%2C88%2C112%2C27%2C24%2C115%2C111%2C110%2C130%2C67%2C132%2C131%2C43%2C113%2C53%2C105%2C11%2C135%2C38%2C204%2C206%2C171%2C21%2C22%2C23%2C15%2C16%2C37%2C33%2C35%2C34%2C72%2C78%2C80%2C93%2C121%2C124%2C39%2C94%2C19%2C17%2C99%2C62%2C31%2C126%2C125%2C127%2C118%2C20%2C30%2C52%2C92%2C134%2C63%2C14%2C29%2C186%2C157%2C263%2C202%2C147%2C189%2C182%2C90%2C114%2C71%2C103%2C47%2C40%2C101%2C102%2C107%2C51%2C13%2C109%2C100%2C58%2C42%2C96%2C46%2C49%2C45%2C84%2C137%2C0%2C106%2C10%2C104%2C8%2C50%2C79%2C56%2C128%2C59%2C98%2C75%2C74%2C44%2C119%2C73%2C70%2C64%2C97%2C89%2C36%2C120%2C32%2C91%2C9%2C140"
+      async=""
+    ></script>
+    <script
+      async=""
+      src="https://connect.facebook.net/en_US/fbevents.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C3QE7P84C3SCJI4REVE0&amp;lib=ttq"
+    ></script>
+    <script
+      async=""
+      src="//www.googletagmanager.com/gtm.js?id=GTM-5GSLLFKQ"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://stats.g.doubleclick.net/dc.js"
+    ></script>
+    <script
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      async=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+    ></script>
+    <script async="">
+      !(function (e, t, a, n, c, o, s) {
+        (e.GoogleAnalyticsObject = c),
+          (e[c] =
+            e[c] ||
+            function () {
+              (e[c].q = e[c].q || []).push(arguments);
+            }),
+          (e[c].l = 1 * new Date()),
+          (o = t.createElement(a)),
+          (s = t.getElementsByTagName(a)[0]),
+          (o.async = 1),
+          (o.src = n),
+          s.parentNode.insertBefore(o, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      ),
+        ga("create", "UA-131075285-1", "auto");
+    </script>
+    <script src="//www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript">
+      function gaTrackEvent(e, t, n) {
+        _gaq.push(["_trackEvent", e, t, n]);
+      }
+      function crumbleCookie(e) {
+        for (
+          var t = document.cookie.split(";"), n = {}, i = 0;
+          i < t.length;
+          i++
+        ) {
+          var u = t[i].substring(0, t[i]?.indexOf("=")).trim(),
+            a = t[i].substring(t[i]?.indexOf("=") + 1, t[i].length).trim();
+          n[u] = a;
+        }
+        return e ? (n[e] ? n[e] : null) : n;
+      }
+      function gaCookies() {
+        var e = function () {
+            var e;
+            if (!crumbleCookie("__utma")) return null;
+            e = crumbleCookie("__utma").split(".");
+            var t = e[0],
+              n = e[1],
+              i = e[2],
+              u = e[3],
+              a = e[4],
+              r = e[5];
+            return {
+              cookie: e,
+              domainhash: t,
+              uniqueid: n,
+              ftime: i,
+              ltime: u,
+              stime: a,
+              sessions: r,
+            };
+          },
+          t = function () {
+            var e;
+            if (!crumbleCookie("__utmb")) return null;
+            e = crumbleCookie("__utmb").split(".");
+            var t = e[1];
+            return { cookie: e, gifrequest: t };
+          },
+          n = function () {
+            var e;
+            if (!crumbleCookie("__utmv")) return null;
+            e = crumbleCookie("__utmv").split(".");
+            var t = e[1];
+            return { cookie: e, value: t };
+          },
+          i = function () {
+            var e, t, n, i, u, a, r;
+            if (!crumbleCookie("__utmz")) return null;
+            e = crumbleCookie("__utmz").split(".");
+            for (var s = e[4].split("|"), o = 0; o < s.length; o++) {
+              var c = s[o].substring(0, s[o]?.indexOf("=")),
+                m = decodeURIComponent(
+                  s[o].substring(s[o]?.indexOf("=") + 1, s[o].length)
+                );
+              switch (((m = m.replace(/^(|)$/g, "")), c)) {
+                case "utmcsr":
+                  t = m;
+                  break;
+                case "utmcmd":
+                  n = m;
+                  break;
+                case "utmccn":
+                  i = m;
+                  break;
+                case "utmctr":
+                  u = m;
+                  break;
+                case "utmcct":
+                  a = m;
+                  break;
+                case "utmgclid":
+                  r = m;
+              }
+            }
+            return {
+              cookie: e,
+              source: t,
+              medium: n,
+              name: i,
+              term: u,
+              content: a,
+              gclid: r,
+            };
+          };
+        (this.getDomainHash = function () {
+          return e() && e().domainhash ? e().domainhash : null;
+        }),
+          (this.getUniqueId = function () {
+            return e() && e().uniqueid ? e().uniqueid : null;
+          }),
+          (this.getInitialVisitTime = function () {
+            return e() && e().ftime ? e().ftime : null;
+          }),
+          (this.getPreviousVisitTime = function () {
+            return e() && e().ltime ? e().ltime : null;
+          }),
+          (this.getCurrentVisitTime = function () {
+            return e() && e().stime ? e().stime : null;
+          }),
+          (this.getSessionCounter = function () {
+            return e() && e().sessions ? e().sessions : null;
+          }),
+          (this.getGifRequests = function () {
+            return t() && t().gifrequest ? t().gifrequest : null;
+          }),
+          (this.getUserDefinedValue = function () {
+            return n() && n().value ? decodeURIComponent(n().value) : null;
+          }),
+          (this.getCampaignSource = function () {
+            return i() && i().source ? i().source : null;
+          }),
+          (this.getCampaignMedium = function () {
+            return i() && i().medium ? i().medium : null;
+          }),
+          (this.getCampaignName = function () {
+            return i() && i().name ? i().name : null;
+          }),
+          (this.getCampaignTerm = function () {
+            return i() && i().term ? i().term : null;
+          }),
+          (this.getCampaignContent = function () {
+            return i() && i().content ? i().content : null;
+          }),
+          (this.getGclid = function () {
+            return i() && i().gclid ? i().gclid : null;
+          });
+      }
+      var _gaq = _gaq || [],
+        gac = new gaCookies();
+      _gaq.push(["_setAccount", "UA-131075285-1"], ["_setAllowLinker", !0]),
+        _gaq.push(["_setDomainName", "lenskart.com"]),
+        _gaq.push(
+          ["ninja._setAccount", "UA-131075285-1"],
+          ["ninja._setAllowLinker", !0]
+        ),
+        _gaq.push(["ninja._setDomainName", "lenskart.com"]),
+        _gaq.push(["_initData"]),
+        _gaq.push(function () {
+          var e = _gat._getTrackerByName();
+          (UniqueId = gac.getUniqueId()),
+            e._setCustomVar(1, "Visitor", UniqueId, 1);
+          var t = _gat._getTrackerByName("ninja");
+          t._setCustomVar(1, "Visitor", UniqueId, 1);
+          var n = gac.getSessionCounter(),
+            i = gac.getCampaignSource(),
+            u = gac.getCampaignMedium(),
+            a = gac.getCampaignTerm(),
+            r = gac.getCampaignName(),
+            s = gac.getCampaignContent(),
+            o = gac.getGclid();
+          null != o && ((i = "google"), (u = "cpc")),
+            1 == n &&
+              (e._setCustomVar(
+                2,
+                "FT",
+                i + "|" + u + "|" + a + "|" + r + "|" + s,
+                1
+              ),
+              t._setCustomVar(
+                2,
+                "FT",
+                i + "|" + u + "|" + a + "|" + r + "|" + s,
+                1
+              ));
+        }),
+        _gaq.push(
+          ["_setSiteSpeedSampleRate", 100],
+          ["ninja._setSiteSpeedSampleRate", 100]
+        ),
+        _gaq.push(["_trackPageview"], ["ninja._trackPageview"]),
+        (function () {
+          var e = document.createElement("script");
+          (e.type = "text/javascript"),
+            (e.async = !0),
+            (e.src =
+              ("https:" == document.location.protocol
+                ? "https://"
+                : "http://") + "stats.g.doubleclick.net/dc.js");
+          var t = document.getElementsByTagName("script")[0];
+          t.parentNode.insertBefore(e, t);
+        })();
+    </script>
+    <noscript
+      ><img
+        alt="img"
+        height="1"
+        src="https://www.facebook.com/tr?id=297844910867676&amp;ev=PageView&amp;noscript=1"
+        style="display: none"
+        width="1"
+    /></noscript>
+    <meta content="638381491" property="fb:admins" />
+    <meta content="392248067537088" property="fb:app_id" />
+    <meta content="5B6622CBA13393D54072EF6C8482D676" name="msvalidate.01" />
+    <script
+      charset="UTF-8"
+      src="https://static.lenskart.com/media/desktop/js/vendor/desktop-ga-c3197c2d1dcaf8ecde841b36bbdf37fa.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5GSLLFKQ");
+    </script>
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        (ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+        ]),
+          (ttq.setAndDefer = function (t, e) {
+            t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          });
+        for (var i = 0; i < ttq.methods.length; i++)
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        (ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+            ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        }),
+          (ttq.load = function (e, n) {
+            var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+            (ttq._i = ttq._i || {}),
+              (ttq._i[e] = []),
+              (ttq._i[e]._u = i),
+              (ttq._t = ttq._t || {}),
+              (ttq._t[e] = +new Date()),
+              (ttq._o = ttq._o || {}),
+              (ttq._o[e] = n || {});
+            var o = document.createElement("script");
+            (o.type = "text/javascript"),
+              (o.async = !0),
+              (o.src = i + "?sdkid=" + e + "&lib=" + t);
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(o, a);
+          });
+
+        ttq.load("C3QE7P84C3SCJI4REVE0");
+        ttq.page();
+      })(window, document, "ttq");
+    </script>
+    <script type="text/javascript">
+      var dtm = dtm || {};
+      dtm.pageName = "baseAbort";
+      function initSatellite() {
+        try {
+          _satellite.pageBottom();
+        } catch (e) {
+          //ignore
+        }
+      }
+      initSatellite();
+    </script>
+    <script>
+      window.fwSettings = {
+        widget_id: 13000000125,
+      };
+      !(function () {
+        if ("function" != typeof window.FreshworksWidget) {
+          var n = function () {
+            n.q.push(arguments);
+          };
+          (n.q = []), (window.FreshworksWidget = n);
+        }
+      })();
+      window.chatBotParams = {
+        orderNo: "",
+        emailId: "",
+        phoneNumber: "",
+        action: "",
+        uniqueId: "",
+        sessionID: "",
+        env: "",
+        apiClient: "",
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script
+      src="https://static.lenskart.com/owndays/media/v2/js/session-relpay-newrelic.js"
+      async=""
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;hl=ja&amp;v=weekly&amp;loading=async&amp;callback=initMap"
+      id="script-loader"
+      async=""
+      data-state="ready"
+    ></script>
+    <link
+      rel="alternate"
+      hreflang="en-sg"
+      href="https://www.owndays.com/sg/en/information/1048"
+      data-react-helmet="true"
+    />
+    <script type="application/ld+json" data-react-helmet="true">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.owndays.com/sg/en",
+        "name": "OWNDAYS",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "6222-0588",
+          "contactType": "Customer Service"
+        },
+        "sameAs": [
+          "https://www.facebook.com/owndays.sg",
+          "https://www.instagram.com/owndays_sg/",
+          "https://www.tiktok.com/@owndays_sg",
+          "https://www.youtube.com/channel/UCSu2yqzCpnTtGXi05WtsiZg"
+        ],
+        "logo": "https://static1.lenskart.com/media/owndays/desktop/img/od-logos-new/logo-type-black.png"
+      }
+    </script>
+    <script type="application/ld+json" data-react-helmet="true">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.owndays.com/sg/en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.owndays.com/sg/en/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/main.js"></script>
+    <script
+      src="https://bat.bing.com/p/action/134598098.js"
+      type="text/javascript"
+      async=""
+      data-ueto="ueto_cac6acf883"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/723115492/?random=1757583543503&amp;cv=11&amp;fst=1757583543503&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be5991v895293790z89165206974za200zb9165206974zd9165206974xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527907~104528500~104684208~104684211~104948813~105367987~105367989~105426769~105426771&amp;u_w=1792&amp;u_h=1120&amp;url=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Finformation%2F1048&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;frm=0&amp;tiba=Thu.%2019%20Dec.%202024%20OWNDAYS%20Le%20Quest%20Outlet%20Store%20New%20Open!&amp;hn=www.googleadservices.com&amp;npa=0&amp;auid=269799165.1757486201&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.133%7CNot%253DA%253FBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B140.0.7339.133&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.6.1&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/723115492/?random=1757583543515&amp;cv=11&amp;fst=1757583543515&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be5991v895293790z89165206974za200zb9165206974zd9165206974xea&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527907~104528500~104684208~104684211~104948813~105367987~105367989~105426769~105426771&amp;u_w=1792&amp;u_h=1120&amp;url=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Finformation%2F1048&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;frm=0&amp;tiba=Thu.%2019%20Dec.%202024%20OWNDAYS%20Le%20Quest%20Outlet%20Store%20New%20Open!&amp;hn=www.googleadservices.com&amp;npa=0&amp;auid=269799165.1757486201&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.133%7CNot%253DA%253FBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B140.0.7339.133&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.6.1&amp;uaw=0&amp;_tu=CA&amp;rfmt=3&amp;fmt=4"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://eu1.clevertap-prod.com/a?t=96&amp;type=page&amp;d=N4IgTgpgZhaWIBcIDuaB0BzA9tzAbCdAY2wFsQAaEASwBMkQA2ALQBYBaN1jlgTlZUQmRgCMArH3GiAjAEM5fCHQBMbNvIAcfFSoDsEBSoDMxY%2FOIAGIQGckMveMebLmpn2oAHEYhltqclBIoPg0oowoEKIcNnQA1hwAbiroKSpCnmDYAC7YpPiMABbZ2Z52AL7UxN5FJWWIAPQNaCjo2CgAdnRyAJ42JOQNNpgNEB0NNB1Q2GBkctk02OMylmyaQgDqLABKANIA%2BgDCAIIAsgAKwag0ZJ5IltQoNNn4xEgA2gC6jzZviA%2BoKB%2FYCVVB5YKgzp0X73R5dIEQuF0cGIEHlcpAAA%3D%3D&amp;rn=2&amp;i=1757583543&amp;sn=0&amp;gc=b595b1aa9ed2441a89227eaa23c31ac0&amp;arp=N4IgVg%2BgdiBcIC0DuBeFIA0ICW04gE0AmAOQHMBTAQQFUBhK1dLAEwgBcBnOABlYAteWAG5wiWSN3jAAvphwt8ANgQAWALSqV6hAE4V8gE4cpARgDsAVlWqrADnM8ZQA&amp;tries=1&amp;origin=https%3A%2F%2Fwww.owndays.com&amp;useIP=false&amp;r=1757583543552"
+      class="ct-jp-cb"
+      rel="nofollow"
+      async=""
+    ></script>
+    <script
+      type="text/javascript"
+      charset="UTF-8"
+      src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/common.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="UTF-8"
+      src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/util.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="UTF-8"
+      src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/map.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="UTF-8"
+      src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/marker.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="UTF-8"
+      src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/log.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="UTF-8"
+      src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/onion.js"
+    ></script>
+    <link
+      id="sa-css"
+      rel="stylesheet"
+      type="text/css"
+      href="https://tags.srv.stackadapt.com/sa.css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      charset="UTF-8"
+      src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/controls.js"
+    ></script>
+  </head>
+
+  <body
+    style="background-color: #fff"
+    data-aos-easing="ease"
+    data-aos-duration="400"
+    data-aos-delay="0"
+  >
+    <noscript
+      ><iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5GSLLFKQ"
+        style="display: none; visibility: hidden"
+        title="GTM noscript"
+        width="0"
+      ></iframe
+    ></noscript>
+    <div id="content">
+      <div class="">
+        <div
+          class="message-toast pos-fix"
+          style="bottom: -999px; right: -999px; text-align: end"
+        ></div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb breadcrumb--2">
+            <li class="breadcrumb-item"><a href="/sg/en">Homepage</a></li>
+            <li class="breadcrumb-item">
+              <a href="/sg/en/information">See all the Information</a>
+            </li>
+            <li aria-current="page" class="breadcrumb-item active">
+              OWNDAYS Le Quest Outlet Store New Open
+            </li>
+          </ol>
+        </nav>
+        <main class="information-details">
+          <div class="information-details__header">
+            <div class="information-details__container">
+              <p class="days">2024.12.12 ｜ Latest Information</p>
+              <h1>Thu. 19 Dec. 2024 OWNDAYS Le Quest Outlet Store New Open!</h1>
+            </div>
+          </div>
+          <div class="information-details__cover">
+            <img
+              alt="OWNDAYS Le Quest Outlet"
+              loading="lazy"
+              src="https://static.lenskart.com/media/owndays/img/information/2024-12-12_1048.webp"
+            />
+          </div>
+          <div class="information-details__container">
+            <div class="information-details__body">
+              <div class="information-details__store-details">
+                <h2>Store Details</h2>
+                <ul>
+                  <li>
+                    <strong>Address</strong>4 Bukit Batok Street 41, #01-67 Le
+                    Quest, Singapore 657991
+                  </li>
+                  <li><strong>Operating Hours</strong>11:00-20:30</li>
+                </ul>
+              </div>
+              <div class="information-details__access">
+                <h2>Access</h2>
+                <div></div>
+                <div
+                  style="
+                    width: 100%;
+                    height: 450px;
+                    position: relative;
+                    overflow: hidden;
+                  "
+                >
+                  <div
+                    style="
+                      height: 100%;
+                      width: 100%;
+                      position: absolute;
+                      top: 0px;
+                      left: 0px;
+                      background-color: rgb(229, 227, 223);
+                    "
+                  >
+                    <div>
+                      <button
+                        draggable="false"
+                        aria-label="Keyboard shortcuts"
+                        title="Keyboard shortcuts"
+                        type="button"
+                        style="
+                          background: none transparent;
+                          display: block;
+                          border: none;
+                          margin: 0px;
+                          padding: 0px;
+                          text-transform: none;
+                          appearance: none;
+                          position: absolute;
+                          cursor: pointer;
+                          user-select: none;
+                          z-index: 1000002;
+                          outline-offset: 3px;
+                          right: 0px;
+                          bottom: 0px;
+                          transform: translateX(100%);
+                        "
+                      ></button>
+                    </div>
+                    <div
+                      tabindex="0"
+                      aria-label="Map"
+                      aria-roledescription="map"
+                      role="region"
+                      aria-describedby="67E00A18-92ED-4FB2-A5E0-BE8475E67A75"
+                      style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        padding: 0px;
+                        border-width: 0px;
+                        margin: 0px;
+                        left: 0px;
+                        top: 0px;
+                      "
+                    >
+                      <div
+                        id="67E00A18-92ED-4FB2-A5E0-BE8475E67A75"
+                        style="display: none"
+                      >
+                        <div class="LGLeeN-keyboard-shortcuts-view">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td><kbd aria-label="Left arrow">←</kbd></td>
+                                <td aria-label="Move left.">Move left</td>
+                              </tr>
+                              <tr>
+                                <td><kbd aria-label="Right arrow">→</kbd></td>
+                                <td aria-label="Move right.">Move right</td>
+                              </tr>
+                              <tr>
+                                <td><kbd aria-label="Up arrow">↑</kbd></td>
+                                <td aria-label="Move up.">Move up</td>
+                              </tr>
+                              <tr>
+                                <td><kbd aria-label="Down arrow">↓</kbd></td>
+                                <td aria-label="Move down.">Move down</td>
+                              </tr>
+                              <tr>
+                                <td><kbd>+</kbd></td>
+                                <td aria-label="Zoom in.">Zoom in</td>
+                              </tr>
+                              <tr>
+                                <td><kbd>-</kbd></td>
+                                <td aria-label="Zoom out.">Zoom out</td>
+                              </tr>
+                              <tr>
+                                <td><kbd>Home</kbd></td>
+                                <td aria-label="Jump left by 75%.">
+                                  Jump left by 75%
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><kbd>End</kbd></td>
+                                <td aria-label="Jump right by 75%.">
+                                  Jump right by 75%
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><kbd>Page Up</kbd></td>
+                                <td aria-label="Jump up by 75%.">
+                                  Jump up by 75%
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><kbd>Page Down</kbd></td>
+                                <td aria-label="Jump down by 75%.">
+                                  Jump down by 75%
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm-style"
+                      style="
+                        position: absolute;
+                        z-index: 0;
+                        left: 0px;
+                        top: 0px;
+                        height: 100%;
+                        width: 100%;
+                        padding: 0px;
+                        border-width: 0px;
+                        margin: 0px;
+                      "
+                    >
+                      <div
+                        style="
+                          position: absolute;
+                          z-index: 0;
+                          left: 0px;
+                          top: 0px;
+                          height: 100%;
+                          width: 100%;
+                          padding: 0px;
+                          border-width: 0px;
+                          margin: 0px;
+                          cursor: url('https://maps.gstatic.com/mapfiles/openhand_8_8.cur'),
+                            default;
+                          touch-action: pan-x pan-y;
+                        "
+                      >
+                        <div
+                          style="
+                            z-index: 1;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 100%;
+                            will-change: transform;
+                            transform: translate(0px, 0px);
+                          "
+                        >
+                          <div
+                            style="
+                              position: absolute;
+                              left: 0px;
+                              top: 0px;
+                              z-index: 100;
+                              width: 100%;
+                            "
+                          >
+                            <div
+                              style="
+                                position: absolute;
+                                left: 0px;
+                                top: 0px;
+                                z-index: 0;
+                              "
+                            >
+                              <div
+                                style="
+                                  position: absolute;
+                                  z-index: 983;
+                                  transform: matrix(1, 0, 0, 1, -1, -69);
+                                "
+                              >
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 0px;
+                                    width: 256px;
+                                    height: 256px;
+                                  "
+                                >
+                                  <div
+                                    style="width: 256px; height: 256px"
+                                  ></div>
+                                </div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: -256px;
+                                    top: 0px;
+                                    width: 256px;
+                                    height: 256px;
+                                  "
+                                >
+                                  <div
+                                    style="width: 256px; height: 256px"
+                                  ></div>
+                                </div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: -256px;
+                                    top: -256px;
+                                    width: 256px;
+                                    height: 256px;
+                                  "
+                                >
+                                  <div
+                                    style="width: 256px; height: 256px"
+                                  ></div>
+                                </div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: 0px;
+                                    top: -256px;
+                                    width: 256px;
+                                    height: 256px;
+                                  "
+                                >
+                                  <div
+                                    style="width: 256px; height: 256px"
+                                  ></div>
+                                </div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: 256px;
+                                    top: -256px;
+                                    width: 256px;
+                                    height: 256px;
+                                  "
+                                >
+                                  <div
+                                    style="width: 256px; height: 256px"
+                                  ></div>
+                                </div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: 256px;
+                                    top: 0px;
+                                    width: 256px;
+                                    height: 256px;
+                                  "
+                                >
+                                  <div
+                                    style="width: 256px; height: 256px"
+                                  ></div>
+                                </div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: 256px;
+                                    top: 256px;
+                                    width: 256px;
+                                    height: 256px;
+                                  "
+                                >
+                                  <div
+                                    style="width: 256px; height: 256px"
+                                  ></div>
+                                </div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 256px;
+                                    width: 256px;
+                                    height: 256px;
+                                  "
+                                >
+                                  <div
+                                    style="width: 256px; height: 256px"
+                                  ></div>
+                                </div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: -256px;
+                                    top: 256px;
+                                    width: 256px;
+                                    height: 256px;
+                                  "
+                                >
+                                  <div
+                                    style="width: 256px; height: 256px"
+                                  ></div>
+                                </div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: -512px;
+                                    top: 256px;
+                                    width: 256px;
+                                    height: 256px;
+                                  "
+                                >
+                                  <div
+                                    style="width: 256px; height: 256px"
+                                  ></div>
+                                </div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: -512px;
+                                    top: 0px;
+                                    width: 256px;
+                                    height: 256px;
+                                  "
+                                >
+                                  <div
+                                    style="width: 256px; height: 256px"
+                                  ></div>
+                                </div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    left: -512px;
+                                    top: -256px;
+                                    width: 256px;
+                                    height: 256px;
+                                  "
+                                >
+                                  <div
+                                    style="width: 256px; height: 256px"
+                                  ></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            style="
+                              position: absolute;
+                              left: 0px;
+                              top: 0px;
+                              z-index: 101;
+                              width: 100%;
+                            "
+                          ></div>
+                          <div
+                            style="
+                              position: absolute;
+                              left: 0px;
+                              top: 0px;
+                              z-index: 102;
+                              width: 100%;
+                            "
+                          ></div>
+                          <div
+                            style="
+                              position: absolute;
+                              left: 0px;
+                              top: 0px;
+                              z-index: 103;
+                              width: 100%;
+                            "
+                          >
+                            <div
+                              style="
+                                position: absolute;
+                                left: 0px;
+                                top: 0px;
+                                z-index: -1;
+                              "
+                            >
+                              <div
+                                style="
+                                  position: absolute;
+                                  z-index: 983;
+                                  transform: matrix(1, 0, 0, 1, -1, -69);
+                                "
+                              >
+                                <div
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 0px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: -256px;
+                                    top: 0px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: -256px;
+                                    top: -256px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: 0px;
+                                    top: -256px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: 256px;
+                                    top: -256px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: 256px;
+                                    top: 0px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: 256px;
+                                    top: 256px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 256px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: -256px;
+                                    top: 256px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: -512px;
+                                    top: 256px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: -512px;
+                                    top: 0px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: -512px;
+                                    top: -256px;
+                                  "
+                                ></div>
+                              </div>
+                            </div>
+                            <div
+                              style="
+                                width: 40px;
+                                height: 40px;
+                                overflow: hidden;
+                                position: absolute;
+                                left: -20px;
+                                top: -40px;
+                                z-index: 0;
+                              "
+                            >
+                              <img
+                                alt=""
+                                src="https://static.lenskart.com/media/owndays/img/pin.svg"
+                                draggable="false"
+                                style="
+                                  position: absolute;
+                                  left: 0px;
+                                  top: 0px;
+                                  user-select: none;
+                                  width: 40px;
+                                  height: 40px;
+                                  border: 0px;
+                                  padding: 0px;
+                                  margin: 0px;
+                                  max-width: none;
+                                  opacity: 1;
+                                "
+                              />
+                            </div>
+                          </div>
+                          <div
+                            style="
+                              position: absolute;
+                              left: 0px;
+                              top: 0px;
+                              z-index: 0;
+                            "
+                          >
+                            <div
+                              style="
+                                position: absolute;
+                                z-index: 983;
+                                transform: matrix(1, 0, 0, 1, -1, -69);
+                              "
+                            >
+                              <div
+                                style="
+                                  position: absolute;
+                                  left: 0px;
+                                  top: 0px;
+                                  width: 256px;
+                                  height: 256px;
+                                  transition: opacity 200ms linear;
+                                "
+                              >
+                                <img
+                                  draggable="false"
+                                  alt=""
+                                  role="presentation"
+                                  src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i17!2i103307!3i65042!4i256!2m3!1e0!2sm!3i748507932!3m13!2sen-GB!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;token=47664"
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                              <div
+                                style="
+                                  position: absolute;
+                                  left: -256px;
+                                  top: 0px;
+                                  width: 256px;
+                                  height: 256px;
+                                  transition: opacity 200ms linear;
+                                "
+                              >
+                                <img
+                                  draggable="false"
+                                  alt=""
+                                  role="presentation"
+                                  src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i17!2i103306!3i65042!4i256!2m3!1e0!2sm!3i748507932!3m13!2sen-GB!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;token=25998"
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                              <div
+                                style="
+                                  position: absolute;
+                                  left: -256px;
+                                  top: -256px;
+                                  width: 256px;
+                                  height: 256px;
+                                  transition: opacity 200ms linear;
+                                "
+                              >
+                                <img
+                                  draggable="false"
+                                  alt=""
+                                  role="presentation"
+                                  src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i17!2i103306!3i65041!4i256!2m3!1e0!2sm!3i748507932!3m13!2sen-GB!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;token=93308"
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                              <div
+                                style="
+                                  position: absolute;
+                                  left: 0px;
+                                  top: -256px;
+                                  width: 256px;
+                                  height: 256px;
+                                  transition: opacity 200ms linear;
+                                "
+                              >
+                                <img
+                                  draggable="false"
+                                  alt=""
+                                  role="presentation"
+                                  src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i17!2i103307!3i65041!4i256!2m3!1e0!2sm!3i748507932!3m13!2sen-GB!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;token=114974"
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                              <div
+                                style="
+                                  position: absolute;
+                                  left: 256px;
+                                  top: -256px;
+                                  width: 256px;
+                                  height: 256px;
+                                  transition: opacity 200ms linear;
+                                "
+                              >
+                                <img
+                                  draggable="false"
+                                  alt=""
+                                  role="presentation"
+                                  src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i17!2i103308!3i65041!4i256!2m3!1e0!2sm!3i748507860!3m13!2sen-GB!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;token=80272"
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                              <div
+                                style="
+                                  position: absolute;
+                                  left: 256px;
+                                  top: 0px;
+                                  width: 256px;
+                                  height: 256px;
+                                  transition: opacity 200ms linear;
+                                "
+                              >
+                                <img
+                                  draggable="false"
+                                  alt=""
+                                  role="presentation"
+                                  src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i17!2i103308!3i65042!4i256!2m3!1e0!2sm!3i748507860!3m13!2sen-GB!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;token=12962"
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                              <div
+                                style="
+                                  position: absolute;
+                                  left: 256px;
+                                  top: 256px;
+                                  width: 256px;
+                                  height: 256px;
+                                  transition: opacity 200ms linear;
+                                "
+                              >
+                                <img
+                                  draggable="false"
+                                  alt=""
+                                  role="presentation"
+                                  src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i17!2i103308!3i65043!4i256!2m3!1e0!2sm!3i748507921!3m13!2sen-GB!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;token=108242"
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                              <div
+                                style="
+                                  position: absolute;
+                                  left: 0px;
+                                  top: 256px;
+                                  width: 256px;
+                                  height: 256px;
+                                  transition: opacity 200ms linear;
+                                "
+                              >
+                                <img
+                                  draggable="false"
+                                  alt=""
+                                  role="presentation"
+                                  src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i17!2i103307!3i65043!4i256!2m3!1e0!2sm!3i748507932!3m13!2sen-GB!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;token=111425"
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                              <div
+                                style="
+                                  position: absolute;
+                                  left: -256px;
+                                  top: 256px;
+                                  width: 256px;
+                                  height: 256px;
+                                  transition: opacity 200ms linear;
+                                "
+                              >
+                                <img
+                                  draggable="false"
+                                  alt=""
+                                  role="presentation"
+                                  src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i17!2i103306!3i65043!4i256!2m3!1e0!2sm!3i748507932!3m13!2sen-GB!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;token=89759"
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                              <div
+                                style="
+                                  position: absolute;
+                                  left: -512px;
+                                  top: 256px;
+                                  width: 256px;
+                                  height: 256px;
+                                  transition: opacity 200ms linear;
+                                "
+                              >
+                                <img
+                                  draggable="false"
+                                  alt=""
+                                  role="presentation"
+                                  src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i17!2i103305!3i65043!4i256!2m3!1e0!2sm!3i748507932!3m13!2sen-GB!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;token=68093"
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                              <div
+                                style="
+                                  position: absolute;
+                                  left: -512px;
+                                  top: 0px;
+                                  width: 256px;
+                                  height: 256px;
+                                  transition: opacity 200ms linear;
+                                "
+                              >
+                                <img
+                                  draggable="false"
+                                  alt=""
+                                  role="presentation"
+                                  src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i17!2i103305!3i65042!4i256!2m3!1e0!2sm!3i748507932!3m13!2sen-GB!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;token=4332"
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                              <div
+                                style="
+                                  position: absolute;
+                                  left: -512px;
+                                  top: -256px;
+                                  width: 256px;
+                                  height: 256px;
+                                  transition: opacity 200ms linear;
+                                "
+                              >
+                                <img
+                                  draggable="false"
+                                  alt=""
+                                  role="presentation"
+                                  src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i17!2i103305!3i65041!4i256!2m3!1e0!2sm!3i748507932!3m13!2sen-GB!3sUS!5e18!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;key=AIzaSyBH3SwkuwI4c_eJLKM00WeO7BRTuEj8V6A&amp;token=71642"
+                                  style="
+                                    width: 256px;
+                                    height: 256px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          style="
+                            z-index: 3;
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            padding: 0px;
+                            border-width: 0px;
+                            margin: 0px;
+                            left: 0px;
+                            top: 0px;
+                            touch-action: pan-x pan-y;
+                          "
+                        >
+                          <div
+                            style="
+                              z-index: 4;
+                              position: absolute;
+                              left: 50%;
+                              top: 50%;
+                              width: 100%;
+                              will-change: transform;
+                              transform: translate(0px, 0px);
+                            "
+                          >
+                            <div
+                              style="
+                                position: absolute;
+                                left: 0px;
+                                top: 0px;
+                                z-index: 104;
+                                width: 100%;
+                              "
+                            ></div>
+                            <div
+                              style="
+                                position: absolute;
+                                left: 0px;
+                                top: 0px;
+                                z-index: 105;
+                                width: 100%;
+                              "
+                            ></div>
+                            <div
+                              style="
+                                position: absolute;
+                                left: 0px;
+                                top: 0px;
+                                z-index: 106;
+                                width: 100%;
+                              "
+                            >
+                              <slot></slot
+                              ><span
+                                id="50F737D1-4BA3-4915-BDF4-28FBFE99970B"
+                                aria-live="polite"
+                                style="
+                                  position: absolute;
+                                  width: 1px;
+                                  height: 1px;
+                                  margin: -1px;
+                                  padding: 0px;
+                                  overflow: hidden;
+                                  clip-path: inset(100%);
+                                  white-space: nowrap;
+                                  border: 0px;
+                                "
+                              ></span>
+                              <div
+                                title=""
+                                style="
+                                  width: 40px;
+                                  height: 40px;
+                                  overflow: hidden;
+                                  position: absolute;
+                                  cursor: pointer;
+                                  touch-action: none;
+                                  left: -20px;
+                                  top: -40px;
+                                  z-index: 0;
+                                "
+                                tabindex="-1"
+                              >
+                                <img
+                                  alt=""
+                                  src="https://maps.gstatic.com/mapfiles/transparent.png"
+                                  draggable="false"
+                                  style="
+                                    width: 40px;
+                                    height: 40px;
+                                    user-select: none;
+                                    border: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    max-width: none;
+                                  "
+                                />
+                              </div>
+                            </div>
+                            <div
+                              style="
+                                position: absolute;
+                                left: 0px;
+                                top: 0px;
+                                z-index: 107;
+                                width: 100%;
+                              "
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          class="gm-style-moc"
+                          style="
+                            z-index: 4;
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            padding: 0px;
+                            border-width: 0px;
+                            margin: 0px;
+                            left: 0px;
+                            top: 0px;
+                            transition-property: opacity, display;
+                            transition-behavior: allow-discrete;
+                            opacity: 0;
+                            transition-duration: 0.8s;
+                            display: none;
+                          "
+                        >
+                          <p class="gm-style-mot">
+                            Use ⌘ + scroll to zoom the map
+                          </p>
+                        </div>
+                      </div>
+                      <iframe
+                        aria-hidden="true"
+                        frameborder="0"
+                        tabindex="-1"
+                        style="
+                          z-index: -1;
+                          position: absolute;
+                          width: 100%;
+                          height: 100%;
+                          top: 0px;
+                          left: 0px;
+                          border: none;
+                          opacity: 0;
+                        "
+                      ></iframe>
+                      <div
+                        style="
+                          pointer-events: none;
+                          width: 100%;
+                          height: 100%;
+                          box-sizing: border-box;
+                          position: absolute;
+                          z-index: 1000002;
+                          opacity: 0;
+                          border: 2px solid rgb(26, 115, 232);
+                        "
+                      ></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div>
+                        <button
+                          draggable="false"
+                          aria-label="Toggle fullscreen view"
+                          title="Toggle fullscreen view"
+                          type="button"
+                          aria-pressed="false"
+                          class="gm-control-active gm-fullscreen-control"
+                          style="
+                            background: none rgb(255, 255, 255);
+                            border: 0px;
+                            margin: 10px;
+                            padding: 0px;
+                            text-transform: none;
+                            appearance: none;
+                            position: absolute;
+                            cursor: pointer;
+                            user-select: none;
+                            border-radius: 2px;
+                            height: 40px;
+                            width: 40px;
+                            box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                            overflow: hidden;
+                            display: none;
+                            top: 0px;
+                            right: 0px;
+                          "
+                        >
+                          <img
+                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E"
+                            alt=""
+                            style="height: 18px; width: 18px"
+                          /><img
+                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E"
+                            alt=""
+                            style="height: 18px; width: 18px"
+                          /><img
+                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E"
+                            alt=""
+                            style="height: 18px; width: 18px"
+                          />
+                        </button>
+                      </div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div>
+                        <div
+                          class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom"
+                          draggable="false"
+                          data-control-width="0"
+                          data-control-height="0"
+                          style="
+                            margin: 10px;
+                            user-select: none;
+                            position: absolute;
+                            display: none;
+                            bottom: 26px;
+                            left: 0px;
+                          "
+                        ></div>
+                      </div>
+                      <div>
+                        <div
+                          class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom"
+                          draggable="false"
+                          data-control-width="40"
+                          data-control-height="153"
+                          style="
+                            margin: 10px;
+                            user-select: none;
+                            position: absolute;
+                            bottom: 167px;
+                            right: 40px;
+                          "
+                        >
+                          <div
+                            class="gmnoprint"
+                            data-control-width="40"
+                            data-control-height="40"
+                            style="display: none; position: absolute"
+                          >
+                            <div
+                              style="
+                                background-color: rgb(255, 255, 255);
+                                box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                                border-radius: 2px;
+                                width: 40px;
+                                height: 40px;
+                              "
+                            >
+                              <button
+                                draggable="false"
+                                aria-label="Rotate map clockwise"
+                                title="Rotate map clockwise"
+                                type="button"
+                                class="gm-control-active"
+                                style="
+                                  background: none;
+                                  display: none;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                  text-transform: none;
+                                  appearance: none;
+                                  position: relative;
+                                  cursor: pointer;
+                                  user-select: none;
+                                  left: 0px;
+                                  top: 0px;
+                                  overflow: hidden;
+                                  width: 40px;
+                                  height: 40px;
+                                "
+                              >
+                                <img
+                                  alt=""
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                                  style="width: 20px; height: 20px"
+                                /><img
+                                  alt=""
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                                  style="width: 20px; height: 20px"
+                                /><img
+                                  alt=""
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                                  style="width: 20px; height: 20px"
+                                />
+                              </button>
+                              <div
+                                style="
+                                  position: relative;
+                                  overflow: hidden;
+                                  width: 30px;
+                                  height: 1px;
+                                  margin: 0px 5px;
+                                  background-color: rgb(230, 230, 230);
+                                  display: none;
+                                "
+                              ></div>
+                              <button
+                                draggable="false"
+                                aria-label="Rotate map counterclockwise"
+                                title="Rotate map counterclockwise"
+                                type="button"
+                                class="gm-control-active"
+                                style="
+                                  background: none;
+                                  display: none;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                  text-transform: none;
+                                  appearance: none;
+                                  position: relative;
+                                  cursor: pointer;
+                                  user-select: none;
+                                  left: 0px;
+                                  top: 0px;
+                                  overflow: hidden;
+                                  width: 40px;
+                                  height: 40px;
+                                  transform: scaleX(-1);
+                                "
+                              >
+                                <img
+                                  alt=""
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                                  style="width: 20px; height: 20px"
+                                /><img
+                                  alt=""
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                                  style="width: 20px; height: 20px"
+                                /><img
+                                  alt=""
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                                  style="width: 20px; height: 20px"
+                                />
+                              </button>
+                              <div
+                                style="
+                                  position: relative;
+                                  overflow: hidden;
+                                  width: 30px;
+                                  height: 1px;
+                                  margin: 0px 5px;
+                                  background-color: rgb(230, 230, 230);
+                                  display: none;
+                                "
+                              ></div>
+                              <button
+                                draggable="false"
+                                aria-label="Tilt map"
+                                title="Tilt map"
+                                type="button"
+                                class="gm-tilt gm-control-active"
+                                style="
+                                  background: none;
+                                  display: block;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                  text-transform: none;
+                                  appearance: none;
+                                  position: relative;
+                                  cursor: pointer;
+                                  user-select: none;
+                                  top: 0px;
+                                  left: 0px;
+                                  overflow: hidden;
+                                  width: 40px;
+                                  height: 40px;
+                                "
+                              >
+                                <img
+                                  alt=""
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"
+                                  style="width: 18px"
+                                /><img
+                                  alt=""
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"
+                                  style="width: 18px"
+                                /><img
+                                  alt=""
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"
+                                  style="width: 18px"
+                                />
+                              </button>
+                            </div>
+                          </div>
+                          <gmp-internal-camera-control
+                            data-control-width="40"
+                            data-control-height="40"
+                            draggable="false"
+                            class="gmnoprint"
+                            style="
+                              position: absolute;
+                              cursor: pointer;
+                              user-select: none;
+                              left: 0px;
+                              top: 0px;
+                            "
+                            ><button
+                              draggable="false"
+                              aria-label="Map camera controls"
+                              title="Map camera controls"
+                              type="button"
+                              class="gm-control-active"
+                              aria-expanded="false"
+                              aria-controls="48252686-08DE-4B63-AF76-98D0829889CA"
+                              style="
+                                background: none 6px center / 28px no-repeat
+                                  rgb(255, 255, 255);
+                                display: block;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                text-transform: none;
+                                appearance: none;
+                                position: relative;
+                                cursor: pointer;
+                                user-select: none;
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                              "
+                            >
+                              <img
+                                src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2019.175l2.125-2.125%201.425%201.4L12%2022l-3.55-3.55%201.425-1.4L12%2019.175zM4.825%2012l2.125%202.125-1.4%201.425L2%2012l3.55-3.55%201.4%201.425L4.825%2012zm14.35%200L17.05%209.875l1.4-1.425L22%2012l-3.55%203.55-1.4-1.425L19.175%2012zM12%204.825L9.875%206.95%208.45%205.55%2012%202l3.55%203.55-1.425%201.4L12%204.825z%22%20fill%3D%22%23666%22/%3E%3C/svg%3E"
+                                alt=""
+                                style="height: 28px; width: 28px"
+                              /><img
+                                src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2019.175l2.125-2.125%201.425%201.4L12%2022l-3.55-3.55%201.425-1.4L12%2019.175zM4.825%2012l2.125%202.125-1.4%201.425L2%2012l3.55-3.55%201.4%201.425L4.825%2012zm14.35%200L17.05%209.875l1.4-1.425L22%2012l-3.55%203.55-1.4-1.425L19.175%2012zM12%204.825L9.875%206.95%208.45%205.55%2012%202l3.55%203.55-1.425%201.4L12%204.825z%22%20fill%3D%22%23666%22/%3E%3C/svg%3E"
+                                alt=""
+                                style="height: 28px; width: 28px"
+                              /><img
+                                src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2019.175l2.125-2.125L15.55%2018.45%2012%2022%208.45%2018.45%209.875%2017.05%2012%2019.175zM4.825%2012l2.125%202.125L5.55%2015.55%202%2012%205.55%208.45%206.95%209.875%204.825%2012zM19.175%2012L17.05%209.875%2018.45%208.45%2022%2012%2018.45%2015.55%2017.05%2014.125%2019.175%2012zM12%204.825L9.875%206.95%208.45%205.55%2012%202%2015.55%205.55%2014.125%206.95%2012%204.825z%22%20fill%3D%22%231A73E8%22/%3E%3C/svg%3E"
+                                alt=""
+                                style="height: 28px; width: 28px"
+                              /><img
+                                src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2019.175l2.125-2.125L15.55%2018.45%2012%2022%208.45%2018.45%209.875%2017.05%2012%2019.175zM4.825%2012l2.125%202.125L5.55%2015.55%202%2012%205.55%208.45%206.95%209.875%204.825%2012zM19.175%2012L17.05%209.875%2018.45%208.45%2022%2012%2018.45%2015.55%2017.05%2014.125%2019.175%2012zM12%204.825L9.875%206.95%208.45%205.55%2012%202%2015.55%205.55%2014.125%206.95%2012%204.825z%22%20fill%3D%22%23D1D1D1%22/%3E%3C/svg%3E"
+                                alt=""
+                                style="height: 28px; width: 28px"
+                              />
+                            </button>
+                            <menu
+                              id="48252686-08DE-4B63-AF76-98D0829889CA"
+                              style="
+                                list-style: none;
+                                padding: 0px;
+                                display: none;
+                                position: absolute;
+                                z-index: 999999;
+                                margin: 10px;
+                                width: 140px;
+                                height: 140px;
+                                right: 100%;
+                                top: -60px;
+                              "
+                            >
+                              <li>
+                                <button
+                                  draggable="false"
+                                  aria-label="Move up"
+                                  title="Move up"
+                                  type="button"
+                                  class="gm-control-active"
+                                  style="
+                                    background: none 6px center / 28px no-repeat
+                                      rgb(255, 255, 255);
+                                    display: block;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    text-transform: none;
+                                    appearance: none;
+                                    position: absolute;
+                                    cursor: pointer;
+                                    user-select: none;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                                    top: 0px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                  "
+                                >
+                                  <img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2010.8l-4.6%204.6L6%2014l6-6%206%206-1.4%201.4-4.6-4.6z%22%20fill%3D%22%23666%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2010.8l-4.6%204.6L6%2014l6-6%206%206L16.6%2015.4%2012%2010.8z%22%20fill%3D%22%23333%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2010.8l-4.6%204.6L6%2014l6-6%206%206-1.4%201.4-4.6-4.6z%22%20fill%3D%22%23666%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2010.8l-4.6%204.6L6%2014l6-6%206%206L16.6%2015.4%2012%2010.8z%22%20fill%3D%22%23D1D1D1%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  />
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  draggable="false"
+                                  aria-label="Move left"
+                                  title="Move left"
+                                  type="button"
+                                  class="gm-control-active"
+                                  style="
+                                    background: none 6px center / 28px no-repeat
+                                      rgb(255, 255, 255);
+                                    display: block;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    text-transform: none;
+                                    appearance: none;
+                                    position: absolute;
+                                    cursor: pointer;
+                                    user-select: none;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                                    bottom: 50%;
+                                    left: 0px;
+                                    transform: translateY(50%);
+                                  "
+                                >
+                                  <img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M14%2018l-6-6%206-6%201.4%201.4-4.6%204.6%204.6%204.6L14%2018z%22%20fill%3D%22%23666%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M14%2018l-6-6%206-6L15.4%207.4%2010.8%2012%2015.4%2016.6%2014%2018z%22%20fill%3D%22%23333%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M14%2018l-6-6%206-6%201.4%201.4-4.6%204.6%204.6%204.6L14%2018z%22%20fill%3D%22%23666%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M14%2018l-6-6%206-6L15.4%207.4%2010.8%2012%2015.4%2016.6%2014%2018z%22%20fill%3D%22%23D1D1D1%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  />
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  draggable="false"
+                                  aria-label="Move right"
+                                  title="Move right"
+                                  type="button"
+                                  class="gm-control-active"
+                                  style="
+                                    background: none 6px center / 28px no-repeat
+                                      rgb(255, 255, 255);
+                                    display: block;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    text-transform: none;
+                                    appearance: none;
+                                    position: absolute;
+                                    cursor: pointer;
+                                    user-select: none;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                                    bottom: 50%;
+                                    right: 0px;
+                                    transform: translateY(50%);
+                                  "
+                                >
+                                  <img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12.6%2012L8%207.4%209.4%206l6%206-6%206L8%2016.6l4.6-4.6z%22%20fill%3D%22%23666%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12.6%2012L8%207.4%209.4%206l6%206-6%206L8%2016.6%2012.6%2012z%22%20fill%3D%22%23333%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12.6%2012L8%207.4%209.4%206l6%206-6%206L8%2016.6l4.6-4.6z%22%20fill%3D%22%23666%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12.6%2012L8%207.4%209.4%206l6%206-6%206L8%2016.6%2012.6%2012z%22%20fill%3D%22%23D1D1D1%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  />
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  draggable="false"
+                                  aria-label="Move down"
+                                  title="Move down"
+                                  type="button"
+                                  class="gm-control-active"
+                                  style="
+                                    background: none 6px center / 28px no-repeat
+                                      rgb(255, 255, 255);
+                                    display: block;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    text-transform: none;
+                                    appearance: none;
+                                    position: absolute;
+                                    cursor: pointer;
+                                    user-select: none;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                                    bottom: 0px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                  "
+                                >
+                                  <img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2015.4l-6-6L7.4%208l4.6%204.6L16.6%208%2018%209.4l-6%206z%22%20fill%3D%22%23666%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2015.4l-6-6L7.4%208l4.6%204.6L16.6%208%2018%209.4l-6%206z%22%20fill%3D%22%23333%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2015.4l-6-6L7.4%208l4.6%204.6L16.6%208%2018%209.4l-6%206z%22%20fill%3D%22%23666%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2015.4l-6-6L7.4%208l4.6%204.6L16.6%208%2018%209.4l-6%206z%22%20fill%3D%22%23666%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  />
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  draggable="false"
+                                  aria-label="Zoom in"
+                                  title="Zoom in"
+                                  type="button"
+                                  class="gm-control-active"
+                                  style="
+                                    background: none 6px center / 28px no-repeat
+                                      rgb(255, 255, 255);
+                                    display: block;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    text-transform: none;
+                                    appearance: none;
+                                    position: absolute;
+                                    cursor: pointer;
+                                    user-select: none;
+                                    overflow: hidden;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                                    top: 0px;
+                                    right: 0px;
+                                  "
+                                >
+                                  <img
+                                    src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23666%22%3E%3Cpath%20d%3D%22M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240z%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23333%22%3E%3Cpath%20d%3D%22M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240z%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23111%22%3E%3Cpath%20d%3D%22M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240z%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23d1d1d1%22%3E%3Cpath%20d%3D%22M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240z%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  />
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  draggable="false"
+                                  aria-label="Zoom out"
+                                  title="Zoom out"
+                                  type="button"
+                                  class="gm-control-active"
+                                  style="
+                                    background: none 6px center / 28px no-repeat
+                                      rgb(255, 255, 255);
+                                    display: block;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    text-transform: none;
+                                    appearance: none;
+                                    position: absolute;
+                                    cursor: pointer;
+                                    user-select: none;
+                                    overflow: hidden;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                                    bottom: 0px;
+                                    right: 0px;
+                                  "
+                                >
+                                  <img
+                                    src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23666%22%3E%3Cpath%20d%3D%22M200-440v-80h560v80H200z%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23333%22%3E%3Cpath%20d%3D%22M200-440v-80h560v80H200z%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23111%22%3E%3Cpath%20d%3D%22M200-440v-80h560v80H200z%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  /><img
+                                    src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23d1d1d1%22%3E%3Cpath%20d%3D%22M200-440v-80h560v80H200z%22/%3E%3C/svg%3E"
+                                    alt=""
+                                    style="height: 28px; width: 28px"
+                                  />
+                                </button>
+                              </li>
+                            </menu>
+                          </gmp-internal-camera-control>
+                          <div
+                            class="gmnoprint"
+                            data-control-width="40"
+                            data-control-height="81"
+                            style="position: absolute; left: 0px; top: 72px"
+                          >
+                            <div
+                              draggable="false"
+                              style="
+                                user-select: none;
+                                box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                                border-radius: 2px;
+                                cursor: pointer;
+                                background-color: rgb(255, 255, 255);
+                                width: 40px;
+                                height: 81px;
+                              "
+                            >
+                              <button
+                                draggable="false"
+                                aria-label="Zoom in"
+                                title="Zoom in"
+                                type="button"
+                                class="gm-control-active"
+                                style="
+                                  background: none rgb(255, 255, 255);
+                                  display: block;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                  text-transform: none;
+                                  appearance: none;
+                                  position: relative;
+                                  cursor: pointer;
+                                  user-select: none;
+                                  overflow: hidden;
+                                  width: 40px;
+                                  height: 40px;
+                                  top: 0px;
+                                  left: 0px;
+                                "
+                              >
+                                <img
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23666%22%3E%3Cpath%20d%3D%22M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240z%22/%3E%3C/svg%3E"
+                                  alt=""
+                                  style="height: 28px; width: 28px"
+                                /><img
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23333%22%3E%3Cpath%20d%3D%22M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240z%22/%3E%3C/svg%3E"
+                                  alt=""
+                                  style="height: 28px; width: 28px"
+                                /><img
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23111%22%3E%3Cpath%20d%3D%22M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240z%22/%3E%3C/svg%3E"
+                                  alt=""
+                                  style="height: 28px; width: 28px"
+                                /><img
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23d1d1d1%22%3E%3Cpath%20d%3D%22M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240z%22/%3E%3C/svg%3E"
+                                  alt=""
+                                  style="height: 28px; width: 28px"
+                                />
+                              </button>
+                              <div
+                                style="
+                                  position: relative;
+                                  overflow: hidden;
+                                  width: 30px;
+                                  height: 1px;
+                                  margin: 0px 5px;
+                                  background-color: rgb(230, 230, 230);
+                                  top: 0px;
+                                "
+                              ></div>
+                              <button
+                                draggable="false"
+                                aria-label="Zoom out"
+                                title="Zoom out"
+                                type="button"
+                                class="gm-control-active"
+                                style="
+                                  background: none rgb(255, 255, 255);
+                                  display: block;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                  text-transform: none;
+                                  appearance: none;
+                                  position: relative;
+                                  cursor: pointer;
+                                  user-select: none;
+                                  overflow: hidden;
+                                  width: 40px;
+                                  height: 40px;
+                                  top: 0px;
+                                  left: 0px;
+                                "
+                              >
+                                <img
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23666%22%3E%3Cpath%20d%3D%22M200-440v-80h560v80H200z%22/%3E%3C/svg%3E"
+                                  alt=""
+                                  style="height: 28px; width: 28px"
+                                /><img
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23333%22%3E%3Cpath%20d%3D%22M200-440v-80h560v80H200z%22/%3E%3C/svg%3E"
+                                  alt=""
+                                  style="height: 28px; width: 28px"
+                                /><img
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23111%22%3E%3Cpath%20d%3D%22M200-440v-80h560v80H200z%22/%3E%3C/svg%3E"
+                                  alt=""
+                                  style="height: 28px; width: 28px"
+                                /><img
+                                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%20fill%3D%22%23d1d1d1%22%3E%3Cpath%20d%3D%22M200-440v-80h560v80H200z%22/%3E%3C/svg%3E"
+                                  alt=""
+                                  style="height: 28px; width: 28px"
+                                />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            margin: 0px 5px;
+                            z-index: 1000000;
+                            position: absolute;
+                            left: 0px;
+                            bottom: 0px;
+                          "
+                        >
+                          <a
+                            target="_blank"
+                            rel="noopener"
+                            title="Open this area in Google Maps (opens a new window)"
+                            aria-label="Open this area in Google Maps (opens a new window)"
+                            href="https://maps.google.com/maps?ll=1.35594,103.74116&amp;z=17&amp;t=m&amp;hl=en-GB&amp;gl=US&amp;mapclient=apiv3"
+                            style="display: inline"
+                          >
+                            <div style="width: 66px; height: 26px">
+                              <img
+                                alt="Google"
+                                src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2069%2029%22%3E%3Cg%20opacity%3D%22.6%22%20fill%3D%22%23fff%22%20stroke%3D%22%23fff%22%20stroke-width%3D%221.5%22%3E%3Cpath%20d%3D%22M17.4706%207.33616L18.0118%206.79504%2017.4599%206.26493C16.0963%204.95519%2014.2582%203.94522%2011.7008%203.94522c-4.613699999999999%200-8.50262%203.7551699999999997-8.50262%208.395779999999998C3.19818%2016.9817%207.0871%2020.7368%2011.7008%2020.7368%2014.1712%2020.7368%2016.0773%2019.918%2017.574%2018.3689%2019.1435%2016.796%2019.5956%2014.6326%2019.5956%2012.957%2019.5956%2012.4338%2019.5516%2011.9316%2019.4661%2011.5041L19.3455%2010.9012H10.9508V14.4954H15.7809C15.6085%2015.092%2015.3488%2015.524%2015.0318%2015.8415%2014.403%2016.4629%2013.4495%2017.1509%2011.7008%2017.1509%209.04835%2017.1509%206.96482%2015.0197%206.96482%2012.341%206.96482%209.66239%209.04835%207.53119%2011.7008%207.53119%2013.137%207.53119%2014.176%208.09189%2014.9578%208.82348L15.4876%209.31922%2016.0006%208.80619%2017.4706%207.33616z%22/%3E%3Cpath%20d%3D%22M24.8656%2020.7286C27.9546%2020.7286%2030.4692%2018.3094%2030.4692%2015.0594%2030.4692%2011.7913%2027.953%209.39011%2024.8656%209.39011%2021.7783%209.39011%2019.2621%2011.7913%2019.2621%2015.0594c0%203.25%202.514499999999998%205.6692%205.6035%205.6692zM24.8656%2012.8282C25.8796%2012.8282%2026.8422%2013.6652%2026.8422%2015.0594%2026.8422%2016.4399%2025.8769%2017.2905%2024.8656%2017.2905%2023.8557%2017.2905%2022.8891%2016.4331%2022.8891%2015.0594%2022.8891%2013.672%2023.853%2012.8282%2024.8656%2012.8282z%22/%3E%3Cpath%20d%3D%22M35.7511%2017.2905v0H35.7469C34.737%2017.2905%2033.7703%2016.4331%2033.7703%2015.0594%2033.7703%2013.672%2034.7343%2012.8282%2035.7469%2012.8282%2036.7608%2012.8282%2037.7234%2013.6652%2037.7234%2015.0594%2037.7234%2016.4439%2036.7554%2017.2962%2035.7511%2017.2905zM35.7387%2020.7286C38.8277%2020.7286%2041.3422%2018.3094%2041.3422%2015.0594%2041.3422%2011.7913%2038.826%209.39011%2035.7387%209.39011%2032.6513%209.39011%2030.1351%2011.7913%2030.1351%2015.0594%2030.1351%2018.3102%2032.6587%2020.7286%2035.7387%2020.7286z%22/%3E%3Cpath%20d%3D%22M51.953%2010.4357V9.68573H48.3999V9.80826C47.8499%209.54648%2047.1977%209.38187%2046.4808%209.38187%2043.5971%209.38187%2041.0168%2011.8998%2041.0168%2015.0758%2041.0168%2017.2027%2042.1808%2019.0237%2043.8201%2019.9895L43.7543%2020.0168%2041.8737%2020.797%2041.1808%2021.0844%2041.4684%2021.7772C42.0912%2023.2776%2043.746%2025.1469%2046.5219%2025.1469%2047.9324%2025.1469%2049.3089%2024.7324%2050.3359%2023.7376%2051.3691%2022.7367%2051.953%2021.2411%2051.953%2019.2723v-8.8366zm-7.2194%209.9844L44.7334%2020.4196C45.2886%2020.6201%2045.878%2020.7286%2046.4808%2020.7286%2047.1616%2020.7286%2047.7866%2020.5819%2048.3218%2020.3395%2048.2342%2020.7286%2048.0801%2021.0105%2047.8966%2021.2077%2047.6154%2021.5099%2047.1764%2021.7088%2046.5219%2021.7088%2045.61%2021.7088%2045.0018%2021.0612%2044.7336%2020.4201zM46.6697%2012.8282C47.6419%2012.8282%2048.5477%2013.6765%2048.5477%2015.084%2048.5477%2016.4636%2047.6521%2017.2987%2046.6697%2017.2987%2045.6269%2017.2987%2044.6767%2016.4249%2044.6767%2015.084%2044.6767%2013.7086%2045.6362%2012.8282%2046.6697%2012.8282zM55.7387%205.22083v-.75H52.0788V20.4412H55.7387V5.220829999999999z%22/%3E%3Cpath%20d%3D%22M63.9128%2016.0614L63.2945%2015.6492%2062.8766%2016.2637C62.4204%2016.9346%2061.8664%2017.3069%2061.0741%2017.3069%2060.6435%2017.3069%2060.3146%2017.2088%2060.0544%2017.0447%2059.9844%2017.0006%2059.9161%2016.9496%2059.8498%2016.8911L65.5497%2014.5286%2066.2322%2014.2456%2065.9596%2013.5589%2065.7406%2013.0075C65.2878%2011.8%2063.8507%209.39832%2060.8278%209.39832%2057.8445%209.39832%2055.5034%2011.7619%2055.5034%2015.0676%2055.5034%2018.2151%2057.8256%2020.7369%2061.0659%2020.7369%2063.6702%2020.7369%2065.177%2019.1378%2065.7942%2018.2213L66.2152%2017.5963%2065.5882%2017.1783%2063.9128%2016.0614zM61.3461%2012.8511L59.4108%2013.6526C59.7903%2013.0783%2060.4215%2012.7954%2060.9017%2012.7954%2061.067%2012.7954%2061.2153%2012.8161%2061.3461%2012.8511z%22/%3E%3C/g%3E%3Cpath%20d%3D%22M11.7008%2019.9868C7.48776%2019.9868%203.94818%2016.554%203.94818%2012.341%203.94818%208.12803%207.48776%204.69522%2011.7008%204.69522%2014.0331%204.69522%2015.692%205.60681%2016.9403%206.80583L15.4703%208.27586C14.5751%207.43819%2013.3597%206.78119%2011.7008%206.78119%208.62108%206.78119%206.21482%209.26135%206.21482%2012.341%206.21482%2015.4207%208.62108%2017.9009%2011.7008%2017.9009%2013.6964%2017.9009%2014.8297%2017.0961%2015.5606%2016.3734%2016.1601%2015.7738%2016.5461%2014.9197%2016.6939%2013.7454h-4.9931V11.6512h7.0298C18.8045%2012.0207%2018.8456%2012.4724%2018.8456%2012.957%2018.8456%2014.5255%2018.4186%2016.4637%2017.0389%2017.8434%2015.692%2019.2395%2013.9838%2019.9868%2011.7008%2019.9868z%22%20fill%3D%22%234285F4%22/%3E%3Cpath%20d%3D%22M29.7192%2015.0594C29.7192%2017.8927%2027.5429%2019.9786%2024.8656%2019.9786%2022.1884%2019.9786%2020.0121%2017.8927%2020.0121%2015.0594%2020.0121%2012.2096%2022.1884%2010.1401%2024.8656%2010.1401%2027.5429%2010.1401%2029.7192%2012.2096%2029.7192%2015.0594zM27.5922%2015.0594C27.5922%2013.2855%2026.3274%2012.0782%2024.8656%2012.0782S22.1391%2013.2937%2022.1391%2015.0594C22.1391%2016.8086%2023.4038%2018.0405%2024.8656%2018.0405S27.5922%2016.8168%2027.5922%2015.0594z%22%20fill%3D%22%23E94235%22/%3E%3Cpath%20d%3D%22M40.5922%2015.0594C40.5922%2017.8927%2038.4159%2019.9786%2035.7387%2019.9786%2033.0696%2019.9786%2030.8851%2017.8927%2030.8851%2015.0594%2030.8851%2012.2096%2033.0614%2010.1401%2035.7387%2010.1401%2038.4159%2010.1401%2040.5922%2012.2096%2040.5922%2015.0594zM38.4734%2015.0594C38.4734%2013.2855%2037.2087%2012.0782%2035.7469%2012.0782%2034.2851%2012.0782%2033.0203%2013.2937%2033.0203%2015.0594%2033.0203%2016.8086%2034.2851%2018.0405%2035.7469%2018.0405%2037.2087%2018.0487%2038.4734%2016.8168%2038.4734%2015.0594z%22%20fill%3D%22%23FABB05%22/%3E%3Cpath%20d%3D%22M51.203%2010.4357v8.8366C51.203%2022.9105%2049.0595%2024.3969%2046.5219%2024.3969%2044.132%2024.3969%2042.7031%2022.7955%2042.161%2021.4897L44.0417%2020.7095C44.3784%2021.5143%2045.1997%2022.4588%2046.5219%2022.4588%2048.1479%2022.4588%2049.1499%2021.4487%2049.1499%2019.568V18.8617H49.0759C48.5914%2019.4612%2047.6552%2019.9786%2046.4808%2019.9786%2044.0171%2019.9786%2041.7668%2017.8352%2041.7668%2015.0758%2041.7668%2012.3%2044.0253%2010.1319%2046.4808%2010.1319%2047.6552%2010.1319%2048.5914%2010.6575%2049.0759%2011.2323H49.1499V10.4357H51.203zM49.2977%2015.084C49.2977%2013.3512%2048.1397%2012.0782%2046.6697%2012.0782%2045.175%2012.0782%2043.9267%2013.3429%2043.9267%2015.084%2043.9267%2016.8004%2045.175%2018.0487%2046.6697%2018.0487%2048.1397%2018.0487%2049.2977%2016.8004%2049.2977%2015.084z%22%20fill%3D%22%234285F4%22/%3E%3Cpath%20d%3D%22M54.9887%205.22083V19.6912H52.8288V5.220829999999999H54.9887z%22%20fill%3D%22%2334A853%22/%3E%3Cpath%20d%3D%22M63.4968%2016.6854L65.1722%2017.8023C64.6301%2018.6072%2063.3244%2019.9869%2061.0659%2019.9869%2058.2655%2019.9869%2056.2534%2017.827%2056.2534%2015.0676%2056.2534%2012.1439%2058.2901%2010.1483%2060.8278%2010.1483%2063.3818%2010.1483%2064.6301%2012.1768%2065.0408%2013.2773L65.2625%2013.8357%2058.6843%2016.5623C59.1853%2017.5478%2059.9737%2018.0569%2061.0741%2018.0569%2062.1746%2018.0569%2062.9384%2017.5067%2063.4968%2016.6854zM58.3312%2014.9115L62.7331%2013.0884C62.4867%2012.4724%2061.764%2012.0454%2060.9017%2012.0454%2059.8012%2012.0454%2058.2737%2013.0145%2058.3312%2014.9115z%22%20fill%3D%22%23E94235%22/%3E%3C/svg%3E"
+                                draggable="false"
+                                style="
+                                  position: absolute;
+                                  left: 0px;
+                                  top: 0px;
+                                  width: 66px;
+                                  height: 26px;
+                                  user-select: none;
+                                  border: 0px;
+                                  padding: 0px;
+                                  margin: 0px;
+                                "
+                              />
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div></div>
+                      <div>
+                        <div
+                          style="
+                            display: inline-flex;
+                            position: absolute;
+                            right: 0px;
+                            bottom: 0px;
+                          "
+                        >
+                          <div class="gmnoprint" style="z-index: 1000001">
+                            <div
+                              draggable="false"
+                              class="gm-style-cc"
+                              style="
+                                user-select: none;
+                                position: relative;
+                                height: 14px;
+                                line-height: 14px;
+                              "
+                            >
+                              <div
+                                style="
+                                  opacity: 0.7;
+                                  width: 100%;
+                                  height: 100%;
+                                  position: absolute;
+                                "
+                              >
+                                <div style="width: 1px"></div>
+                                <div
+                                  style="
+                                    background-color: rgb(245, 245, 245);
+                                    width: auto;
+                                    height: 100%;
+                                    margin-left: 1px;
+                                  "
+                                ></div>
+                              </div>
+                              <div
+                                style="
+                                  position: relative;
+                                  padding-right: 6px;
+                                  padding-left: 6px;
+                                  box-sizing: border-box;
+                                  font-family: Roboto, Arial, sans-serif;
+                                  font-size: 10px;
+                                  color: rgb(0, 0, 0);
+                                  white-space: nowrap;
+                                  direction: ltr;
+                                  text-align: right;
+                                  vertical-align: middle;
+                                  display: inline-block;
+                                "
+                              >
+                                <button
+                                  draggable="false"
+                                  aria-label="Keyboard shortcuts"
+                                  title="Keyboard shortcuts"
+                                  type="button"
+                                  style="
+                                    background: none;
+                                    display: inline-block;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    text-transform: none;
+                                    appearance: none;
+                                    position: relative;
+                                    cursor: pointer;
+                                    user-select: none;
+                                    color: rgb(0, 0, 0);
+                                    font-family: inherit;
+                                    line-height: inherit;
+                                  "
+                                >
+                                  Keyboard shortcuts
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="gmnoprint" style="z-index: 1000001">
+                            <div
+                              draggable="false"
+                              class="gm-style-cc"
+                              style="
+                                user-select: none;
+                                position: relative;
+                                height: 14px;
+                                line-height: 14px;
+                              "
+                            >
+                              <div
+                                style="
+                                  opacity: 0.7;
+                                  width: 100%;
+                                  height: 100%;
+                                  position: absolute;
+                                "
+                              >
+                                <div style="width: 1px"></div>
+                                <div
+                                  style="
+                                    background-color: rgb(245, 245, 245);
+                                    width: auto;
+                                    height: 100%;
+                                    margin-left: 1px;
+                                  "
+                                ></div>
+                              </div>
+                              <div
+                                style="
+                                  position: relative;
+                                  padding-right: 6px;
+                                  padding-left: 6px;
+                                  box-sizing: border-box;
+                                  font-family: Roboto, Arial, sans-serif;
+                                  font-size: 10px;
+                                  color: rgb(0, 0, 0);
+                                  white-space: nowrap;
+                                  direction: ltr;
+                                  text-align: right;
+                                  vertical-align: middle;
+                                  display: inline-block;
+                                "
+                              >
+                                <button
+                                  draggable="false"
+                                  aria-label="Map Data"
+                                  title="Map Data"
+                                  type="button"
+                                  style="
+                                    background: none;
+                                    border: 0px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    text-transform: none;
+                                    appearance: none;
+                                    position: relative;
+                                    cursor: pointer;
+                                    user-select: none;
+                                    color: rgb(0, 0, 0);
+                                    font-family: inherit;
+                                    line-height: inherit;
+                                    display: none;
+                                  "
+                                >
+                                  Map Data</button
+                                ><span style="">Map data ©2025 Google</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="gmnoscreen">
+                            <div
+                              style="
+                                font-family: Roboto, Arial, sans-serif;
+                                font-size: 11px;
+                                color: rgb(0, 0, 0);
+                                direction: ltr;
+                                text-align: right;
+                                background-color: rgb(245, 245, 245);
+                              "
+                            >
+                              Map data ©2025 Google
+                            </div>
+                          </div>
+                          <button
+                            draggable="false"
+                            aria-label="Map scale: 50 m per 42 pixels"
+                            title="Map scale: 50 m per 42 pixels"
+                            type="button"
+                            class="gm-style-cc"
+                            aria-describedby="9CE93F69-21C7-479C-A25C-A8C670802016"
+                            style="
+                              background: none;
+                              display: none;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              text-transform: none;
+                              appearance: none;
+                              position: relative;
+                              cursor: pointer;
+                              user-select: none;
+                              height: 14px;
+                              line-height: 14px;
+                            "
+                          >
+                            <div
+                              style="
+                                opacity: 0.7;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                              "
+                            >
+                              <div style="width: 1px"></div>
+                              <div
+                                style="
+                                  background-color: rgb(245, 245, 245);
+                                  width: auto;
+                                  height: 100%;
+                                  margin-left: 1px;
+                                "
+                              ></div>
+                            </div>
+                            <div
+                              style="
+                                position: relative;
+                                padding-right: 6px;
+                                padding-left: 6px;
+                                box-sizing: border-box;
+                                font-family: Roboto, Arial, sans-serif;
+                                font-size: 10px;
+                                color: rgb(0, 0, 0);
+                                white-space: nowrap;
+                                direction: ltr;
+                                text-align: right;
+                                vertical-align: middle;
+                                display: inline-block;
+                              "
+                            >
+                              <span style="color: rgb(0, 0, 0)"
+                                >50 m&nbsp;</span
+                              >
+                              <div
+                                style="
+                                  position: relative;
+                                  display: inline-block;
+                                  height: 8px;
+                                  bottom: -1px;
+                                  width: 46px;
+                                "
+                              >
+                                <div
+                                  style="
+                                    width: 100%;
+                                    height: 4px;
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 0px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 4px;
+                                    height: 8px;
+                                    left: 0px;
+                                    top: 0px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 4px;
+                                    height: 8px;
+                                    position: absolute;
+                                    right: 0px;
+                                    bottom: 0px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    background-color: rgb(0, 0, 0);
+                                    height: 2px;
+                                    left: 1px;
+                                    bottom: 1px;
+                                    right: 1px;
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    position: absolute;
+                                    width: 2px;
+                                    height: 6px;
+                                    left: 1px;
+                                    top: 1px;
+                                    background-color: rgb(0, 0, 0);
+                                  "
+                                ></div>
+                                <div
+                                  style="
+                                    width: 2px;
+                                    height: 6px;
+                                    position: absolute;
+                                    background-color: rgb(0, 0, 0);
+                                    bottom: 1px;
+                                    right: 1px;
+                                  "
+                                ></div>
+                              </div>
+                            </div>
+                            <span
+                              id="9CE93F69-21C7-479C-A25C-A8C670802016"
+                              style="display: none"
+                              >Click to toggle between metric and imperial
+                              units</span
+                            >
+                          </button>
+                          <div
+                            class="gmnoprint gm-style-cc"
+                            draggable="false"
+                            style="
+                              z-index: 1000001;
+                              user-select: none;
+                              position: relative;
+                              height: 14px;
+                              line-height: 14px;
+                            "
+                          >
+                            <div
+                              style="
+                                opacity: 0.7;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                              "
+                            >
+                              <div style="width: 1px"></div>
+                              <div
+                                style="
+                                  background-color: rgb(245, 245, 245);
+                                  width: auto;
+                                  height: 100%;
+                                  margin-left: 1px;
+                                "
+                              ></div>
+                            </div>
+                            <div
+                              style="
+                                position: relative;
+                                padding-right: 6px;
+                                padding-left: 6px;
+                                box-sizing: border-box;
+                                font-family: Roboto, Arial, sans-serif;
+                                font-size: 10px;
+                                color: rgb(0, 0, 0);
+                                white-space: nowrap;
+                                direction: ltr;
+                                text-align: right;
+                                vertical-align: middle;
+                                display: inline-block;
+                              "
+                            >
+                              <a
+                                aria-label="Terms (opens in new tab)"
+                                href="https://www.google.com/intl/en-GB_US/help/terms_maps.html"
+                                target="_blank"
+                                rel="noopener"
+                                style="
+                                  text-decoration: none;
+                                  cursor: pointer;
+                                  color: rgb(0, 0, 0);
+                                "
+                                >Terms</a
+                              >
+                            </div>
+                          </div>
+                          <div
+                            draggable="false"
+                            class="gm-style-cc"
+                            style="
+                              user-select: none;
+                              position: relative;
+                              height: 14px;
+                              line-height: 14px;
+                            "
+                          >
+                            <div
+                              style="
+                                opacity: 0.7;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                              "
+                            >
+                              <div style="width: 1px"></div>
+                              <div
+                                style="
+                                  background-color: rgb(245, 245, 245);
+                                  width: auto;
+                                  height: 100%;
+                                  margin-left: 1px;
+                                "
+                              ></div>
+                            </div>
+                            <div
+                              style="
+                                position: relative;
+                                padding-right: 6px;
+                                padding-left: 6px;
+                                box-sizing: border-box;
+                                font-family: Roboto, Arial, sans-serif;
+                                font-size: 10px;
+                                color: rgb(0, 0, 0);
+                                white-space: nowrap;
+                                direction: ltr;
+                                text-align: right;
+                                vertical-align: middle;
+                                display: inline-block;
+                              "
+                            >
+                              <a
+                                target="_blank"
+                                rel="noopener"
+                                title="Report errors in the road map or imagery to Google"
+                                dir="ltr"
+                                href="https://www.google.com/maps/@1.35594,103.74116,17z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
+                                style="
+                                  font-family: Roboto, Arial, sans-serif;
+                                  font-size: 10px;
+                                  text-decoration: none;
+                                  position: relative;
+                                  color: rgb(0, 0, 0);
+                                "
+                                >Report a map error</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="information-details__access-view-map">
+                  <a
+                    href="https://www.google.com/maps/@1.35594,103.74116,17z?entry=ttu"
+                    rel="noreferrer"
+                    target="_blank"
+                    >View larger map</a
+                  >
+                </div>
+                <a
+                  class="information-details__btn" id="more-details-btn"
+                  href="https://www.owndays.com/stores/sg?storeId=OD1048"
+                  >More Details</a
+                >
+              </div>
+            </div>
+            <ul class="information-details__sns">
+              <li>
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://www.owndays.com/sg/en/information/1048"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><svg
+                    fill="#999"
+                    height="22"
+                    viewBox="0 0 448 512"
+                    width="22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/intent/tweet?url=https://www.owndays.com/sg/en/information/1048"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><svg
+                    fill="#999"
+                    height="22"
+                    viewBox="0 0 512 512"
+                    width="22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="http://line.me/R/msg/text/?https://www.owndays.com/sg/en/information/1048"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><svg
+                    fill="#999"
+                    height="22"
+                    viewBox="0 0 512 512"
+                    width="22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M311 196.8v81.3c0 2.1-1.6 3.7-3.7 3.7h-13c-1.3 0-2.4-.7-3-1.5l-37.3-50.3v48.2c0 2.1-1.6 3.7-3.7 3.7h-13c-2.1 0-3.7-1.6-3.7-3.7V196.9c0-2.1 1.6-3.7 3.7-3.7h12.9c1.1 0 2.4 .6 3 1.6l37.3 50.3V196.9c0-2.1 1.6-3.7 3.7-3.7h13c2.1-.1 3.8 1.6 3.8 3.5zm-93.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 2.1 1.6 3.7 3.7 3.7h13c2.1 0 3.7-1.6 3.7-3.7V196.8c0-1.9-1.6-3.7-3.7-3.7zm-31.4 68.1H150.3V196.8c0-2.1-1.6-3.7-3.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 1 .3 1.8 1 2.5c.7 .6 1.5 1 2.5 1h52.2c2.1 0 3.7-1.6 3.7-3.7v-13c0-1.9-1.6-3.7-3.5-3.7zm193.7-68.1H327.3c-1.9 0-3.7 1.6-3.7 3.7v81.3c0 1.9 1.6 3.7 3.7 3.7h52.2c2.1 0 3.7-1.6 3.7-3.7V265c0-2.1-1.6-3.7-3.7-3.7H344V247.7h35.5c2.1 0 3.7-1.6 3.7-3.7V230.9c0-2.1-1.6-3.7-3.7-3.7H344V213.5h35.5c2.1 0 3.7-1.6 3.7-3.7v-13c-.1-1.9-1.7-3.7-3.7-3.7zM512 93.4V419.4c-.1 51.2-42.1 92.7-93.4 92.6H92.6C41.4 511.9-.1 469.8 0 418.6V92.6C.1 41.4 42.2-.1 93.4 0H419.4c51.2 .1 92.7 42.1 92.6 93.4zM441.6 233.5c0-83.4-83.7-151.3-186.4-151.3s-186.4 67.9-186.4 151.3c0 74.7 66.3 137.4 155.9 149.3c21.8 4.7 19.3 12.7 14.4 42.1c-.8 4.7-3.8 18.4 16.1 10.1s107.3-63.2 146.5-108.2c27-29.7 39.9-59.8 39.9-93.1z"
+                    ></path></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="information-details__footer">
+            <div
+              class="information-details__container information-details__container--lg"
+            >
+              <div class="information-details__footer-inner">
+                <a href="/sg/en/information"
+                  ><svg
+                    fill="#999"
+                    height="18"
+                    viewBox="0 0 320 512"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                    ></path></svg
+                  >Back to list</a
+                >
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+   
+
+    <script charset="UTF-8" src="/sg/en/main.2e7a9313336c6f88dcc8.js"></script>
+    <script type="text/javascript">
+      function initSprinklrChatBot() {
+        var userInfo =
+          arguments.length > 0 && arguments[0] !== undefined
+            ? arguments[0]
+            : {};
+        var device =
+          arguments.length > 1 && arguments[1] !== undefined
+            ? arguments[1]
+            : false;
+        var loginStatus =
+          arguments.length > 2 && arguments[2] !== undefined
+            ? arguments[2]
+            : false;
+        var telephone = userInfo.telephone,
+          firstName = userInfo.firstName,
+          lastName = userInfo.lastName,
+          email = userInfo.email,
+          orderNo = userInfo.orderNo,
+          countryCode = userInfo.countryCode,
+          platform = userInfo.platform,
+          phoneNumber = userInfo.phoneNumber,
+          emailId = userInfo.emailId;
+        window.sprChatSettings = window.sprChatSettings || {};
+        window.sprChatSettings = _objectSpread(
+          _objectSpread(
+            _objectSpread(
+              {
+                appId: "626fcf8563ac4521314470a6_app_600019149",
+                skin: "MODERN",
+                landingScreen: "LAST_CONVERSATION",
+              },
+              device && {
+                device: "MOBILE",
+              }
+            ),
+            loginStatus && {
+              user: {
+                id: telephone || phoneNumber || "",
+                //mandatory - can send phone number
+                firstName: firstName || "",
+                //optional, can send empty
+                lastName: lastName || "",
+                //optional, can send empty
+                profileImageUrl: "",
+                //optional, can send empty
+                phoneNo: telephone || phoneNumber || "",
+                //optional
+                email: email || emailId || "",
+                //optional
+                hash: generateHash(userInfo), //mandatory - you need to generate your own
+              },
+            }
+          ),
+          loginStatus && {
+            userContext: {
+              _c_628fa2a6e10d7d26ffae932e: orderNo || "",
+              // order_no
+              _c_628fa2e3e10d7d26ffae99c9: "",
+              // unique_id
+              _c_628fa30ee10d7d26ffae9d66: "",
+              // action
+              _c_629059cde7872557aeec559f: "",
+              // customer_id
+              _c_628fa33ae10d7d26ffaea0b0:
+                process.env.BUILD_ENV === "development" ? "preprod" : "prod",
+              // env
+              // "_c_628fa33ae10d7d26ffaea0b0": "", // env
+              _c_628fa36be10d7d26ffaea88b: "",
+              // username
+              _c_628fa39ae10d7d26ffaead3d: "",
+              // External_Conversation_ID
+              _c_628fa3c5e10d7d26ffaeb1a3: "",
+              // External_Customer_ID
+              _c_628fa3f7e10d7d26ffaeb7a9: "",
+              // auth_id
+              _c_628fa430e10d7d26ffaebb90: "",
+              // pincode
+              _c_628fa46ae10d7d26ffaec0e6: "",
+              // auth_code
+              _c_5cc9a7d0e4b01904c8dfc965: "",
+              // language
+              _c_62a1a40fd7c1ad35cd4a6323: platform || "",
+              // device
+              _c_628fa497e10d7d26ffaec4c9: countryCode || "", // country
+              // "_c_628fa497e10d7d26ffaec4c9": ""  // country
+            },
+          }
+        );
+        (function () {
+          var t = window,
+            e = t.sprChat,
+            a = e && !!e.loaded,
+            n = document,
+            _r = function r() {
+              _r.m(arguments);
+            };
+          (_r.q = []),
+            (_r.m = function (t) {
+              _r.q.push(t);
+            }),
+            (t.sprChat = a ? e : _r);
+          var o = function o() {
+            var e = n.createElement("script");
+            (e.type = "text/javascript"),
+              (e.async = !0),
+              (e.src =
+                "https://prod4-live-chat.sprinklr.com/api/livechat/handshake/widget/" +
+                t.sprChatSettings.appId),
+              (e.onerror = function () {
+                t.sprChat.loaded = !1;
+              }),
+              (e.onload = function () {
+                t.sprChat.loaded = !0;
+              });
+            var a = n.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(e, a);
+          };
+          "function" == typeof e
+            ? a
+              ? e("update", t.sprChatSettings)
+              : o()
+            : "loading" !== n.readyState
+            ? o()
+            : n.addEventListener("DOMContentLoaded", o);
+        })();
+      }
+    </script>
+    <script type="text/javascript">
+      (function (w, d, t, r, u) {
+        var f, n, i;
+        (w[u] = w[u] || []),
+          (f = function () {
+            var o = { ti: "134598098" };
+            (o.q = w[u]), (w[u] = new UET(o)), w[u].push("pageLoad");
+          }),
+          (n = d.createElement(t)),
+          (n.src = r),
+          (n.async = 1),
+          (n.onload = n.onreadystatechange =
+            function () {
+              var s = this.readyState;
+              (s && s !== "loaded" && s !== "complete") ||
+                (f(), (n.onload = n.onreadystatechange = null));
+            }),
+          (i = d.getElementsByTagName(t)[0]),
+          i.parentNode.insertBefore(n, i);
+      })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    </script>
+    <script type="text/javascript">
+      window.postpayAsyncInit = function () {
+        postpay.init({
+          merchantId: "id_a09b6ac5a0e44d26bae0b1f4e4954383",
+          sandbox: false,
+          theme: "light",
+          locale: "en",
+        });
+      };
+    </script>
+    <script
+      clientid="owndays"
+      service="in.juspay.hyperpay"
+      src="https://public.releases.juspay.in/hyper-sdk-web/HyperServices.js"
+    ></script>
+    <div style="display: none; visibility: hidden">
+      <script>
+        !(function (b, e, f, g, a, c, d) {
+          b.fbq ||
+            ((a = b.fbq =
+              function () {
+                a.callMethod
+                  ? a.callMethod.apply(a, arguments)
+                  : a.queue.push(arguments);
+              }),
+            b._fbq || (b._fbq = a),
+            (a.push = a),
+            (a.loaded = !0),
+            (a.version = "2.0"),
+            (a.queue = []),
+            (c = e.createElement(f)),
+            (c.async = !0),
+            (c.src = g),
+            (d = e.getElementsByTagName(f)[0]),
+            d.parentNode.insertBefore(c, d));
+        })(
+          window,
+          document,
+          "script",
+          "https://connect.facebook.net/en_US/fbevents.js"
+        );
+        fbq("init", "1510426245838375");
+        fbq("track", "PageView");
+      </script>
+      <noscript></noscript>
+    </div>
+    <style>
+      .wzrk-overlay {
+        display: none !important;
+      }
+    </style>
+    <script type="text/javascript" id="" charset="">
+      var clevertap = {
+        event: [],
+        profile: [],
+        account: [],
+        onUserLogin: [],
+        notifications: [],
+        privacy: [],
+      };
+      clevertap.account.push({ id: "6Z4-46Z-Z96Z" });
+      clevertap.privacy.push({ optOut: !1 });
+      clevertap.privacy.push({ useIP: !1 });
+      (function () {
+        var a = document.createElement("script");
+        a.type = "text/javascript";
+        a.async = !0;
+        a.src =
+          ("https:" == document.location.protocol
+            ? "https://d2r1yp2w7bby2u.cloudfront.net"
+            : "http://static.clevertap.com") + "/js/clevertap.min.js";
+        var b = document.getElementsByTagName("script")[0];
+        b.parentNode.insertBefore(a, b);
+      })();
+    </script>
+    <script
+      id=""
+      text=""
+      charset=""
+      type="text/javascript"
+      src="https://yutoads.com/audience.js"
+    ></script>
+    <script type="text/javascript" id="" charset="">
+      !(function (d, g, e) {
+        d.TiktokAnalyticsObject = e;
+        var a = (d[e] = d[e] || []);
+        a.methods =
+          "page track identify instances debug on off once ready alias group enableCookie disableCookie holdConsent revokeConsent grantConsent".split(
+            " "
+          );
+        a.setAndDefer = function (b, c) {
+          b[c] = function () {
+            b.push([c].concat(Array.prototype.slice.call(arguments, 0)));
+          };
+        };
+        for (d = 0; d < a.methods.length; d++) a.setAndDefer(a, a.methods[d]);
+        a.instance = function (b) {
+          b = a._i[b] || [];
+          for (var c = 0; c < a.methods.length; c++)
+            a.setAndDefer(b, a.methods[c]);
+          return b;
+        };
+        a.load = function (b, c) {
+          var f = "https://analytics.tiktok.com/i18n/pixel/events.js";
+          a._i = a._i || {};
+          a._i[b] = [];
+          a._i[b]._u = f;
+          a._t = a._t || {};
+          a._t[b] = +new Date();
+          a._o = a._o || {};
+          a._o[b] = c || {};
+          c = document.createElement("script");
+          c.type = "text/javascript";
+          c.async = !0;
+          c.src = f + "?sdkid\x3d" + b + "\x26lib\x3d" + e;
+          b = document.getElementsByTagName("script")[0];
+          b.parentNode.insertBefore(c, b);
+        };
+        a.load("CTTO0KRC77UDUQAR23O0");
+        a.page();
+      })(window, document, "ttq");
+    </script>
+    <script type="text/javascript" id="" charset="">
+      (function (a, e, b, f, g, c, d) {
+        a[b] =
+          a[b] ||
+          function () {
+            (a[b].q = a[b].q || []).push(arguments);
+          };
+        c = e.createElement(f);
+        c.async = 1;
+        c.src = "https://www.clarity.ms/tag/" + g;
+        d = e.getElementsByTagName(f)[0];
+        d.parentNode.insertBefore(c, d);
+      })(window, document, "clarity", "script", "qx92mwqclb");
+    </script>
+    <iframe
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe>
+    <script type="text/javascript" id="" charset="">
+      !(function (b, e, f, g, a, c, d) {
+        b.saq ||
+          ((a = b.saq =
+            function () {
+              a.callMethod
+                ? a.callMethod.apply(a, arguments)
+                : a.queue.push(arguments);
+            }),
+          b._saq || (b._saq = a),
+          (a.push = a),
+          (a.loaded = !0),
+          (a.version = "1.0"),
+          (a.queue = []),
+          (c = e.createElement(f)),
+          (c.async = !0),
+          (c.src = g),
+          (d = e.getElementsByTagName(f)[0]),
+          d.parentNode.insertBefore(c, d));
+      })(
+        window,
+        document,
+        "script",
+        "https://tags.srv.stackadapt.com/events.js"
+      );
+      saq("ts", "FLzFqiXLl9dVkW8kXq13NQ");
+    </script>
+    <div
+      id="batBeacon520404645484"
+      style="width: 0px; height: 0px; display: none; visibility: hidden"
+    >
+      <img
+        id="batBeacon404674269493"
+        width="0"
+        height="0"
+        alt=""
+        src="https://bat.bing.com/action/0?ti=134598098&amp;Ver=2&amp;mid=71112460-596e-432f-a3f7-bd7427e81ff1&amp;bo=1&amp;sid=5f4094008c0311f0bacb17249e09362b&amp;vid=85a6b6e072af11f0a3789f0dcd6edd65&amp;vids=0&amp;msclkid=N&amp;pi=918639831&amp;lg=en-GB&amp;sw=1792&amp;sh=1120&amp;sc=24&amp;tl=Thu.%2019%20Dec.%202024%20OWNDAYS%20Le%20Quest%20Outlet%20Store%20New%20Open!&amp;kw=Le%20Quest%20Outlet%20Store,New%20Open,spectacles,glasses,optical%20shop,eye%20glasses,sunglasses,eyewear,pc%20lenses,frame&amp;p=https%3A%2F%2Fwww.owndays.com%2Fsg%2Fen%2Finformation%2F1048&amp;r=https%3A%2F%2Fwww.google.com%2F&amp;lt=1892&amp;evt=pageLoad&amp;sv=2&amp;cdb=AQAQ&amp;rn=813027"
+        style="width: 0px; height: 0px; display: none; visibility: hidden"
+      />
+    </div>
+    <script>
+      (function () {
+        if (window.__mapInitInstalled) return;
+        window.__mapInitInstalled = true;
+
+        function installZoomInFallback(mapInstance) {
+          try {
+            setTimeout(function () {
+              var mapDiv =
+                mapInstance && mapInstance.getDiv ? mapInstance.getDiv() : null;
+              var zoomInBtn = mapDiv
+                ? mapDiv.querySelector('button[aria-label="Zoom in"]')
+                : null;
+              if (zoomInBtn && !zoomInBtn.__wired) {
+                zoomInBtn.__wired = true;
+                zoomInBtn.addEventListener("click", function (e) {
+                  try {
+                    mapInstance.setZoom(mapInstance.getZoom() + 1);
+                  } catch (e) {}
+                });
+              }
+            }, 300);
+          } catch (e) {}
+        }
+
+        function mountMapIntoAccess() {
+          try {
+            var access = document.querySelector(".information-details__access");
+            if (!access) return null;
+
+            var mapHost = access.querySelector(
+              'div[style*="position: relative"][style*="height: 450px"]'
+            );
+            if (!mapHost) {
+              var divs = access.getElementsByTagName("div");
+              for (var i = 0; i < divs.length; i++) {
+                var el = divs[i];
+                if (!el || !el.style) continue;
+                if (
+                  el.style.position === "relative" &&
+                  el.style.overflow === "hidden" &&
+                  (el.style.height || "").indexOf("450px") !== -1
+                ) {
+                  mapHost = el;
+                  break;
+                }
+              }
+            }
+            if (!mapHost) return null;
+
+            mapHost.innerHTML =
+              '<div id="store-map" style="width:100%;height:100%"></div>';
+            return document.getElementById("store-map");
+          } catch (_) {
+            return null;
+          }
+        }
+
+        function doInit() {
+          if (window.__mapInitDone) return; // guard against double init
+          window.__mapInitDone = true;
+          try {
+            var container = mountMapIntoAccess();
+            if (!container || !window.google || !google.maps) return;
+            var center = { lat: 1.35594, lng: 103.74116 };
+            var map = new google.maps.Map(container, {
+              center: center,
+              zoom: 17,
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              gestureHandling: "cooperative",
+              fullscreenControl: true,
+              streetViewControl: false,
+              rotateControl: true,
+              zoomControl: true,
+              mapTypeControl: false,
+              tilt: 0,
+            });
+            new google.maps.Marker({
+              position: center,
+              map: map,
+              icon: {
+                url: "https://static.lenskart.com/media/owndays/img/pin.svg",
+                scaledSize: new google.maps.Size(40, 40),
+                anchor: new google.maps.Point(20, 40),
+              },
+            });
+            installZoomInFallback(map);
+          } catch (_) {}
+        }
+
+        // Expose for Google callback
+        window.initMap = doInit;
+
+        // If API already loaded, run immediately
+        if (window.google && google.maps) {
+          try {
+            doInit();
+          } catch (_) {}
+        }
+      })();
+    </script>
+  </body>
+</html>
