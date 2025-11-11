@@ -18,6 +18,9 @@
           "type": "TYPE_BANNER_CAROUSEL",
           "data": [
             {
+              "html": "<a class='getGaData' data-event='Banner Clicks' data-category='Banner Clicks' data-action='CAROUSEL' data-label='Harry Potter × OWNDAYS' href='/sg/en/news/harrypotter' data-creative-name='TYPE_BANNER' data-promotion-id='Harry-Potter' data-promotion-name='Harry-Potter'><img title='Harry Potter × OWNDAYS' class='mySlides' src='https://static.lenskart.com/owndays/img/news/harrypotter/2025/PC.webp' style='width:100%'/></a>"
+            },
+            {
               "html": "<a class='getGaData' data-event='Banner Clicks' data-category='Banner Clicks' data-action='CAROUSEL' data-label='home-online-exclusive-sale' href='/sg/en/megadraw' data-creative-name='TYPE_BANNER' data-promotion-id='home-online-exclusive-sale' data-promotion-name='home new carousel online exclusive sale'><img title='Grand Draw' class='mySlides' src='https://static5.lenskart.com/media/uploads/Desktop-Banner-home-hero-0711.png' style='width:100%'/></a>"
             },
             {
