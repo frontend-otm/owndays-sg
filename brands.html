@@ -337,6 +337,7 @@
           move: {
             title: "OWNDAYS | MOVE | Eyewear for the active",
             logo: "https://static.lenskart.com/owndays/img/brands/move/MOVE_brand_logo.webp",
+            logoExtended: true,
             slides: [
               "https://static.lenskart.com/owndays/img/brands/move/brand_slider1.webp",
               "https://static.lenskart.com/owndays/img/brands/move/brand_slider2.webp",
@@ -490,6 +491,7 @@
           squidgame: {
             title: "SQUID GAME × OWNDAYS",
             logo: "https://static1.lenskart.com/owndays/img/brands/squid-game/logo.webp",
+            logoExtended: true,
             slides: [
               "https://static1.lenskart.com/owndays/img/brands/squid-game/brand_slider1.webp",
               "https://static1.lenskart.com/owndays/img/brands/squid-game/brand_slider2.webp",
@@ -507,6 +509,7 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
           tomandjerry: {
             title: "TOM and JERRY × OWNDAYS",
             logo: "https://static1.lenskart.com/owndays/img/brands/tomandjerry/brand_logo.webp",
+            logoExtended: true,
             slides: [
               "https://static1.lenskart.com/owndays/img/brands/tomandjerry/brand_slider1.webp",
               "https://static1.lenskart.com/owndays/img/brands/tomandjerry/brand_slider2.webp",
@@ -522,6 +525,7 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
           pompompurin: {
             title: "OWNDAYS × POMPOMPURIN",
             logo: "https://static.lenskart.com/media/owndays/img/brands/pompompurin/brand_logo.webp",
+            logoExtended: true,
             slides: [
               "https://static.lenskart.com/media/owndays/img/brands/pompompurin/brand_slider1.webp",
               "https://static.lenskart.com/media/owndays/img/brands/pompompurin/brand_slider2.webp",
@@ -538,6 +542,7 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
           toystory: {
             title: "TOY STORY × OWNDAYS",
             logo: "https://static1.lenskart.com/owndays/img/brands/toystory/brand_logo.webp",
+            logoExtended: true,
             slides: [
               "https://static1.lenskart.com/owndays/img/brands/toystory/brand_slider1.webp",
               "https://static1.lenskart.com/owndays/img/brands/toystory/brand_slider2.webp",
@@ -554,6 +559,7 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
           huawei2: {
             title: "OWNDAYS × HUAWEI Eyewear 2",
             logo: "https://static1.lenskart.com/owndays/img/brands/huawei2/brand_logo.webp",
+            logoExtended: true,
             slides: [
               "https://static1.lenskart.com/owndays/img/brands/huawei2/brand_slider1.webp",
               "https://static1.lenskart.com/owndays/img/brands/huawei2/brand_slider2.webp",
@@ -573,6 +579,7 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
           ditalancier: {
             title: "OWNDAYS × DITA Lancier",
             logo: "https://static.lenskart.com/media/owndays/img/brands/dita-lancier-new/logo.webp",
+            logoExtended: true,
             slides: [
               "https://static.lenskart.com/media/owndays/img/brands/dita-lancier/img-1.webp",
               "https://static.lenskart.com/media/owndays/img/brands/dita-lancier/img-2.webp",
@@ -587,6 +594,7 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
           gundam5zeon: {
             title: "ZEON EXCLUSIVE EYEGLASSES & SUNGLASSES",
             logo: "https://static.lenskart.com/media/owndays/img/brands/gundam5-zeon-new/logo.webp",
+            logoExtended: true,
             slides: [
               "https://static.lenskart.com/media/owndays/img/brands/gundam5-zeon/img-1.webp",
               "https://static.lenskart.com/media/owndays/img/brands/gundam5-zeon/img-2.webp",
@@ -647,6 +655,7 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
           kuromi: {
             title: "Kuromi × OWNDAYS",
             logo: "https://static.lenskart.com/media/owndays/img/brands/kuromi-new/logo.webp",
+            logoExtended: true,
             slides: [
               "https://static.lenskart.com/media/owndays/img/brands/kuromi/img-1.webp",
               "https://static.lenskart.com/media/owndays/img/brands/kuromi/img-2.webp",
@@ -726,7 +735,7 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
     </div>
 
     <div class="brands__details-content">
-      <h2 class="brands__details-logo">${data.title}
+      <h2 class="brands__details-logo ${data.logoExtended ? 'brands__details-logo--expanded' : ''}">${data.title}
         <img src="${data.logo}" alt="${data.title}">
       </h2>
       <p class="brands__details-recommended">Recommended for : ${data.recommended}</p>
