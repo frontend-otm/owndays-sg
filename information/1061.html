@@ -28,6 +28,13 @@
 
     <link rel="stylesheet" href="https://static.lenskart.com/owndays/libs/normalize/normalize.min.css" />
     <link rel="stylesheet" href="/css/information.css" />
+    <style>
+        #map {
+            height: 450px;
+        }
+    </style>
+
+    <script src="/js/google-maps.js"></script>
 </head>
 
 <body>
@@ -58,13 +65,17 @@
                     <h2>Store Details</h2>
                     <ul>
                         <li>
-                            <strong>Address</strong>
+                            <strong>Address</strong>90 Hougang Ave 10, #01-11 Hougang Mall Singapore 538766
                         </li>
                         <li><strong>Operating Hours</strong>11:00-22:00</li>
                     </ul>
                 </div>
                 <div class="information-details__access">
                     <h2>Access</h2>
+                    <div id="map" data-lat="1.372455" data-lng="103.8938277" data-title="OWNDAYS HOUGANG MALL"></div>
+                    <div class="information-details__access-view-map">
+                        <a href="https://maps.app.goo.gl/ihYXy2uTRcKiCAir7" rel="noreferrer" target="_blank">View larger map</a>
+                    </div>
                     <a class="information-details__btn" id="more-details-btn" href="https://www.owndays.com/stores/sg?storeId=OD1061">More Details</a>
                 </div>
             </div>
@@ -105,6 +116,8 @@
             </div>
         </div>
     </main>
+
+    <script src="/js/information.js"></script>
 </body>
 
 </html>
