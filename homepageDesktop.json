@@ -95,9 +95,8 @@
       ],
       "blockType": "TOP_BLOCK"
     },
-
     {
-      "bottomSpace": "10", 
+      "bottomSpace": "10",
       "data": [
         {
           "type": "TYPE_BANNER",
@@ -111,7 +110,6 @@
       ],
       "blockType": "TOP_BLOCK"
     },
-
     {
       "bottomSpace": "14",
       "data": [
@@ -216,7 +214,6 @@
       "blockType": "TOP_BLOCK",
       "bottomSpace": "11"
     },
-    
     {
       "data": [
         {
@@ -232,14 +229,13 @@
       "blockType": "TOP_BLOCK",
       "bottomSpace": "11"
     },
-
     {
       "data": [
         {
           "type": "TYPE_BANNER",
           "data": [
             {
-              "html": "<center><h4 class='font-head mt70'>INFORMATION</h4><div class=odInformation><div class=odInformation__cards><div class=odInformation__card><a class='odInformation__cardItem od_link' href=/sg/en/information/1058><img class=odInformation__image src=https://static.lenskart.com/owndays/img/information/1058/main.webp alt='Grand Opening of OWNDAYS NOVENA SQUARE on Friday, Sep. 26, 2025'><div class=odInformation__footer><div class=odInformation__meta><div>2025.09.19</div><div class=odInformation__border></div><div>Latest Information</div></div><div class=odInformation__label>Grand Opening of OWNDAYS NOVENA SQUARE on Friday, Sep. 26, 2025</div></div></a></div><div class=odInformation__card><a class='odInformation__cardItem od_link' href=/sg/en/information/1053><img class=odInformation__image src=https://static.lenskart.com/owndays/img/information/1053/main.webp alt='Grand Opening of OWNDAYS JEM on Friday, July 11, 2025'><div class=odInformation__footer><div class=odInformation__meta><div>2025.07.04</div><div class=odInformation__border></div><div>Latest Information</div></div><div class=odInformation__label>Grand Opening of OWNDAYS JEM on Friday, July 11, 2025</div></div></a></div><div class=odInformation__card><a class='odInformation__cardItem od_link' href=/sg/en/information/1052><img class=odInformation__image src=https://static.lenskart.com/media/owndays/minified/information-1.webp alt='Sat. 1 Mar. 2025 OWNDAYS Punggol Coast Mall Store New Open!'><div class=odInformation__footer><div class=odInformation__meta><div>2025.02.27</div><div class=odInformation__border></div><div>Latest Information</div></div><div class=odInformation__label>Sat. 1 Mar. 2025 OWNDAYS Punggol Coast Mall Store New Open!</div></div></a></div><div class=odInformation__card><a class='odInformation__cardItem od_link' href=/sg/en/information/1048><img class=odInformation__image src=https://static.lenskart.com/media/owndays/minified/information-2.webp alt='Thu. 19 Dec. 2024 OWNDAYS Le Quest Outlet Store New Open!'><div class=odInformation__footer><div class=odInformation__meta><div>2024.12.12</div><div class=odInformation__border></div><div>Latest Information</div></div><div class=odInformation__label>Thu. 19 Dec. 2024 OWNDAYS Le Quest Outlet Store New Open!</div></div></a></div><div class=odInformation__card><a class='odInformation__cardItem od_link' href=/sg/en/information/5002><img class=odInformation__image src=https://static.lenskart.com/media/owndays/minified/information-3.webp alt='Announcement on Product Line Changes'><div class=odInformation__footer><div class=odInformation__meta><div>2024.10.31</div><div class=odInformation__border></div><div>Press Release</div></div><div class=odInformation__label>Announcement on Product Line Changes</div></div></a></div></div></div></center>",
+              "html": "<center><h4 class='font-head mt70'>INFORMATION</h4><div class=odInformation><div class=odInformation__cards><div class=odInformation__card><a class='odInformation__cardItem od_link'href=/sg/en/information/1061><img alt='OWNDAYS HOUGANG MALL'class=odInformation__image src=https://static1.lenskart.com/owndays/img/information/1061/main.webp><div class=odInformation__footer><div class=odInformation__meta><div>2024.11.21</div><div class=odInformation__border></div><div>Latest Information</div></div><div class=odInformation__label>Grand Opening of OWNDAYS HOUGANG MALL on Monday November 24, 2025</div></div></a></div><div class=odInformation__card><a class='odInformation__cardItem od_link'href=/sg/en/information/1058><img alt='Grand Opening of OWNDAYS NOVENA SQUARE on Friday, Sep. 26, 2025'class=odInformation__image src=https://static.lenskart.com/owndays/img/information/1058/main.webp><div class=odInformation__footer><div class=odInformation__meta><div>2025.09.19</div><div class=odInformation__border></div><div>Latest Information</div></div><div class=odInformation__label>Grand Opening of OWNDAYS NOVENA SQUARE on Friday, Sep. 26, 2025</div></div></a></div><div class=odInformation__card><a class='odInformation__cardItem od_link'href=/sg/en/information/1053><img alt='Grand Opening of OWNDAYS JEM on Friday, July 11, 2025'class=odInformation__image src=https://static.lenskart.com/owndays/img/information/1053/main.webp><div class=odInformation__footer><div class=odInformation__meta><div>2025.07.04</div><div class=odInformation__border></div><div>Latest Information</div></div><div class=odInformation__label>Grand Opening of OWNDAYS JEM on Friday, July 11, 2025</div></div></a></div><div class=odInformation__card><a class='odInformation__cardItem od_link'href=/sg/en/information/1052><img alt='Sat. 1 Mar. 2025 OWNDAYS Punggol Coast Mall Store New Open!'class=odInformation__image src=https://static.lenskart.com/media/owndays/minified/information-1.webp><div class=odInformation__footer><div class=odInformation__meta><div>2025.02.27</div><div class=odInformation__border></div><div>Latest Information</div></div><div class=odInformation__label>Sat. 1 Mar. 2025 OWNDAYS Punggol Coast Mall Store New Open!</div></div></a></div><div class=odInformation__card><a class='odInformation__cardItem od_link'href=/sg/en/information/1048><img alt='Thu. 19 Dec. 2024 OWNDAYS Le Quest Outlet Store New Open!'class=odInformation__image src=https://static.lenskart.com/media/owndays/minified/information-2.webp><div class=odInformation__footer><div class=odInformation__meta><div>2024.12.12</div><div class=odInformation__border></div><div>Latest Information</div></div><div class=odInformation__label>Thu. 19 Dec. 2024 OWNDAYS Le Quest Outlet Store New Open!</div></div></a></div></div></div></center>",
               "css": "<style>.section-component{margin-left: 35px; margin-right: 35px}a{text-decoration:none;color:inherit;}.odInformation{margin:50px auto;padding:0 35px;}.odInformation__cards{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}.odInformation__cardItem{display:flex;flex-direction:column;border-radius:8px;overflow:hidden;background-color:#fff;box-shadow:0 4px 8px rgba(0,0,0,0.05);height:100%;}.odInformation__image{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}.odInformation__footer{padding:15px;display:flex;flex-direction:column;flex-grow:1;justify-content:space-between;}.odInformation__meta{display:flex;align-items:center;font-size:12px;color:#777;margin-bottom:10px;}.odInformation__border{width:1px;height:12px;background-color:#ccc;margin:0 8px;}.odInformation__label{font-size:16px;font-weight:600;line-height:1.4;}@media(max-width:1024px){.odInformation__cards{grid-template-columns:repeat(2,1fr);}}@media(max-width:600px){.odInformation__cards{grid-template-columns:1fr;}}</style>"
             }
           ]
