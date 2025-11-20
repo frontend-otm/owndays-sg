@@ -1,14 +1,14 @@
 $(function () {
   let $modalProductImgW = 0;
   let $modalProductImgH = 0;
-  
+
   /* SET BODY WIDTH CUSTOM PROPERTY */
   function getBodyWidth() {
     document.documentElement.style.setProperty('--body-w', document.body.clientWidth + 'px');
   }
   getBodyWidth();
   window.addEventListener('resize', getBodyWidth);
-  
+
   /* AOS */
   AOS.init({
     once: true,
@@ -18,11 +18,11 @@ $(function () {
 
   /* SET LINEUP GROUP TITLE HEIGHT */
   function setLineupGroupTitleHeight() {
-    $('.lineup__group').each(function(){
+    $('.lineup__group').each(function () {
       const $this = $(this);
       const $titleGroup = $this.find('.lineup__group-title');
       const $titleGroupH = $titleGroup.outerHeight();
-  
+
       $this.css('--title-h', $titleGroupH + 'px');
     });
   }
@@ -58,7 +58,7 @@ $(function () {
       }, 100);
     }
   }
-  
+
   $('.open-modal-product').on('click', function () {
     const $this = $(this);
     const $group = $this.closest('.group');
@@ -69,12 +69,12 @@ $(function () {
     $group.addClass('item-selected');
     $this.addClass('opacity-0').closest('.group').addClass('pointer-events-none');
     $checkbox.prop('checked', true);
-    
+
     setTimeout(() => {
       $('.fancybox__dialog').addClass('product-fancybox');
-     /*  $('input[name="modal-product"]:checked').closest('.product-slider__group').find('img.lazyload').each(function () {
-        lazySizes.loader.unveil($(this)[0])
-      }); */
+      /*  $('input[name="modal-product"]:checked').closest('.product-slider__group').find('img.lazyload').each(function () {
+         lazySizes.loader.unveil($(this)[0])
+       }); */
     }, 0);
 
     setTimeout(() => {
@@ -103,11 +103,11 @@ $(function () {
   $('[data-close="modal"]').on('click', function () {
     $('#modal_product .aos-animate').removeClass('aos-animate');
 
-    setTimeout(function() {
+    setTimeout(function () {
       $('#modal_product').modal('hide');
     }, 350);
   });
-  
+
   $('#modal_product').on('hidden.bs.modal', function () {
     setTimeout(() => {
       Fancybox.close();
@@ -125,7 +125,7 @@ $(function () {
   const $accordionTitles = $(".c-accordion__title");
   $('.c-accordion-open .c-accordion__content').show();
 
-  $accordionTitles.on("click", function() {
+  $accordionTitles.on("click", function () {
     const $this = $(this);
     const $parent = $this.closest(".c-accordion-container");
     const $li = $this.closest("li");
@@ -142,17 +142,17 @@ $(function () {
     }
   });
 
-  $accordionTitles.on("mousedown", function(e) {
+  $accordionTitles.on("mousedown", function (e) {
     e.preventDefault();
   });
   /* END ACCORDION */
-  
+
   /* FADE OUT LINEUP ITEMS */
   function checkElementSnapTop() {
     const windowTop = $(window).scrollTop();
     const className = 'opacity-0 pointer-events-none';
-    
-    $('.lineup__item').each(function() {
+
+    $('.lineup__item').each(function () {
       const $item = $(this);
       const itemTop = $item.offset().top;
       let offsetPercent = 0;
@@ -185,10 +185,9 @@ $(function () {
     var $scrollBarContainer = $('.scroll-bar');
     var $scrollBarLine = $('.scroll-bar-line');
     var $sectionShareH = $('.share').outerHeight();
-    var $sectionFooterH = $('.l-footer').outerHeight();
+    var $sectionFooterH = $('.l-footer').outerHeight() || 167;
     var $scrollBarTrackCloneTop = $('.scroll-bar-track-clone-top');
     var $scrollBarTrackCloneBottom = $('.scroll-bar-track-clone-bottom');
-    var $topInformationH = $('#top-information').outerHeight();
 
     if ($scrollBarTrack.length && $scrollBarContainer.is(':visible')) {
       var containerHeight = $(window).height();
@@ -201,18 +200,18 @@ $(function () {
       var percent = maxScroll > 0 ? scrollTop / maxScroll : 0;
       percent = Math.max(0, Math.min(1, percent));
       var translateY = percent * maxTrackMove;
-      
+
       $scrollBarTrack.removeClass('opacity-0');
       $scrollBarTrackCloneTop.addClass('opacity-0');
       $scrollBarTrackCloneBottom.addClass('opacity-0');
 
       if (scrollTop === 0) {
-        $scrollBarTrack.css({'transform': 'translateY(0)'}).addClass('opacity-0');
+        $scrollBarTrack.css({ 'transform': 'translateY(0)' }).addClass('opacity-0');
         $scrollBarTrackCloneTop.removeClass('opacity-0');
         return;
       }
 
-      if (scrollTop < (containerHeight + $topInformationH)) {
+      if (scrollTop < (containerHeight)) {
         $scrollBarTrack.addClass('opacity-0');
         $scrollBarTrackCloneTop.removeClass('opacity-0');
         return;
@@ -225,7 +224,7 @@ $(function () {
       }
 
       if (scrollTop > containerHeight && maxScroll > 0) {
-        $scrollBarTrack.css({'transform': 'translateY(' + (translateY - 30) + 'px)'}).removeClass('opacity-0');
+        $scrollBarTrack.css({ 'transform': 'translateY(' + (translateY - 30) + 'px)' }).removeClass('opacity-0');
       }
     }
   }
@@ -236,11 +235,11 @@ $(function () {
   /* END SCROLL BAR */
 
   /* SPLIT TEXT */
-  $(".c-text-animate-typing > span").each(function() {
+  $(".c-text-animate-typing > span").each(function () {
     let contents = $(this).contents();
     let newText = "";
 
-    contents.each(function() {
+    contents.each(function () {
       if (this.nodeType === 3) {
         let text = $(this).text();
         for (let i = 0; i < text.length; i++) {
@@ -253,7 +252,7 @@ $(function () {
     $(this).html(newText);
   });
 
-  $(".text-split").each(function() {
+  $(".text-split").each(function () {
     if ($(this).text().trim() === "") {
       $(this).html("&nbsp;");
     }
@@ -261,7 +260,7 @@ $(function () {
 
   $(".c-text-animate-typing").each(function () {
     let transitionDelay = 0;
-    $(this).find(".text-split").each(function() {
+    $(this).find(".text-split").each(function () {
       $(this).css("transition-delay", transitionDelay + "s");
       transitionDelay += 0.05;
     });
@@ -351,24 +350,24 @@ $(function () {
   }
 
   function handleScroll(targetSelector, actionCallback) {
-    $(targetSelector).each(function() {
+    $(targetSelector).each(function () {
       const $target = $(this);
-      
+
       if ($target.hasClass('aos-animate') && !$target.hasClass('is-shown')) {
         $target.addClass('is-shown');
         actionCallback($target);
       }
     });
   }
-  
+
   /* WINDOW SCROLL */
-  $(window).on('scroll', function() {
+  $(window).on('scroll', function () {
     checkElementSnapTop();
     if (window.innerWidth >= 1296) {
       updateScrollBar();
     }
 
-    handleScroll('.lineup', function() {
+    handleScroll('.lineup', function () {
       $('#modal_product').find('img.lazyload').each(function () {
         lazySizes.loader.unveil($(this)[0])
       });
