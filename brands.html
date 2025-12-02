@@ -102,8 +102,9 @@
       margin: 0 auto;
     }
 
-    .brands__details-logo img {
-      overflow: visible;
+    .brands__details-logo--zootopia img {
+      max-height: 40px;
+      overflow-y: visible;
     }
   </style>
   <link id="sa-css" rel="stylesheet" type="text/css" href="https://tags.srv.stackadapt.com/sa.css" media="all">
@@ -700,7 +701,7 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
     </div>
 
     <div class="brands__details-content">
-      <h2 class="brands__details-logo ${data.logoExtended ? 'brands__details-logo--expanded' : ''} ${data.logoFull ? 'brands__details-logo--full' : ''}">${data.title}
+      <h2 class="brands__details-logo ${data.logoExtended ? 'brands__details-logo--expanded' : ''} ${data.logoFull ? 'brands__details-logo--full' : ''} brands__details-logo--${brandKey}">${data.title}
         <img src="${data.logo}" alt="${data.title}">
       </h2>
       <p class="brands__details-recommended">Recommended for : ${data.recommended}</p>
