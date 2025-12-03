@@ -370,6 +370,10 @@
             background-color: #f7f9fc;
             position: relative;
             text-decoration: none;
+
+            .mobile center > a{
+                display: grid !important;
+            }
         }
 
         .base-ortho-k-lens__button::before {
@@ -1942,7 +1946,18 @@
     </nav>
 
     <div class="base-ortho-k-lens__container">
-      <!-- Header Section -->
+        <!-- Header Section -->
+        <section class="header-ortho-k-lens__top">
+            <div class="header-ortho-k-lens__top__img">
+                <picture>
+                    <source media="(min-width:768px)" srcset="https://static.lenskart.com/media/owndays/img/ortho-k-lens/main-banner-pc.webp" type="image/webp">
+                    <source media="(max-width:767px)" srcset="https://static.lenskart.com/media/owndays/img/ortho-k-lens/main-banner-sp.webp" type="image/webp">
+                    <img alt="MYOPIA CONTROL FOR KIDS" src="https://static.lenskart.com/media/owndays/img/ortho-k-lens/main-banner-sp.png">
+                </picture>
+                <img alt="Ortho-K" class="header-ortho-k-lens__top__title" src="https://static.lenskart.com/media/owndays/img/ortho-k-lens/main-banner-text.svg">
+            </div>
+        </section>
+
         <section class="header-ortho-k-lens__intro">
             <h1 class="base-ortho-k-lens__title">What is Ortho-k?</h1>
             <p>
@@ -2703,7 +2718,7 @@
             return window.innerWidth < 768;
         }
 
-        // Update responsive images (only main-banner uses -sp for mobile, -pc for desktop)
+        // Update responsive images (-sp for mobile, -pc for desktop)
         function updateResponsiveImages() {
             const isMobileView = isMobile();
             
@@ -2713,45 +2728,48 @@
                 const src = img.getAttribute('src');
                 if (!src) return;
                 
-                // Only handle main-banner image - make it responsive
-                if (src.includes('main-banner')) {
-                    if (isMobileView) {
-                        // Mobile: ensure -sp version
-                        if (src.includes('-pc.')) {
-                            img.src = src.replace(/-pc\.(webp|png|svg)/g, '-sp.$1');
-                        } else if (!src.includes('-sp.')) {
-                            // If no suffix, add -sp
-                            const lastDot = src.lastIndexOf('.');
-                            if (lastDot !== -1) {
-                                const ext = src.slice(lastDot);
-                                const base = src.slice(0, lastDot);
+                // Skip the banner image as it uses picture element
+                if (src.includes('main-banner')) return;
+                
+                // Skip CLNavMenu images - they should keep their original names
+                if (img.closest('.clnavmenu')) return;
+                
+                if (isMobileView) {
+                    // Mobile: ensure -sp version
+                    if (src.includes('-pc.')) {
+                        img.src = src.replace(/-pc\.(webp|png|svg)/g, '-sp.$1');
+                    } else if (!src.includes('-sp.') && !src.includes('-pc.')) {
+                        // If no suffix, check if we should add -sp
+                        const lastDot = src.lastIndexOf('.');
+                        if (lastDot !== -1) {
+                            const ext = src.slice(lastDot);
+                            const base = src.slice(0, lastDot);
+                            // Only add -sp if it's a webp/png and doesn't already have a suffix
+                            if ((ext === '.webp' || ext === '.png') && !base.endsWith('-sp') && !base.endsWith('-pc')) {
                                 img.src = base + '-sp' + ext;
                             }
                         }
-                    } else {
-                        // Desktop: ensure -pc version
-                        if (src.includes('-sp.')) {
-                            img.src = src.replace(/-sp\.(webp|png|svg)/g, '-pc.$1');
-                        } else if (!src.includes('-pc.')) {
-                            // If no suffix, add -pc
-                            const lastDot = src.lastIndexOf('.');
-                            if (lastDot !== -1) {
-                                const ext = src.slice(lastDot);
-                                const base = src.slice(0, lastDot);
+                    }
+                } else {
+                    // Desktop: ensure -pc version
+                    if (src.includes('-sp.')) {
+                        img.src = src.replace(/-sp\.(webp|png|svg)/g, '-pc.$1');
+                    } else if (!src.includes('-pc.') && !src.includes('-sp.')) {
+                        // If no suffix, check if we should add -pc
+                        const lastDot = src.lastIndexOf('.');
+                        if (lastDot !== -1) {
+                            const ext = src.slice(lastDot);
+                            const base = src.slice(0, lastDot);
+                            // Only add -pc if it's a webp/png and doesn't already have a suffix
+                            if ((ext === '.webp' || ext === '.png') && !base.endsWith('-sp') && !base.endsWith('-pc')) {
                                 img.src = base + '-pc' + ext;
                             }
                         }
                     }
-                    return; // Skip other processing for main-banner
-                }
-                
-                // For all other images, remove any -sp or -pc suffixes to keep original names
-                if (src.includes('-sp.') || src.includes('-pc.')) {
-                    img.src = src.replace(/-sp\.(webp|png|svg|jpg|jpeg)/g, '.$1').replace(/-pc\.(webp|png|svg|jpg|jpeg)/g, '.$1');
                 }
             });
 
-            // Update background images in style attributes (only main-banner uses -sp/-pc)
+            // Update background images in style attributes
             const allElements = document.querySelectorAll('[style*="background-image"]');
             allElements.forEach(element => {
                 const currentBgImage = element.style.backgroundImage || window.getComputedStyle(element).backgroundImage;
@@ -2760,29 +2778,15 @@
                 
                 let newBgImage = currentBgImage;
                 
-                // Only handle main-banner background images
-                if (currentBgImage.includes('main-banner')) {
-                    if (isMobileView) {
-                        // Mobile: ensure -sp version
-                        if (currentBgImage.includes('-pc.')) {
-                            newBgImage = currentBgImage.replace(/-pc\.(webp|png|svg)/g, '-sp.$1');
-                        } else if (!currentBgImage.includes('-sp.')) {
-                            // If no suffix, add -sp
-                            newBgImage = currentBgImage.replace(/main-banner\.(webp|png|svg)/g, 'main-banner-sp.$1');
-                        }
-                    } else {
-                        // Desktop: ensure -pc version
-                        if (currentBgImage.includes('-sp.')) {
-                            newBgImage = currentBgImage.replace(/-sp\.(webp|png|svg)/g, '-pc.$1');
-                        } else if (!currentBgImage.includes('-pc.')) {
-                            // If no suffix, add -pc
-                            newBgImage = currentBgImage.replace(/main-banner\.(webp|png|svg)/g, 'main-banner-pc.$1');
-                        }
+                if (isMobileView) {
+                    // Mobile: ensure -sp version
+                    if (currentBgImage.includes('-pc.')) {
+                        newBgImage = currentBgImage.replace(/-pc\.(webp|png|svg)/g, '-sp.$1');
                     }
                 } else {
-                    // For all other background images, remove any -sp or -pc suffixes
-                    if (currentBgImage.includes('-sp.') || currentBgImage.includes('-pc.')) {
-                        newBgImage = currentBgImage.replace(/-sp\.(webp|png|svg|jpg|jpeg)/g, '.$1').replace(/-pc\.(webp|png|svg|jpg|jpeg)/g, '.$1');
+                    // Desktop: ensure -pc version
+                    if (currentBgImage.includes('-sp.')) {
+                        newBgImage = currentBgImage.replace(/-sp\.(webp|png|svg)/g, '-pc.$1');
                     }
                 }
                 

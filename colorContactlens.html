@@ -61,8 +61,7 @@
         .breadcrumb.breadcrumb--2 > li + li::before {
             content: '>';
             padding: 0 15px;
-            color: #ccc;
-          }
+        }
 
         .breadcrumb-item {
             display: flex;
@@ -463,6 +462,7 @@
             width: 100%;
             margin: 0 0 24px 0;
             overflow: hidden;
+            align-self: center;
         }
 
         .bcc-banner img {
@@ -969,6 +969,11 @@
             padding: 0;
             overflow-x: auto;
             flex-wrap: nowrap;
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        .faq-tabs::-webkit-scrollbar {
+            display: none;  /* Chrome, Safari, Opera */
         }
 
         .faq-tab {
@@ -1060,6 +1065,7 @@
             font-weight: 600;
             line-height: 24px;
             letter-spacing: 0.18px;
+            margin-bottom: 24px;
         }
 
         .faq-mobile-tabs {
@@ -1069,11 +1075,12 @@
             margin-bottom: 24px;
             padding: 0 16px;
             overflow-x: auto;
-            scrollbar-width: none;  
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
         }
 
         .faq-mobile-tabs::-webkit-scrollbar {
-            display: none; 
+            display: none;  /* Chrome, Safari, Opera */
         }
 
         .faq-mobile-tab {
@@ -1415,7 +1422,7 @@
                     <div class="product-card__title"></div>
                     <div class="product-card__actions">
                         <button class="product-card__button daily-pc" onclick="window.location.href='/sg/en/contacts/color-contactlens/petal'">
-                            DAILY
+                            MONTHLY
                         </button>
                     </div>
                 </div>
