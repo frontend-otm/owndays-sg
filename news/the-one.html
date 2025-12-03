@@ -107,10 +107,14 @@
             .nav-link {
                 display: flex !important;
 
-                span {
+                span[aria-label="color"] {
                     display: block;
                 }
             }
+        }
+
+        #footer {
+            position: relative;
         }
 
         @media (min-width: 576px) {
