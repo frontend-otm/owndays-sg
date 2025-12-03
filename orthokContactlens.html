@@ -24,11 +24,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Founders+Grotesk:wght@400;600&display=swap" rel="stylesheet">
     
     <style>
+
+.bNUeNt .base-ortho-k-lens__button {
+    display: grid !important;
+}
+.iGBykG .base-ortho-k-lens__button {
+    display: grid !important;
+}
         /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+        
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+            position: relative;
+        }
+
+        body{
+            height: 100dvh !important;
+        }
+        
+        img, video, iframe {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        @media (max-width: 767px) {
+            body {
+                overflow-x: hidden !important;
+                position: relative;
+            }
+            
+            html {
+                overflow-x: hidden !important;
+            }
+            
+            .base-ortho-k-lens__container {
+                overflow-x: hidden;
+                width: 100%;
+            }
         }
         
         body {
@@ -37,12 +76,6 @@
             color: #413d3d;
             letter-spacing: 0.02em;
             line-height: 2.2;
-        }
-
-        @media (max-width: 430px) {
-            body {
-                overflow-x: hidden;
-            }
         }
 
         /* Breadcrumb Styles */
@@ -317,7 +350,9 @@
             .base-ortho-k-lens__container {
                 padding-right: 27px;
                 padding-left: 27px;
-                max-width: calc(1120px + 54px);
+                max-width: 100%;
+                width: 100%;
+                box-sizing: border-box;
             }
         }
 
@@ -370,10 +405,6 @@
             background-color: #f7f9fc;
             position: relative;
             text-decoration: none;
-
-            .mobile center > a{
-                display: grid !important;
-            }
         }
 
         .base-ortho-k-lens__button::before {
@@ -1946,17 +1977,6 @@
     </nav>
 
     <div class="base-ortho-k-lens__container">
-        <!-- Header Section -->
-        <section class="header-ortho-k-lens__top">
-            <div class="header-ortho-k-lens__top__img">
-                <picture>
-                    <source media="(min-width:768px)" srcset="https://static.lenskart.com/media/owndays/img/ortho-k-lens/main-banner-pc.webp" type="image/webp">
-                    <source media="(max-width:767px)" srcset="https://static.lenskart.com/media/owndays/img/ortho-k-lens/main-banner-sp.webp" type="image/webp">
-                    <img alt="MYOPIA CONTROL FOR KIDS" src="https://static.lenskart.com/media/owndays/img/ortho-k-lens/main-banner-sp.png">
-                </picture>
-                <img alt="Ortho-K" class="header-ortho-k-lens__top__title" src="https://static.lenskart.com/media/owndays/img/ortho-k-lens/main-banner-text.svg">
-            </div>
-        </section>
 
         <section class="header-ortho-k-lens__intro">
             <h1 class="base-ortho-k-lens__title">What is Ortho-k?</h1>
@@ -2733,6 +2753,12 @@
                 
                 // Skip CLNavMenu images - they should keep their original names
                 if (img.closest('.clnavmenu')) return;
+                
+                // Skip contact lens menu images - they should keep their original names
+                if (img.closest('.footer-ortho-k-lens__contact-lenses')) return;
+                
+                // Skip store images - they should keep their original names
+                if (img.closest('.body-ortho-k-lens__stores__list') || img.classList.contains('body-ortho-k-lens__stores__list-img')) return;
                 
                 if (isMobileView) {
                     // Mobile: ensure -sp version
