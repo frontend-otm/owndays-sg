@@ -122,7 +122,12 @@
                 margin: -6% auto;
                 max-width: 1681px;
                 transform: scale(0.7);
+                scrollbar-width: none;  /* Firefox */
             }
+        }
+
+        .header-contacts__carousel-desktop::-webkit-scrollbar {
+            display: none;  /* Chrome, Safari, Opera */
         }
 
         .header-contacts__carousel-mobile {
@@ -136,6 +141,11 @@
             max-width: 100%;
             padding: 0 20px;
             overflow-x: scroll;
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        .header-contacts__carousel-mobile::-webkit-scrollbar {
+            display: none;  /* Chrome, Safari, Opera */
         }
 
         @media (min-width: 1200px) {
@@ -777,6 +787,12 @@
             padding: 0;
             overflow-x: auto;
             flex-wrap: nowrap;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        .faq-tabs::-webkit-scrollbar {
+            display: none;  /* Chrome, Safari, Opera */
         }
 
         .faq-tab {
@@ -868,6 +884,7 @@
             font-weight: 600;
             line-height: 24px;
             letter-spacing: 0.18px;
+            margin-bottom: 24px;
         }
 
         .faq-mobile-tabs {
@@ -877,11 +894,12 @@
             margin-bottom: 24px;
             padding: 0 16px;
             overflow-x: auto;
+            -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
         }
 
         .faq-mobile-tabs::-webkit-scrollbar {
-            display: none;  /* Chrome, Safari and Opera */
+            display: none;  /* Chrome, Safari, Opera */
         }
 
         .faq-mobile-tab {
@@ -1144,7 +1162,6 @@
         .breadcrumb.breadcrumb--2 > li + li::before {
             content: '>';
             padding: 0 15px;
-            color: #ccc;
         }
 
         .breadcrumb-item {
