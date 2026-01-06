@@ -1,25 +1,15 @@
-Demo
-
-[https//:www.owndays-sg.vercel.app](https://owndays-sg.vercel.app/)
-
-
-Collection
-
+# OWNDAYS SG
+**VSCode Extension**
+Live Server  [https://marketplace.cursorapi.com/items/?itemName=ritwickdey.LiveServer](https://marketplace.cursorapi.com/items/?itemName=ritwickdey.LiveServer)
+## Demo
+URL: https://owndays-sg.vercel.app/
+## Collections page
+URL: https://owndays-sg.vercel.app/brands.html
 File: /brands.html
-
-
-News
-
+## News page
+URL: https://owndays-sg.vercel.app/news.html
 File: /news.html
-
-
-LP
-
-File: /news/[page-name].html
-CSS & JS: Upload with Jenkins
-
-
-Extension
-
-Live Server
-https://marketplace.cursorapi.com/items/?itemName=ritwickdey.LiveServer
+## LP
+URL: https://owndays-sg.vercel.app/news/frozen.html
+File: /news/frozen.html
+Remark: CSS & JS: Upload with Jenkins
