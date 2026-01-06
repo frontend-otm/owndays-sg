@@ -1,6 +1,8 @@
 # OWNDAYS SG
 **VSCode Extension**
+
 Live Server
+
 [https://marketplace.cursorapi.com/items/?itemName=ritwickdey.LiveServer](https://marketplace.cursorapi.com/items/?itemName=ritwickdey.LiveServer)
 ## Demo
 URL: https://owndays-sg.vercel.app/
