@@ -17,3 +17,9 @@ LP
 
 File: /news/[page-name].html
 CSS & JS: Upload with Jenkins
+
+
+Extension
+
+Live Server
+https://marketplace.cursorapi.com/items/?itemName=ritwickdey.LiveServer
