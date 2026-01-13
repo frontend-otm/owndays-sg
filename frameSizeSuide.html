@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Measure Frame Size</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #000;
+            background-color: #fff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Page Container */
+        .page-frame-size {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        /* Header */
+        .page-frame-size .page-header {
+            padding: 35px 20px 25px;
+        }
+
+        .page-frame-size .page-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 150%;
+            letter-spacing: 0.18px;
+        }
+
+        /* Body */
+        .page-frame-size .page-body {
+            padding: 0 20px 50px;
+        }
+
+        /* With Wrapper */
+        .p-frame-size-with-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* With Section */
+        .p-frame-size-with {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #F2F2F2;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+        }
+
+        .p-frame-size-with-title {
+            text-align: center;
+            background-color: #F2F2F2;
+            padding: 18px 20px;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 180%;
+            letter-spacing: 0.14px;
+        }
+
+        /* Steps */
+        .p-frame-size-with-steps {
+            display: grid;
+        }
+
+        .p-frame-size-with-step {
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .p-frame-size-with-step:not(:last-child) {
+            border-bottom: 1px solid #F2F2F2;
+        }
+
+        .p-frame-size-with-step-title {
+            color: #B47E00;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 150%;
+            letter-spacing: 0.18px;
+        }
+
+        .p-frame-size-with-step-description {
+            font-weight: 500;
+            line-height: 180%;
+        }
+
+        .p-frame-size-with-step-remarks {
+            color: #A5A5A5;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 160%;
+            letter-spacing: 0.12px;
+        }
+
+        /* By Step (Size Guide Items) */
+        .p-frame-size-with-step-by-step {
+            display: grid;
+            gap: 25px;
+        }
+
+        .p-frame-size-with-step-by-step-item {
+            /* item styling */
+        }
+
+        .p-frame-size-with-step-by-step-img {
+            aspect-ratio: 269/189;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .p-frame-size-with-step-by-step-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 180%;
+            letter-spacing: 0.16px;
+            margin-bottom: 16px;
+        }
+
+        .p-frame-size-with-step-by-step-description {
+            font-weight: 500;
+            line-height: 180%;
+            letter-spacing: 0.14px;
+        }
+
+        /* With Ruler Content */
+        .p-frame-size-with-content {
+            padding: 30px 20px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .p-frame-size-with-top {
+            display: grid;
+            gap: 30px;
+        }
+
+        .p-frame-size-with-top-image {
+            aspect-ratio: 1/1;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+
+        .p-frame-size-with-top-description {
+            font-weight: 500;
+            line-height: 180%;
+            letter-spacing: 0.14px;
+        }
+
+        /* Table */
+        .p-frame-size-with-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .p-frame-size-with-table thead tr th {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 180%;
+            letter-spacing: 0.16px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .p-frame-size-with-table tbody {
+            border-left: 1px solid #F2F2F2;
+            border-right: 1px solid #F2F2F2;
+        }
+
+        .p-frame-size-with-table tbody tr td {
+            line-height: 180%;
+            letter-spacing: 0.14px;
+            padding: 24px 17px;
+            border-top: 1px solid #F2F2F2;
+            border-bottom: 1px solid #F2F2F2;
+        }
+
+        .p-frame-size-with-table-label {
+            font-weight: 700;
+            color: #B47E00;
+        }
+
+        .p-frame-size-with-table-range {
+            text-align: right;
+            font-weight: 500;
+        }
+
+        /* Tablet Styles (768px - 1023px) */
+        @media screen and (min-width: 768px) {
+            .page-frame-size .page-header {
+                justify-content: center;
+                padding: 42px 40px;
+                text-align: center;
+            }
+
+            .page-frame-size .page-title {
+                text-align: center;
+                font-size: 24px;
+                letter-spacing: 0.2px;
+            }
+
+            .page-frame-size .page-body {
+                padding: 0 40px 60px;
+            }
+
+            .p-frame-size-with-wrapper {
+                gap: 30px;
+            }
+
+            .p-frame-size-with-title {
+                font-size: 18px;
+                letter-spacing: 0.18px;
+                padding-block: 21px;
+            }
+
+            .p-frame-size-with-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .p-frame-size-with-step {
+                padding: 35px 30px;
+            }
+
+            .p-frame-size-with-step--1 {
+                border-right: 1px solid #F2F2F2;
+                border-bottom: none;
+            }
+
+            .p-frame-size-with-step--2 {
+                border-bottom: none;
+            }
+
+            .p-frame-size-with-step-title {
+                font-size: 20px;
+                letter-spacing: 0.2px;
+            }
+
+            .p-frame-size-with-step-by-step {
+                margin-top: calc(30px - 18px);
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .p-frame-size-with-step-by-step-title {
+                font-size: 18px;
+                letter-spacing: 0.18px;
+            }
+
+            .p-frame-size-with-step--3 {
+                grid-column: span 2;
+            }
+
+            .p-frame-size-with-content {
+                padding: 40px 30px;
+            }
+
+            .p-frame-size-with-top {
+                gap: 20px;
+            }
+        }
+
+        /* Desktop Styles (1024px+) */
+        @media screen and (min-width: 1024px) {
+            .page-frame-size .page-header {
+                padding: 50px 60px;
+            }
+
+            .page-frame-size .page-title {
+                font-size: 28px;
+                letter-spacing: 0.28px;
+            }
+
+            .page-frame-size .page-body {
+                padding: 0 60px 80px;
+            }
+
+            .p-frame-size-with-wrapper {
+                gap: 40px;
+            }
+
+            .p-frame-size-with-title {
+                font-size: 20px;
+                letter-spacing: 0.2px;
+                padding: 24px 30px;
+            }
+
+            .p-frame-size-with-step {
+                padding: 40px;
+            }
+
+            .p-frame-size-with-step-title {
+                font-size: 22px;
+                letter-spacing: 0.22px;
+            }
+
+            .p-frame-size-with-step-description {
+                font-size: 15px;
+            }
+
+            .p-frame-size-with-step-by-step {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+
+            .p-frame-size-with-step-by-step-title {
+                font-size: 18px;
+            }
+
+            .p-frame-size-with-step-by-step-description {
+                font-size: 14px;
+            }
+
+            .p-frame-size-with-content {
+                padding: 50px 40px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+                align-items: start;
+            }
+
+            .p-frame-size-with-top {
+                gap: 25px;
+            }
+
+            .p-frame-size-with-top-image {
+                max-width: 100%;
+            }
+
+            .p-frame-size-with-top-description {
+                font-size: 15px;
+            }
+
+            .p-frame-size-with-table thead tr th {
+                font-size: 18px;
+                padding: 24px;
+            }
+
+            .p-frame-size-with-table tbody tr td {
+                font-size: 15px;
+                padding: 20px 24px;
+            }
+        }
+
+        /* Large Desktop Styles (1280px+) */
+        @media screen and (min-width: 1280px) {
+            .page-frame-size .page-header {
+                padding: 60px 80px;
+            }
+
+            .page-frame-size .page-title {
+                font-size: 32px;
+                letter-spacing: 0.32px;
+            }
+
+            .page-frame-size .page-body {
+                padding: 0 80px 100px;
+            }
+
+            .p-frame-size-with-wrapper {
+                gap: 50px;
+            }
+
+            .p-frame-size-with-title {
+                font-size: 22px;
+                padding: 28px 40px;
+            }
+
+            .p-frame-size-with-step {
+                padding: 50px;
+            }
+
+            .p-frame-size-with-step-title {
+                font-size: 24px;
+            }
+
+            .p-frame-size-with-step-description {
+                font-size: 16px;
+            }
+
+            .p-frame-size-with-step-by-step {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px 40px;
+            }
+
+            .p-frame-size-with-step-by-step-img {
+                margin-bottom: 15px;
+            }
+
+            .p-frame-size-with-step-by-step-title {
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+
+            .p-frame-size-with-step-by-step-description {
+                font-size: 14px;
+            }
+
+            .p-frame-size-with-content {
+                padding: 60px 50px;
+                gap: 60px;
+            }
+
+            .p-frame-size-with-top-image {
+                max-width: 350px;
+            }
+
+            .p-frame-size-with-top-description {
+                font-size: 16px;
+            }
+
+            .p-frame-size-with-table thead tr th {
+                font-size: 20px;
+            }
+
+            .p-frame-size-with-table tbody tr td {
+                font-size: 16px;
+                padding: 22px 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-frame-size">
+        <div class="page-header">
+            <h1 class="page-title">How to Measure Frame Size</h1>
+        </div>
+        <div class="page-body">
+            <div class="p-frame-size-with-wrapper">
+                <!-- Using Credit Card Section -->
+                <div class="p-frame-size-with">
+                    <h3 class="p-frame-size-with-title">Using Credit Card</h3>
+                    <ul class="p-frame-size-with-steps">
+                        <!-- Step 1 -->
+                        <li class="p-frame-size-with-step p-frame-size-with-step--1">
+                            <h4 class="p-frame-size-with-step-title">STEP 1</h4>
+                            <p class="p-frame-size-with-step-description">Please have your credit card or card of the same size ready</p>
+                            <ul class="p-frame-size-with-step-remarks">
+                                <li class="p-frame-size-with-step-remark">*Height of card is approximately the same as the width of a typical spectacle frame</li>
+                            </ul>
+                        </li>
+                        <!-- Step 2 -->
+                        <li class="p-frame-size-with-step p-frame-size-with-step--2">
+                            <h4 class="p-frame-size-with-step-title">STEP 2</h4>
+                            <p class="p-frame-size-with-step-description">Hold the card with one end at the centre of the nose and the other end at the outer corner of the eye</p>
+                        </li>
+                        <!-- Step 3 -->
+                        <li class="p-frame-size-with-step p-frame-size-with-step--3">
+                            <h4 class="p-frame-size-with-step-title">STEP 3</h4>
+                            <p class="p-frame-size-with-step-description">Check the position of the card edge</p>
+                            <ul class="p-frame-size-with-step-by-step">
+                                <!-- XXS -->
+                                <li class="p-frame-size-with-step-by-step-item">
+                                    <img class="p-frame-size-with-step-by-step-img" src="https://storage.owndays.com/images/modals/frame-size/with-creditcard-xxs.webp" alt="XXS size" loading="lazy">
+                                    <h5 class="p-frame-size-with-step-by-step-title">XXS size</h5>
+                                    <p class="p-frame-size-with-step-by-step-description">When the edge of the card is outside the face</p>
+                                </li>
+                                <!-- XS -->
+                                <li class="p-frame-size-with-step-by-step-item">
+                                    <img class="p-frame-size-with-step-by-step-img" src="https://storage.owndays.com/images/modals/frame-size/with-creditcard-xs.webp" alt="XS size" loading="lazy">
+                                    <h5 class="p-frame-size-with-step-by-step-title">XS size</h5>
+                                    <p class="p-frame-size-with-step-by-step-description">When the card edge is facing inwards</p>
+                                </li>
+                                <!-- S -->
+                                <li class="p-frame-size-with-step-by-step-item">
+                                    <img class="p-frame-size-with-step-by-step-img" src="https://storage.owndays.com/images/modals/frame-size/with-creditcard-s.webp" alt="S size" loading="lazy">
+                                    <h5 class="p-frame-size-with-step-by-step-title">S size</h5>
+                                    <p class="p-frame-size-with-step-by-step-description">When the card edge is at the same level as the outer corner of the eyes</p>
+                                </li>
+                                <!-- M -->
+                                <li class="p-frame-size-with-step-by-step-item">
+                                    <img class="p-frame-size-with-step-by-step-img" src="https://storage.owndays.com/images/modals/frame-size/with-creditcard-m.webp" alt="M size" loading="lazy">
+                                    <h5 class="p-frame-size-with-step-by-step-title">M size</h5>
+                                    <p class="p-frame-size-with-step-by-step-description">When the card edge is positioned inside the outer corner of the eyes</p>
+                                </li>
+                                <!-- L -->
+                                <li class="p-frame-size-with-step-by-step-item">
+                                    <img class="p-frame-size-with-step-by-step-img" src="https://storage.owndays.com/images/modals/frame-size/with-creditcard-l.webp" alt="L size" loading="lazy">
+                                    <h5 class="p-frame-size-with-step-by-step-title">L size</h5>
+                                    <p class="p-frame-size-with-step-by-step-description">If the edge of the card is positioned at the left of the pupil</p>
+                                </li>
+                                <!-- XL -->
+                                <li class="p-frame-size-with-step-by-step-item">
+                                    <img class="p-frame-size-with-step-by-step-img" src="https://storage.owndays.com/images/modals/frame-size/with-creditcard-xl.webp" alt="XL size" loading="lazy">
+                                    <h5 class="p-frame-size-with-step-by-step-title">XL size</h5>
+                                    <p class="p-frame-size-with-step-by-step-description">When the edge of the card is at the centre of the pupil</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Using Ruler Section -->
+                <div class="p-frame-size-with">
+                    <h3 class="p-frame-size-with-title">Using Ruler on Face</h3>
+                    <div class="p-frame-size-with-content">
+                        <div class="p-frame-size-with-top">
+                            <img class="p-frame-size-with-top-image" src="https://storage.owndays.com/images/modals/frame-size/with-ruler.webp" alt="Using Ruler on Face" loading="lazy">
+                            <p class="p-frame-size-with-top-description">Stand in front of a mirror and place a ruler on your face to measure the distance between your temples. Ignore the curve of your face and measure in a straight line instead. The width of the spectacle frame is also measured in a straight line.</p>
+                        </div>
+                        <table class="p-frame-size-with-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Size Guide</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-frame-size-with-table-label">XXS size</td>
+                                    <td class="p-frame-size-with-table-range">〜129mm</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-frame-size-with-table-label">XS size</td>
+                                    <td class="p-frame-size-with-table-range">130〜133mm</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-frame-size-with-table-label">S size</td>
+                                    <td class="p-frame-size-with-table-range">134〜137mm</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-frame-size-with-table-label">M size</td>
+                                    <td class="p-frame-size-with-table-range">138〜141mm</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-frame-size-with-table-label">L size</td>
+                                    <td class="p-frame-size-with-table-range">142〜145mm</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-frame-size-with-table-label">XL size</td>
+                                    <td class="p-frame-size-with-table-range">146mm〜</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
