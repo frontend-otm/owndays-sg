@@ -102,6 +102,10 @@
       margin: 0 auto;
     }
 
+    .brands__details-logo--overflow img {
+      overflow: visible;
+    }
+
     .brands__details-logo--zootopia img,
     .brands__details-logo--frozen img {
       max-height: 40px;
@@ -170,6 +174,9 @@
             </li>
             <li>
               <div class="brands__card" data-brand="theone"><img src="https://static.lenskart.com/owndays/img/brands/the-one/Brands.webp" alt="THE ONE by OWNDAYS Lab." loading="lazy"></div>
+            </li>
+            <li>
+              <div class="brands__card" data-brand="strangerThings"><img src="https://assets.lenskart.com/images/2026/02/16/stranger-things_brand_thumb.webp" alt="OWNDAYS × STRANGER THINGS" loading="lazy"></div>
             </li>
             <li>
               <div class="brands__card" data-brand="harrypotter"><img src="https://static.lenskart.com/owndays/img/brands/harrypotter/2025/brand_thumb.webp" alt="Harry Potter × OWNDAYS" loading="lazy"></div>
@@ -614,6 +621,25 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
             productsLink: null,   // not provided in snippet
             detailsLink: "/sg/en/news/gundam5-zeon"
           },
+          strangerThings: {
+            title: "OWNDAYS × STRANGER THINGS",
+            logo: "https://assets.lenskart.com/images/2026/02/16/stranger-things_brand_logo.webp",
+            logoExtended: true,
+            overflow: true,
+            slides: [
+              "https://assets.lenskart.com/images/2026/02/16/stranger-things_brand_slider1.webp",
+              "https://assets.lenskart.com/images/2026/02/16/stranger-things_brand_slider2.webp",
+              "https://assets.lenskart.com/images/2026/02/16/stranger-things_brand_slider3.webp",
+              "https://assets.lenskart.com/images/2026/02/16/stranger-things_brand_slider4.webp",
+              "https://assets.lenskart.com/images/2026/02/16/stranger-things_brand_slider5.webp",
+              "https://assets.lenskart.com/images/2026/02/16/stranger-things_brand_slider6.webp",
+              "https://assets.lenskart.com/images/2026/02/16/stranger-things_brand_slider7.webp"
+            ],
+            description: `The Netflix series STRANGER THINGS and OWNDAYS come together in a special collaboration. Iconic elements like the “UPSIDE DOWN” and “HELLFIRE CLUB” are woven into the frame designs, bringing the world of Hawkins to life through eyewear.`,
+            recommended: "MEN・WOMEN",
+            productsLink: "/sg/en/eyeglasses/brands/stranger-things.html",
+            detailsLink: "sg/en/news/stranger-things"
+          },
           harrypotter: {
             title: "Harry Potter × OWNDAYS",
             logo: "https://static.lenskart.com/media/owndays/img/brands/harry-potter-new/logo.webp",
@@ -744,7 +770,7 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
     </div>
 
     <div class="brands__details-content">
-      <h2 class="brands__details-logo ${data.logoExtended ? 'brands__details-logo--expanded' : ''} ${data.logoFull ? 'brands__details-logo--full' : ''} brands__details-logo--${brandKey}">${data.title}
+      <h2 class="brands__details-logo ${data.logoExtended ? 'brands__details-logo--expanded' : ''} ${data.logoFull ? 'brands__details-logo--full' : ''} ${data.overflow ? 'brands__details-logo--overflow' : ''} brands__details-logo--${brandKey}">${data.title}
         <img src="${data.logo}" alt="${data.title}">
       </h2>
       <p class="brands__details-recommended">Recommended for : ${data.recommended}</p>
