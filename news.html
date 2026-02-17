@@ -80,20 +80,20 @@
             </section>
             <div class="body-news" data-aos="zoom-up">
                 <section class="body-news__news body-news__news--active body-news__l-content--inner body-news__l-content--inner--full-sp">
-                    <a href="/sg/en/news/hellokitty" style="display: flex;">
+                    <a href="/sg/en/news/stranger-things" style="display: flex;">
                         <figure class="body-news__news__card">
                             <div class="body-news__news-thumbnail">
-                                <img alt="OWNDAYS & Hello Kitty" src="https://assets.lenskart.com/images/2026/01/06/news-kitty.jpg" />
+                                <img alt="OWNDAYS × STRANGER THINGS" src="https://assets.lenskart.com/images/2026/02/17/stranger-things_news.webp" />
                             </div>
                             <figcaption>
                                 <div class="body-news__news-details">
                                     <div class="body-news__news-text">
                                         <p class="body-news__news-category">Products</p>
                                         <h2 class="body-news__news-title">
-                                            OWNDAYS & Hello Kitty
+                                            OWNDAYS × STRANGER THINGS
                                         </h2>
                                         <p class="body-news__news-description">
-                                            Make every day a little more special with OWNDAYS & Hello Kitty. HELLO KITTY, the adorable character created by Sanrio, has captured the hearts of many around the world.
+                                            The Netflix series STRANGER THINGS and OWNDAYS come together in a special collaboration. Iconic elements like the "UPSIDE DOWN" and "HELLFIRE CLUB" are woven into the frame designs, bringing the world of Hawkins to life through eyewear.
                                         </p>
                                     </div>
                                     <p class="body-news__news-link">VIEW MORE</p>
@@ -144,6 +144,15 @@
         ];
 
         const ITEMS_NEWS = [
+            {
+                slug: "/sg/en/news/stranger-things",
+                title: "OWNDAYS × STRANGER THINGS",
+                image: "https://assets.lenskart.com/images/2026/02/17/stranger-things_news.webp",
+                category: "Products",
+                description:
+                    "The Netflix series STRANGER THINGS and OWNDAYS come together in a special collaboration. Iconic elements like the “UPSIDE DOWN” and “HELLFIRE CLUB” are woven into the frame designs, bringing the world of Hawkins to life through eyewear.",
+                datetime: "2026-03-02T10:00:00+08:00",
+            },
             {
                 slug: "/sg/en/news/hellokitty",
                 title: "OWNDAYS & Hello Kitty",
@@ -590,7 +599,7 @@
             filtered.forEach((item, index) => {
                 const li = document.createElement("li");
                 li.setAttribute("data-aos", "zoom-in");
-                li.setAttribute("data-aos-delay", index * 200); // ms
+                li.setAttribute("data-aos-delay", index * 100);
                 li.innerHTML = `
               <a href="${item.slug}">
                 <figure>
@@ -614,7 +623,8 @@
             renderCategories();
             renderNews();
             AOS.init({
-                duration: 1200,
+                duration: 800,
+                once: true,
             });
         });
     </script>
