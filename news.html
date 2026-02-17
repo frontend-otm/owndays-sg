@@ -14,10 +14,31 @@
     <link id="sa-css" rel="stylesheet" type="text/css" href="https://tags.srv.stackadapt.com/sa.css" media="all" />
     <style>
         .body-news {
-            img {
-                display: block;
-                width: 100%;
-                aspect-ratio: 1/1;
+            .blog-news__list {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 30px;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                }
+
+                li {
+                    margin: 0;
+                    width: 100%;
+                }
+
+                @media (min-width: 768px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media (min-width: 1024px) {
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 55px 30px;
+                }
+
             }
         }
     </style>
