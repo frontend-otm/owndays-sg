@@ -14,16 +14,23 @@
     <link id="sa-css" rel="stylesheet" type="text/css" href="https://tags.srv.stackadapt.com/sa.css" media="all" />
     <style>
         .body-news {
+
+            img {
+                display: block;
+                width: 100%;
+                aspect-ratio: 1/1;
+            }
+
+            .body-news__news-thumbnail {
+                img {
+                    height: auto;
+                }
+            }
+
             .blog-news__list {
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 30px;
-
-                img {
-                    display: block;
-                    width: 100%;
-                    aspect-ratio: 1/1;
-                }
 
                 li {
                     margin: 0;
