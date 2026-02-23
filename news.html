@@ -116,28 +116,7 @@
                 </div>
             </section>
             <div class="body-news" data-aos="zoom-up">
-                <section class="body-news__news body-news__news--active body-news__l-content--inner body-news__l-content--inner--full-sp">
-                    <a href="/sg/en/news/stranger-things" style="display: flex;">
-                        <figure class="body-news__news__card">
-                            <div class="body-news__news-thumbnail">
-                                <img alt="OWNDAYS × STRANGER THINGS" src="https://assets.lenskart.com/images/2026/02/17/stranger-things_news.webp" />
-                            </div>
-                            <figcaption>
-                                <div class="body-news__news-details">
-                                    <div class="body-news__news-text">
-                                        <p class="body-news__news-category">Products</p>
-                                        <h2 class="body-news__news-title">
-                                            OWNDAYS × STRANGER THINGS
-                                        </h2>
-                                        <p class="body-news__news-description">
-                                            The Netflix series STRANGER THINGS and OWNDAYS come together in a special collaboration. Iconic elements like the "UPSIDE DOWN" and "HELLFIRE CLUB" are woven into the frame designs, bringing the world of Hawkins to life through eyewear.
-                                        </p>
-                                    </div>
-                                    <p class="body-news__news-link">VIEW MORE</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </a>
+                <section id="featuredNews" class="body-news__news body-news__news--active body-news__l-content--inner body-news__l-content--inner--full-sp">
                 </section>
                 <div class="blog-news">
                     <!-- Categories will inject here -->
@@ -188,7 +167,7 @@
                 category: "Products",
                 description:
                     "The Netflix series STRANGER THINGS and OWNDAYS come together in a special collaboration. Iconic elements like the “UPSIDE DOWN” and “HELLFIRE CLUB” are woven into the frame designs, bringing the world of Hawkins to life through eyewear.",
-                datetime: "2026-03-02T10:00:00+08:00",
+                startdate: "2026-03-02T10:00:00+08:00",
             },
             {
                 slug: "/sg/en/news/hellokitty",
@@ -197,7 +176,6 @@
                 category: "Products",
                 description:
                     "Make every day a little more special with OWNDAYS & Hello Kitty. HELLO KITTY, the adorable character created by Sanrio, has captured the hearts of many around the world.",
-                datetime: "2026-01-05T00:00:00+08:00",
             },
             {
                 slug: "/sg/en/news/frozen",
@@ -206,7 +184,6 @@
                 category: "Products",
                 description:
                     "Experience the magic of winter with the latest FROZEN | OWNDAYS eyewear collection inspired by the enchanted world of Frozen.",
-                datetime: "2025-12-16T00:00:00+08:00",
             },
             {
                 slug: "/sg/en/news/harrypotter",
@@ -215,7 +192,6 @@
                 category: "Products",
                 description:
                     "Discover the wizarding world with the second release of our exclusive Harry Potter collaboration, a tribute to the beloved story that has captured hearts around the world.",
-                datetime: "2025-11-13T00:00:00+08:00",
             },
             {
                 slug: "/sg/en/news/back-in-black",
@@ -279,7 +255,6 @@
                 image: `${baseImgUrl}/pompompurin.webp`,
                 category: "Products",
                 description: `Presenting the spectacle frame collaboration with POMPOMPURIN`,
-                datetime: "2025-01-02T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/sun",
@@ -287,7 +262,6 @@
                 image: `${baseNewImgUrl}/sun-2025.webp`,
                 category: "Products",
                 description: `Where fashion meets function. With SUN by your side, every moment becomes extra special. `,
-                datetime: "2025-01-02T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/air",
@@ -295,7 +269,6 @@
                 image: `${baseImgUrl}/air.webp`,
                 category: "Products",
                 description: `Engineered with ultra-lightweight and highly durable materials to deliver a wearing comfort that feels like air, these spectacle frames offer an impeccable fit and can be worn comfortably for long hours.`,
-                datetime: "2024-12-15T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/black-collection",
@@ -303,8 +276,6 @@
                 image: `https://static1.lenskart.com/media/owndays/img/news/black-collection/news.webp`,
                 category: "Products",
                 description: `The Black Collection comprises approximately 30 frame designs, all centred around OWNDAYS' brand colour—black.`,
-                datetime: "2024-12-10T12:00:00Z",
-                startDeactivate: "2025-02-22T15:00:00Z", // 2025-02-23 00:00 JST
             },
             {
                 slug: "/sg/en/news/gundam5-zakuhead",
@@ -313,7 +284,6 @@
                 category: "Products",
                 description:
                     "From Mobile Suit Gundam, one of the most iconic Japanese anime series that has transcended generations, comes the Zaku Head Case, an eyewear storage case modelled after Char Aznable’s custom Zaku in the largest-ever 1:7 scale.",
-                datetime: "2024-12-06T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/gundam5-zeon",
@@ -322,7 +292,6 @@
                 category: "Products",
                 description:
                     "From Mobile Suit Gundam, one of the most iconic Japanese anime series that has remained highly popular across generations, comes an eyewear collaboration focusing on the Principality of Zeon. The lineup consists of a spectacle model and a sunglass model.",
-                datetime: "2024-12-05T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/shingo-aiba",
@@ -331,7 +300,6 @@
                 category: "Products",
                 description:
                     "A capsule collection created in collaboration with Japanese designer, Shingo Aiba whose credentials include a tenure in a global fashion house in Paris.",
-                datetime: "2024-12-02T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/10th-anniversary-collection",
@@ -340,7 +308,6 @@
                 category: "Products",
                 description:
                     "A commemorative collection to mark 10 amazing years in Singapore, featuring frame designs created specifically for the discerning local customers who manifest in the love for tasteful yet functional eyewear.",
-                datetime: "2024-12-01T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/500stores",
@@ -349,7 +316,6 @@
                 category: "Products",
                 description:
                     "A commemorative collection to mark the 500-store milestone, featuring frames in lightweight resin material that makes them a great comfort to wear. These made-in-Japan frames come in the oversized rectangle style and the classic Boston style and are available at an unprecedented price so customers can enjoy quality eyewear at a fraction of the usual retail price. This is our way of saying Thank You to all our customers for making this 500-store milestone a dream come true.",
-                datetime: "2024-12-01T10:00:00Z",
             },
             {
                 slug: "/sg/en/news/kuromi",
@@ -358,7 +324,6 @@
                 category: "Products",
                 description:
                     "An OWNDAYS x Kuromi crossover in support of the #KUROMIfy the World project. Transform into the best self you can ever be with these cute, accessory-like eyewear that are inspired by Kuromi and Baku!",
-                datetime: "2024-12-01T09:00:00Z",
             },
             {
                 slug: "/sg/en/news/senichisaku",
@@ -367,7 +332,6 @@
                 category: "Products",
                 description:
                     "Sabae, a city located in the Fukui Prefecture, Japan, is widely regarded as the City of Eyewear. This is where Senichisaku frames are crafted, with every pair carefully put together by hand.",
-                datetime: "2024-12-01T08:00:00Z",
             },
             {
                 slug: "/sg/en/news/mi-mollet",
@@ -376,7 +340,6 @@
                 category: "Products",
                 description:
                     "Explore the stylish spectacle frames by Naoko Okusa, a collaboration between mi-mollet and OWNDAYS, where fashion meets functionality effortlessly. Shop now.",
-                datetime: "2024-12-01T07:00:00Z",
             },
             {
                 slug: "/sg/en/news/kimetsu",
@@ -385,9 +348,6 @@
                 category: "Products",
                 description:
                     "A collection featuring six spectacle frames inspired by the six characters, namely Tanjiro, Nezuko, Zenitsu, Inosuke, Giyu, Shinobu and Kyojuro from the anime television series Demon Slayer: Kimetsu no Yaiba. Each frame is a distinct representation of each of the six characters, with frame temples decorated in motifs depicting iconic patterns found on both the Nichirin Sword and the outfit of the respective character.",
-                startDeactivate: "2024-10-10T03:00:00Z",
-                endDeactivate: "2024-10-10T04:00:00Z",
-                datetime: "2024-12-01T06:00:00Z",
             },
             {
                 slug: "/sg/en/news/gundam",
@@ -396,7 +356,6 @@
                 category: "Products",
                 description:
                     "Mobile suit GUNDAM × OWNDAYS! Wear the GUNDAM. 40th Anniversary Collaboration Project.",
-                datetime: "2024-12-01T05:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndayspc",
@@ -405,7 +364,6 @@
                 category: "Products",
                 description:
                     "OWNDAYS PC - SAVE YOUR EYES, SHIELD YOUR EYES! Reduce up to 25% blue light!",
-                datetime: "2024-12-01T04:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201905",
@@ -414,7 +372,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "Our guest in Part 19 of OWNDAYS MEETS is Ototake Hirotada. We speak him about the “OTOTAKE PROJECT” in which he took up the challenge of walking with prosthetic legs developed using the latest technology. We also talk to him about his plans moving forward.",
-                datetime: "2024-11-30T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201807",
@@ -423,7 +380,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "Our guest in Part 17 of OWNDAYS MEETS is Fujiwara Katsuaki, a former professional motorcycle racer who is currently the coach of the Kawasaki Racing Team.",
-                datetime: "2024-11-29T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201702-3",
@@ -432,7 +388,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "Our guest in part 16 of OWNDAYS MEETS is award-winning Vietnamese-American film director, Ham Tran. We speak to him about the path he has taken so far in his career.",
-                datetime: "2024-11-28T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201702-2",
@@ -441,7 +396,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "Our guest in part 14 of OWNDAYS MEETS is Yuni Hadi, a Singaporean film producer who is known in the Singapore art scene for actively promoting independent Singapore films. We speak to her about her career and her views on the future of the film industry.",
-                datetime: "2024-11-27T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201701",
@@ -450,7 +404,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "Delve into the world of Dawn Yeoh, Singaporean artiste, in Part 14 of OWNDAYS MEETS. Uncover her career path, passion, and future aspirations in the arts and beyond.",
-                datetime: "2024-11-26T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201610",
@@ -459,7 +412,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "Our guest in part 13 of OWNDAYS MEETS is Mike Havenaar, a professional footballer who leads an active international career.",
-                datetime: "2024-11-25T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201506",
@@ -468,7 +420,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "We have SABU, a film director, as the 12th guest for OWNDAYS MEETS. He is the director, author and scriptwriter of the film “Ama no Chasuke”",
-                datetime: "2024-11-24T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201410",
@@ -477,7 +428,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "#11 KENSHI HIROKANE -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
-                datetime: "2024-11-23T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201409",
@@ -486,7 +436,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "#10 Chocomoo -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
-                datetime: "2024-11-22T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201408",
@@ -495,7 +444,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "#09 HITOSHI UEDA -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
-                datetime: "2024-11-21T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201407",
@@ -504,7 +452,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "#08 SHUZO NAGUMO -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
-                datetime: "2024-11-20T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201406",
@@ -513,7 +460,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "#07 KEITA SUZUKI -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
-                datetime: "2024-11-19T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201405",
@@ -522,7 +468,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "#06 RYU KOSHINO -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
-                datetime: "2024-11-18T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201404",
@@ -531,7 +476,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "#05 TAKANORI GOMI -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
-                datetime: "2024-11-17T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201403",
@@ -540,7 +484,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "#04 KEISUKE OKUNOYA -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
-                datetime: "2024-11-16T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201402",
@@ -549,7 +492,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "#03 AKIYO NOGUCHI -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
-                datetime: "2024-11-15T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201401",
@@ -558,7 +500,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "#02 YOHEI SHINOMIYA -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
-                datetime: "2024-11-14T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201312",
@@ -567,7 +508,6 @@
                 category: "OWNDAYS MEETS",
                 description:
                     "#01 JUN HAGAN -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
-                datetime: "2024-11-13T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/progressive-cp",
@@ -575,7 +515,6 @@
                 image: `${baseImgUrl}/owndays-progressive-glasses-10-2024.webp`,
                 category: "Campaign",
                 description: `Free Enhanced Progressive Lens with spectacle purchase for all customers; just one pair of glasses to see far, intermediate and reading zones`,
-                datetime: "2024-12-14T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/contact-lens-deal",
@@ -583,9 +522,6 @@
                 image: `${baseImgUrl}/owndays-1-for-1-contact-lens-deal.webp`,
                 category: "Campaign",
                 description: `Unlock incredible savings with our 1-for-1 clear contact lens deal. Exclusively for new contact lens customers.`,
-                startDeactivate: "2024-12-31T16:00:00Z", // SG 2025-01-01T00:00:00
-                endDeactivate: null,
-                datetime: "2024-12-11T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/free-myopia-control-2-lenses",
@@ -593,7 +529,6 @@
                 image: `https://static.lenskart.com/owndays/img/news/free-myopia-control-2-lenses/News-20250408.webp`,
                 category: "Campaign",
                 description: `Get FREE Myopia Control 2 Lenses for kids aged 14 and below with any spectacles purchase at OWNDAYS. Slow down myopia progression by up to 50%. Learn more today!`,
-                datetime: "2024-12-09T12:00:00Z",
             },
             {
                 slug: "/sg/en/news/bundle-sale",
@@ -601,12 +536,12 @@
                 image: `${baseImgUrl}/contact-lens-bundle-sale.webp`,
                 category: "Campaign",
                 description: `Grab exclusive contact lens bundles: Get $10 off 4 boxes or $30 off 8 boxes of clear lenses and 1 box free for every 7 boxes of color lenses. While stocks last!`,
-                datetime: "2024-12-08T12:00:00Z",
             },
         ];
 
         const categoriesEl = document.getElementById("newsCategories");
         const newsListEl = document.getElementById("newsList");
+        const featuredNewsEl = document.getElementById("featuredNews");
 
         let selectedCategory = "ALL";
 
@@ -628,11 +563,49 @@
 
         function renderNews() {
             newsListEl.innerHTML = "";
-            const filtered =
+            featuredNewsEl.innerHTML = "";
+            const now = new Date();
+
+            let filtered =
                 selectedCategory === "ALL"
                     ? ITEMS_NEWS
                     : ITEMS_NEWS.filter((item) => item.category === selectedCategory);
 
+            filtered = filtered.filter((item) => {
+                if (!item.startdate) return true;
+                const startDate = new Date(item.startdate);
+                return startDate <= now;
+            });
+
+            // Render featured news (first item)
+            if (filtered.length > 0) {
+                const featuredItem = filtered[0];
+                featuredNewsEl.innerHTML = `
+                    <a href="${featuredItem.slug}" style="display: flex;">
+                        <figure class="body-news__news__card">
+                            <div class="body-news__news-thumbnail">
+                                <img alt="${featuredItem.title}" src="${featuredItem.image}" />
+                            </div>
+                            <figcaption>
+                                <div class="body-news__news-details">
+                                    <div class="body-news__news-text">
+                                        <p class="body-news__news-category">${featuredItem.category}</p>
+                                        <h2 class="body-news__news-title">
+                                            ${featuredItem.title}
+                                        </h2>
+                                        <p class="body-news__news-description">
+                                            ${featuredItem.description}
+                                        </p>
+                                    </div>
+                                    <p class="body-news__news-link">VIEW MORE</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                `;
+            }
+
+            // Render news list
             filtered.forEach((item, index) => {
                 const li = document.createElement("li");
                 li.setAttribute("data-aos", "zoom-in");
