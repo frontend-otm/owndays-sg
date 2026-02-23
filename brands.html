@@ -175,7 +175,7 @@
             <li>
               <div class="brands__card" data-brand="theone"><img src="https://static.lenskart.com/owndays/img/brands/the-one/Brands.webp" alt="THE ONE by OWNDAYS Lab." loading="lazy"></div>
             </li>
-            <li>
+            <li data-startdate="2026-03-02T10:00:00+08:00">
               <div class="brands__card" data-brand="strangerThings"><img src="https://assets.lenskart.com/images/2026/02/16/stranger-things_brand_thumb.webp" alt="OWNDAYS × STRANGER THINGS" loading="lazy"></div>
             </li>
             <li>
@@ -243,7 +243,16 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       setTimeout(() => {
-        console.log("555lenskartData");
+
+        // Filter brands by startdate
+        const now = new Date();
+        document.querySelectorAll(".brands__list li[data-startdate]").forEach((li) => {
+          const startDate = new Date(li.getAttribute("data-startdate"));
+          if (startDate > now) {
+            li.style.display = "none";
+          }
+        });
+
         const cards = document.querySelectorAll(".brands__card");
         const list = document.querySelector(".brands__list");
         const jq = window.jQuery;
@@ -889,7 +898,7 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
         //     cards[0].click();
         //   }, 0);
         // }
-      }, 2000);
+      }, 300);
     });
   </script>
 
