@@ -135,9 +135,9 @@
       background: transparent;
     }
 
-    .l-stranger-things img:not([class*="flex"],[class*="flex-center"],[class*="grid"],[class*="block"],[class*="hidden"]),
-    .l-stranger-things picture:not([class*="flex"],[class*="flex-center"],[class*="grid"],[class*="block"],[class*="hidden"]),
-    .l-stranger-things a:not([class*="flex"],[class*="flex-center"],[class*="grid"],[class*="block"],[class*="hidden"],.button) {
+    .l-stranger-things img:not([class*="flex"],[class*="flex-center"],[class*="grid"],[class*="block"],[class*="hidden"], .view-timer),
+    .l-stranger-things picture:not([class*="flex"],[class*="flex-center"],[class*="grid"],[class*="block"],[class*="hidden"], .view-timer),
+    .l-stranger-things a:not([class*="flex"],[class*="flex-center"],[class*="grid"],[class*="block"],[class*="hidden"],.button, .view-timer) {
       display: block !important;
     }
 
@@ -198,6 +198,9 @@
     .l-stranger-things .button {
       display: flex !important;
     }
+    .l-stranger-things .view-timer {
+      display: none;
+    }
   </style>
 
   <!-- js -->
@@ -244,9 +247,9 @@
           </picture>
         </h1>
         <img
-          class="w-[calc(110/390*100vw)] aspect-square absolute top-[10px] left-[10px] md:w-[calc(150/1440*100vw)] md:top-[calc(50/1440*100vw)] md:left-auto md:right-[30px] lg:right-[calc(120/1440*100vw)]"
+          class="w-[calc(110/390*100vw)] aspect-square absolute top-[10px] left-[10px] view-timer md:w-[calc(150/1440*100vw)] md:top-[calc(50/1440*100vw)] md:left-auto md:right-[30px] lg:right-[calc(120/1440*100vw)]"
           src="https://storage.owndays.com/images/specials/products/stranger-things/sales-start-tag-au.webp"
-          alt="2026 3.6 fri Release" data-aos="scale-y" data-show-until="2026-03-06T00:00:00">
+          alt="2026 3.6 fri Release" data-aos="scale-y" data-end-date="2026-03-06T00:00:00+08:00">
       </section>
 
       <!-- CONCEPT / LINEUP NAV -->
@@ -2501,7 +2504,7 @@
     <div id="sticky-button" class=" pt-[9px] pb-[18px] md:min-h-[102px]  sticky bottom-0 z-[9] bg-[#fff]/[0.15] backdrop-blur-[5px] border-[1px] border-solid border-[#fff]/[0.15] border-l-0 border-r-0 border-b-0 flex-center md:py-[14px]">
       <div class="container">
         <div class="md:flex md:items-center md:justify-between md:gap-[10px]">
-          <div class="md:flex md:items-center md:gap-[10px] xl:gap-[20px]" data-show-until="2026-03-06T00:00:00">
+          <div class="md:flex md:items-center view-timer md:gap-[10px] xl:gap-[20px]" data-end-date="2026-03-06T00:00:00+08:00">
             <div class="bg-[#fff] rounded-[5px] flex-center gap-[10px] py-[5px] px-[10px] xl:py-[10px] xl:px-[18px] xl:gap-[20px]">
               <strong class="font-benguiat text-[12px] font-[700] leading-none tracking-[0.48px] flex-center bg-[#e4002b] text-[#fff] whitespace-nowrap xl:text-[16px] xl:leading-[22px] xl:tracking-[0.64px] p-[5px] max-h-[43px]">
                 Online Pre-order<br class="hidden md:block">Only
@@ -2604,16 +2607,22 @@
         });
       });
 
-      $('[data-show-until]').each(function() {
-        const $el = $(this);
-        const showUntil = $el.data('show-until');
-        const endTime = new Date(showUntil + '+08:00');
-        const now = new Date();
+      $(".view-timer").each(function(index, target) {
+        var startDate = $(this).attr("data-start-date");
+        var endDate = $(this).attr("data-end-date");
+        var nowDate = new Date();
 
-        if (now > endTime) {
-          $el.remove();
-
-          $('#sticky-lineup-button').removeClass('ml-auto').addClass('mx-auto');
+        if (startDate) {
+          startDate = new Date(startDate);
+        } else {
+          startDate = nowDate;
+        }
+        if (endDate) {
+          endDate = new Date(endDate);
+        }
+        $(this).css('display', 'none !important');
+        if (startDate <= nowDate && (!endDate || nowDate <= endDate)) {
+          $(this).css('display', '').removeClass('view-timer');
         }
       });
 
