@@ -466,7 +466,7 @@
         counter-increment: num;
 
         &::before {
-          content: "(" counter(num, decimal) ")" !important;
+          content: "(" counter(num, decimal) ") " !important;
         }
       }
     }
@@ -486,7 +486,7 @@
         counter-increment: roman;
 
         &::before {
-          content: "(" counter(roman, lower-roman) ")" !important;
+          content: "(" counter(roman, lower-roman) ") " !important;
         }
       }
     }
@@ -496,6 +496,11 @@
       height: auto;
       border: 1px solid gray;
       margin-block: 20px;
+
+      th {
+        font-size: 20px;
+        white-space: nowrap;
+      }
 
       th,
       td {
@@ -514,6 +519,39 @@
         &:first-child {
           vertical-align: top;
           text-align: left;
+        }
+
+        h5 {
+          font-size: 20px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        border-bottom: 1px solid transparent;
+
+        tbody,tr,th,td {
+          display: block;
+          width: 100%;
+        }
+
+        th:last-child {
+          display: none;
+        }
+
+        tr:first-child {
+          border-bottom: 1px solid gray;
+        }
+
+        th:first-child,
+        td:first-child {
+          width: 100%;
+          border-right: none;
+          border-bottom: none;
+          font-weight: bold;
+
+          br {
+            display: none;
+          }
         }
       }
     }
@@ -538,7 +576,7 @@
         height: 1px;
         background-color: gray;
         position: absolute;
-        top: -6px;
+        top: -4px;
         left: 0;
       }
 
@@ -633,14 +671,14 @@
                 </tr>
 
                 <tr>
-                  <td>Accountability</td>
+                  <td><h5><strong>Accountability</strong></h5></td>
                   <td>
-                    <p>Accountability refers to a risk-based approach to identify, monitor and respond to data risks
+                    <p style="padding: 0 !important;">Accountability refers to a risk-based approach to identify, monitor and respond to data risks
                       through the data life cycle. Organisation must ensure and demonstrate the compliance with the
                       PDPA. In addition, organisations are to make information about its Personal Data protection
                       policies and practices available to individuals and appoints a data protection officer (“DPO”) who
                       is responsible for ensuring the organisation comply with the PDPA.</p>
-                    <p>Accountability towards data protection also refers to moving away from viewing PDPA as a
+                    <p style="padding: 0 !important;">Accountability towards data protection also refers to moving away from viewing PDPA as a
                       “checkbox” compliance, where organisations should undertake and demonstrate responsibility for the
                       data they have collected (to not only safeguard the Personal Data but also to use, innovate and
                       maximize its value), to build public trust in order to thrive in the evolving landscape.</p>
@@ -648,9 +686,9 @@
                 </tr>
 
                 <tr>
-                  <td>Consent</td>
+                  <td><h5><strong>Consent</strong></h5></td>
                   <td>
-                    <p>Any Personal Data collected, used, stored or otherwise disclosed shall only be collected, used,
+                    <p style="padding: 0 !important;">Any Personal Data collected, used, stored or otherwise disclosed shall only be collected, used,
                       stored or otherwise disclosed with the consent of the individual from whom Personal Data is
                       collected. The individual shall be made aware of the purpose for which his or her Personal Data is
                       collated, used, stored or otherwise disclosed. Where reasonable or practicable, written consent
@@ -661,18 +699,18 @@
                 </tr>
 
                 <tr>
-                  <td>Purpose Limitation</td>
+                  <td><h5><strong>Purpose Limitation</strong></h5></td>
                   <td>
-                    <p>Any Personal Data collected, used, stored or otherwise disclosed must be for purposes that would
+                    <p style="padding: 0 !important;">Any Personal Data collected, used, stored or otherwise disclosed must be for purposes that would
                       be considered reasonable and appropriate in the circumstances and for which that individual has
                       given consent.</p>
                   </td>
                 </tr>
 
                 <tr>
-                  <td>Notification</td>
+                  <td><h5><strong>Notification</strong></h5></td>
                   <td>
-                    <p>An individual should be notified of the purposes for which an employee of OWNDAYS or the User on
+                    <p style="padding: 0 !important;">An individual should be notified of the purposes for which an employee of OWNDAYS or the User on
                       behalf of OWNDAYS is intending to collect, use, store or disclosure his or her Personal Data on or
                       prior to the collection, use, storage or disclosure of his or her Personal Data. Where reasonable
                       or practicable, the notification should be made in written form to the individual.</p>
@@ -680,20 +718,20 @@
                 </tr>
 
                 <tr>
-                  <td>Access and Correction</td>
+                  <td><h5><strong>Access and Correction</strong></h5></td>
                   <td>
-                    <p>An individual has the right to request access to his or her Personal Data and the purposes for
+                    <p style="padding: 0 !important;">An individual has the right to request access to his or her Personal Data and the purposes for
                       which and the ways his or her Personal Data has been collected, used, stored or otherwise
                       disclosed in the past one year. </p>
-                    <p>Employees of OWNDAYS and Users on its behalf should also correct any Personal Data that may be
+                    <p style="padding: 0 !important;">Employees of OWNDAYS and Users on its behalf should also correct any Personal Data that may be
                       inaccurate when requested by the individual.</p>
                   </td>
                 </tr>
 
                 <tr>
-                  <td>Accuracy</td>
+                  <td><h5><strong>Accuracy</strong></h5></td>
                   <td>
-                    <p>All reasonable efforts and endeavours should be used to ensure that any Personal Data collected,
+                    <p style="padding: 0 !important;">All reasonable efforts and endeavours should be used to ensure that any Personal Data collected,
                       used, stored or otherwise disclosed is accurate and complete, as the Personal Data is likely to be
                       used to make a decision affecting the individual, or if the Personal Data is likely to be
                       disclosed to another organisation.</p>
@@ -701,18 +739,18 @@
                 </tr>
 
                 <tr>
-                  <td>Protection</td>
+                  <td><h5><strong>Protection</strong></h5></td>
                   <td>
-                    <p>All security procedures and policies that an organisation has implemented must be complied with,
+                    <p style="padding: 0 !important;">All security procedures and policies that an organisation has implemented must be complied with,
                       to prevent any unauthorised access, collection, use, disclosure, copying, modification, disposal
                       or other risks to the Personal Data the organisation has in its possession or control. </p>
                   </td>
                 </tr>
 
                 <tr>
-                  <td>Retention Limitation</td>
+                  <td><h5><strong>Retention Limitation</strong></h5></td>
                   <td>
-                    <p>
+                    <p style="padding: 0 !important;">
                       Retention and storage of Personal Data should cease as soon as it is reasonable to assume that the
                       purpose for which the Personal Data was collected is no longer being served by the retention of
                       that Personal Data and retention is no longer necessary or required for an organisation’s legal,
@@ -722,9 +760,9 @@
                 </tr>
 
                 <tr>
-                  <td>Transfer Limitation</td>
+                  <td><h5><strong>Transfer Limitation</strong></h5></td>
                   <td>
-                    <p>No Personal Data shall be transferred to any territory outside of Singapore except in accordance
+                    <p style="padding: 0 !important;">No Personal Data shall be transferred to any territory outside of Singapore except in accordance
                       with the provisions and the standards contained in the PDPA to ensure that the receiving
                       organisations provide a standard of protection to the transferred Personal Data that is equivalent
                       or comparable to the protection afforded by PDPA. </p>
@@ -732,9 +770,9 @@
                 </tr>
 
                 <tr>
-                  <td>Data Breach Notification </td>
+                  <td><h5><strong>Data Breach Notification</strong></h5></td>
                   <td>
-                    <p>An organisation that suffered a data breach must, within thirty (30) days of becoming aware of
+                    <p style="padding: 0 !important;">An organisation that suffered a data breach must, within thirty (30) days of becoming aware of
                       the breach, assess whether the breach is notifiable to the Personal Data Protection Commission
                       (“PDPC”) and/or the individuals whose Personal Data is involved in the breach. If the breach is
                       assessed to be notifiable because it is likely to result in significant harm to the individuals,
@@ -744,9 +782,9 @@
                 </tr>
 
                 <tr>
-                  <td>Data Portability<br />(not yet in effect)</td>
+                  <td><h5><strong>Data Portability <br />(not yet in effect)</strong></h5></td>
                   <td>
-                    <p>An organisation must, upon request, transmit an individual’s Personal Data in the organisation’s
+                    <p style="padding: 0 !important;">An organisation must, upon request, transmit an individual’s Personal Data in the organisation’s
                       possession or under the organisation’s control to another organisation specified by the individual
                       in a commonly used machine-readable format.</p>
                   </td>
@@ -755,7 +793,7 @@
 
               <p style="margin-bottom: 0 !important;">Detailed information on PDPA can be found at:</p>
               <p>
-                <a href="https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act"
+                <a href="https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act" style="display: inline-block !important;"
                   target="_blank">https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act
                 </a>
               </p>
@@ -1248,53 +1286,166 @@
               <div class="box-info">
                 <h4><strong>Owndays Singapore Pte Ltd Personnel Data Protection Notice (the “Notice”)</strong></h4>
                 <p style="padding: 0 !important;">Updated as at 3 Mar 2026</p>
-                <h4><strong>1. Collection and Use of Personal Data</strong></h4>
-                <p>1.1 In this Notice, “we”, “us”, “our” or “OWNDAYS” means Owndays Singapore Pte Ltd, “you”, “your” or
-                  “yours” means the persons to whom this Notice applies. “Personal Data” has the same meaning as that
-                  defined in the Personal Data Protection Act 2012 (the “PDPA”). </p>
-                <p>1.2 This Notice provides information on the way OWNDAYS obtains, uses, holds, transfers and otherwise
-                  processes your Personal Data as full time, part time and temporary employees, contract workers of
-                  OWNDAYS, and such other persons engaged by OWNDAYS to perform duties or functions for OWNDAYS
-                  (collectively “Personnel”). Collection, use and disclosure of Personal Data is conducted by lawful and
-                  fair means, and consistent with requirements under PDPA. It is also intended to notify Personnel the
-                  rules on the protection of Personal Data and the Personnel’s rights in relation to their Personal Data
-                  processed by OWNDAYS. In addition, the Notice provides information on the circumstances in which one
-                  entity of OWNDAYS processes Personal Data on behalf of another entity of OWNDAYS. </p>
-                <p>1.3 OWNDAYS processes Personal Data about individuals such as its Personnel (past and present), job
-                  applicants, business partners and suppliers. OWNDAYS may process either directly or through third
-                  party vendors and service providers, such Personal Data for a number of business purposes, including:
-                </p>
 
-                <ul class="alpha-list" style="padding-left: 15px;">
-                  <li>
-                    Recruitment, including evaluation and reference checks of an individual for suitability of
-                    employment;
-                  </li>
-                  <li>
-                    Schedule work activities and projects undertaken by OWNDAYS’ departments, teams and retail stores;
-                  </li>
-                  <li>
-                    Employee performance management and professional development;
-                  </li>
-                  <li>Payroll, claims reimbursements, accounting or tax purposes;</li>
-                  <li>Administering records of leave applications and consumption of employment benefits;</li>
-                  <li>Applying for work permits at the Ministry of Manpower, if needed;</li>
-                  <li>Administer business travel (i.e., booking airfare, hotels and applying for visa etc.) and other
-                    corporate events (i.e., annual general meetings, extraordinary general meetings);</li>
-                  <li>Facilitating corporate insurance coverage;</li>
-                  <li>Knowledge management and training for staff;</li>
-                  <li>Government and other regulatory reporting;</li>
-                  <li>Business and market development; </li>
-                  <li>Publicity, external and internal marketing purposes; </li>
-                  <li>For leasing of properties for OWNDAYS’ employees;</li>
-                  <li>For security, safety surveillance and monitoring, reporting (especially in emergency situations)
-                    and contact tracing purposes; </li>
-                  <li>For issuance of staff ID passes and settings of staff access controls;</li>
-                  <li>For internal reporting and/or accounting or audit purposes; </li>
-                  <li>Registrations and submissions with relevant governmental or regulatory authorities (e.g., to
-                    Optometrists and Opticians’ Board for recertifications), and financial institutions (e.g., bank
-                    signatories), as necessary; and</li>
-                </ul>
+                <div>
+                  <h4><strong>1. Collection and Use of Personal Data</strong></h4>
+                  <p>1.1 In this Notice, “we”, “us”, “our” or “OWNDAYS” means Owndays Singapore Pte Ltd, “you”, “your” or
+                    “yours” means the persons to whom this Notice applies. “Personal Data” has the same meaning as that
+                    defined in the Personal Data Protection Act 2012 (the “PDPA”). </p>
+                  <p>
+                    1.2 This Notice provides information on the way OWNDAYS obtains, uses, holds, transfers and otherwise processes your Personal Data as full time, part time and temporary employees, contract workers of OWNDAYS, and such other persons engaged by OWNDAYS to perform duties or functions for OWNDAYS (collectively “Personnel”). Collection, use and disclosure of Personal Data is conducted by lawful and fair means, and consistent with requirements under PDPA. It is also intended to notify Personnel the rules on the protection of Personal Data and the Personnel’s rights in relation to their Personal Data processed by OWNDAYS.  In addition, the Notice provides information on the circumstances in which one entity of OWNDAYS processes Personal Data on behalf of another entity of OWNDAYS. 
+                  </p>
+                  <p>1.3 OWNDAYS processes Personal Data about individuals such as its Personnel (past and present), job applicants, business partners and suppliers. OWNDAYS may process either directly or through third party vendors and service providers, such Personal Data for a number of business purposes, including:
+                  </p>
+
+                  <ul class="alpha-list" style="padding-left: 15px;">
+                    <li>
+                      Recruitment, including evaluation and reference checks of an individual for suitability of employment;
+                    </li>
+                    <li>
+                      Schedule work activities and projects undertaken by OWNDAYS’ departments, teams and retail stores;
+                    </li>
+                    <li>
+                      Employee performance management and professional development;
+                    </li>
+                    <li>Payroll, claims reimbursements, accounting or tax purposes;</li>
+                    <li>Administering records of leave applications and consumption of employment benefits;</li>
+                    <li>Applying for work permits at the Ministry of Manpower, if needed;</li>
+                    <li>Administer business travel (i.e., booking airfare, hotels and applying for visa etc.) and other
+                      corporate events (i.e., annual general meetings, extraordinary general meetings);</li>
+                    <li>Facilitating corporate insurance coverage;</li>
+                    <li>Knowledge management and training for staff;</li>
+                    <li>Government and other regulatory reporting;</li>
+                    <li>Business and market development; </li>
+                    <li>Publicity, external and internal marketing purposes; </li>
+                    <li>For leasing of properties for OWNDAYS’ employees;</li>
+                    <li>For security, safety surveillance and monitoring, reporting (especially in emergency situations)
+                      and contact tracing purposes; </li>
+                    <li>For issuance of staff ID passes and settings of staff access controls;</li>
+                    <li>For internal reporting and/or accounting or audit purposes; </li>
+                    <li>Registrations and submissions with relevant governmental or regulatory authorities (e.g., to
+                      Optometrists and Opticians’ Board for recertifications), and financial institutions (e.g., bank
+                      signatories), as necessary; and</li>
+                    <li>Other purposes required by law or regulation;</li>
+                  </ul>
+
+                  <p>1.4 Please note that if you do not consent to any of the above business purposes, it may affect OWNDAYS’ ability to continue on the employer/employee relationship and/or other engagements with you.</p>
+                </div>
+
+                <div>
+                  <h4><strong>2. OWNDAYS’ Duties</strong></h4>
+                  <p>
+                    2.1 OWNDAYS will process your Personal Data in accordance with PDPA. In particular, OWNDAYS will not process Personal Data unless one of the following conditions is met: 
+                  </p>
+
+                  <ul class="alpha-list" style="padding-left: 15px;">
+                    <li>the individual concerned has consented to such processing;</li>
+                    <li>
+                      <strong>OWNDAYS</strong> needs to carry out such processing (i) to perform, or take steps with view to enter into, a contract with the individual concerned, (ii) to comply with legal obligation of <strong>OWNDAYS</strong> or (iii) to protect the vital interests of the individual concerned in a `life or death' situation; or (iv) as permitted by “other exemptions” under PDPA (as specified in Second, Third, Fourth, Fifth and Sixth Schedule of PDPA)
+                    </li>
+                  </ul>
+
+                  <p>
+                    2.2 When you provide OWNDAYS with your (or those of any third parties) Personal Data, OWNDAYS will process the Personal Data according to PDPA.
+                  </p>
+
+                  <p>
+                    2.3 OWNDAYS will make sure you are informed if the existing Personal Data about you is to be used in a new way, or for different purposes. 
+                  </p>
+
+                  <p>
+                    2.4 OWNDAYS will not collect or use or disclose your Personal Data unless: (a) you consent to such collection, or (b) OWNDAYS needs to do so to meet its obligations or exercise its rights under employment law or other applicable laws and regulations, or (c) in exceptional circumstances such as where the processing is necessary to protect the vital interests of the individual concerned, or (d) in circumstances permitted by PDPA. 
+                  </p>
+
+                  <p>
+                    2.5 OWNDAYS may in exceptional circumstances, rely on consent given on behalf of the individual, for example, by a company employee on behalf of a family member. 
+                  </p>
+
+                  <p>2.6 OWNDAYS shall: </p>
+
+                  <ul class="alpha-list" style="padding-left: 15px;">
+                    <li>not collect Personal Data more than what is reasonably required for the intended purpose; </li>
+                    <li>ensure the Personal Data collected are adequate and relevant for the intended purposes, accurate and up to date; </li>
+                    <li>process Personal Data only for the purposes specified in this Notice or in information provided to the individual concerned; and </li>
+                    <li>ensure one of the conditions in Section 2.1 is met if it processes Personal Data for new or different purposes.</li>
+                  </ul>
+
+                  <p>
+                    2.7 OWNDAYS will maintain retention policies and procedures so that Personal Data is deleted after a reasonable time, given the purposes for which the Personal Data are held, except where, given those purposes, another law requires the data to be kept for a certain period of time.  When OWNDAYS no longer needs to keep Personal Data for the purposes for which they are held, it will destroy them as soon as practicable. OWNDAYS will destroy all unsolicited Personal Data immediately which it comes into contact or possess during the course of business activity. All Personnel can contact the Data Protection Officer (the “DPO”) about the duration and the purposes for which their Personal Data is retained by OWNDAYS.
+                  </p>
+
+                  <p>
+                    2.8 OWNDAYS will maintain appropriate organisational, physical and technical security arrangements to prevent unauthorised access, collection, use, disclosure, copying, modification, disposal of Personal Data in its possession.  
+                  </p>
+
+                  <p>
+                    2.9 OWNDAYS may disclose your Personal Data to any member of our group, which means our subsidiaries, our ultimate holding company and its subsidiaries, as defined in the Companies Act (Cap. 50). On occasion, we may use third party agents and service providers to assist us in the use of your Personal Data as outlined under "Collection and Use of Personal Data". OWNDAYS will not transfer Personal Data to entities outside OWNDAYS in other countries for further processing unless such entities agree to abide by a data protection standard at least as high as this Notice, or enter into a contractual arrangement requiring the same. The only exceptions are where the transfer is necessary to 
+                  </p>
+
+                  <ul class="alpha-list" style="padding-left: 15px;">
+                    <li>protect the vital interests of the individual concerned in a `life or death' situation, or </li>
+                    <li>enter into or perform a contract with (or for the benefit of) that individual.</li>
+                  </ul>
+
+                  <p>
+                    2.10 OWNDAYS has procedures to deal with any suspected breaches of data security arrangements, unauthorized access or disclosure, or loss of Personal Data. 
+                  </p>
+                </div>
+
+                <div>
+                  <h4><strong>3. An Individual's Rights</strong></h4>
+                  <p>3.1 Right of Access and Correction, Withdrawal of Consent Requests</p>
+                  <ul class="alpha-list" style="padding-left: 15px;">
+                    <li>Your Right of Access and Correction shall be as set out in PDPA. You may contact the DPO if you wish to request access and/or make correction to your Personal Data. Please take note that there may be a fee for performing such request. </li>
+                    <li>You may also contact the DPO to withdraw consent on the collection, use and disclosure of your Personal Data. All withdrawal of consent requests shall be done via email request and write in to DPO directly. If more time is needed, the DPO will inform you in writing. After successful withdrawal of consent, DPO shall inform all third parties or data intermediaries to cease, to collect, use or disclose the Personal Data of the individual (If applicable).</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4><strong>4. Accurate and Complete Records</strong></h4>
+                  <p>4.1 OWNDAYS take reasonable actions to verify any Personal Data from third parties’ source are accurate and complete by:</p>
+                  <ul class="alpha-list" style="padding-left: 15px;">
+                    <li>Ensuring third parties source provide the latest and completed data as per date of handover by the third parties. </li>
+                    <li>Performing system verification to ensure mandatory information (e.g., name, IC number, contact number, address, etc.) is provided. </li>
+                  </ul>
+
+                  <p>4.2 OWNDAYS takes reasonable actions where possible to verify the accuracy and completeness of Personal Data before use or disclosure:</p>
+                  <ul class="alpha-list" style="padding-left: 15px;">
+                    <li>Reviewing the current data</li>
+                    <li>Ensuring the data are the latest and most accurate to date </li>
+                    <li>Verifying the data with individual (if necessary)</li>
+                  </ul>
+
+                  <p>
+                    4.3 Please note that it is your responsibility to ensure that all Personal Data (including those that are providing on behalf of another individual) submitted to OWNDAYS is complete, accurate, true and correct at the time of submission.  You are also requested to inform us should there be any changes to the Personal Data that you had submitted to us.
+                  </p>
+
+                  <p>
+                    4.4 OWNDAYS will amend any of the Personal Data when informed by Personnel. OWNDAYS will maintain the amendment details (e.g. changes, date, time, etc). All third parties who have obtained the particular data from OWNDAYS will also be provided with the latest Personal Data where necessary.
+                  </p>
+                </div>
+
+                <div>
+                  <h4><strong>5. Company Compliance with this Notice</strong></h4>
+                  <p>5.1 OWNDAYS will maintain internal and external arrangements to: </p>
+
+                  <ul class="alpha-list" style="padding-left: 15px;">
+                    <li>facilitate compliance with this Notice;</li>
+                    <li>allow effective exercise of individuals' rights guaranteed in the Notice; and</li>
+                    <li>consider and respond to complaints from individuals that OWNDAYS may not have complied with this Notice. </li>
+                  </ul>
+
+                  <p>
+                    You may rely upon these procedures and/or exercise your rights provided as informed in this Notice by contacting the DPO. The email address of the DPO is <a href="mailto:dpo@owndays.co.jp" style="display: inline-block !important;">dpo@owndays.co.jp</a>.
+                  </p>
+
+                  <p>
+                    5.2 OWNDAYS may update this Notice any time. All personnel are reminded they can refer to the latest version on OWNDAYS’ intranet. 
+                  </p>
+
+                  <p>Version 2.0</p>
+                  
+                </div>
               </div>
             </div>
 
@@ -1310,7 +1461,7 @@
                   I expressly consent to such processing for the purposes as set out in OWNDAYS’ Privacy Policy
                   available at
                 </p>
-                <p style="padding: 0 !important;"><a href="https://www.owndays.com/sg/en/privacy"
+                <p style="padding: 0 !important;"><a href="https://www.owndays.com/sg/en/privacy" style="display: inline-block !important;"
                     target="_blank">https://www.owndays.com/sg/en/privacy</a>.</p>
                 <p style="padding: 0 !important; margin: 0;">I understand that any personal data disclosed by me herein
                   will be retained by OWNDAYS and its connected entities as long as any of the purposes set out in
@@ -1328,7 +1479,7 @@
                   I expressly consent to such processing for the purposes as set out in OWNDAYS’ Privacy Policy
                   available at
                 </p>
-                <p style="padding: 0 !important;"><a href="https://www.owndays.com/sg/en/privacy"
+                <p style="padding: 0 !important;"><a href="https://www.owndays.com/sg/en/privacy" style="display: inline-block !important;"
                     target="_blank">https://www.owndays.com/sg/en/privacy</a>.</p>
                 <p style="padding: 0 !important;">I also warrant that I have obtained all necessary consents from any
                   third parties for OWNDAYS to disclose any personal data belonging to such third parties as well as for
@@ -1349,10 +1500,10 @@
               </div>
 
               <div class="small-text-ref" data-key="without-border">
-                <small>
+                <p style="font-size: 10px !important; line-height: 2 !important;">
                   Note: Notice should be prominently displayed prior to and during the collection, use and disclosure of
                   personal data (i.e., at all major entry and exit points of the premises under CCTV surveillance).
-                </small>
+                </p>
               </div>
             </div>
 
@@ -1374,11 +1525,11 @@
               </div>
 
               <div class="small-text-ref" data-key="without-border">
-                <small>
+                <p style="font-size: 10px !important; line-height: 2 !important;">
                   Note: Notice should be prominently displayed prior to and during the collection, use and disclosure of
                   personal data (i.e., at the registration desks, and all major entry and exit points where the event is
                   being held).
-                </small>
+                </p>
               </div>
             </div>
           </div>
