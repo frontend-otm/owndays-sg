@@ -67,6 +67,10 @@
     position: relative;
     img{
       width: 100%;
+      aspect-ratio: 3/2;
+      @media screen and (min-width: 768px) {
+        aspect-ratio: 3/1;
+      }
     }
     .button--primary-main{
       height: 53px;
@@ -247,6 +251,7 @@
           margin-left: auto;
           margin-right: auto;
           display: block;
+          aspect-ratio: 1/1;
           @media screen and (min-width: 768px) {
             margin-left: 0;
             margin-right: 0;
@@ -311,6 +316,7 @@
     img{
       display: block;
       width: 100%;
+      aspect-ratio: 518/311;
     }
     &__item{
       span{
@@ -438,7 +444,9 @@
           margin-top: 16px;
           margin-bottom: 0;
         }
-        @media screen and (min-width: 768px) {
+
+        img{
+          aspect-ratio: 15/8;
         }
       }
       &-buttons{
@@ -472,6 +480,7 @@
       display: block;
       width: 156.5px;
       margin-top: 24px;
+      aspect-ratio: 461/64;
       @media screen and (min-width: 1024px) {
         width: 461px;
         margin-top: 40px;
@@ -485,11 +494,18 @@
     ul{
       list-style: none;
       padding-left: 0px;
+      margin-top: 0px;
       li{
         display: flex;
         gap: 2px;
+        font-size: 12px;
+        font-family: "Founders Grotesk", sans-serif;
+        color: #6D4335;
+        font-weight: 400;
         @media screen and (min-width: 768px) {
           line-height: 35px;
+          font-size: 16px;
+          line-height: 36px;
         }
       }
     }
@@ -627,7 +643,7 @@
     position: relative;
     display: inline-block;
     cursor: pointer;
-    padding-top: 45.85%;
+    padding-top: 55.85%;
     margin-top: 30px;
     margin-bottom: 40px;
     @media screen and (min-width: 768px) {
@@ -671,7 +687,9 @@
     position: relative;
     display: inline-block;
     cursor: pointer;
-    padding-top: 45.85%;
+    padding-top: 55.85%;
+    margin-top: 30px;
+    margin-bottom: 40px;
     @media screen and (min-width: 768px) {
       margin-top: 0px;
       margin-bottom: 0px;

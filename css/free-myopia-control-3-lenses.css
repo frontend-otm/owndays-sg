@@ -60,6 +60,12 @@
 }
 .free-myopia-control-3-lenses__main img {
   width: 100%;
+  aspect-ratio: 3/2;
+}
+@media screen and (min-width: 768px) {
+  .free-myopia-control-3-lenses__main img {
+    aspect-ratio: 3/1;
+  }
 }
 .free-myopia-control-3-lenses__main .button--primary-main {
   height: 53px;
@@ -258,6 +264,7 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
+  aspect-ratio: 1/1;
 }
 @media screen and (min-width: 768px) {
   .free-myopia-control-3-lenses__benefits__list-item img {
@@ -330,6 +337,7 @@
 .free-myopia-control-3-lenses__importance img {
   display: block;
   width: 100%;
+  aspect-ratio: 518/311;
 }
 .free-myopia-control-3-lenses__importance__item span {
   position: relative;
@@ -470,6 +478,9 @@
   margin-top: 16px;
   margin-bottom: 0;
 }
+.free-myopia-control-3-lenses__recommended__content-products img {
+  aspect-ratio: 15/8;
+}
 .free-myopia-control-3-lenses__recommended__content-buttons {
   margin-top: 56px;
 }
@@ -506,6 +517,7 @@
   display: block;
   width: 156.5px;
   margin-top: 24px;
+  aspect-ratio: 461/64;
 }
 @media screen and (min-width: 1024px) {
   .free-myopia-control-3-lenses__recommended__logo {
@@ -520,14 +532,21 @@
 .free-myopia-control-3-lenses__cta ul {
   list-style: none;
   padding-left: 0px;
+  margin-top: 0px;
 }
 .free-myopia-control-3-lenses__cta ul li {
   display: flex;
   gap: 2px;
+  font-size: 12px;
+  font-family: "Founders Grotesk", sans-serif;
+  color: #6D4335;
+  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .free-myopia-control-3-lenses__cta ul li {
     line-height: 35px;
+    font-size: 16px;
+    line-height: 36px;
   }
 }
 .free-myopia-control-3-lenses .button--primary {
@@ -670,7 +689,7 @@
   position: relative;
   display: inline-block;
   cursor: pointer;
-  padding-top: 45.85%;
+  padding-top: 55.85%;
   margin-top: 30px;
   margin-bottom: 40px;
 }
@@ -715,7 +734,9 @@
   position: relative;
   display: inline-block;
   cursor: pointer;
-  padding-top: 45.85%;
+  padding-top: 55.85%;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .free-myopia-control-3-lenses .meaning__playing {
