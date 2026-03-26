@@ -158,13 +158,16 @@
     gap: 8px;
   }
   .free-myopia-control-3-lenses__about__content > div:nth-child(2) {
-    grid-row: span 2/span 2;
+    grid-row: auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .free-myopia-control-3-lenses__about__content {
     gap: 48px;
     grid-template-columns: 674px 1fr;
+  }
+  .free-myopia-control-3-lenses__about__content > div:nth-child(2) {
+    grid-row: auto;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -316,6 +319,11 @@
   display: block;
   width: 100%;
 }
+.free-myopia-control-3-lenses__importance__item span {
+  position: relative;
+  font-size: 12px;
+  top: -8px;
+}
 @media screen and (min-width: 768px) {
   .free-myopia-control-3-lenses__importance__item {
     display: grid;
@@ -367,6 +375,12 @@
   letter-spacing: 0;
   margin-top: 32px;
 }
+@media screen and (min-width: 1024px) {
+  .free-myopia-control-3-lenses__recommended h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
 .free-myopia-control-3-lenses__recommended p {
   font-size: 16px;
   font-family: "Founders Grotesk", sans-serif;
@@ -376,6 +390,12 @@
   letter-spacing: 0;
   margin-top: 24px;
 }
+@media screen and (min-width: 1024px) {
+  .free-myopia-control-3-lenses__recommended p {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
 .free-myopia-control-3-lenses__recommended__content {
   border-radius: 24px;
   background-color: #fff;
@@ -384,6 +404,12 @@
 @media screen and (min-width: 768px) {
   .free-myopia-control-3-lenses__recommended__content {
     padding: 40px 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .free-myopia-control-3-lenses__recommended__content {
+    padding: 80px 40px;
+    border-radius: 32px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -460,6 +486,13 @@
   width: 156.5px;
   margin-top: 24px;
 }
+@media screen and (min-width: 1024px) {
+  .free-myopia-control-3-lenses__recommended__logo {
+    width: 461px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
 .free-myopia-control-3-lenses__cta {
   padding-top: 48px;
 }
@@ -478,7 +511,7 @@
 }
 .free-myopia-control-3-lenses .button--primary {
   background-color: #B3DEE8;
-  color: #6D4335;
+  color: #000;
   font-size: 16px;
   font-family: "Founders Grotesk", sans-serif;
   line-height: 20px;
@@ -564,6 +597,7 @@
   height: 100%;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" fill="none" viewBox="0 0 8 13"><path stroke="white" stroke-linecap="square" stroke-width="1.75" d="m1.238 11.238 5-5-5-5"/></svg>');
   background-repeat: no-repeat;
+  background-size: 8px;
 }
 .free-myopia-control-3-lenses .button--primary-back:hover {
   opacity: 0.8;
@@ -583,8 +617,7 @@
 }
 @media screen and (min-width: 768px) {
   .free-myopia-control-3-lenses .meaning__vdo {
-    object-fit: contain;
-    -o-object-fit: contain;
+    border-radius: 16px;
   }
 }
 .free-myopia-control-3-lenses .meaning__vdo-cover {
@@ -600,10 +633,9 @@
 }
 @media screen and (min-width: 768px) {
   .free-myopia-control-3-lenses .meaning__vdo-cover {
-    object-fit: contain;
-    -o-object-fit: contain;
     position: static;
     height: fit-content;
+    border-radius: 16px;
   }
 }
 .free-myopia-control-3-lenses .meaning__vdo-container {
@@ -621,11 +653,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
     height: fit-content;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .free-myopia-control-3-lenses .meaning__vdo-container {
-    padding-top: 55.85%;
+    padding-top: 56.85%;
   }
 }
 .free-myopia-control-3-lenses .meaning__vdo-container:hover .meaning__vdo-cover {
@@ -648,6 +676,12 @@
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
+@media screen and (min-width: 1024px) {
+  .free-myopia-control-3-lenses .meaning__vdo-container::before {
+    width: 160px;
+    height: 160px;
+  }
+}
 .free-myopia-control-3-lenses .meaning__playing {
   width: 100%;
   height: auto;
@@ -656,9 +690,12 @@
   cursor: pointer;
   padding-top: 45.85%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .free-myopia-control-3-lenses .meaning__playing {
-    padding-top: 55.85%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: fit-content;
+    padding-top: 56.85%;
   }
 }
 .free-myopia-control-3-lenses .meaning__playing::before {
