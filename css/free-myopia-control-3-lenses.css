@@ -501,8 +501,8 @@
     gap: 64px;
   }
   .free-myopia-control-3-lenses__recommended__content-buttons .button--primary {
-    width: 362px !important;
-    max-width: 362px !important;
+    width: 460px !important;
+    max-width: 460px !important;
   }
 }
 .free-myopia-control-3-lenses__recommended__content .button--primary + .button--primary {
