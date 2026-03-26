@@ -60,6 +60,10 @@
     }
   }
   &__main{
+    h1{
+      opacity: 0;
+      position: absolute;
+    }
     position: relative;
     img{
       width: 100%;
@@ -75,6 +79,9 @@
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;
+      &:hover{
+        opacity: 0.8;
+      }
       @media screen and (min-width: 768px) {
         left: calc(90 / 1440 * 100%);
         bottom: calc(51 / 390 * 100%);
@@ -149,6 +156,9 @@
           gap: 12px;
         }
       }
+      @media screen and (min-width: 1240px) {
+        margin-bottom: 0px;
+      }
     }
     &__content{
       @media screen and (min-width: 768px) {
@@ -162,8 +172,8 @@
           }
         }
       }
-      @media screen and (min-width: 1024px) {
-        gap: 48px;
+      @media screen and (min-width: 1240px) {
+        column-gap: 48px;
         grid-template-columns: 674px 1fr;
         >div{
           &:nth-child(2){
@@ -321,7 +331,7 @@
           }
         }
       }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1240px) {
         h2{
           margin-top: 0px;
           margin-bottom: 16px;
@@ -334,7 +344,7 @@
     }
     &__item + &__item{
       margin-top: 45px;
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1240px) {
         margin-top: 56px;
       }
     }
@@ -441,6 +451,13 @@
           margin-left: auto;
           margin-right: auto;
         }
+        @media screen and (min-width: 1240px) {
+          gap: 64px;
+          .button--primary{
+            width: 362px !important;
+            max-width: 362px !important;
+          }
+        }
       }
       .button--primary + .button--primary{
         margin-top: 12px;
@@ -521,7 +538,7 @@
         background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" fill="none" viewBox="0 0 9 15"><path stroke="black" stroke-linecap="square" stroke-width="2.1" d="m1.484 13.484 6-6-6-6"/></svg>');
         background-repeat: no-repeat;
         @media screen and (min-width: 1024px) {
-          top:5px;
+          top:6px;
         }
       }
     }
@@ -564,6 +581,9 @@
     }
     &:hover{
       opacity: 0.8;
+    }
+    @media screen and (min-width: 1240px) {
+      font-size: 14px;
     }
   }
 
@@ -618,9 +638,9 @@
     }
   }
 
-  .meaning__vdo-container:hover .meaning__vdo-cover {
+  .meaning__vdo-container:hover::before {
     background-color: transparent;
-     
+    opacity: 0.8;
   }
 
   .meaning__vdo-container::before {
