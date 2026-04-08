@@ -1,0 +1,96 @@
+body {
+  background: gray;
+}
+
+.stack {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 300px auto;
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 260px;
+  transform: translate(-50%, -50%);
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+/* center */
+.card.center {
+  transform: translate(-50%, -55%) rotate(0deg) scale(1.1);
+  opacity: 1;
+  z-index: 5;
+}
+
+/* right */
+.card.r1 {
+  transform: translate(69%, -40%) rotate(12deg) scale(1);
+  opacity: 1;
+  z-index: 4;
+}
+
+.card.r2 {
+  transform: translate(170%, -10%) rotate(24deg) scale(0.9);
+  opacity: 1;
+  z-index: 3;
+}
+
+/* left */
+.card.l1 {
+  transform: translate(-170%, -42%) rotate(-12deg) scale(1);
+  opacity: 1;
+  z-index: 4;
+}
+
+.card.l2 {
+  transform: translate(-273%, -10%) rotate(-24deg) scale(0.9);
+  opacity: 1;
+  z-index: 3;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #000;
+  width: 24px;
+  border-radius: 6px;
+}
+
+.dot.active::after {
+  content: "";
+  display: block;
+  height: 100%;
+  background: #000;
+  animation: progress 2.5s linear;
+}
+
+@keyframes progress {
+  from { width: 0; }
+  to { width: 100%; }
+}
