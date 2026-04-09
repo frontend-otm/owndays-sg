@@ -106,16 +106,22 @@
 }
 
 .l-acuvue-contact-lens__main {
-  background: url('https://assets.lenskart.com/images/2026/04/07/acuvue-contact-lens-main_sp.webp') no-repeat left bottom / cover;
-
-  @media (min-width: 768px) {
-    background: url('https://assets.lenskart.com/images/2026/04/07/acuvue-contact-lens-main_pc.webp') no-repeat left bottom / cover;
+  position: relative;
+  
+  > bg {
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }
 
 .l-acuvue-contact-lens__main__container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
-  max-width: 1440px;
+  max-width: 425px;
   height: auto;
   aspect-ratio: 3/2;
   padding-block: 34px 24px;
@@ -125,9 +131,14 @@
   justify-content: space-between;
   margin-inline: auto;
 
+  @media (min-width: 425px) {
+    padding-block: 40px;
+  }
+
   @media (min-width: 768px) {
     aspect-ratio: 3/1;
     padding-inline: 20px;
+    max-width: 1440px;
   }
 
   @media (min-width: 1024px) {
