@@ -3,9 +3,9 @@ const BREAKPOINT_LG = 1024;
 const AOS_OFFSET_RATIO = 0.5;
 
 const SPECIAL_SCROLL_TARGETS = [
-  '#star-wars-hand-case',
+  '#hard-case-film',
   '#cylinder-case',
-  '#grogu-hard-case',
+  '#hard-case-grogu',
 ];
 
 const PRODUCT_HEADER_SELECTOR = [
@@ -76,10 +76,10 @@ function initImageAOSRefresh() {
 
 function getOffset(target) {
   if (SPECIAL_SCROLL_TARGETS.includes(target)) {
-    return isMobile() ? 280 : 400;
+    return isMobile() ? 212 : 420;
   }
 
-  return isMobile() ? 100 : 150;
+  return isMobile() ? 100 : 184;
 }
 
 function smoothScrollTo(target, callback) {
@@ -149,23 +149,40 @@ function setLineupNav() {
   ];
 
   document.querySelectorAll('.lineup__navs').forEach((list) => {
-    const repeat = Number(list.dataset.repeat || 1);
     const basePath = 'https://storage.owndays.com/news/starwars/products/';
-
-    list.innerHTML = Array.from({ length: repeat }, (_, repeatIndex) =>
+  
+    const createItems = () =>
       lineupNavs.map(([id, image, name, collection]) => `
-        <li${repeatIndex > 1 ? ' aria-hidden="true"' : ''}>
+        <li>
           <a href="#${id}">
             <div>
               <div class="lineup__navs__box">
                 <img src="${basePath}${image}" alt="${name} ${collection}">
               </div>
-              <p class="lineup__navs__title">${name} <br>${collection}</p>
+  
+              <p class="lineup__navs__title">
+                ${name}<br>${collection}
+              </p>
             </div>
           </a>
         </li>
-      `).join('')
-    ).join('');
+      `).join('');
+  
+    // initial
+    list.innerHTML = createItems().repeat(999);
+  
+    // endless append
+    list.addEventListener('animationiteration', () => {
+      list.insertAdjacentHTML('beforeend', createItems());
+  
+      const items = list.querySelectorAll('li');
+  
+      if (items.length > lineupNavs.length * 20) {
+        for (let i = 0; i < lineupNavs.length; i++) {
+          items[i].remove();
+        }
+      }
+    });
   });
 }
 
