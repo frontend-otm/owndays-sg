@@ -121,8 +121,7 @@ function setPeriod() {
   const deadlineSGT = new Date("2026-06-14T23:59:59+08:00");
 
   if (now > deadlineSGT) {
-    reservePeriod.textContent =
-      "Reserve from 26 MAY 26 - 14 JUNE 26";
+    reservePeriod.style.display = "none";
   }
 }
 
