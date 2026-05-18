@@ -611,16 +611,20 @@ function createStar() {
 }
 
 function setInspiredName() {
+  injectInspiredDoneStyle();
+
   document.querySelectorAll('.js-stroke-split').forEach((el) => {
     if (el.classList.contains('is-splitted')) return;
 
-    const text = el.textContent.replace(/\s+/g, ' ').trim();
-
     el.classList.add('is-splitted');
-    el.setAttribute('aria-label', text);
-    el.textContent = '';
 
-    const chars = Array.from(text);
+    const text = el.textContent.trim();
+    if (!text) return;
+
+    el.setAttribute('aria-label', text);
+    el.innerHTML = '';
+
+    const chars = [...text];
 
     const visibleChars = chars
       .map((char, index) => ({ char, index }))
@@ -629,41 +633,31 @@ function setInspiredName() {
     const centerIndex = Math.floor((visibleChars.length - 1) / 2);
     const ordered = [];
 
-    for (let offset = 0; offset < visibleChars.length; offset++) {
-      const left = centerIndex - offset;
-      const right = centerIndex + offset;
+    ordered.push(visibleChars[centerIndex]);
 
-      if (visibleChars[left]) {
-        ordered.push(visibleChars[left]);
-      }
-
-      if (offset !== 0 && visibleChars[right]) {
-        ordered.push(visibleChars[right]);
-      }
+    for (let i = 1; i < visibleChars.length; i++) {
+      if (visibleChars[centerIndex - i]) ordered.push(visibleChars[centerIndex - i]);
+      if (visibleChars[centerIndex + i]) ordered.push(visibleChars[centerIndex + i]);
     }
 
     const delayMap = new Map();
+    const maxTotalDelay =
+      text === 'CHARACTER-INSPIRED'
+        ? 540
+        : 500;
+    const step = ordered.length > 1 ? maxTotalDelay / (ordered.length - 1) : 0;
 
     ordered.forEach((item, orderIndex) => {
-      const delay = (orderIndex % 3) * 300 + Math.floor(orderIndex / 3) * 180;
-      delayMap.set(item.index, delay);
+      delayMap.set(item.index, Math.round(orderIndex * step));
     });
-
-    const fragment = document.createDocumentFragment();
 
     chars.forEach((char, index) => {
-      const span = createInspiredChar(char, delayMap.get(index) ?? 0);
-
-      span.style.webkitTransform = 'translateZ(0)';
-      span.style.transform = 'translateZ(0)';
-      span.style.webkitBackfaceVisibility = 'hidden';
-      span.style.backfaceVisibility = 'hidden';
-      span.style.willChange = 'opacity, transform';
-
-      fragment.appendChild(span);
+      el.appendChild(createInspiredChar(char, delayMap.get(index) ?? 0));
     });
 
-    el.appendChild(fragment);
+    setTimeout(() => {
+      el.classList.add('is-inspired-done');
+    }, maxTotalDelay + 3000);
   });
 }
 

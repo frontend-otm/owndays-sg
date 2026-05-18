@@ -474,32 +474,36 @@
             </div>
           `;
 
-        const renderImages = product => `
-          <div class="product__image">
-            <span
-              class="product__caption"
-              data-id="${product.id}"
-              ${!product.caption ? 'style="display:none;"' : ""}
-            >
-              ${product.caption || ""}
-            </span>
+        const renderImages = product => {
+          const caption = captions[product.number] || "";
 
-            <ul class="product__image__slider">
-              ${Array.from({ length: product.countSlider }, (_, index) => {
-                const image = generateProductImg(product, index);
+          return `
+            <div class="product__image">
+              <span
+                class="product__caption"
+                data-id="${product.id}"
+                ${!caption ? 'style="display:none;"' : ""}
+              >
+                ${caption}
+              </span>
 
-                return `
-                  <li data-option-index="${getOptionIndex(product, index)}">
-                    <img
-                      src="${imgUrl}/products/slider/${image}.webp"
-                      alt="${image}"
-                    />
-                  </li>
-                `;
-              }).join("")}
-            </ul>
-          </div>
-        `;
+              <ul class="product__image__slider">
+                ${Array.from({ length: product.countSlider }, (_, index) => {
+                  const image = generateProductImg(product, index);
+
+                  return `
+                    <li data-option-index="${getOptionIndex(product, index)}">
+                      <img
+                        src="${imgUrl}/products/slider/${image}.webp"
+                        alt="${image}"
+                      />
+                    </li>
+                  `;
+                }).join("")}
+              </ul>
+            </div>
+          `;
+        };
 
         const renderOptions = product => {
           const group = skuGroups[product.number];
