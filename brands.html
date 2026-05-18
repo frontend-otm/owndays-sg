@@ -111,6 +111,17 @@
       max-height: 40px;
       overflow-y: visible;
     }
+
+    @keyframes expandHeight {
+      0% {
+        max-height: 0;
+        opacity: 0;
+      }
+      100% {
+        max-height: 9999px;
+        opacity: 1;
+      }
+    }
   </style>
   <link id="sa-css" rel="stylesheet" type="text/css" href="https://tags.srv.stackadapt.com/sa.css" media="all">
 </head>
@@ -174,6 +185,9 @@
             </li>
             <li>
               <div class="brands__card" data-brand="theone"><img src="https://static.lenskart.com/owndays/img/brands/the-one/Brands.webp" alt="THE ONE by OWNDAYS Lab." loading="lazy"></div>
+            </li>
+            <li>
+              <div class="brands__card" data-brand="starwars"><img src="https://assets.lenskart.com/images/2026/05/18/starwars_brand_thumb.webp" alt="STAR WARS | OWNDAYS" loading="lazy"></div>
             </li>
             <li data-startdate="2026-03-02T10:00:00+08:00">
               <div class="brands__card" data-brand="strangerThings"><img src="https://assets.lenskart.com/images/2026/02/16/stranger-things_brand_thumb.webp" alt="OWNDAYS × STRANGER THINGS" loading="lazy"></div>
@@ -630,6 +644,22 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
             productsLink: null,   // not provided in snippet
             detailsLink: "/sg/en/news/gundam5-zeon"
           },
+          starwars: {
+            title: "STAR WARS | OWNDAYS",
+            logo: "https://assets.lenskart.com/images/2026/05/18/starwars-logo.webp",
+            slides: [
+              "https://assets.lenskart.com/images/2026/05/18/starwars_brand_slider1.webp",
+              "https://assets.lenskart.com/images/2026/05/18/starwars_brand_slider2.webp",
+              "https://assets.lenskart.com/images/2026/05/18/starwars_brand_slider3.webp",
+              "https://assets.lenskart.com/images/2026/05/18/starwars_brand_slider4.webp",
+              "https://assets.lenskart.com/images/2026/05/18/starwars_brand_slider5.webp",
+            ],
+            description: "A long time ago, in a galaxy far, far away….and beloved by fans across the universe comes the STAR WARS | OWNDAYS Accessories Collection. Featuring designs that are simple yet powerful, with colors and details that reflect the spirit of the STAR WARS universe. Each piece captures the unique identity of these beloved characters while keeping a sleek and stylish look. <br/>No matter where your mission takes you, they are ready to go with you anytime, anywhere.",
+            tagline: "",
+            productsLink: "/sg/en/accessories/starwars.html",
+            detailsLink: "/sg/en/news/starwars",
+            recommended: "MEN・WOMEN"
+          },
           strangerThings: {
             title: "OWNDAYS × STRANGER THINGS",
             logo: "https://assets.lenskart.com/images/2026/02/16/stranger-things_brand_logo.webp",
@@ -755,10 +785,23 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
           let detailsButton = "";
           let singleClass = "";
 
+          const launchDate = new Date("2026-05-26T00:00:00+08:00");
+          const now = new Date();
+
+          const isStarwarsDetails = data.detailsLink === "/sg/en/news/starwars";
+          const canShowDetails = !isStarwarsDetails || now >= launchDate;
+
           if (data.productsLink && data.detailsLink) {
             // Case 1: both links exist
             productsButton = `<a class="button button--secondary" href="${data.productsLink}">See All Products</a>`;
-            detailsButton = `<a class="button button--secondary brands__display" href="${data.detailsLink}">More Details</a>`;
+
+            const isStarwarsDetails = data.detailsLink === "/sg/en/news/starwars";
+            const starwarsLaunchDate = new Date("2026-05-26T00:00:00+08:00");
+            const now = new Date();
+
+            if (!isStarwarsDetails || now >= starwarsLaunchDate) {
+              detailsButton = `<a class="button button--secondary brands__display" href="${data.detailsLink}">More Details</a>`;
+            }
           } else if (data.productsLink) {
             // Case 2: only products
             singleClass = "button--full";
