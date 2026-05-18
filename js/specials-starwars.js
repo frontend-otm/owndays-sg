@@ -614,50 +614,56 @@ function setInspiredName() {
   document.querySelectorAll('.js-stroke-split').forEach((el) => {
     if (el.classList.contains('is-splitted')) return;
 
+    const text = el.textContent.replace(/\s+/g, ' ').trim();
+
     el.classList.add('is-splitted');
-
-    const text = el.textContent.trim();
-
     el.setAttribute('aria-label', text);
-    el.innerHTML = '';
+    el.textContent = '';
 
-    const chars = [...text];
+    const chars = Array.from(text);
+
     const visibleChars = chars
       .map((char, index) => ({ char, index }))
       .filter((item) => item.char !== ' ');
 
     const centerIndex = Math.floor((visibleChars.length - 1) / 2);
-
     const ordered = [];
 
-    ordered.push(visibleChars[centerIndex]);
+    for (let offset = 0; offset < visibleChars.length; offset++) {
+      const left = centerIndex - offset;
+      const right = centerIndex + offset;
 
-    for (let i = 1; i <= centerIndex + 1; i++) {
-      if (visibleChars[centerIndex - i]) {
-        ordered.push(visibleChars[centerIndex - i]);
+      if (visibleChars[left]) {
+        ordered.push(visibleChars[left]);
       }
 
-      if (visibleChars[centerIndex + i]) {
-        ordered.push(visibleChars[centerIndex + i]);
+      if (offset !== 0 && visibleChars[right]) {
+        ordered.push(visibleChars[right]);
       }
     }
 
     const delayMap = new Map();
 
     ordered.forEach((item, orderIndex) => {
-      const group = orderIndex % 3;
-
-      let delay = 0;
-
-      if (group === 1) delay = 300;
-      if (group === 2) delay = 600;
-
-      delayMap.set(item.index, delay + Math.floor(orderIndex / 3) * 180);
+      const delay = (orderIndex % 3) * 300 + Math.floor(orderIndex / 3) * 180;
+      delayMap.set(item.index, delay);
     });
+
+    const fragment = document.createDocumentFragment();
 
     chars.forEach((char, index) => {
-      el.appendChild(createInspiredChar(char, delayMap.get(index) || 0));
+      const span = createInspiredChar(char, delayMap.get(index) ?? 0);
+
+      span.style.webkitTransform = 'translateZ(0)';
+      span.style.transform = 'translateZ(0)';
+      span.style.webkitBackfaceVisibility = 'hidden';
+      span.style.backfaceVisibility = 'hidden';
+      span.style.willChange = 'opacity, transform';
+
+      fragment.appendChild(span);
     });
+
+    el.appendChild(fragment);
   });
 }
 
