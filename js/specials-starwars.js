@@ -610,6 +610,32 @@ function createStar() {
   return star;
 }
 
+function injectInspiredDoneStyle() {
+  if (document.getElementById('inspired-done-style')) return;
+
+  const style = document.createElement('style');
+  style.id = 'inspired-done-style';
+
+  style.textContent = `
+    .js-stroke-split.is-inspired-done > span {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+
+    .js-stroke-split.is-inspired-done > span::before {
+      opacity: 0.32 !important;
+      visibility: visible !important;
+    }
+
+    .js-stroke-split.is-inspired-done > span::after {
+      opacity: 0.08 !important;
+      visibility: visible !important;
+    }
+  `;
+
+  document.head.appendChild(style);
+}
+
 function setInspiredName() {
   injectInspiredDoneStyle();
 
