@@ -785,18 +785,12 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
           let detailsButton = "";
           let singleClass = "";
 
-          const launchDate = new Date("2026-05-26T00:00:00+08:00");
-          const now = new Date();
-
-          const isStarwarsDetails = data.detailsLink === "/sg/en/news/starwars";
-          const canShowDetails = !isStarwarsDetails || now >= launchDate;
-
           if (data.productsLink && data.detailsLink) {
             // Case 1: both links exist
             productsButton = `<a class="button button--secondary" href="${data.productsLink}">See All Products</a>`;
 
             const isStarwarsDetails = data.detailsLink === "/sg/en/news/starwars";
-            const starwarsLaunchDate = new Date("2026-05-26T00:00:00+08:00");
+            const starwarsLaunchDate = new Date("2026-05-26T10:00:00+08:00");
             const now = new Date();
 
             if (!isStarwarsDetails || now >= starwarsLaunchDate) {
