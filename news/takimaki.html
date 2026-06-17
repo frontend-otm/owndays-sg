@@ -458,6 +458,7 @@
             z-index: 1;
         }
     </style>
+    </style>
 </head>
 
 <body id="main-body" style="display: block" class="is-sale-time">
@@ -9358,6 +9359,25 @@
     
     <script>
         window.IMG_URL ="https://storage.owndays.com";
+    </script>
+    <!-- fix: cap special-guest reveal to the cover's real height so no black panel shows
+         below the last content (SHARE) at any browser zoom. Keeps the sticky-scroll animation. -->
+    <script>
+        (function () {
+            function fitGuestOverlay() {
+                document.querySelectorAll('.takimaki-special-guest').forEach(function (sg) {
+                    var cover = sg.querySelector('.takimaki-special-guest__cover');
+                    if (cover) {
+                        sg.style.setProperty('--takimaki-guest-overlay-h', cover.offsetHeight + 'px');
+                    }
+                });
+            }
+            window.addEventListener('load', fitGuestOverlay);
+            window.addEventListener('resize', fitGuestOverlay);
+            // re-measure after fonts/layout settle (zoom also fires resize)
+            [200, 800, 2000].forEach(function (t) { setTimeout(fitGuestOverlay, t); });
+            fitGuestOverlay();
+        })();
     </script>
 </body>
 
