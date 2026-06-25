@@ -2514,19 +2514,43 @@
             </div>
           </section>
         </div>
-     <section id="under-nav" aria-hidden="false"
-          class="l-underNav py-[11px] fixed bottom-0 left-0 right-0 bg-[#F4F1ED] w-full z-[10] lg:py-[19px] is-ready">
+      </section>
+       <section id="under-nav" aria-hidden="false"
+          class="l-underNav py-[11px] fixed bottom-0 left-0 right-0 bg-[#F4F1ED] w-full z-[10] lg:py-[19px] is-ready is-hidden">
           <div class="container">
             <div class="flex items-center justify-center">
               <div class="text-center lg:flex-center lg:gap-[5px]">
                 <p class="font-euclid font-[600]"><span class="text-[18px] lg:text-[24px]"><span>2 July 2026</span>
-                        <span>SGT</span></p>
+                        <span>THU</span></p>
                 <p class="text-[16px] font-[700] font-heisei lg:text-[18px]">Online & Physical Stores</p>
               </div>
             </div>
           </div>
         </section>
-      </section>
+        <script>
+          (function () {
+            var el = document.getElementById('under-nav');
+            if (!el) return;
+            var shown = false;
+            var show = function () {
+              if (shown) return;
+              shown = true;
+              requestAnimationFrame(function () { el.classList.remove('is-hidden'); });
+            };
+
+            setTimeout(show, 2000);
+
+            var afterReady = function () {
+              if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(show).catch(show);
+              } else {
+                show();
+              }
+            };
+            if (document.readyState === 'complete') afterReady();
+            else window.addEventListener('load', afterReady);
+          })();
+        </script>
       </section>
 
       <div id="takimaki-modal-try-on-host" class="hidden" aria-hidden="true" data-nosnippet>
