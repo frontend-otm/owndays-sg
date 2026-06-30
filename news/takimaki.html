@@ -666,9 +666,9 @@
               <p class="text-center flex justify-center items-baseline gap-x-[10px] mt-[20px]"
                 data-aos="takimaki-soft-fade-up" data-aos-duration="1500" data-aos-easing="ease-out-cubic"
                 data-aos-delay="200">
-                <span class="text-[20px] font-heisei font-[500] leading-[20px] tracking-[1.4px]">4 designs 16
+                <span class="text-[20px] lg:text-[25px] font-euclid font-[500] leading-[20px] tracking-[1.4px]">4 designs 16
                   variations</span>
-                <span class="text-[22px] font-founder font-[500] leading-[35px] tracking-[1.32px]">S$198</span>
+                <span class="text-[20px] lg:text-[25px] font-euclid font-[500] leading-[35px] tracking-[1.32px]">S$198</span>
               </p>
 
               <div class="mt-[40px] md:grid md:grid-cols-[1fr_1fr] md:gap-[20px] lg:mt-[60px] lg:gap-[40px]">
@@ -2399,7 +2399,7 @@
                           Refractive
                           Index
                         </td>
-                        <td class="font-heisei text-[#666] px-[16px] py-[24px] md:text-[15px] md:tracking-[1px]">
+                        <td class="font-euclid text-[#666] px-[16px] py-[24px] md:text-[16px] md:tracking-[1px]">
                           1.60, 1.67, 1.74 </td>
                       </tr>
                     </tbody>
@@ -2540,9 +2540,11 @@
           <div class="container">
             <div class="flex items-center justify-center">
               <div class="text-center lg:flex-center lg:gap-[5px]">
-                <p class="font-euclid font-[600]"><span class="text-[18px] lg:text-[24px]"><span>2 July 2026</span>
-                        <span>SGT</span></p>
-                <p class="text-[16px] font-[700] font-heisei lg:text-[18px]">Online & Physical Stores</p>
+              <p class="font-euclid font-[600] flex justify-center items-center gap-[4px] lg:justify-start">
+                <span class="text-[18px] lg:text-[24px]">2 July 2026</span>
+                <span class="text-[16px] lg:text-[18px]">SGT</span>
+              </p>
+              <p class="text-[16px] font-[700] font-euclid lg:text-[18px]">Online & Physical Stores</p>
               </div>
             </div>
           </div>
@@ -2603,305 +2605,7 @@
           <input type="hidden" id="is-repurchase" name="" value="false">
           <input type="hidden" id="prescription-type" name="" value="">
 
-          <div id="try-on" class="modal fade p-modal__tryon p-modal__tryon--2 p-modal__tryon--3" tabindex="-1">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="modal-actions" style="z-index:9">
-                    <div class="modal-actions-mode">
-                      <label for="mode-ar">
-                        <input type="radio" name="switch-mode" id="mode-ar" value="try_on" checked>
-                        <span>AR</span>
-                      </label>
-                      <label for="mode-3d">
-                        <input type="radio" name="switch-mode" id="mode-3d" value="view_360">
-                        <span>3D</span>
-                      </label>
-                    </div>
-                    <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">Close</button>
-                  </div>
-                  <div class="modal-grid">
-                    <div class="modal-display">
-                      <div id="vr-glasson"></div>
-
-                      <button id="btn-lens-color" type="button" class="modal-lens-color-btn" style="z-index:10">
-                        <img src="https://storage.owndays.com/images/lens/lens-01.webp" alt="LENS COLOR" width="32"
-                          height="32">
-                        <span>レンズカラー</span>
-                      </button>
-
-                      <div id="fav_lens_sp" class="fav-lens-sp-container">
-                        <label class="c-btn__fav c-btn__fav--lens-color" for="lens-color-favorite">
-                          <input id="lens-color-favorite" type="checkbox" name="lens-color-favorite">
-                          <span>Favorite</span>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="modal-options" style="z-index:7">
-                      <div class="row-section-transition">
-
-                        <div class="section-track">
-                          <img src="https://storage.owndays.com/storage/glass-on/home-slide.svg" width="18"
-                            alt="home slide">
-                          <input type="range" name="range-transparent" min="0" max="100" step="0.1" value="50"
-                            class="slide-range" oninput="(function(event) {
-      const val = event.target.value;
-      console.log('updateLensTransparent', val);
-    })(event)" />
-                          <img src="https://storage.owndays.com/storage/glass-on/sun-slide.svg" width="20"
-                            class="sun-slide" alt="sun slide">
-                        </div>
-                      </div> <span class="modal-loading">
-                        <i aria-hidden="true" class="fas fa-spinner fa-spin"></i>
-                      </span>
-                      <div class="modal-options-body">
-                        <p id="e-product-brand" class="modal-options-body-brand"></p>
-                        <p id="e-product-model" class="modal-options-body-model-name"></p>
-                        <p id="e-product-no" class="modal-options-body-no"></p>
-                        <div id="e-skus" class="modal-options-body-colors">
-
-                        </div>
-                        <div class="modal-options-body-colors-selected" id="selected-sku-text"></div>
-                        <label for="product-favorite" class="c-btn__fav">
-                          <input type="checkbox" name="product-favorite" id="product-favorite">
-                          <span>Favorite</span>
-                        </label>
-                      </div>
-                      <div class="modal-options-footer" style="">
-                        <p>Total <strong class="text-total-price u-ml__8"></strong></p>
-                        <div class="c-btn c-btn--blue--secondary c-btn--pill">
-                          <button id="btn-open-modal-lens" type="button"
-                            class="d-none disabledLoading"><i></i>オンライン在庫なし</button>
-                          <a href="#" id="btn-open-modal-lens-2" class="d-none disabledLoading"><i aria-hidden="true"
-                              class="fas fa-spinner fa-spin d-none"></i> カートに入れる</a>
-                        </div>
-                      </div>
-
-                      <div class="modal-options-lens modal-options-lens--2">
-                        <div class="modal-options-lens-inner">
-
-                          <button class="modal-close btn-close-modal-options-lens" type="button"
-                            aria-label="Close">Close</button>
-                          <button id="lens-btn-reset" class="modal-options-lens-btn-reset" type="button"
-                            aria-label="Reset"></button>
-                          <h4
-                            class="modal-options-lens-title modal-options-lens-title--sp modal-options-lens-selected-title">
-                            <span></span>
-                            <i data-toggle="modal" data-target="#modal-note_default-lens">?</i>
-                          </h4>
-                          <h5 class="modal-options-lens-price modal-options-lens-price--sp">+¥0</h5>
-                          <ul id="e-lens-type" class="modal-options-lens-ul">
-
-                          </ul>
-
-                          <div id="sub_color_lens_sp">
-                            <div class="modal-options-lens-sub-color-lens">
-                              <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
-                              <div id="e-sub-color-lens">
-                                <ul class="swiper-wrapper">
-
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-
-                          <ul id="e-lens-type-m" class="modal-options-lens-ul-type">
-
-                          </ul>
-                        </div>
-                        <div class="modal-options-lens-footer">
-                          <h4 class="modal-options-lens-selected-title"></h4>
-                          <h5 class="modal-options-lens-price modal-options-lens-price--pc"></h5>
-                          <div class="c-btn c-btn--pill c-btn--primary c-btn--primary-center c-btn--fullwidth">
-                            <button class="btn-close-modal-options-lens">閉じる</button>
-                          </div>
-                          <div id="fav_lens_pc" class="fav-lens-pc-container"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <form id="cart-add-new" action="/jp/ja/cart/new" class="btn-add-cart" method="POST">
-            <input type="hidden" name="_token" value="hZMXRjvm453gL9xkkjes9afzBBEapzej7ZK6qoTj">
-            <div id="modal-lens-selection" class="modal  fade p-modal__lens-selection pr-0" tabindex="-1">
-              <div class="modal-dialog">
-                <div class="modal-content">
-
-                  <modal-lens-selection-confirmation :modal-lr-confirm-gate="false"
-                    :shops-map-url='"\/jp\/ja\/shops?autoSearchCurrentLocation=true"'
-                    :lens-replacement-product-url='"\/jp\/ja\/products\/GlassesProcessingFee"'></modal-lens-selection-confirmation>
-                  <div id="modal-lens-selection-main" class="">
-                    <div id="modal-lens-selection-content">
-                      <div class="modal-price">Total <strong class="text-total-price u-ml__8"></strong></div>
-                      <button type="button" id="previous-step"
-                        class="modal-back btn-prev-step counter-step current-step-2 current-step-3 current-step-4"> 戻る
-                      </button>
-                      <button type="button" id="close-modal" class="modal-close" style="z-index: 8">Close</button>
-                      <div class="modal-progress">
-                        <span id="progressBar"></span>
-                      </div>
-                      <div class="modal-display">
-                        <div class="row-section-transition">
-
-                          <div class="section-track">
-                            <img src="https://storage.owndays.com/storage/glass-on/home-slide.svg" width="18"
-                              alt="home slide">
-                            <input type="range" name="range-transparent" min="0" max="100" step="0.1" value="50"
-                              class="slide-range" oninput="(function(event) {
-      const val = event.target.value;
-      console.log('updateLensTransparent', val);
-    })(event)" />
-                            <img src="https://storage.owndays.com/storage/glass-on/sun-slide.svg" width="20"
-                              class="sun-slide" alt="sun slide">
-                          </div>
-                        </div>
-                        <div id="vr-glasson-360"></div>
-                        <p class="modal-display-caption" style="z-index:9"></p>
-                      </div>
-                      <div class="modal-options">
-                        <div class="modal-loading">
-                          <i aria-hidden="true" class="fas fa-spinner fa-spin"></i>
-                        </div>
-                        <div id="step-1" class="counter-step current-step-1">
-                          <h3 class="modal-options-title">メガネの種類を選択してください</h3>
-                          <div class="modal-options-types">
-                            <label for="with-prescription">
-                              <input type="radio" name="withPrescription" id="with-prescription" value="true">
-                              <span>度付き</span>
-                            </label>
-                            <label for="without-prescription">
-                              <input type="radio" name="withPrescription" id="without-prescription" value="false">
-                              <span>度無し</span>
-                            </label>
-                          </div>
-                          <!-- <ul class="modal-notes">
-                    <li>度無しレンズにてご購入の場合は、レンズ保証の対象外となります。あらかじめご了承ください。</li>
-                  </ul> -->
-                        </div>
-                        <div id="step-2" class="counter-step current-step-2">
-                          <h3 class="modal-options-title">度数の入力方法を選択</h3>
-                          <div class="modal-options-frequency">
-                            <div class="modal-options-frequency-option">
-                              <h4 class="modal-options-frequency-title">度数情報がわかる方</h4>
-                              <label for="with_prescription">
-                                <input type="radio" name="prescriptionOption" id="with_prescription"
-                                  value="with_prescription">
-                                <div>
-                                  <div id="tw1111-banner"
-                                    class="modal-options-lenstype-recommendation modal-options-lenstype-recommendation--red"
-                                    style="display:none">
-                                    <span class="modal-options-lenstype-recommendation-title">1111超級購物節</span>
-                                    <span class="modal-options-lenstype-recommendation-text">限時優惠</span>
-                                  </div>
-                                  <h5>オンライン上で入力または選択する</h5>
-                                  <p>度数を新たに入力するか、店頭やオンラインストアで過去に購入した度数を使用する購入方法です。</p>
-                                </div>
-                              </label>
-                            </div>
-                            <div class="modal-options-frequency-option" id="menu_lens_exchange_ticket">
-                              <h4 class="modal-options-frequency-title">度数情報がわからない方</h4>
-                              <div class="modal-options-frequency-body" id="menu_lens_exchange_ticket_label"></div>
-
-                            </div>
-                            <div class="modal-options-frequency-option" id="menu_post_order">
-                              <h4 class="modal-options-frequency-title">度数情報がわからない方</h4>
-                              <label for="post_order">
-                                <input type="radio" name="prescriptionOption" id="post_order" value="post_order">
-                                <div>
-                                  <h5>送るメガネと同じ度数で作成する</h5>
-                                </div>
-                              </label>
-                            </div>
-                          </div>
-                          <ul class="modal-notes">
-                            <li>レンズ交換チケットの有効期限は商品発送から3ヶ月間です。(日本国外の店舗ではご利用いただけません)</li>
-                            <li class="for-kafun d-none" style="color: #bf0000">度付きレンズへの変更は追加料金がかかります</li>
-                            <li class="not-for-kafun">ディスプレイ用デモレンズの状態でお届けします。</li>
-                            <li class="not-for-saunamegane">オプションレンズへの変更は追加料金がかかります。</li>
-                            <li class="for-saunamegane d-none" style="color: #bf0000">
-                              サウナメガネ専用くもり止めレンズは他のオプションレンズと併用はできません</li>
-                          </ul>
-                        </div>
-                        <div id="step-3" class="counter-step current-step-3">
-                          <h3 class="modal-options-title">レンズの種類を選択</h3>
-
-                          <ul class="modal-tab">
-                            <li>
-                              <span class="modal-tab-button active" data-tab="e-lens-type-product-detail">一覧</span>
-                            </li>
-                            <li>
-                              <span class="modal-tab-button" data-tab="e-lens-type-product-detail-favorite">お気に入り</span>
-                            </li>
-                          </ul>
-                          <ul class="modal-options-lenstype" id="e-lens-type-product-detail">
-
-                          </ul>
-                          <div id="e-lens-type-product-detail-favorite" class="d-none">
-                            <ul class="modal-options-lenstype">
-
-                            </ul>
-                          </div>
-                          <ul class="modal-notes">
-                            <li>屈折率（薄さ）1.60/1.67/1.74のレンズから、お客様の度数に合わせた最適なレンズでお作りしております。</li>
-                            <li>お選びいただくレンズ／オプション、お支払い方法によって発送予定日が変更になる場合があります。</li>
-                          </ul>
-                        </div>
-                        <div id="step-4" class="counter-step current-step-4">
-                          <h3 class="modal-options-title">レンズオプションを選択</h3>
-                          <ul class="modal-options-lenstype" id="e-lens-coating-product-detail">
-
-                          </ul>
-                        </div>
-
-                      </div>
-                      <div class="modal-footer">
-                        <p class="modal-footer-unselected" id="unselected">
-                          <span id="unselectedText"></span>
-                        </p>
-                        <div class="modal-footer-next" id="next">
-
-                          <div class="c-btn c-btn--blue--secondary c-btn--pill c-btn--fullwidth" id="step-btn-next">
-                            <button type="button" class="btn-next-step counter-step current-step-1">
-                              次へ（<i></i>度数の入力方法 ）
-                            </button>
-                            <button type="button" class="btn-next-step counter-step current-step-2">
-                              次へ（<i></i>レンズの種類 ）
-                            </button>
-                            <button type="button" class="btn-next-step counter-step current-step-3">
-                              次へ（<i></i>レンズオプション ）
-                            </button>
-                            <button type="submit" class="btn-next-step counter-step current-step-4">
-                              カートに入れる
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-
-          <div id="modal-lens-exchang-ticket" class="modal p-modal__note" tabindex="-1">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <button type="button" data-dismiss="modal" class="modal-close">Close</button>
-                <h5 class="modal-title modal-title--center">度数がわからなくても<br />メガネが買える「レンズ交換チケット」</h5>
-                <img src="https://storage.owndays.com/images/lens/modal-note_lens-exchange-ticket.webp" alt=""
-                  class="modal-img" style="--max-w: 232px; --max-w-pc: 272px;">
-                <p class="modal-text">
-                  オンラインストアでご購入いただいたフレームとレンズ交換チケット※をお持ちの上、お近くのOWNDAYS店舗へお越しください。視力測定をした上で、お客様に最適な度数の度付きレンズへ交換いたします。度数がわからなくても購入できるので、プレゼントにも最適です。<br />オプションレンズのご相談もお気軽にどうぞ。
-                </p>
-                <ul class="modal-notes">
-                  <li>「レンズ交換チケット」はOWNDAYSマイページの購入履歴から表示できるデジタルチケットです。</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <!-- (removed) #try-on modal + #modal-lens-exchang-ticket: try-on/AR ใช้ไม่ได้บน static -->
 
           <div id="modal-note_story-owndays" class="modal p-modal__note" tabindex="-1">
             <div class="modal-dialog">
@@ -4766,6 +4470,7 @@
 
           var isSubmitting = false;
 
+          /* (dead) cart-add-new ไม่มีแล้ว -> submit handler นี้ไม่ทำงาน เก็บเป็น comment
           $('#cart-add-new').on('submit', function (e) {
             e.preventDefault(); // Prevent default submission until URL is set
             e.stopPropagation(); // Stop event bubbling
@@ -4819,7 +4524,7 @@
             }
 
             this.submit(); // Proceed with form submission
-          });
+          }); */
 
           $('#modal-try-on-lens-selection #try-on').on('shown.bs.modal.modalTryOnPdp', function () {
             ModalTryOnSelection.resetDefaultValues();
@@ -5153,7 +4858,7 @@
             // Reset cart URL + sku fields only when closing try-on for good (not when continuing to
             // lens flow via #btn-open-modal-lens — SKU/cart were already set for the selected color).
             if (!openModalLensSelectionAfterTryOn) {
-              $('#cart-add-new').attr('action', `/jp/ja/cart/new/${originalSkuId}`);
+          // (dead cart) $('#cart-add-new').attr('action', `/jp/ja/cart/new/${originalSkuId}`);
               $('#product-sku-input').val(originalSkuId || '');
               if ($('#main_sku_id').length && originalSkuId) {
                 $('#main_sku_id').val(originalSkuId);
@@ -9140,7 +8845,7 @@
             skuId = $('input[name="select-sku"]').attr('id').split('-')[1];
           }
           var actionUrl = "/jp/ja/cart/new/" + skuId;
-          $('#cart-add-new').attr('action', actionUrl);
+          // (dead cart) $('#cart-add-new').attr('action', actionUrl);
           $('#product-sku-input').val(skuId);
           if ($('#main_sku_id').length) {
             $('#main_sku_id').val(skuId);
@@ -9176,7 +8881,7 @@
             var $sku = $(this);
             skuId = $sku.attr('id').split('-')[1];
             actionUrl = "/jp/ja/cart/new/" + skuId;
-            $('#cart-add-new').attr('action', actionUrl);
+          // (dead cart) $('#cart-add-new').attr('action', actionUrl);
             $('#product-sku-input').val(skuId);
             if ($('#main_sku_id').length) {
               $('#main_sku_id').val(skuId);
@@ -9325,6 +9030,7 @@
 
             if (!skuIds.length) return;
 
+            /* (dead cart) cart-add-new ถูกลบ -> skuCombine ไม่มีที่ append (no-op)
             var $modal = $('#modal-try-on-lens-selection');
             var $cart = $modal.find('#cart-add-new');
 
@@ -9337,6 +9043,7 @@
                 value: val
               }).appendTo($cart);
             });
+            */
           })
         },
         loadSupportedSubColorLens(primaryColorName) {
@@ -9628,7 +9335,7 @@
       modal.find('#default-lens-coating-type').val(lensCoatingTypeId);
       modal.find('#default-lens-coating-option').val(lensCoatingOptionId);
       modal.find('#product-sku-input').val(skuId);
-      modal.find('#cart-add-new').attr('action', "/jp/ja/cart/new/" + skuId);
+          // (dead cart) modal.find('#cart-add-new').attr('action', "/jp/ja/cart/new/" + skuId);
       $('#modal-lens-selection').modal('show');
     }
   </script>
