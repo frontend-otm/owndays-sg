@@ -20,11 +20,10 @@
   <meta charset="utf-8">
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <!-- <meta name="format-detection" content="telephone=no"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- <meta name="viewport" -->
-    <!-- content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, minimal-ui"> -->
-  <!-- <meta name="csrf-token" content="hZMXRjvm453gL9xkkjes9afzBBEapzej7ZK6qoTj"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, minimal-ui">
+  <meta name="csrf-token" content="hZMXRjvm453gL9xkkjes9afzBBEapzej7ZK6qoTj">
   <meta property="og:locale" content="en_SG" />
   <meta name="locale-country" content="sg" />
   <meta name="locale-language" content="en" />
@@ -525,6 +524,17 @@
       z-index: 1;
     }
   </style>
+  <!-- <style>
+   @media (min-width:1024px){
+    .takimaki-special-guest__panel,
+    .takimaki-special-guest__cover{
+      width: var(--body-w, 100vw) !important;
+      max-width: var(--body-w, 100vw) !important;
+      margin-left: calc(50% - var(--body-w, 100vw)/2) !important;
+      margin-right: 0 !important;
+    }
+  }
+</style> -->
 </head>
 
 <body id="main-body" style="display: block" class="is-sale-time">
@@ -2331,7 +2341,7 @@
           <section id="special-guest" class="takimaki-special-guest mt-[60px] md:mt-[100px]">
             <div class="takimaki-special-guest__scroll-track">
               <div
-                class="takimaki-special-guest__panel container bg-[#000] pt-[80px] pb-[60px] md:pb-[120px] lg:max-w-full lg:py-[120px]">
+                class="takimaki-special-guest__panel container !bg-[#000] pt-[80px] pb-[60px] md:pb-[120px] lg:!max-w-full lg:py-[120px]">
                 <div class="takimaki-special-guest__panel-inner" data-aos="fade-up">
                   <div class="scene__video-container">
                     <a href="https://storage.owndays.com/images/specials/products/takimaki/video/takimaki_bts.mp4"
@@ -2398,7 +2408,7 @@
             <div class="takimaki-special-guest__cover relative z-[2]">
               <div class="bg-[#fff]">
                 <div
-                  class="container py-[60px] text-[15px] font-euclid font-[400] leading-[30.8px] tracking-[1%] md:pt-[100px] md:pb-[100px] lg:mx-auto lg:max-w-[908px]">
+                  class="container py-[60px] text-[15px] font-euclid font-[400] leading-[30.8px] tracking-[1%] md:pt-[100px] md:pb-[100px] lg:!mx-auto lg:!max-w-[918px]">
                   <p class="flex gap-[8px] lg:gap-[24px]"><span>・Not valid in conjunction with other
                       discounts, promotions and/or privileges</span></p>
                   <p class="flex gap-[8px] lg:gap-[24px]"><span>・No cancellation, refund, exchange or
