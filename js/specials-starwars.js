@@ -332,7 +332,7 @@ function updateProductButtonText() {
   const now = new Date();
 
   const preorderEnd = new Date("2026-06-14T23:59:59+08:00");
-  const availableEnd = new Date("2026-07-31T23:59:59+08:00");
+  const availableEnd = new Date("2026-09-03T23:59:59+08:00");
 
   let text = "";
   let isAvailableState = false;
@@ -340,7 +340,7 @@ function updateProductButtonText() {
   if (now <= preorderEnd) {
     text = "PRE-ORDER NOW";
   } else if (now <= availableEnd) {
-    text = "AVAILABLE FROM 1 AUG 26";
+    text = "AVAILABLE FROM 4 SEP 26";
     isAvailableState = true;
   } else {
     text = "ONLINE STORE";
