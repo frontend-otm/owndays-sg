@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich content</title>
+    <style>
+        .rich-content {
+            padding: 0 16px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 180%;
+            letter-spacing: 0.14px;
+            color: #000;
+        }
+
+        .rich-content__media-wrapper {
+            margin-inline: -20px;
+        }
+
+        .rich-content__media-item {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .rich-content__media-src {
+            aspect-ratio: 134 / 117;
+            width: 100%;
+            position: relative;
+            display: flex;
+        }
+
+        .rich-content__media-src img {
+            width: 100%;
+            height: auto;
+            background-color: #F7F7F7;
+            mix-blend-mode: multiply;
+            margin: 0;
+        }
+
+        .rich-content__media-details {
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rich-content__media-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 180%;
+            letter-spacing: 0.16px;
+            margin-bottom: 10px;
+        }
+
+        .rich-content__media-des {
+            line-height: 180%;
+            letter-spacing: 0.14px;
+            margin: 0;
+        }
+
+        /* Tablet à¸‚à¸¶à¹‰à¸™à¹„à¸› */
+        @media (min-width: 768px) {
+            .rich-content__media-wrapper {
+                margin-inline: 0;
+            }
+
+            .rich-content__media-item {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .rich-content__media-item:nth-of-type(odd) .rich-content__media-details {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rich-content">
+        <div class="rich-content__media-wrapper">
+            <div class="rich-content__media-item">
+                <div class="rich-content__media-src">
+                    <img src="storage.owndays.com/storage/products/60983109-370…" alt="UPSIDE DOWN Model"
+                        loading="lazy" />
+                </div>
+                <div class="rich-content__media-details">
+                    <h6 class="rich-content__media-title">UPSIDE DOWN Model</h6>
+                    <p class="rich-content__media-des">
+                        A Boston-style frame inspired by the mysterious "UPSIDE DOWN". The deep, dark colors capture the
+                        eerie mood of
+                        the other world.
+                    </p>
+                </div>
+            </div>
+            <div class="rich-content__media-item">
+                <div class="rich-content__media-src">
+                    <img src="storage.owndays.com/storage/products/36fda140-ebe…" alt="ORIGINAL CASE & CLEANING CLOTH"
+                        loading="lazy" />
+                </div>
+                <div class="rich-content__media-details">
+                    <h6 class="rich-content__media-title">Original Case</h6>
+                    <p class="rich-content__media-des">
+                        Receive an exclusive merchandise in the collaboration's signature colour when you purchase an
+                        eyewear from the
+                        collection. The merchandise includes a spectacle case and a spectacle cloth, both featuring
+                        designs inspired
+                        by the world of STRANGER THINGS.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
