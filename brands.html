@@ -117,6 +117,7 @@
         max-height: 0;
         opacity: 0;
       }
+
       100% {
         max-height: 9999px;
         opacity: 1;
@@ -186,7 +187,10 @@
             <li>
               <div class="brands__card" data-brand="theone"><img src="https://static.lenskart.com/owndays/img/brands/the-one/Brands.webp" alt="THE ONE by OWNDAYS Lab." loading="lazy"></div>
             </li>
-             <li>
+            <li>
+              <div class="brands__card" data-brand="pompompurin"><img src="https://assets.lenskart.com/images/2026/07/31/pompompurin_brand_thumb.webp" alt="OWNDAYS & POMPOMPURIN" loading="lazy"></div>
+            </li>
+            <li>
               <div class="brands__card" data-brand="takimaki"><img src="https://assets.lenskart.com/images/2026/06/25/takimaki_brand_thumb.webp" alt="OWNDAYS × MAKIKO TAKIZAWA" loading="lazy"></div>
             </li>
             <li>
@@ -219,15 +223,9 @@
             <li>
               <div class="brands__card" data-brand="huawei2"><img src="https://static1.lenskart.com/owndays/img/brands/huawei2/Brands.webp" alt="OWNDAYS × HUAWEI Eyewear 2" loading="lazy"></div>
             </li>
-            <!-- <li>
-              <div class="brands__card" data-brand="ditalancier"><img src="https://static.lenskart.com/media/owndays/img/brands/dita-lancier/OWNDAYS_×_DITA_Lancier.webp" alt="dita-lancier" loading="lazy"></div>
-            </li> -->
             <li>
               <div class="brands__card" data-brand="gundam5zeon"><img src="https://static.lenskart.com/media/owndays/img/brands/gundam5-zeon/zeon.webp" alt="gundam5-zeon" loading="lazy"></div>
             </li>
-            <!-- <li>
-              <div class="brands__card" data-brand="freakstore2025"><img src="https://static1.lenskart.com/owndays/img/brands/freaks-store-2025/thumbnail.webp" alt="OWNDAYS × FREAK'S STORE" loading="lazy"></div>
-            </li> -->
             <li>
               <div class="brands__card" data-brand="shingoaiba"><img src="https://static.lenskart.com/media/owndays/img/brands/shingo-aiba/SHINGO_AIBA_×_OWNDAYS_EYEWEAR_COLLECTION.webp" alt="shingo-aiba" loading="lazy"></div>
             </li>
@@ -277,6 +275,23 @@
 
         // 🔹 Brand data
         const brandDetails = {
+          pompompurin: {
+            title: "OWNDAYS & POMPOMPURIN",
+            logoExtended: true,
+            logo: "https://assets.lenskart.com/images/2026/07/31/pompompurin_brand_logo.webp",
+            slides: [
+              "https://assets.lenskart.com/images/2026/07/31/pompompurin_brand_slider1.webp",
+              "https://assets.lenskart.com/images/2026/07/31/pompompurin_brand_slider2.webp",
+              "https://assets.lenskart.com/images/2026/07/31/pompompurin_brand_slider3.webp",
+              "https://assets.lenskart.com/images/2026/07/31/pompompurin_brand_slider4.webp",
+              "https://assets.lenskart.com/images/2026/07/31/pompompurin_brand_slider5.webp",
+              "https://assets.lenskart.com/images/2026/07/31/pompompurin_brand_slider6.webp"
+            ],
+            description: "Celebrating the 30th anniversary of POMPOMPURIN, we bring you the 2nd collection from the POMPOMPURIN & OWNDAYS collaboration. Inspired by the laid-back and easy-going personality of Pompompurin, these eyewear are designed to bring you gentle moments of “Pomu” (chill) in your everyday life. Look out for frame designs that feature hidden motifs of Pompompurin’s friends from Team Purin.",
+            productsLink: "/sg/en/eyeglasses/brands/pompompurin.html",
+            detailsLink: "/sg/en/news/pompompurin",
+            recommended: "MEN・WOMEN・KIDS"
+          },
           takimaki: {
             title: "OWNDAYS × MAKIKO TAKIZAWA",
             logoExtended: true,
