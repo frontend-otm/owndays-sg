@@ -190,7 +190,7 @@ function setLineupProducts() {
   $('.lineup-products__secondary__item__colors > span').on('click', function () {
     const $this = $(this);
   
-    const sku = $this.data('sku');
+    const urlKey = $this.data('url-key');
     const productNumber = $this.data('product-number');
     const index = $this.data('index');
   
@@ -217,13 +217,9 @@ function setLineupProducts() {
     });
   
     // update href
-    const currentUrl = $btn.attr('href');
-  
-    const newHref = currentUrl
-      .replace(/\/[^/?]+(?=\?)/, `/${productNumber}`)
-      .replace(/sku=[^&]+/, `sku=${sku}`);
-  
-    $btn.attr('href', newHref);
+    if (urlKey) {
+      $btn.attr('href', `/sg/en/${urlKey}.html`);
+    }
   });
 
   const sections = document.querySelectorAll('.lineup-products__section__container');
