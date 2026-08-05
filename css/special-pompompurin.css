@@ -574,6 +574,18 @@
     position: relative
 }
 
+.l-pompompurin-2026 .lineup-navs__item a {
+    display: block !important;
+}
+
+/* anchor ที่ต้องเป็น flex — ยกระดับให้สู้ !important ของ CMS ได้ */
+.l-pompompurin-2026 .share__list li a,
+.l-pompompurin-2026 .sticky-btn__container .sticky-btn__btn {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
 .l-pompompurin-2026:before {
     content: "";
     position: absolute;
@@ -1478,16 +1490,15 @@
     position: relative;
     z-index: 3
 }
-
 .l-pompompurin-2026 .main__logo {
-    width: 197px;
+    width: 246px;
     height: 103px
 }
 
 @media (min-width: 1024px) {
     .l-pompompurin-2026 .main__logo {
-        width:284px;
-        height: 148px
+        width:315px;
+        height: 131px
     }
 }
 
@@ -2796,7 +2807,7 @@
     background-size: 14.25px 14.25px
 }
 
-.l-pompompurin-2026 .lineup-products__section__container:nth-child(2n) {
+.l-pompompurin-2026 .lineup-products__section__container:nth-child(4n+3) {
     background-color: #fabe00;
     background-image: radial-gradient(hsla(0,0%,100%,.1) 35%,transparent 36%);
     background-size: 14.25px 14.25px
