@@ -502,6 +502,12 @@
         border-right-width: 0 !important;
         border-bottom-width: 0 !important;
       }
+
+      /* ทับ CDN: .footer-junni.is-sticky — แก้เฉพาะ z-index อย่างเดียว
+         (z-index เป็นค่าไม่มีหน่วย จึงใช้ 10 ไม่ใช่ 10px) */
+      .footer-junni.is-sticky {
+        z-index: 10 !important;
+      }
     </style>
     <!-- ===== Junni 2026ver. — has-features: จัดกลางแนวตั้ง + ตำแหน่งลูกศร =====
          Figma PC: item #810:550 = 1290x471
