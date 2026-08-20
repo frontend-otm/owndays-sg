@@ -37,7 +37,7 @@
     <meta property="og:title" content="Junni（Kids Glasses）| OWNDAYS ONLINE STORE - OPTICAL SHOP" />
     <meta property="og:description"
         content="Yes, I Can! Big Adventures Start with Clear Vision. From answering questions in class to trying something new after school, JUNNI is made to keep growing kids comfortable and confident through it all." />
-    <meta property="og:image" content="https://assets.lenskart.com/images/2026/08/19/ogp_1200x630.png" />
+    <meta property="og:image" content="https://assets.lenskart.com/images/2026/08/19/ogp_1200x630.webp" />
 
     <!-- X (Twitter) -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -45,7 +45,7 @@
     <meta property="twitter:title" content="Junni（Kids Glasses）| OWNDAYS ONLINE STORE - OPTICAL SHOP" />
     <meta property="twitter:description"
         content="Yes, I Can! Big Adventures Start with Clear Vision. From answering questions in class to trying something new after school, JUNNI is made to keep growing kids comfortable and confident through it all." />
-    <meta property="twitter:image" content="https://assets.lenskart.com/images/2026/08/19/ogp_1200x630.png" />
+    <meta property="twitter:image" content="https://assets.lenskart.com/images/2026/08/19/ogp_1200x630.webp" />
     
     <meta content="OWNDAYS" name="author" />
     <meta content="OWNDAYS" name="publisher" />
@@ -501,6 +501,34 @@
       .footer-junni__btn--left {
         border-right-width: 0 !important;
         border-bottom-width: 0 !important;
+      }
+    </style>
+    <!-- ===== Junni 2026ver. — has-features: จัดกลางแนวตั้ง + ตำแหน่งลูกศร =====
+         Figma PC: item #810:550 = 1290x471
+           · การ์ด features #810:575  อยู่ y 54..330
+           · ลูกศร pre-next #810:574  อยู่ y 378..418 (อยู่ "ในกรอบ" item ห่างขอบล่าง 53px = 11.25%)
+         ของเดิม: การ์ดชิดบน (เหลือที่ว่างล่าง ~150px) และลูกศรหลุดต่ำกว่า item ~125px -->
+    <style id="junni-2026-has-features">
+      @media (min-width: 768px) {
+        /* .body-junni__style-product-feature ถูก slick ยืดเต็มความสูงแถว (402px @1339)
+           แต่เนื้อหา (รูป+ข้อความ) สูงแค่ ~253px แล้วชิดบน -> ดูไม่ตรงกับคอลัมน์ซ้าย
+           CDN ตั้ง display:flex !important + flex-direction:column ไว้แต่ไม่ได้ตั้ง justify-content */
+        .body-junni__style-products.has-features .body-junni__style-product-feature {
+          justify-content: center !important;
+        }
+
+        /* ทับ inline CSS ท้ายไฟล์: .body-junni__style-product-features .slick-arrow { bottom: -36% !important }
+           -36% ดันลูกศรหลุดออกไปใต้ item ~125px
+           ใช้ bottom:0 = ชิดขอบล่าง item พอดี (เสมอกับบล็อก code/price/swatch ฝั่งซ้าย)
+           ได้ระยะห่างจากข้อความการ์ด 34.8px ซึ่งเป็นค่ามากสุดที่ยังอยู่ในกรอบ item
+           (Figma #810:574 วางไว้ 11.25% จากขอบล่าง แต่ในสัดส่วนจริงของเราเนื้อหาการ์ดยาวกว่า
+            ทำให้ลูกศรไปชิดข้อความ จึงดันลงมาสุดกรอบแทน)
+           และทับ slick-theme.css: .slick-prev/.slick-next { transform: translate(0,-50%) }
+           ซึ่งดึงลูกศรขึ้นอีก 20px ทำให้คำนวณตำแหน่งไม่ตรง */
+        .body-junni__style-products.has-features .slick-arrow {
+          bottom: 0 !important;
+          transform: none !important;
+        }
       }
     </style>
     <script async="" src="https://scripts.clarity.ms/0.8.30/clarity.js"></script>
@@ -977,11 +1005,11 @@
               <picture>
                 <source
                   media="(min-width: 768px)"
-                  srcset="https://assets.lenskart.com/images/2026/08/19/main-pc.png"
+                  srcset="https://assets.lenskart.com/images/2026/08/19/main_pc.webp"
                 />
                 <img
                   alt="Junni（Kids Glasses）"
-                  src="https://assets.lenskart.com/images/2026/08/19/main_sp.png"
+                  src="https://assets.lenskart.com/images/2026/08/19/main_sp.webp"
                 />
               </picture>
             </div>
@@ -1018,11 +1046,11 @@
                 <picture>
                   <source
                     media="(min-width: 768px)"
-                    srcset="https://assets.lenskart.com/images/2026/08/19/vision_pc.png"
+                    srcset="https://assets.lenskart.com/images/2026/08/19/vision_pc.webp"
                   />
                   <img
                     alt="Junni（Kids Glasses）"
-                    src="https://assets.lenskart.com/images/2026/08/19/vision_sp.png"
+                    src="https://assets.lenskart.com/images/2026/08/19/vision_sp.webp"
                   />
                 </picture>
               </div>
@@ -1108,7 +1136,7 @@
                   <img
                     alt="Fits as they grow"
                     loading="lazy"
-                    src="https://assets.lenskart.com/images/2026/08/19/vision_1img.png"
+                    src="https://assets.lenskart.com/images/2026/08/19/vision_1img.webp"
                   />
                   <div class="junni2026__feature-text">
                     <h3 class="junni2026__feature-title">Fits as they grow</h3>
@@ -1125,7 +1153,7 @@
                   <img
                     alt="Featherlight comfort"
                     loading="lazy"
-                    src="https://assets.lenskart.com/images/2026/08/19/vision_2img.png"
+                    src="https://assets.lenskart.com/images/2026/08/19/vision_2img.webp"
                   />
                   <div class="junni2026__feature-text">
                     <h3 class="junni2026__feature-title">Featherlight comfort</h3>
@@ -1142,7 +1170,7 @@
                   <img
                     alt="Stays secure through every play"
                     loading="lazy"
-                    src="https://assets.lenskart.com/images/2026/08/19/vision_3img.png"
+                    src="https://assets.lenskart.com/images/2026/08/19/vision_3img.webp"
                   />
                   <div class="junni2026__feature-text">
                     <h3 class="junni2026__feature-title">
