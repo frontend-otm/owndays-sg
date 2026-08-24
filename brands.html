@@ -173,7 +173,7 @@
               <div class="brands__card" data-brand="backinblack"><img src="https://static1.lenskart.com/owndays/img/brands/back-in-black/thumbnail.webp" alt="BACK in BLACK" loading="lazy"></div>
             </li>
             <li>
-              <div class="brands__card" data-brand="junni"><img src="https://static5.lenskart.com/media/uploads/724x724_junnie_brands.jpg" alt="junni" loading="lazy"></div>
+              <div class="brands__card" data-brand="junni"><img src="https://assets.lenskart.com/images/2026/08/24/junni_thumbnail.webp" alt="junni" loading="lazy"></div>
             </li>
             <li>
               <div class="brands__card" data-brand="kmoriyama"><img src="https://static.lenskart.com/media/owndays/img/brands/kmoriyama-new/kmoriyama.webp" alt="k-moriyama" loading="lazy"></div>
@@ -412,7 +412,7 @@
             ],
             description: "A collection that embraces clean lines and contemporary aesthetics, featuring frames that are both stylish and versatile.",
             tagline: "Levelling Up To The Adults<br>In Style And Durability",
-            productsLink: "/sg/en/eyeglasses/brands/Junni.html",
+            productsLink: "/sg/en/eyeglasses/brands/Junni.html?tab=17714&viewType=tile",
             detailsLink: "/sg/en/news/junni",
             recommended: "WOMEN・KIDS"
           },
@@ -778,7 +778,7 @@ Dreaming of striking it rich, contestants risk everything in a high-stakes game 
 
           if (data.productsLink && data.detailsLink) {
             // Case 1: both links exist
-            // productsButton = `<a class="button button--secondary" href="${data.productsLink}">See All Products</a>`;
+            productsButton = `<a class="button button--secondary" href="${data.productsLink}">See All Products</a>`;
 
             const isStarwarsDetails = data.detailsLink === "/sg/en/news/starwars";
             const starwarsLaunchDate = new Date("2026-05-26T10:00:00+08:00");
