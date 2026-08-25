@@ -523,16 +523,8 @@
           justify-content: center !important;
         }
 
-        /* ทับ inline CSS ท้ายไฟล์: .body-junni__style-product-features .slick-arrow { bottom: -36% !important }
-           -36% ดันลูกศรหลุดออกไปใต้ item ~125px
-           ใช้ bottom:0 = ชิดขอบล่าง item พอดี (เสมอกับบล็อก code/price/swatch ฝั่งซ้าย)
-           ได้ระยะห่างจากข้อความการ์ด 34.8px ซึ่งเป็นค่ามากสุดที่ยังอยู่ในกรอบ item
-           (Figma #810:574 วางไว้ 11.25% จากขอบล่าง แต่ในสัดส่วนจริงของเราเนื้อหาการ์ดยาวกว่า
-            ทำให้ลูกศรไปชิดข้อความ จึงดันลงมาสุดกรอบแทน)
-           และทับ slick-theme.css: .slick-prev/.slick-next { transform: translate(0,-50%) }
-           ซึ่งดึงลูกศรขึ้นอีก 20px ทำให้คำนวณตำแหน่งไม่ตรง */
         .body-junni__style-products.has-features .slick-arrow {
-          bottom: 0 !important;
+          bottom:-36px !important;
           transform: none !important;
         }
       }
