@@ -667,12 +667,9 @@
     <style>
       /* === SUN 2026 overrides === */
 
-      /* 1) HERO - the 2026 hero export (https://assets.lenskart.com/images/2026/08/27/hero_pc|sp.webp, Figma
-            #3378:626 / #3378:1209) already has the "OWNDAYS | SUN" logo
-            burnt into the artwork, so the overlaid page-title logo image is
-            hidden visually while kept in the DOM for SEO / screen readers.
-            Figma puts that logo at x=624 y=76 (192px, horizontally centred)
-            which is exactly where sun.css already placed it. */
+      /* 1) HERO - the 2026 export already has the "OWNDAYS | SUN" logo burnt
+            into the artwork, so the overlaid logo <img> is sr-only'd (kept in
+            the DOM for SEO). Figma #3378:626 / #3378:1209. */
       .header-sun__main__text h1 img {
         position: absolute !important;
         width: 1px !important;
@@ -686,49 +683,34 @@
         white-space: nowrap !important;
       }
 
-      /* 1b) HERO DIVIDER - sun.css draws a 1px x 60px grey line (80px from
-             1024px up) hanging off the bottom edge of the hero via
-             .header-sun__main::after. Not wanted in 2026. The rule lives in
-             the remote CDN stylesheet so it cannot be deleted - `content: none`
-             stops the pseudo-element from being generated at all, which is the
-             only way to truly remove it rather than just hide it.
-             Note: that line is position:absolute + translate(-50%, 50%), so it
-             never occupied layout space - removing it does NOT change the gap
-             between the hero and the CHECK! block (see rule 5). */
+      /* 1b) HERO DIVIDER - kills the 1px grey line sun.css hangs off the hero
+             bottom (.header-sun__main::after). `content: none` stops the
+             pseudo-element being generated at all. It was absolute+translated,
+             so removing it does NOT change the hero -> CHECK! gap (rule 5). */
       .header-sun__main::after {
         content: none !important;
         display: none !important;
       }
 
-      /* 2) KEY VISUALS - the 3 style sliders now carry a <picture>
-            (separate PC 680x780 / SP 390x609 art). Make the wrapper
-            behave exactly like the plain <img> it replaced. */
+      /* 2) KEY VISUALS - sliders now use <picture> (PC 680x780 / SP 390x609).
+            Make the wrapper behave like the plain <img> it replaced. */
       .body-sun__styles__top-img-slider picture {
         display: inline-block !important;
         width: 100% !important;
         max-width: 100% !important;
       }
 
-      /* 3) LINEUP - cards whose swatch row is still pending (see the
-            "TODO 2026 - swatches pending" comments) keep the same height as
-            their siblings: 32px button + 16px/24px padding of
-            .product__colors__list = 72px. Remove this rule together with
-            the .sun2026-pending-swatch classes once the swatches land. */
+      /* 3) LINEUP - cards with a pending swatch row (see "TODO 2026 - swatches
+            pending") keep their siblings' height: 32px button + 16/24px padding
+            = 72px. Drop this + .sun2026-pending-swatch once swatches land. */
       .body-sun__lineup__item.sun2026-pending-swatch {
         padding-bottom: 72px !important;
       }
 
-      /* 3b) BREAKPOINT UTILITIES - HARDENING, no value change.
-             sun.css ships these two without !important:
-               .base-sun__hide--sp { display: none }   @768+ { display: block }
-               .base-sun__hide--pc { display: block }  @768+ { display: none }
-             so any CMS/global stylesheet loaded after it on prod can win on
-             `display` - and then BOTH sticky-footer button labels render at
-             once ("See All SUN <br> Frames" + "See All SUN Frames"), or the
-             <br> inside "Search For Nearest Stores" survives on PC.
-             Re-declared here with the SAME values + !important. Note the
-             naming is inverted: hide--pc = hidden ON pc (shown on SP).
-             sun.css already does exactly this for .base-kimetsu__hide--*. */
+      /* 3b) BREAKPOINT UTILITIES - HARDENING, same values, no behaviour change.
+             sun.css ships these without !important, so a CMS stylesheet loaded
+             later can win on `display` -> BOTH sticky-footer labels render at
+             once. Naming is inverted: hide--pc = hidden ON pc. */
       .base-sun__hide--sp {
         display: none !important;
       }
@@ -736,9 +718,20 @@
         display: block !important;
       }
 
-      /* 4) HERO COPY - SP first (Figma SP: frame "movie" #3378:759 is 273px
-            tall, transparent, and only holds the text frame #3381:1653 at
-            x=20 y=60, w=350, column gap 30px; text is BLACK #000000). */
+      /* 3c) CMS shell ships `<hash> a { display: inherit !important }` so every
+             <a> takes its PARENT's display -> buttons + SP nav lose their flex.
+             Breaks on prod only; opening this file locally looks fine.
+             Never key a fix off that hash (it changes every CMS build) - win on
+             specificity + !important. Looks redundant, is load-bearing: keep. */
+      .base-sun .base-sun__btn,
+      .base-sun .header-sun__navs ul a {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+      }
+
+      /* 4) HERO COPY - SP. Figma #3381:1653 (x=20 y=60 w=350, column gap 30px,
+            text BLACK) inside the transparent 273px "movie" frame #3378:759. */
       .sun2026-hero__copy {
         display: block !important;
         padding-block: 60px 67px !important;
@@ -770,12 +763,10 @@
         letter-spacing: 0.42px !important;
       }
 
-      /* 5) HERO COPY - PC: overlaid on the hero photo. Figma #3381:1645 sits
-            at x=100 y=408 inside the 1440x720 hero frame #3378:626, w=460,
-            column gap 40px, text WHITE #FFFFFF over the built-in
-            "cover" gradient (#3381:1649). .sun2026-hero__inner reproduces
-            .base-sun__container geometry (max-width 1280 + 20px inset =
-            content starts at x=100 on a 1440 viewport). */
+      /* 5) HERO COPY - PC: overlaid on the hero. Figma #3381:1645 at x=100
+            y=408 in the 1440x720 hero #3378:626, w=460, gap 40px, text WHITE
+            over the built-in gradient. __inner mirrors .base-sun__container
+            geometry (max-width 1280 + 20px inset = x=100 at 1440). */
       @media (min-width: 768px) {
         .sun2026-hero__copy {
           position: absolute !important;
@@ -804,12 +795,9 @@
           line-height: 32px !important;
           letter-spacing: 0.48px !important;
         }
-        /* header-sun__about used to supply the gap between the hero and the
-           CHECK! box on PC. Figma 2026 does not state a value for the
-           "no movie" layout, so 80px was taken from the height the
-           .header-sun__main::after divider used to have at 1024px+. That
-           divider is now switched off (rule 1b), so this number no longer has
-           anything backing it. APPROXIMATE - please confirm with the designer. */
+        /* 80px replaces the gap the removed header-sun__about used to give.
+           Figma has no "no movie" PC layout to source it from - APPROXIMATE,
+           confirm with the designer. */
         .sun2026-check {
           padding-top: 80px !important;
         }
