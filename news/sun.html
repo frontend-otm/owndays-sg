@@ -2375,14 +2375,13 @@
     ><iframe style="display: none"></iframe>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Get all navigation links inside .base-sun__container
-        const navLinks = document.querySelectorAll(".base-sun__container a");
+        const navLinks = document.querySelectorAll(
+          ".header-sun__navs .base-sun__container a"
+        );
 
         // Add click event to each link
         navLinks.forEach((link) => {
           link.addEventListener("click", function (e) {
-            e.preventDefault();
-
             // Create target ID based on link text
             const targetId = this.textContent
               .trim()
@@ -2390,12 +2389,15 @@
               .replace(/\s+/g, "-");
             const targetSection = document.getElementById(targetId);
 
-            if (targetSection) {
-              targetSection.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
-            }
+            // No matching section - let the browser follow the href instead of
+            // swallowing the click.
+            if (!targetSection) return;
+
+            e.preventDefault();
+            targetSection.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
           });
         });
       });
