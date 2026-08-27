@@ -41,7 +41,7 @@
 <meta property="og:description"
     content="Where fashion meets function. With SUN by your side, every moment becomes extra special." />
 <meta property="og:image"
-    content="https://static.lenskart.com/owndays/img/sun/ogp_1200x630.jpg" />
+    content="https://assets.lenskart.com/images/2026/08/27/ogp.webp" />
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://www.owndays.com/sg/en/news/sun" />
 
@@ -50,7 +50,7 @@
 <meta property="twitter:description"
     content="Where fashion meets function. With SUN by your side, every moment becomes extra special." />
 <meta property="twitter:image"
-    content="https://static.lenskart.com/owndays/img/sun/ogp_1200x630.jpg" />
+    content="https://assets.lenskart.com/images/2026/08/27/ogp.webp" />
 
 
     <meta content="OWNDAYS" name="author" />
@@ -655,6 +655,185 @@
       src="https://gs-cdn.optimonk.com/jfclientsdk/latest/jfclientsdk.min.js?ts=16"
       async=""
     ></script>
+
+    <!-- ==========================================================
+         SUN 2026 overrides  (added for the ver-2026 update)
+         The main stylesheet is remote & read-only
+         (static.lenskart.com/owndays/cms/css/sun.css) so every
+         declaration below is intentionally !important.
+         All new classes are prefixed sun2026- ; delete this whole
+         <style> block + those classes to roll back to ver 2025.
+         ========================================================== -->
+    <style>
+      /* === SUN 2026 overrides === */
+
+      /* 1) HERO - the 2026 hero export (https://assets.lenskart.com/images/2026/08/27/hero_pc|sp.webp, Figma
+            #3378:626 / #3378:1209) already has the "OWNDAYS | SUN" logo
+            burnt into the artwork, so the overlaid page-title logo image is
+            hidden visually while kept in the DOM for SEO / screen readers.
+            Figma puts that logo at x=624 y=76 (192px, horizontally centred)
+            which is exactly where sun.css already placed it. */
+      .header-sun__main__text h1 img {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        margin: -1px !important;
+        padding: 0 !important;
+        border: 0 !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        clip-path: inset(50%) !important;
+        white-space: nowrap !important;
+      }
+
+      /* 1b) HERO DIVIDER - sun.css draws a 1px x 60px grey line (80px from
+             1024px up) hanging off the bottom edge of the hero via
+             .header-sun__main::after. Not wanted in 2026. The rule lives in
+             the remote CDN stylesheet so it cannot be deleted - `content: none`
+             stops the pseudo-element from being generated at all, which is the
+             only way to truly remove it rather than just hide it.
+             Note: that line is position:absolute + translate(-50%, 50%), so it
+             never occupied layout space - removing it does NOT change the gap
+             between the hero and the CHECK! block (see rule 5). */
+      .header-sun__main::after {
+        content: none !important;
+        display: none !important;
+      }
+
+      /* 2) KEY VISUALS - the 3 style sliders now carry a <picture>
+            (separate PC 680x780 / SP 390x609 art). Make the wrapper
+            behave exactly like the plain <img> it replaced. */
+      .body-sun__styles__top-img-slider picture {
+        display: inline-block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      /* 3) LINEUP - cards whose swatch row is still pending (see the
+            "TODO 2026 - swatches pending" comments) keep the same height as
+            their siblings: 32px button + 16px/24px padding of
+            .product__colors__list = 72px. Remove this rule together with
+            the .sun2026-pending-swatch classes once the swatches land. */
+      .body-sun__lineup__item.sun2026-pending-swatch {
+        padding-bottom: 72px !important;
+      }
+
+      /* 3b) BREAKPOINT UTILITIES - HARDENING, no value change.
+             sun.css ships these two without !important:
+               .base-sun__hide--sp { display: none }   @768+ { display: block }
+               .base-sun__hide--pc { display: block }  @768+ { display: none }
+             so any CMS/global stylesheet loaded after it on prod can win on
+             `display` - and then BOTH sticky-footer button labels render at
+             once ("See All SUN <br> Frames" + "See All SUN Frames"), or the
+             <br> inside "Search For Nearest Stores" survives on PC.
+             Re-declared here with the SAME values + !important. Note the
+             naming is inverted: hide--pc = hidden ON pc (shown on SP).
+             sun.css already does exactly this for .base-kimetsu__hide--*. */
+      .base-sun__hide--sp {
+        display: none !important;
+      }
+      .base-sun__hide--pc {
+        display: block !important;
+      }
+
+      /* 4) HERO COPY - SP first (Figma SP: frame "movie" #3378:759 is 273px
+            tall, transparent, and only holds the text frame #3381:1653 at
+            x=20 y=60, w=350, column gap 30px; text is BLACK #000000). */
+      .sun2026-hero__copy {
+        display: block !important;
+        padding-block: 60px 67px !important;
+        padding-inline: 0 !important;
+        background-color: #ffffff !important;
+      }
+      .sun2026-hero__inner {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-inline: auto !important;
+        padding-inline: 20px !important;
+      }
+      .sun2026-hero__title {
+        margin: 0 0 30px !important;
+        color: #000000 !important;
+        font-family: "Founders Grotesk", sans-serif !important;
+        font-size: 36px !important;
+        font-weight: 700 !important;
+        line-height: 1.5 !important;
+        letter-spacing: 0.72px !important;
+      }
+      .sun2026-hero__lead {
+        margin: 0 !important;
+        color: #000000 !important;
+        font-family: "Founders Grotesk", sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        line-height: 20px !important;
+        letter-spacing: 0.42px !important;
+      }
+
+      /* 5) HERO COPY - PC: overlaid on the hero photo. Figma #3381:1645 sits
+            at x=100 y=408 inside the 1440x720 hero frame #3378:626, w=460,
+            column gap 40px, text WHITE #FFFFFF over the built-in
+            "cover" gradient (#3381:1649). .sun2026-hero__inner reproduces
+            .base-sun__container geometry (max-width 1280 + 20px inset =
+            content starts at x=100 on a 1440 viewport). */
+      @media (min-width: 768px) {
+        .sun2026-hero__copy {
+          position: absolute !important;
+          top: 408px !important;
+          left: 0 !important;
+          right: 0 !important;
+          padding-block: 0 !important;
+          background-color: transparent !important;
+        }
+        .sun2026-hero__inner {
+          max-width: 1280px !important;
+          padding-inline: 20px !important;
+        }
+        .sun2026-hero__title {
+          max-width: 460px !important;
+          margin: 0 0 40px !important;
+          color: #ffffff !important;
+          font-size: 50px !important;
+          line-height: 74px !important;
+          letter-spacing: 1px !important;
+        }
+        .sun2026-hero__lead {
+          max-width: 460px !important;
+          color: #ffffff !important;
+          font-size: 16px !important;
+          line-height: 32px !important;
+          letter-spacing: 0.48px !important;
+        }
+        /* header-sun__about used to supply the gap between the hero and the
+           CHECK! box on PC. Figma 2026 does not state a value for the
+           "no movie" layout, so 80px was taken from the height the
+           .header-sun__main::after divider used to have at 1024px+. That
+           divider is now switched off (rule 1b), so this number no longer has
+           anything backing it. APPROXIMATE - please confirm with the designer. */
+        .sun2026-check {
+          padding-top: 80px !important;
+        }
+        /* 3b continued - the 768px half of the breakpoint utilities. */
+        .base-sun__hide--sp {
+          display: block !important;
+        }
+        .base-sun__hide--pc {
+          display: none !important;
+        }
+      }
+
+      /* 6) A11Y - do not auto-fade the key visual when the user asked
+            for reduced motion. */
+      @media (prefers-reduced-motion: reduce) {
+        .body-sun__styles__top-img-slider .slick-track,
+        .body-sun__styles__top-img-slider .slick-slide {
+          -webkit-transition: none !important;
+          transition: none !important;
+          -webkit-animation: none !important;
+          animation: none !important;
+        }
+      }
+    </style>
   </head>
   <body
     style="background-color: #fff"
@@ -689,16 +868,17 @@
           </nav>
           <section class="header-sun__main">
             <div class="header-sun__main__bg">
+              <!-- SUN 2026 : hero  (Figma PC #3378:626 / SP #3378:1209) -->
+              <!-- CMS: hero visual. PC 1440x720 / SP 390x600 (assets are @2x) -->
               <picture
                 ><source
                   media="(min-width: 768px)"
-                  srcset="
-                    https://static.lenskart.com/owndays/img/sun/main_pc-2025_04_10-3.webp
-                  " />
+                  srcset="https://assets.lenskart.com/images/2026/08/27/hero_pc.webp" />
                 <img
                   alt="OWNDAYS | SUN"
-                  loading="lazy"
-                  src="https://static.lenskart.com/owndays/img/sun/main_sp-2025_04_10-3.webp"
+                  fetchpriority="high"
+                  decoding="async"
+                  src="https://assets.lenskart.com/images/2026/08/27/hero_sp.webp"
               /></picture>
             </div>
             <div class="header-sun__main__text">
@@ -712,20 +892,18 @@
                 </h1>
               </div>
             </div>
-          </section>
-          <section class="header-sun__about">
-            <div class="header-sun__about__bg">
-              <video
-                loop=""
-                playsinline=""
-                poster="https://static.lenskart.com/owndays/img/sun/sun-about-bg.webp"
-                width="100%"
-              ></video>
-            </div>
-            <div class="header-sun__about__text">
-              <div class="header-sun__about__container">
-                <h2>The day is yours!</h2>
-                <p>
+            <!-- SUN 2026: hero copy. MOVED here (not copied) out of the removed
+                 header-sun__about block, so there is exactly ONE instance in the DOM.
+                 Figma PC #3381:1645 / #3381:1646 / #3381:1647  ->  overlaid on the hero
+                 photo at x=100 y=408, white, 50px/74px + 16px/32px, max-width 460px.
+                 Figma SP #3381:1653 / #3381:1654 / #3381:1655  ->  black on white BELOW
+                 the photo, 36px/1.5em + 14px/20px. CSS does the repositioning. -->
+            <div class="sun2026-hero__copy">
+              <div class="sun2026-hero__inner">
+                <!-- CMS: hero headline -->
+                <h2 class="sun2026-hero__title">The day is yours!</h2>
+                <!-- CMS: hero lead paragraph -->
+                <p class="sun2026-hero__lead">
                   Where fashion meets function. Coming in an array of vibrant
                   designs, these sunglasses not only reduce glare and protect
                   your eyes from UV rays but also enable you to see the world
@@ -735,7 +913,8 @@
               </div>
             </div>
           </section>
-          <section class="header-sun__check">
+          <!-- SUN 2026: <section class="header-sun__about"> (brand movie + "The day is yours!" copy) removed per Figma 2026 - copy moved into the hero above. Baseline reference: sun.html.baseline-2025 lines 716-737 -->
+          <section class="header-sun__check sun2026-check">
             <div class="base-sun__container">
               <div class="header-sun__check__inner">
                 <div class="header-sun__check__ribbon">
@@ -796,15 +975,22 @@
                 <div class="body-sun__styles__top-img">
                   <!-- slick slider revised : 01  -->
                   <div class="slick-slider body-sun__styles__top-img-slider">
+                    <!-- SUN 2026 : SUNGLASSES key visual (Figma PC #3378:1241 / SP #3378:1247) -->
                     <div>
-                      <img
-                        src="https://static.lenskart.com/owndays/img/sun/sunglasses-pc--05.webp"
-                        alt="Slide 1"
-                      />
+                      <picture
+                        ><source
+                          media="(min-width: 768px)"
+                          srcset="https://assets.lenskart.com/images/2026/08/27/group_627171_pc.webp" />
+                        <img
+                          src="https://assets.lenskart.com/images/2026/08/27/frame_4_sp.webp"
+                          alt="Sunglasses 2026"
+                          loading="lazy"
+                          decoding="async"
+                      /></picture>
                     </div>
                     <div>
                       <img
-                        src="https://static.lenskart.com/owndays/img/sun/sunglasses-pc--06.webp"
+                        src="https://assets.lenskart.com/images/2026/08/27/frame_4_slide_2_sp.webp"
                         alt="Slide 2"
                       />
                     </div>
@@ -1027,8 +1213,6 @@
                     </li>
                   </ul>
                 </li>
-
-                <!-- Repeat same cleanup for SUN1081X-5S, SUN2118X-5S, SUN1083G-5S ... -->
               </ul>
             </div>
           </section>
@@ -1238,17 +1422,18 @@
                 <div class="body-sun__styles__top-img">
                   <!-- slick slider revised : 02 starts here -->
                   <div class="slick-slider body-sun__styles__top-img-slider">
+                    <!-- SUN 2026 : SNAP key visual (Figma PC #3390:402 "sunglasses-pc--2026_03" / SP #3390:415) -->
                     <div class="slick-slide">
-                      <img
-                        src="https://static.lenskart.com/owndays/img/sun/snap-sp--05.webp"
-                        alt="Snap Sunglasses 1"
-                      />
-                    </div>
-                    <div class="slick-slide">
-                      <img
-                        src="https://static.lenskart.com/owndays/img/sun/snap-sp--06.webp"
-                        alt="Snap Sunglasses 2"
-                      />
+                      <picture
+                        ><source
+                          media="(min-width: 768px)"
+                          srcset="https://assets.lenskart.com/images/2026/08/27/sunglasses_pc_2026_03_pc.webp" />
+                        <img
+                          src="https://assets.lenskart.com/images/2026/08/27/sunglasses_sp_2026_03_sp.webp"
+                          alt="Snap Sunglasses 2026"
+                          loading="lazy"
+                          decoding="async"
+                      /></picture>
                     </div>
                   </div>
 
@@ -1526,18 +1711,17 @@
                           "
                         >
                           <div>
+                            <!-- SUN 2026 : CLEAR key visual (Figma PC #3378:737 / SP #3378:1230) -->
                             <picture
                               tabindex="-1"
-                              style="width: 100%; display: inline-block"
                               ><source
                                 media="(min-width: 768px)"
-                                srcset="
-                                  https://static.lenskart.com/owndays/img/sun/clear-sunglasses-pc-01.webp
-                                " />
+                                srcset="https://assets.lenskart.com/images/2026/08/27/group_1171277130_pc.webp" />
                               <img
-                                alt="Clear Sunglasses"
+                                alt="Clear Sunglasses 2026"
                                 loading="lazy"
-                                src="https://static.lenskart.com/owndays/img/sun/clear-sunglasses-sp-01.webp"
+                                decoding="async"
+                                src="https://assets.lenskart.com/images/2026/08/27/frame_4_slide_2_sp.webp"
                             /></picture>
                           </div>
                         </div>
@@ -1623,7 +1807,7 @@
             <div class="base-sun__container">
               <h3>LINEUP</h3>
              
-              <ul class="body-sun__lineup__list">
+               <ul class="body-sun__lineup__list">
                 <li
                   class="body-sun__lineup__item aos-init aos-animate"
                   data-aos="fade-left"
