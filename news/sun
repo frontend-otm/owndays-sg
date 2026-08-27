@@ -1,0 +1,2320 @@
+<html lang="en-US" data-reactroot="">
+  <head>
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      rel="stylesheet"
+    />
+    <link href="//www.google-analytics.com" rel="preconnect" />
+    <link href="//www.google-analytics.com" rel="dns-prefetch" />
+    <link href="//www.googletagmanager.com" rel="preconnect" />
+    <link href="//www.googletagmanager.com" rel="dns-prefetch" />
+    <link href="//static.lenskart.com" rel="preconnect" />
+    <link href="//static.lenskart.com" rel="dns-prefetch" />
+    <meta
+      content="pfd8x7ajms35j8pe7h6nitj5b95nqw"
+      name="facebook-domain-verification"
+    />
+    <link
+      as="style"
+      charset="UTF-8"
+      href="https://static.lenskart.com/owndays/cms/css/sun.css"
+      media="all"
+      rel="preload"
+      type="text/css"
+    />
+
+<!-- Primary Meta Tags -->
+    <title>OWNDAYS | SUN</title>
+<meta name="title" content="OWNDAYS | SUN" />
+<meta name="description"
+    content="Where fashion meets function. With SUN by your side, every moment becomes extra special." />
+<meta name="keywords"
+    content="OWNDAYS | SUN,sunglasses,snap,clearsunglasses,newarrivals,frames,colour,tranisiton,polarised,lensesSingapore,OWNDAYS">
+<link rel="canonical" href="https://www.owndays.com/sg/en/news/sun">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.owndays.com/sg/en/news/sun" />
+<meta property="og:title" content="OWNDAYS | SUN" />
+<meta property="og:description"
+    content="Where fashion meets function. With SUN by your side, every moment becomes extra special." />
+<meta property="og:image"
+    content="https://static.lenskart.com/owndays/img/sun/ogp_1200x630.jpg" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://www.owndays.com/sg/en/news/sun" />
+
+<!-- X (Twitter) -->
+<meta property="twitter:title" content="OWNDAYS | SUN" />
+<meta property="twitter:description"
+    content="Where fashion meets function. With SUN by your side, every moment becomes extra special." />
+<meta property="twitter:image"
+    content="https://static.lenskart.com/owndays/img/sun/ogp_1200x630.jpg" />
+
+
+    <meta content="OWNDAYS" name="author" />
+    <meta content="OWNDAYS" name="publisher" />
+    <link href="https://www.owndays.com/sg/en/news/sun" rel="canonical" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4/dist/fancybox.css"
+      rel="stylesheet"
+    />
+    <style>
+      .product__colors__list {
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin-bottom: 0px;
+        display: flex !important;
+        gap: 4px;
+        padding: 16px 0px 24px;
+      }
+
+      .product__colors__list li {
+        list-style-type: none;
+      }
+
+      .product__colors__list li button {
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        display: grid;
+        cursor: pointer;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent;
+        border-image: initial;
+        border-radius: 10rem;
+        outline: none;
+        padding: 0px;
+        margin: 0px;
+        place-content: center;
+      }
+
+      .product__colors__list li button img {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        border-radius: inherit;
+      }
+
+      .product__colors__list li.active {
+        background-color: white;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        border-image: initial;
+        border-radius: 50%;
+      }
+
+      .product__colors__list li button img {
+        margin-bottom: 0 !important;
+      }
+      #fix-link{
+        display: flex !important;
+      }
+      /* to remove double line for hovering */
+      a:hover{
+            text-decoration: none !important;
+        }
+    </style>
+    <script
+      async=""
+      src="https://scripts.clarity.ms/0.8.30/clarity.js"
+    ></script>
+    <script src="//bat.bing.com/bat.js" async=""></script>
+    <script
+      src="https://connect.facebook.net/signals/config/1510426245838375?v=2.9.232&amp;r=stable&amp;domain=preproduction.owndays.com&amp;hme=dcbbef44c997927c5af260dbc0059090127dce285cd316734e66d01ffe06084e&amp;ex_m=88%2C150%2C130%2C19%2C123%2C62%2C42%2C124%2C69%2C61%2C137%2C77%2C13%2C87%2C27%2C118%2C109%2C67%2C70%2C117%2C134%2C96%2C139%2C7%2C3%2C4%2C6%2C5%2C2%2C78%2C86%2C140%2C214%2C162%2C56%2C219%2C216%2C217%2C49%2C177%2C26%2C66%2C223%2C222%2C165%2C29%2C55%2C8%2C58%2C82%2C83%2C84%2C89%2C113%2C28%2C25%2C116%2C112%2C111%2C131%2C68%2C133%2C132%2C44%2C114%2C54%2C106%2C12%2C136%2C39%2C205%2C207%2C172%2C22%2C23%2C24%2C16%2C17%2C38%2C34%2C36%2C35%2C73%2C79%2C81%2C94%2C122%2C125%2C40%2C95%2C20%2C18%2C100%2C63%2C32%2C127%2C126%2C128%2C119%2C21%2C31%2C53%2C93%2C135%2C64%2C15%2C30%2C187%2C158%2C265%2C203%2C148%2C190%2C183%2C91%2C115%2C72%2C104%2C48%2C41%2C102%2C103%2C108%2C52%2C14%2C110%2C101%2C59%2C43%2C97%2C47%2C50%2C46%2C85%2C138%2C0%2C107%2C11%2C105%2C9%2C1%2C51%2C80%2C57%2C129%2C60%2C99%2C76%2C75%2C45%2C120%2C74%2C71%2C65%2C98%2C90%2C37%2C121%2C33%2C92%2C10%2C141%2C201%2C224%2C226%2C267%2C204%2C151%2C195%2C179%2C160%2C264%2C145%2C180%2C208%2C198%2C147%2C168%2C152%2C182%2C185%2C159%2C193"
+      async=""
+    ></script>
+    <script
+      src="https://connect.facebook.net/signals/config/297844910867676?v=2.9.232&amp;r=stable&amp;domain=preproduction.owndays.com&amp;hme=dcbbef44c997927c5af260dbc0059090127dce285cd316734e66d01ffe06084e&amp;ex_m=88%2C150%2C130%2C19%2C123%2C62%2C42%2C124%2C69%2C61%2C137%2C77%2C13%2C87%2C27%2C118%2C109%2C67%2C70%2C117%2C134%2C96%2C139%2C7%2C3%2C4%2C6%2C5%2C2%2C78%2C86%2C140%2C214%2C162%2C56%2C219%2C216%2C217%2C49%2C177%2C26%2C66%2C223%2C222%2C165%2C29%2C55%2C8%2C58%2C82%2C83%2C84%2C89%2C113%2C28%2C25%2C116%2C112%2C111%2C131%2C68%2C133%2C132%2C44%2C114%2C54%2C106%2C12%2C136%2C39%2C205%2C207%2C172%2C22%2C23%2C24%2C16%2C17%2C38%2C34%2C36%2C35%2C73%2C79%2C81%2C94%2C122%2C125%2C40%2C95%2C20%2C18%2C100%2C63%2C32%2C127%2C126%2C128%2C119%2C21%2C31%2C53%2C93%2C135%2C64%2C15%2C30%2C187%2C158%2C265%2C203%2C148%2C190%2C183%2C91%2C115%2C72%2C104%2C48%2C41%2C102%2C103%2C108%2C52%2C14%2C110%2C101%2C59%2C43%2C97%2C47%2C50%2C46%2C85%2C138%2C0%2C107%2C11%2C105%2C9%2C1%2C51%2C80%2C57%2C129%2C60%2C99%2C76%2C75%2C45%2C120%2C74%2C71%2C65%2C98%2C90%2C37%2C121%2C33%2C92%2C10%2C141"
+      async=""
+    ></script>
+    <script
+      async=""
+      src="https://connect.facebook.net/en_US/fbevents.js"
+    ></script>
+    <script async="" src="https://tags.srv.stackadapt.com/events.js"></script>
+    <script async="" src="https://www.clarity.ms/tag/qx92mwqclb"></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CTTO0KRC77UDUQAR23O0&amp;lib=ttq"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=AW-723115492&amp;cx=c&amp;gtm=4e59p0"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-V9YREND482&amp;cx=c&amp;gtm=4e59p0"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C3QE7P84C3SCJI4REVE0&amp;lib=ttq"
+    ></script>
+    <script
+      async=""
+      src="//www.googletagmanager.com/gtm.js?id=GTM-5GSLLFKQ"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://stats.g.doubleclick.net/dc.js"
+    ></script>
+    <script
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <title data-react-helmet="true"></title>
+    <meta content="on" http-equiv="x-dns-prefetch-control" />
+    <link href="/sg/en/favicon.ico" rel="icon" type="image/x-icon" />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="https://static.lenskart.com/media/owndays/favicon/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      color="#5bbad5"
+      href="https://static.lenskart.com/media/owndays/favicon/safari-pinned-tab.svg"
+      rel="mask-icon"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#ffffff" id="themeColor" name="theme-color" />
+    <link href="/sg/en/manifest.json" rel="manifest" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      charset="UTF-8"
+      href="https://static.lenskart.com/owndays/cms/css/sun.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add Slick Slider CSS and JS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script
+      async=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+    ></script>
+    <script async="">
+      !(function (e, t, a, n, c, o, s) {
+        (e.GoogleAnalyticsObject = c),
+          (e[c] =
+            e[c] ||
+            function () {
+              (e[c].q = e[c].q || []).push(arguments);
+            }),
+          (e[c].l = 1 * new Date()),
+          (o = t.createElement(a)),
+          (s = t.getElementsByTagName(a)[0]),
+          (o.async = 1),
+          (o.src = n),
+          s.parentNode.insertBefore(o, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      ),
+        ga("create", "UA-131075285-1", "auto");
+    </script>
+    <script src="//www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript">
+      function gaTrackEvent(e, t, n) {
+        _gaq.push(["_trackEvent", e, t, n]);
+      }
+      function crumbleCookie(e) {
+        for (
+          var t = document.cookie.split(";"), n = {}, i = 0;
+          i < t.length;
+          i++
+        ) {
+          var u = t[i].substring(0, t[i]?.indexOf("=")).trim(),
+            a = t[i].substring(t[i]?.indexOf("=") + 1, t[i].length).trim();
+          n[u] = a;
+        }
+        return e ? (n[e] ? n[e] : null) : n;
+      }
+      function gaCookies() {
+        var e = function () {
+            var e;
+            if (!crumbleCookie("__utma")) return null;
+            e = crumbleCookie("__utma").split(".");
+            var t = e[0],
+              n = e[1],
+              i = e[2],
+              u = e[3],
+              a = e[4],
+              r = e[5];
+            return {
+              cookie: e,
+              domainhash: t,
+              uniqueid: n,
+              ftime: i,
+              ltime: u,
+              stime: a,
+              sessions: r,
+            };
+          },
+          t = function () {
+            var e;
+            if (!crumbleCookie("__utmb")) return null;
+            e = crumbleCookie("__utmb").split(".");
+            var t = e[1];
+            return { cookie: e, gifrequest: t };
+          },
+          n = function () {
+            var e;
+            if (!crumbleCookie("__utmv")) return null;
+            e = crumbleCookie("__utmv").split(".");
+            var t = e[1];
+            return { cookie: e, value: t };
+          },
+          i = function () {
+            var e, t, n, i, u, a, r;
+            if (!crumbleCookie("__utmz")) return null;
+            e = crumbleCookie("__utmz").split(".");
+            for (var s = e[4].split("|"), o = 0; o < s.length; o++) {
+              var c = s[o].substring(0, s[o]?.indexOf("=")),
+                m = decodeURIComponent(
+                  s[o].substring(s[o]?.indexOf("=") + 1, s[o].length)
+                );
+              switch (((m = m.replace(/^(|)$/g, "")), c)) {
+                case "utmcsr":
+                  t = m;
+                  break;
+                case "utmcmd":
+                  n = m;
+                  break;
+                case "utmccn":
+                  i = m;
+                  break;
+                case "utmctr":
+                  u = m;
+                  break;
+                case "utmcct":
+                  a = m;
+                  break;
+                case "utmgclid":
+                  r = m;
+              }
+            }
+            return {
+              cookie: e,
+              source: t,
+              medium: n,
+              name: i,
+              term: u,
+              content: a,
+              gclid: r,
+            };
+          };
+        (this.getDomainHash = function () {
+          return e() && e().domainhash ? e().domainhash : null;
+        }),
+          (this.getUniqueId = function () {
+            return e() && e().uniqueid ? e().uniqueid : null;
+          }),
+          (this.getInitialVisitTime = function () {
+            return e() && e().ftime ? e().ftime : null;
+          }),
+          (this.getPreviousVisitTime = function () {
+            return e() && e().ltime ? e().ltime : null;
+          }),
+          (this.getCurrentVisitTime = function () {
+            return e() && e().stime ? e().stime : null;
+          }),
+          (this.getSessionCounter = function () {
+            return e() && e().sessions ? e().sessions : null;
+          }),
+          (this.getGifRequests = function () {
+            return t() && t().gifrequest ? t().gifrequest : null;
+          }),
+          (this.getUserDefinedValue = function () {
+            return n() && n().value ? decodeURIComponent(n().value) : null;
+          }),
+          (this.getCampaignSource = function () {
+            return i() && i().source ? i().source : null;
+          }),
+          (this.getCampaignMedium = function () {
+            return i() && i().medium ? i().medium : null;
+          }),
+          (this.getCampaignName = function () {
+            return i() && i().name ? i().name : null;
+          }),
+          (this.getCampaignTerm = function () {
+            return i() && i().term ? i().term : null;
+          }),
+          (this.getCampaignContent = function () {
+            return i() && i().content ? i().content : null;
+          }),
+          (this.getGclid = function () {
+            return i() && i().gclid ? i().gclid : null;
+          });
+      }
+      var _gaq = _gaq || [],
+        gac = new gaCookies();
+      _gaq.push(["_setAccount", "UA-131075285-1"], ["_setAllowLinker", !0]),
+        _gaq.push(["_setDomainName", "lenskart.com"]),
+        _gaq.push(
+          ["ninja._setAccount", "UA-131075285-1"],
+          ["ninja._setAllowLinker", !0]
+        ),
+        _gaq.push(["ninja._setDomainName", "lenskart.com"]),
+        _gaq.push(["_initData"]),
+        _gaq.push(function () {
+          var e = _gat._getTrackerByName();
+          (UniqueId = gac.getUniqueId()),
+            e._setCustomVar(1, "Visitor", UniqueId, 1);
+          var t = _gat._getTrackerByName("ninja");
+          t._setCustomVar(1, "Visitor", UniqueId, 1);
+          var n = gac.getSessionCounter(),
+            i = gac.getCampaignSource(),
+            u = gac.getCampaignMedium(),
+            a = gac.getCampaignTerm(),
+            r = gac.getCampaignName(),
+            s = gac.getCampaignContent(),
+            o = gac.getGclid();
+          null != o && ((i = "google"), (u = "cpc")),
+            1 == n &&
+              (e._setCustomVar(
+                2,
+                "FT",
+                i + "|" + u + "|" + a + "|" + r + "|" + s,
+                1
+              ),
+              t._setCustomVar(
+                2,
+                "FT",
+                i + "|" + u + "|" + a + "|" + r + "|" + s,
+                1
+              ));
+        }),
+        _gaq.push(
+          ["_setSiteSpeedSampleRate", 100],
+          ["ninja._setSiteSpeedSampleRate", 100]
+        ),
+        _gaq.push(["_trackPageview"], ["ninja._trackPageview"]),
+        (function () {
+          var e = document.createElement("script");
+          (e.type = "text/javascript"),
+            (e.async = !0),
+            (e.src =
+              ("https:" == document.location.protocol
+                ? "https://"
+                : "http://") + "stats.g.doubleclick.net/dc.js");
+          var t = document.getElementsByTagName("script")[0];
+          t.parentNode.insertBefore(e, t);
+        })();
+    </script>
+    <noscript
+      ><img
+        alt="img"
+        height="1"
+        src="https://www.facebook.com/tr?id=297844910867676&amp;ev=PageView&amp;noscript=1"
+        style="display: none"
+        width="1"
+    /></noscript>
+    <meta content="638381491" property="fb:admins" />
+    <meta content="392248067537088" property="fb:app_id" />
+    <meta content="5B6622CBA13393D54072EF6C8482D676" name="msvalidate.01" />
+    <script
+      charset="UTF-8"
+      src="https://static.lenskart.com/media/desktop/js/vendor/desktop-ga-c3197c2d1dcaf8ecde841b36bbdf37fa.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5GSLLFKQ");
+    </script>
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        (ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+        ]),
+          (ttq.setAndDefer = function (t, e) {
+            t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          });
+        for (var i = 0; i < ttq.methods.length; i++)
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        (ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+            ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        }),
+          (ttq.load = function (e, n) {
+            var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+            (ttq._i = ttq._i || {}),
+              (ttq._i[e] = []),
+              (ttq._i[e]._u = i),
+              (ttq._t = ttq._t || {}),
+              (ttq._t[e] = +new Date()),
+              (ttq._o = ttq._o || {}),
+              (ttq._o[e] = n || {});
+            var o = document.createElement("script");
+            (o.type = "text/javascript"),
+              (o.async = !0),
+              (o.src = i + "?sdkid=" + e + "&lib=" + t);
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(o, a);
+          });
+
+        ttq.load("C3QE7P84C3SCJI4REVE0");
+        ttq.page();
+      })(window, document, "ttq");
+    </script>
+    <script type="text/javascript">
+      var dtm = dtm || {};
+      dtm.pageName = "baseAbort";
+      function initSatellite() {
+        try {
+          _satellite.pageBottom();
+        } catch (e) {
+          //ignore
+        }
+      }
+      initSatellite();
+    </script>
+    <script>
+      window.fwSettings = {
+        widget_id: 13000000125,
+      };
+      !(function () {
+        if ("function" != typeof window.FreshworksWidget) {
+          var n = function () {
+            n.q.push(arguments);
+          };
+          (n.q = []), (window.FreshworksWidget = n);
+        }
+      })();
+      window.chatBotParams = {
+        orderNo: "",
+        emailId: "",
+        phoneNumber: "",
+        action: "",
+        uniqueId: "",
+        sessionID: "",
+        env: "",
+        apiClient: "",
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="https://eu1.clevertap-prod.com/a?t=96&amp;type=page&amp;d=N4IglgJiBcICoFEDKcC0A2AnO1BpAWgEqr7b4gA0IA5jCAEYCsmj9AjAIYeYCmEATABZBnAByZ%2B%2FAOw8u%2FAMwBjeZ0UAGSiADOMNlOZt0jUWsZUADrWiCqHAGYxQAGzD06Adx71UWiAGtUADd%2BADp5EI0LACcAewAXGMUYpzoACzi48x0AXypFSzSMrOgAehLzKJ4KmIgAV0U4sBiAOxCY92aIDgBPLRCkgFsSrWoSnmaS5p53LWHa5s0AdSJcAH0AYQBBAFkABUcQdzAB8xg1KiO4p0UYAG0AXQutG%2Bhzw7sX4FzDxMdvjogzzOF06Hz%2BIIgv2gX2y2SAAA&amp;rn=2&amp;i=1759166364&amp;sn=0&amp;gc=b595b1aa9ed2441a89227eaa23c31ac0&amp;arp=N4IgVg%2BgdiBcIC0DuBeFIA0ICW06IFsA5KAUyQE0AJTEAEwgBcBnOABizoAt2sA3OACYskVvGABfWtjr4AbAE45AWgDSCAErKEShLQBOTMQEYA7AFZzpuYusSgA%3D&amp;tries=1&amp;origin=https%3A%2F%2Fpreproduction.owndays.com&amp;useIP=false&amp;r=1759166364391"
+      class="ct-jp-cb"
+      rel="nofollow"
+      async=""
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/723115492/?random=1759166364482&amp;cv=11&amp;fst=1759166364482&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be59p0v895293790z89165206974za200zb9165206974zd9165206974xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~115480709~115616985&amp;u_w=1792&amp;u_h=1120&amp;url=https%3A%2F%2Fpreproduction.owndays.com%2Fsg%2Fen%2Fnews%2Fsun&amp;frm=0&amp;tiba=OWNDAYS%20%7C%20SUN&amp;hn=www.googleadservices.com&amp;npa=0&amp;auid=269799165.1757486201&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.214%7CNot%253DA%253FBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B140.0.7339.214&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.6.1&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/723115492/?random=1759166364498&amp;cv=11&amp;fst=1759166364498&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be59p0v895293790z89165206974za200zb9165206974zd9165206974xea&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~115480709~115616985&amp;u_w=1792&amp;u_h=1120&amp;url=https%3A%2F%2Fpreproduction.owndays.com%2Fsg%2Fen%2Fnews%2Fsun&amp;frm=0&amp;tiba=OWNDAYS%20%7C%20SUN&amp;hn=www.googleadservices.com&amp;npa=0&amp;auid=269799165.1757486201&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.214%7CNot%253DA%253FBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B140.0.7339.214&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=15.6.1&amp;uaw=0&amp;_tu=CA&amp;rfmt=3&amp;fmt=4"
+    ></script>
+    <script
+      src="https://static.lenskart.com/owndays/media/v2/js/session-relpay-newrelic.js"
+      async=""
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="alternate"
+      hreflang="en-sg"
+      href="https://www.owndays.com/sg/en/news/sun"
+      data-react-helmet="true"
+    />
+    <script type="application/ld+json" data-react-helmet="true">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://preproduction.owndays.com",
+        "name": "OWNDAYS",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "6222-0588",
+          "contactType": "Customer Service"
+        },
+        "sameAs": [
+          "https://www.facebook.com/owndays.sg",
+          "https://www.instagram.com/owndays_sg/",
+          "https://www.tiktok.com/@owndays_sg",
+          "https://www.youtube.com/channel/UCSu2yqzCpnTtGXi05WtsiZg"
+        ],
+        "logo": "https://static1.lenskart.com/media/owndays/desktop/img/od-logos-new/logo-type-black.png"
+      }
+    </script>
+    <script type="application/ld+json" data-react-helmet="true">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://preproduction.owndays.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://preproduction.owndays.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script
+      type="module"
+      src="https://cdn-asset.optimonk.com/script.esm/embedded.e9a925b6.js"
+    ></script>
+    <link
+      id="sa-css"
+      rel="stylesheet"
+      type="text/css"
+      href="https://tags.srv.stackadapt.com/sa.css"
+      media="all"
+    />
+    <script
+      src="https://bat.bing.com/p/action/134598098.js"
+      type="text/javascript"
+      async=""
+      data-ueto="ueto_b5013b8a05"
+    ></script>
+    <script
+      src="https://gs-cdn.optimonk.com/jfclientsdk/latest/jfclientsdk.min.js?ts=16"
+      async=""
+    ></script>
+    <script
+      src="https://gs-cdn.optimonk.com/jfclientsdk/latest/jfclientsdk.min.js?ts=16"
+      async=""
+    ></script>
+  </head>
+  <body
+    style="background-color: #fff"
+    data-aos-easing="ease"
+    data-aos-duration="1000"
+    data-aos-delay="0"
+  >
+    <noscript
+      ><iframe
+        height="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5GSLLFKQ"
+        style="display: none; visibility: hidden"
+        title="GTM noscript"
+        width="0"
+      ></iframe
+    ></noscript>
+    <div id="content">
+      <div class="">
+        <div
+          class="message-toast pos-fix"
+          style="bottom: -999px; right: -999px; text-align: end"
+        ></div>
+        <div class="base-sun base-sun__scroll-hidden">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--2">
+              <li class="breadcrumb-item"><a href="/sg/en">Homepage</a></li>
+              <li class="breadcrumb-item"><a href="/sg/en/news">News</a></li>
+              <li aria-current="page" class="breadcrumb-item active">
+                OWNDAYS | SUN
+              </li>
+            </ol>
+          </nav>
+          <section class="header-sun__main">
+            <div class="header-sun__main__bg">
+              <picture
+                ><source
+                  media="(min-width: 768px)"
+                  srcset="
+                    https://static.lenskart.com/owndays/img/sun/main_pc-2025_04_10-3.webp
+                  " />
+                <img
+                  alt="OWNDAYS | SUN"
+                  loading="lazy"
+                  src="https://static.lenskart.com/owndays/img/sun/main_sp-2025_04_10-3.webp"
+              /></picture>
+            </div>
+            <div class="header-sun__main__text">
+              <div class="base-sun__container">
+                <h1>
+                  <img
+                    alt="OWNDAYS | SUN"
+                    loading="lazy"
+                    src="https://static.lenskart.com/owndays/img/sun/sun_white_logo.svg"
+                  />
+                </h1>
+              </div>
+            </div>
+          </section>
+          <section class="header-sun__about">
+            <div class="header-sun__about__bg">
+              <video
+                loop=""
+                playsinline=""
+                poster="https://static.lenskart.com/owndays/img/sun/sun-about-bg.webp"
+                width="100%"
+              ></video>
+            </div>
+            <div class="header-sun__about__text">
+              <div class="header-sun__about__container">
+                <h2>The day is yours!</h2>
+                <p>
+                  Where fashion meets function. Coming in an array of vibrant
+                  designs, these sunglasses not only reduce glare and protect
+                  your eyes from UV rays but also enable you to see the world
+                  more vividly. With SUN by your side, every moment becomes
+                  extra special.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="header-sun__check">
+            <div class="base-sun__container">
+              <div class="header-sun__check__inner">
+                <div class="header-sun__check__ribbon">
+                  <i class="header-sun__check-bg-svg"
+                    ><svg
+                      fill="none"
+                      height="40"
+                      viewBox="0 0 98 40"
+                      width="98"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M90.416 4.865c0-5.06 6.584-5.246 6.584 0v2.04"
+                        stroke="#F7F6F2"
+                        stroke-linecap="square"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      ></path>
+                      <path
+                        d="M90.416 5.18V39l-44.708-6.467L1 39V5.18c0-2.943 1.648-4.144 3.297-4.163h88.427"
+                        fill="#F7F6F2"
+                      ></path>
+                      <path
+                        d="M90.416 5.18V39l-44.708-6.467L1 39V5.18c0-2.943 1.648-4.144 3.297-4.163h88.427"
+                        stroke="#F7F6F2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      ></path></svg></i
+                  ><span class="header-sun__check__ribbon-text">CHECK!</span>
+                </div>
+                <h2 class="header-sun__check__title">
+                  Is it true that UV rays entering your <br />eyes can cause
+                  suntan?
+                </h2>
+                <p>
+                  When UV rays enter the eyes, the brain sends a signal to the
+                  body to produce melanin which causes the skin to turn dark.
+                  Your sunscreen products will therefore be less effective if
+                  your eyes are left without UV protection. Don’t forget to
+                  safeguard your eyes against UV rays too!
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="header-sun__navs">
+            <div class="base-sun__container">
+              <ul>
+                <li><a>SUNGLASSES</a></li>
+                <li><a>SNAP SUNGLASSES</a></li>
+                <li><a>CLEAR SUNGLASSES</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="body-sun__styles" id="sunglasses">
+            <div class="body-sun__styles__item">
+              <div class="body-sun__styles__top">
+                <div class="body-sun__styles__top-img">
+                  <!-- slick slider revised : 01  -->
+                  <div class="slick-slider body-sun__styles__top-img-slider">
+                    <div>
+                      <img
+                        src="https://static.lenskart.com/owndays/img/sun/sunglasses-pc--05.webp"
+                        alt="Slide 1"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://static.lenskart.com/owndays/img/sun/sunglasses-pc--06.webp"
+                        alt="Slide 2"
+                      />
+                    </div>
+                  </div>
+                  <!-- slick slider revised ends here : 01 -->
+                </div>
+                <div class="body-sun__styles__top-text">
+                  <div class="base-sun__container">
+                    <h2 data-aos="true" class="aos-init aos-animate">
+                      <span>Basking In The Sun</span
+                      ><span>Embracing Greater Freedom</span>
+                    </h2>
+                    <div class="body-sun__styles__top-text-details">
+                      <h3
+                        data-aos="true"
+                        data-aos-delay="100"
+                        class="aos-init aos-animate"
+                      >
+                        <span>SUNGLASSES</span>
+                      </h3>
+                      <p>
+                        From neutral earth tones to transition sunglasses,
+                        discover a curated selection designed to rejuvenate your
+                        everyday look while offering over 99% UV protection.
+                        Slip on a pair that resonates with your style and make
+                        it an extension of your personality.
+                      </p>
+                      <a
+                        class="base-sun__btn base-sun__btn--primary" id="fix-link"
+                        href="/sg/en/eyeglasses/brands/sun.html"
+                        >See All Products</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="body-sun__lineup">
+            <div class="base-sun__container">
+              <h3>LINEUP</h3>
+              <!-- fixed code -->
+              <ul class="body-sun__lineup__list">
+                <li
+                  class="body-sun__lineup__item aos-init aos-animate"
+                  data-aos="fade-left"
+                  data-aos-delay="0"
+                  data-model="SUN2113X-5S C1"
+                >
+                  <div class="product__images">
+                    <img
+                      alt="SUN2113X-5S C1"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2113X-5S_C1.webp"
+                    />
+                    <img
+                      alt="SUN2113X-5S C2"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2113X-5S_C2.webp"
+                    />
+                    <img
+                      alt="SUN2113X-5S C3"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2113X-5S_C3.webp"
+                    />
+                    <img
+                      alt="SUN2113X-5S C4"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2113X-5S_C4.webp"
+                    />
+                  </div>
+                  <ul class="product__colors__list">
+                    <li>
+                      <button>
+                        <img
+                          alt="C1"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-1.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C2"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-2.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C3"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-4.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C4"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-28.webp"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+
+                <li
+                  class="body-sun__lineup__item aos-init aos-animate"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  data-model="SUN1082X-5S C1"
+                >
+                  <div class="product__images">
+                    <img
+                      alt="SUN1082X-5S C1"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN1082X-5S_C1.webp"
+                    />
+                    <img
+                      alt="SUN1082X-5S C2"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN1082X-5S_C2.webp"
+                    />
+                    <img
+                      alt="SUN1082X-5S C3"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN1082X-5S_C3.webp"
+                    />
+                    <img
+                      alt="SUN1082X-5S C4"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN1082X-5S_C4.webp"
+                    />
+                  </div>
+                  <ul class="product__colors__list">
+                    <li>
+                      <button>
+                        <img
+                          alt="C1"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-29.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C2"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-10.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C3"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-22.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C4"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-20.webp"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+
+                <li
+                  class="body-sun__lineup__item aos-init aos-animate"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  data-model="SUN2114N-5S C1"
+                >
+                  <div class="product__images">
+                    <img
+                      alt="SUN2114N-5S C1"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2114N-5S_C1.webp"
+                    />
+                    <img
+                      alt="SUN2114N-5S C2"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2114N-5S_C2.webp"
+                    />
+                    <img
+                      alt="SUN2114N-5S C3"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2114N-5S_C3.webp"
+                    />
+                    <img
+                      alt="SUN2114N-5S C4"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2114N-5S_C4.webp"
+                    />
+                  </div>
+                  <ul class="product__colors__list">
+                    <li>
+                      <button>
+                        <img
+                          alt="C1"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-1.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C2"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-4.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C3"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-8.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C4"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-7.webp"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- Repeat same cleanup for SUN1081X-5S, SUN2118X-5S, SUN1083G-5S ... -->
+              </ul>
+            </div>
+          </section>
+          <div class="base-sun__container">
+            <div class="body-sun__styles__option">
+              <h3 class="body-sun__styles__option-title">OPTIONAL LENSES</h3>
+              <div class="body-sun__styles__option-top">
+                <div class="body-sun__styles__option-top-detail">
+                  <p class="body-sun__styles__option-sub-title">
+                    Adding prescription with <br />optional lenses
+                  </p>
+                  <p class="body-sun__styles__option-desc">
+                    Upgrade to prescription sunglasses from $198, which includes
+                    a lens replacement fee of $98 and an optional lens upgrade
+                    for $100*. You can also customize your sunglasses by
+                    swapping the original lenses for lenses in a different
+                    colour.
+                  </p>
+                  <p
+                    class="body-sun__styles__option-desc body-sun__styles__option-desc--remark"
+                  >
+                    Additional fees apply for other lens upgrade options
+                  </p>
+                </div>
+                <ul
+                  class="body-sun__styles__option-step styles__option-step--3col"
+                >
+                  <li>
+                    <div>
+                      <div class="body-sun__styles__option-step-img-wrap">
+                        <img
+                          alt="Price of Sunglasses"
+                          loading="lazy"
+                          src="https://static.lenskart.com/owndays/img/sun/icon-sunglasses-prices.svg"
+                        />
+                      </div>
+                      <p>Price of <br />Sunglasses</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon-plus"
+                      ><svg
+                        fill="none"
+                        height="13"
+                        viewBox="0 0 13 13"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.347 7.443v5.171h-1.49V7.443H.704V5.989h5.153V.84h1.49v5.15h5.132v1.454H7.347Z"
+                          fill="#000"
+                        ></path></svg
+                    ></i>
+                  </li>
+                  <li>
+                    <div>
+                      <div class="body-sun__styles__option-step-img-wrap">
+                        <img
+                          alt="Lens Replacement Fee"
+                          loading="lazy"
+                          src="https://static.lenskart.com/owndays/img/sun/icon-lens-processing-fee.svg"
+                        />
+                      </div>
+                      <p>Lens Replacement <br />Fee</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon-plus"
+                      ><svg
+                        fill="none"
+                        height="13"
+                        viewBox="0 0 13 13"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.347 7.443v5.171h-1.49V7.443H.704V5.989h5.153V.84h1.49v5.15h5.132v1.454H7.347Z"
+                          fill="#000"
+                        ></path></svg
+                    ></i>
+                  </li>
+                  <li>
+                    <div>
+                      <div class="body-sun__styles__option-step-img-wrap">
+                        <img
+                          alt="Optional Lens Upgrade Fee"
+                          loading="lazy"
+                          src="https://static.lenskart.com/owndays/img/sun/icon-optional-lens-price.svg"
+                        />
+                      </div>
+                      <p>Optional Lens <br />Upgrade Fee</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <h4 class="body-sun__styles__option-recommended-title">
+                Recommended Optional Lenses
+              </h4>
+              <ul class="body-sun__styles__option-recommended">
+                <li>
+                  <a href="/sg/en/services/lens#color"
+                    ><img
+                      alt="Colour Lenses"
+                      loading="lazy"
+                      src="https://static.lenskart.com/owndays/img/sun/banner-lens-color.webp"
+                    />
+                    <div class="body-sun__styles__option-recommended-footer">
+                      <div>
+                        <h5
+                          class="body-sun__styles__option-recommended-footer-title"
+                        >
+                          Colour Lenses
+                        </h5>
+                        <span
+                          class="body-sun__styles__option-recommended-footer-more"
+                          >More Details</span
+                        >
+                      </div>
+                      <div>
+                        <strong
+                          class="body-sun__styles__option-recommended-footer-price"
+                          >S$100</strong
+                        >
+                      </div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a href="/sg/en/services/lens#transitions-light"
+                    ><img
+                      alt="Transitions Lenses"
+                      loading="lazy"
+                      src="https://static.lenskart.com/owndays/img/sun/banner-lens-transition.webp"
+                    />
+                    <div class="body-sun__styles__option-recommended-footer">
+                      <div>
+                        <h5
+                          class="body-sun__styles__option-recommended-footer-title"
+                        >
+                          Transitions Lenses
+                        </h5>
+                        <span
+                          class="body-sun__styles__option-recommended-footer-more"
+                          >More Details</span
+                        >
+                      </div>
+                      <div>
+                        <strong
+                          class="body-sun__styles__option-recommended-footer-price"
+                          >S$200</strong
+                        >
+                      </div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a href="/sg/en/services/lens#polarised"
+                    ><img
+                      alt="Polarised Lenses"
+                      loading="lazy"
+                      src="https://static.lenskart.com/owndays/img/sun/banner-lens-polarised.webp"
+                    />
+                    <div class="body-sun__styles__option-recommended-footer">
+                      <div>
+                        <h5
+                          class="body-sun__styles__option-recommended-footer-title"
+                        >
+                          Polarised Lenses
+                        </h5>
+                        <span
+                          class="body-sun__styles__option-recommended-footer-more"
+                          >More Details</span
+                        >
+                      </div>
+                      <div>
+                        <strong
+                          class="body-sun__styles__option-recommended-footer-price"
+                          >S$100</strong
+                        >
+                      </div>
+                    </div></a
+                  >
+                </li>
+              </ul>
+              <ul class="body-sun__styles__option-note">
+                <li>
+                  This service is only available for sunglasses purchased from
+                  physical retail stores only
+                </li>
+                <li>
+                  Lens replacement is subject to lens power and the type of
+                  sunglasses
+                </li>
+                <li>
+                  Slight variations in colour may occur when replacing with
+                  prescription lenses of the same colour
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section
+            class="body-sun__styles body-sun__styles--reverse"
+            id="snap-sunglasses"
+          >
+            <div class="body-sun__styles__item">
+              <div class="body-sun__styles__top">
+                <div class="body-sun__styles__top-img">
+                  <!-- slick slider revised : 02 starts here -->
+                  <div class="slick-slider body-sun__styles__top-img-slider">
+                    <div class="slick-slide">
+                      <img
+                        src="https://static.lenskart.com/owndays/img/sun/snap-sp--05.webp"
+                        alt="Snap Sunglasses 1"
+                      />
+                    </div>
+                    <div class="slick-slide">
+                      <img
+                        src="https://static.lenskart.com/owndays/img/sun/snap-sp--06.webp"
+                        alt="Snap Sunglasses 2"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- slick slider revised : 02 ends here -->
+                </div>
+                <div class="body-sun__styles__top-text">
+                  <div class="base-sun__container">
+                    <h2 data-aos="true" class="aos-init aos-animate">
+                      <span>Just A Simple SNAP</span
+                      ><span>Be It Indoors Or Outdoors</span>
+                    </h2>
+                    <div class="body-sun__styles__top-text-details">
+                      <h3
+                        data-aos="true"
+                        data-aos-delay="100"
+                        class="aos-init aos-animate"
+                      >
+                        <span>SNAP SUNGLASSES</span>
+                      </h3>
+                      <p>
+                        Designed with built-in magnets that allow you to
+                        transform your spectacles into sunglasses in a split
+                        second! Additionally, SNAP LENS is fitted with polarised
+                        lenses that can reduce glare from shiny surfaces such as
+                        the road and water surface, giving you more comfortable
+                        vision.
+                      </p>
+                      <div class="body-sun__styles__top-text-details-img">
+                        <span></span
+                        ><img
+                          alt="Glasses made of resin"
+                          loading="lazy"
+                          src="https://static.lenskart.com/owndays/img/sun/snap-frame.webp"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="body-sun__features">
+                <div class="base-sun__container">
+                  <h3>FEATURES</h3>
+                  <ul>
+                    <li
+                      data-aos="fade-up"
+                      data-aos-delay="0"
+                      class="aos-init aos-animate"
+                    >
+                      <span
+                        ><img
+                          alt="2-in-1 spectacles that double up as sunglasses"
+                          loading="lazy"
+                          src="https://static.lenskart.com/owndays/img/sun/feature-1.svg" /></span
+                      ><small>#01</small>
+                      <p>2-in-1 spectacles that double up as sunglasses</p>
+                    </li>
+                    <li
+                      data-aos="fade-up"
+                      data-aos-delay="0"
+                      class="aos-init aos-animate"
+                    >
+                      <span
+                        ><img
+                          alt="With built-in magnets for quick attaching/detaching"
+                          loading="lazy"
+                          src="https://static.lenskart.com/owndays/img/sun/feature-2_r.svg" /></span
+                      ><small>#02</small>
+                      <p>With built-in magnets for quick attaching/detaching</p>
+                    </li>
+                    <li
+                      data-aos="fade-up"
+                      data-aos-delay="0"
+                      class="aos-init aos-animate"
+                    >
+                      <span
+                        ><img
+                          alt="Polarised lenses reduce glare from shiny surfaces"
+                          loading="lazy"
+                          src="https://static.lenskart.com/owndays/img/sun/feature-3.svg" /></span
+                      ><small>#03</small>
+                      <p>Polarised lenses reduce glare from shiny surfaces</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="body-sun__description">
+                <div class="base-sun__container">
+                  <a
+                    class="base-sun__btn base-sun__btn--primary" id="fix-link"
+                    href="/sg/en/eyeglasses/brands/sun.html"
+                    >See All Products</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="body-sun__lineup">
+            <div class="base-sun__container">
+              <h3>LINEUP</h3>
+              <ul class="body-sun__lineup__list">
+                <li
+                  class="body-sun__lineup__item aos-init aos-animate"
+                  data-aos="fade-left"
+                  data-aos-delay="0"
+                  data-model="SNP2022N-5S C1"
+                >
+                  <div class="product__images">
+                    <img
+                      alt="SNP2022N-5S C1"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SNP2022N-5S_C1.webp"
+                    />
+                    <img
+                      alt="SNP2022N-5S C2"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SNP2022N-5S_C2.webp"
+                    />
+                    <img
+                      alt="SNP2022N-5S C3"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SNP2022N-5S_C3.webp"
+                    />
+                  </div>
+                  <ul class="product__colors__list">
+                    <li>
+                      <button>
+                        <img
+                          alt="C1"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-1.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C2"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-4.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C3"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-7.webp"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+
+                <li
+                  class="body-sun__lineup__item aos-init aos-animate"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  data-model="SNP2021N-5S C1"
+                >
+                  <div class="product__images">
+                    <img
+                      alt="SNP2021N-5S C1"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SNP2021N-5S_C1.webp"
+                    />
+                    <img
+                      alt="SNP2021N-5S C2"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SNP2021N-5S_C2.webp"
+                    />
+                    <img
+                      alt="SNP2021N-5S C3"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SNP2021N-5S_C3.webp"
+                    />
+                  </div>
+                  <ul class="product__colors__list">
+                    <li>
+                      <button>
+                        <img
+                          alt="C1"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-17.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C2"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-18.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C3"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-13.webp"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+
+                <li
+                  class="body-sun__lineup__item aos-init aos-animate"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  data-model="SNP1025X-5S C1"
+                >
+                  <div class="product__images">
+                    <img
+                      alt="SNP1025X-5S C1"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SNP1025X-5S_C1.webp"
+                    />
+                    <img
+                      alt="SNP1025X-5S C2"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SNP1025X-5S_C2.webp"
+                    />
+                    <img
+                      alt="SNP1025X-5S C3"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SNP1025X-5S_C3.webp"
+                    />
+                  </div>
+                  <ul class="product__colors__list">
+                    <li>
+                      <button>
+                        <img
+                          alt="C1"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-17.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C2"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-10.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C3"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-19.webp"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section
+            class="body-sun__styles body-sun__styles__clear-sunglasses"
+            id="clear-sunglasses"
+          >
+            <div class="body-sun__styles__item">
+              <div class="body-sun__styles__top">
+                <div class="body-sun__styles__top-img">
+                  <div
+                    class="slick-slider body-sun__styles__top-img-slider slick-initialized"
+                    dir="ltr"
+                  >
+                    <div class="slick-list">
+                      <div
+                        class="slick-track"
+                        style="width: 3090px; opacity: 1"
+                      >
+                        <div
+                          data-index="0"
+                          class="slick-slide"
+                          tabindex="-1"
+                          aria-hidden="true"
+                          style="
+                            outline: none;
+                            width: 618px;
+                            position: relative;
+                            left: 0px;
+                            opacity: 0;
+                            transition: opacity 800ms, visibility 800ms;
+                          "
+                        >
+                          <div>
+                            <picture
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                              ><source
+                                media="(min-width: 768px)"
+                                srcset="
+                                  https://static.lenskart.com/owndays/img/sun/clear-sunglasses-pc-01.webp
+                                " />
+                              <img
+                                alt="Clear Sunglasses"
+                                loading="lazy"
+                                src="https://static.lenskart.com/owndays/img/sun/clear-sunglasses-sp-01.webp"
+                            /></picture>
+                          </div>
+                        </div>
+                        <div
+                          data-index="1"
+                          class="slick-slide slick-active slick-current"
+                          tabindex="-1"
+                          aria-hidden="false"
+                          style="
+                            outline: none;
+                            width: 618px;
+                            position: relative;
+                            left: -618px;
+                            opacity: 1;
+                            transition: opacity 800ms, visibility 800ms;
+                          "
+                        >
+                          <div>
+                            <picture
+                              tabindex="-1"
+                              style="width: 100%; display: inline-block"
+                              ><source
+                                media="(min-width: 768px)"
+                                srcset="
+                                  https://static.lenskart.com/owndays/img/sun/clear-sunglasses-pc-02.webp
+                                " />
+                              <img
+                                alt="Clear Sunglasses"
+                                loading="lazy"
+                                src="https://static.lenskart.com/owndays/img/sun/clear-sunglasses-sp-02.webp"
+                            /></picture>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="body-sun__styles__top-text">
+                  <div class="base-sun__container">
+                    <h2 data-aos="true" class="aos-init aos-animate">
+                      <span>Keep UV At Bay</span
+                      ><span>Wear Non-Tinted Sunglasses</span>
+                    </h2>
+                    <div class="body-sun__styles__top-text-details">
+                      <h3
+                        data-aos="true"
+                        data-aos-delay="100"
+                        class="aos-init aos-animate"
+                      >
+                        <span>CLEAR SUNGLASSES</span>
+                      </h3>
+                      <p>
+                        Fitted with transparent, non-tinted anti-UV blue light
+                        lenses, these sunglasses offer you double protection
+                        against UV rays and harmful blue light! They are the
+                        ideal eyewear for all occasions, be it your daily
+                        commute, weekend outings or holiday trips.
+                      </p>
+                      <div class="body-sun__styles__top-text-details-img">
+                        <span></span
+                        ><img
+                          alt="Glasses made of resin"
+                          loading="lazy"
+                          src="https://static.lenskart.com/owndays/img/sun/clear-sunglasses-frame.webp"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="body-sun__description">
+                <div class="base-sun__container">
+                  <a
+                    class="base-sun__btn base-sun__btn--primary" id="fix-link"
+                    href="/sg/en/eyeglasses/brands/sun.html"
+                    >See All Products</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="body-sun__lineup">
+            <div class="base-sun__container">
+              <h3>LINEUP</h3>
+             
+              <ul class="body-sun__lineup__list">
+                <li
+                  class="body-sun__lineup__item aos-init aos-animate"
+                  data-aos="fade-left"
+                  data-aos-delay="0"
+                  data-model="SUN2113X-5S C1"
+                >
+                  <div class="product__images">
+                    <img
+                      alt="SUN2113X-5S C1"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2113X-5S_C1.webp"
+                    />
+                    <img
+                      alt="SUN2113X-5S C2"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2113X-5S_C2.webp"
+                    />
+                    <img
+                      alt="SUN2113X-5S C3"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2113X-5S_C3.webp"
+                    />
+                    <img
+                      alt="SUN2113X-5S C4"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2113X-5S_C4.webp"
+                    />
+                  </div>
+                  <ul class="product__colors__list">
+                    <li>
+                      <button>
+                        <img
+                          alt="C1"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-1.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C2"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-2.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C3"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-4.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C4"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-28.webp"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+
+                <li
+                  class="body-sun__lineup__item aos-init aos-animate"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  data-model="SUN1082X-5S C1"
+                >
+                  <div class="product__images">
+                    <img
+                      alt="SUN1082X-5S C1"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN1082X-5S_C1.webp"
+                    />
+                    <img
+                      alt="SUN1082X-5S C2"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN1082X-5S_C2.webp"
+                    />
+                    <img
+                      alt="SUN1082X-5S C3"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN1082X-5S_C3.webp"
+                    />
+                    <img
+                      alt="SUN1082X-5S C4"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN1082X-5S_C4.webp"
+                    />
+                  </div>
+                  <ul class="product__colors__list">
+                    <li>
+                      <button>
+                        <img
+                          alt="C1"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-29.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C2"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-10.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C3"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-22.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C4"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-20.webp"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+
+                <li
+                  class="body-sun__lineup__item aos-init aos-animate"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  data-model="SUN2114N-5S C1"
+                >
+                  <div class="product__images">
+                    <img
+                      alt="SUN2114N-5S C1"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2114N-5S_C1.webp"
+                    />
+                    <img
+                      alt="SUN2114N-5S C2"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2114N-5S_C2.webp"
+                    />
+                    <img
+                      alt="SUN2114N-5S C3"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2114N-5S_C3.webp"
+                    />
+                    <img
+                      alt="SUN2114N-5S C4"
+                      src="https://static.lenskart.com/owndays/img/sun/products/SUN2114N-5S_C4.webp"
+                    />
+                  </div>
+                  <ul class="product__colors__list">
+                    <li>
+                      <button>
+                        <img
+                          alt="C1"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-1.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C2"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-4.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C3"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-8.webp"
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <img
+                          alt="C4"
+                          src="https://static.lenskart.com/owndays/img/sun/colors/color-7.webp"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- Repeat same structure for other products: SUN1081X-5S, SUN2118X-5S, SUN1083G-5S, etc. -->
+              </ul>
+            </div>
+          </section>
+          <section class="footer-sun__gap"></section>
+          <section class="footer-sun__navs-sticky">
+            <div class="footer-sun__navs-sticky__inner" style="position: fixed">
+              <div class="base-sun__container">
+                <div class="footer-sun__navs-sticky__actions">
+                  <div class="base-sun__hide--pc">
+                    <a
+                      class="base-sun__btn base-sun__btn--primary"
+                      href="/sg/en/eyeglasses/brands/sun.html"
+                      >See All SUN <br />
+                      Frames</a
+                    >
+                  </div>
+                  <div class="base-sun__hide--sp">
+                    <a
+                      class="base-sun__btn base-sun__btn--primary"
+                      href="/sg/en/eyeglasses/brands/sun.html"
+                      >See All SUN Frames</a
+                    >
+                  </div>
+                  <a
+                    class="base-sun__btn base-sun__btn--secondary"
+                    href="/stores/sg"
+                    >Search For <br class="base-sun__hide--pc" />Nearest
+                    Stores</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script charset="UTF-8" src="/sg/en/main.0212632919a47683a581.js"></script>
+    <style>
+      .wzrk-overlay {
+        display: none !important;
+      }
+    </style>
+    <script type="text/javascript" id="" charset="">
+      var clevertap = {
+        event: [],
+        profile: [],
+        account: [],
+        onUserLogin: [],
+        notifications: [],
+        privacy: [],
+      };
+      clevertap.account.push({ id: "TEST-696-KZR-Z96Z" });
+      clevertap.privacy.push({ optOut: !1 });
+      clevertap.privacy.push({ useIP: !1 });
+      (function () {
+        var a = document.createElement("script");
+        a.type = "text/javascript";
+        a.async = !0;
+        a.src =
+          ("https:" == document.location.protocol
+            ? "https://d2r1yp2w7bby2u.cloudfront.net"
+            : "http://static.clevertap.com") + "/js/clevertap.min.js";
+        var b = document.getElementsByTagName("script")[0];
+        b.parentNode.insertBefore(a, b);
+      })();
+    </script>
+    <script
+      id=""
+      text=""
+      charset=""
+      type="text/javascript"
+      src="https://onsite.optimonk.com/script.js?account=221211"
+    ></script>
+    <script
+      id=""
+      text=""
+      charset=""
+      type="text/javascript"
+      src="https://yutoads.com/audience.js"
+    ></script>
+    <script type="text/javascript" id="" charset="">
+      !(function (d, g, e) {
+        d.TiktokAnalyticsObject = e;
+        var a = (d[e] = d[e] || []);
+        a.methods =
+          "page track identify instances debug on off once ready alias group enableCookie disableCookie holdConsent revokeConsent grantConsent".split(
+            " "
+          );
+        a.setAndDefer = function (b, c) {
+          b[c] = function () {
+            b.push([c].concat(Array.prototype.slice.call(arguments, 0)));
+          };
+        };
+        for (d = 0; d < a.methods.length; d++) a.setAndDefer(a, a.methods[d]);
+        a.instance = function (b) {
+          b = a._i[b] || [];
+          for (var c = 0; c < a.methods.length; c++)
+            a.setAndDefer(b, a.methods[c]);
+          return b;
+        };
+        a.load = function (b, c) {
+          var f = "https://analytics.tiktok.com/i18n/pixel/events.js";
+          a._i = a._i || {};
+          a._i[b] = [];
+          a._i[b]._u = f;
+          a._t = a._t || {};
+          a._t[b] = +new Date();
+          a._o = a._o || {};
+          a._o[b] = c || {};
+          c = document.createElement("script");
+          c.type = "text/javascript";
+          c.async = !0;
+          c.src = f + "?sdkid\x3d" + b + "\x26lib\x3d" + e;
+          b = document.getElementsByTagName("script")[0];
+          b.parentNode.insertBefore(c, b);
+        };
+        a.load("CTTO0KRC77UDUQAR23O0");
+        a.page();
+      })(window, document, "ttq");
+    </script>
+    <script type="text/javascript" id="" charset="">
+      (function (a, e, b, f, g, c, d) {
+        a[b] =
+          a[b] ||
+          function () {
+            (a[b].q = a[b].q || []).push(arguments);
+          };
+        c = e.createElement(f);
+        c.async = 1;
+        c.src = "https://www.clarity.ms/tag/" + g;
+        d = e.getElementsByTagName(f)[0];
+        d.parentNode.insertBefore(c, d);
+      })(window, document, "clarity", "script", "qx92mwqclb");
+    </script>
+    <iframe
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe>
+    <script type="text/javascript" id="" charset="">
+      !(function (b, e, f, g, a, c, d) {
+        b.saq ||
+          ((a = b.saq =
+            function () {
+              a.callMethod
+                ? a.callMethod.apply(a, arguments)
+                : a.queue.push(arguments);
+            }),
+          b._saq || (b._saq = a),
+          (a.push = a),
+          (a.loaded = !0),
+          (a.version = "1.0"),
+          (a.queue = []),
+          (c = e.createElement(f)),
+          (c.async = !0),
+          (c.src = g),
+          (d = e.getElementsByTagName(f)[0]),
+          d.parentNode.insertBefore(c, d));
+      })(
+        window,
+        document,
+        "script",
+        "https://tags.srv.stackadapt.com/events.js"
+      );
+      saq("ts", "FLzFqiXLl9dVkW8kXq13NQ");
+    </script>
+    <script type="text/javascript">
+      function initSprinklrChatBot() {
+        var userInfo =
+          arguments.length > 0 && arguments[0] !== undefined
+            ? arguments[0]
+            : {};
+        var device =
+          arguments.length > 1 && arguments[1] !== undefined
+            ? arguments[1]
+            : false;
+        var loginStatus =
+          arguments.length > 2 && arguments[2] !== undefined
+            ? arguments[2]
+            : false;
+        var telephone = userInfo.telephone,
+          firstName = userInfo.firstName,
+          lastName = userInfo.lastName,
+          email = userInfo.email,
+          orderNo = userInfo.orderNo,
+          countryCode = userInfo.countryCode,
+          platform = userInfo.platform,
+          phoneNumber = userInfo.phoneNumber,
+          emailId = userInfo.emailId;
+        window.sprChatSettings = window.sprChatSettings || {};
+        window.sprChatSettings = _objectSpread(
+          _objectSpread(
+            _objectSpread(
+              {
+                appId: "626fcf8563ac4521314470a6_app_600019149",
+                skin: "MODERN",
+                landingScreen: "LAST_CONVERSATION",
+              },
+              device && {
+                device: "MOBILE",
+              }
+            ),
+            loginStatus && {
+              user: {
+                id: telephone || phoneNumber || "",
+                //mandatory - can send phone number
+                firstName: firstName || "",
+                //optional, can send empty
+                lastName: lastName || "",
+                //optional, can send empty
+                profileImageUrl: "",
+                //optional, can send empty
+                phoneNo: telephone || phoneNumber || "",
+                //optional
+                email: email || emailId || "",
+                //optional
+                hash: generateHash(userInfo), //mandatory - you need to generate your own
+              },
+            }
+          ),
+          loginStatus && {
+            userContext: {
+              _c_628fa2a6e10d7d26ffae932e: orderNo || "",
+              // order_no
+              _c_628fa2e3e10d7d26ffae99c9: "",
+              // unique_id
+              _c_628fa30ee10d7d26ffae9d66: "",
+              // action
+              _c_629059cde7872557aeec559f: "",
+              // customer_id
+              _c_628fa33ae10d7d26ffaea0b0:
+                process.env.BUILD_ENV === "development" ? "preprod" : "prod",
+              // env
+              // "_c_628fa33ae10d7d26ffaea0b0": "", // env
+              _c_628fa36be10d7d26ffaea88b: "",
+              // username
+              _c_628fa39ae10d7d26ffaead3d: "",
+              // External_Conversation_ID
+              _c_628fa3c5e10d7d26ffaeb1a3: "",
+              // External_Customer_ID
+              _c_628fa3f7e10d7d26ffaeb7a9: "",
+              // auth_id
+              _c_628fa430e10d7d26ffaebb90: "",
+              // pincode
+              _c_628fa46ae10d7d26ffaec0e6: "",
+              // auth_code
+              _c_5cc9a7d0e4b01904c8dfc965: "",
+              // language
+              _c_62a1a40fd7c1ad35cd4a6323: platform || "",
+              // device
+              _c_628fa497e10d7d26ffaec4c9: countryCode || "", // country
+              // "_c_628fa497e10d7d26ffaec4c9": ""  // country
+            },
+          }
+        );
+        (function () {
+          var t = window,
+            e = t.sprChat,
+            a = e && !!e.loaded,
+            n = document,
+            _r = function r() {
+              _r.m(arguments);
+            };
+          (_r.q = []),
+            (_r.m = function (t) {
+              _r.q.push(t);
+            }),
+            (t.sprChat = a ? e : _r);
+          var o = function o() {
+            var e = n.createElement("script");
+            (e.type = "text/javascript"),
+              (e.async = !0),
+              (e.src =
+                "https://prod4-live-chat.sprinklr.com/api/livechat/handshake/widget/" +
+                t.sprChatSettings.appId),
+              (e.onerror = function () {
+                t.sprChat.loaded = !1;
+              }),
+              (e.onload = function () {
+                t.sprChat.loaded = !0;
+              });
+            var a = n.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(e, a);
+          };
+          "function" == typeof e
+            ? a
+              ? e("update", t.sprChatSettings)
+              : o()
+            : "loading" !== n.readyState
+            ? o()
+            : n.addEventListener("DOMContentLoaded", o);
+        })();
+      }
+    </script>
+    <script type="text/javascript">
+      (function (w, d, t, r, u) {
+        var f, n, i;
+        (w[u] = w[u] || []),
+          (f = function () {
+            var o = { ti: "134598098" };
+            (o.q = w[u]), (w[u] = new UET(o)), w[u].push("pageLoad");
+          }),
+          (n = d.createElement(t)),
+          (n.src = r),
+          (n.async = 1),
+          (n.onload = n.onreadystatechange =
+            function () {
+              var s = this.readyState;
+              (s && s !== "loaded" && s !== "complete") ||
+                (f(), (n.onload = n.onreadystatechange = null));
+            }),
+          (i = d.getElementsByTagName(t)[0]),
+          i.parentNode.insertBefore(n, i);
+      })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    </script>
+    <script type="text/javascript">
+      window.postpayAsyncInit = function () {
+        postpay.init({
+          merchantId: "id_a09b6ac5a0e44d26bae0b1f4e4954383",
+          sandbox: true,
+          theme: "light",
+          locale: "en",
+        });
+      };
+    </script>
+    <script
+      clientid="owndays"
+      service="in.juspay.hyperpay"
+      src="https://public.releases.juspay.in/hyper-sdk-web/HyperServices.js"
+    ></script>
+    <script
+      defer=""
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      data-cf-beacon='{"version":"2024.11.0","token":"b64ef9717a684997b4f756bf5cacb066","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+      crossorigin="anonymous"
+    ></script>
+    <div style="display: none; visibility: hidden">
+      <script>
+        !(function (b, e, f, g, a, c, d) {
+          b.fbq ||
+            ((a = b.fbq =
+              function () {
+                a.callMethod
+                  ? a.callMethod.apply(a, arguments)
+                  : a.queue.push(arguments);
+              }),
+            b._fbq || (b._fbq = a),
+            (a.push = a),
+            (a.loaded = !0),
+            (a.version = "2.0"),
+            (a.queue = []),
+            (c = e.createElement(f)),
+            (c.async = !0),
+            (c.src = g),
+            (d = e.getElementsByTagName(f)[0]),
+            d.parentNode.insertBefore(c, d));
+        })(
+          window,
+          document,
+          "script",
+          "https://connect.facebook.net/en_US/fbevents.js"
+        );
+        fbq("init", "1510426245838375");
+        fbq("track", "PageView");
+      </script>
+      <noscript></noscript>
+    </div>
+    <iframe
+      id="__OM_native_iframe"
+      aria-hidden="true"
+      src="about:blank"
+      style="display: none"
+    ></iframe>
+    <div
+      id="batBeacon569055333139"
+      style="width: 0px; height: 0px; display: none; visibility: hidden"
+    >
+      <img
+        id="batBeacon454220280485"
+        width="0"
+        height="0"
+        alt=""
+        src="https://bat.bing.com/action/0?ti=134598098&amp;Ver=2&amp;mid=e3de5c0e-b6c6-4bbf-af0d-e674f6a5d0c7&amp;bo=1&amp;sid=0156a5509c9e11f081b841e8a850e44d&amp;vid=2583163092d511f090cd1321300b3739&amp;vids=0&amp;msclkid=N&amp;pi=918639831&amp;lg=en-GB&amp;sw=1792&amp;sh=1120&amp;sc=24&amp;tl=OWNDAYS%20%7C%20SUN&amp;kw=OWNDAYS%20%7C%20SUN,sunglasses,snap,clearsunglasses,newarrivals,frames,colour,tranisiton,polarised,lensesSingapore,OWNDAYS&amp;p=https%3A%2F%2Fpreproduction.owndays.com%2Fsg%2Fen%2Fnews%2Fsun&amp;r=&amp;lt=3464&amp;evt=pageLoad&amp;sv=2&amp;cdb=AQAQ&amp;rn=170824"
+        style="width: 0px; height: 0px; display: none; visibility: hidden"
+      />
+    </div>
+    <iframe style="display: none"></iframe
+    ><iframe style="display: none"></iframe>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all navigation links inside .base-sun__container
+        const navLinks = document.querySelectorAll(".base-sun__container a");
+
+        // Add click event to each link
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Create target ID based on link text
+            const targetId = this.textContent
+              .trim()
+              .toLowerCase()
+              .replace(/\s+/g, "-");
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+              targetSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      $(function () {
+        if (!$.fn.slick) {
+          console.error("Slick failed to load");
+          return;
+        }
+
+        $(".slick-slider.body-sun__styles__top-img-slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000, // time each slide stays
+          speed: 800, // fade duration
+          fade: true, // cross-fade
+          cssEase: "linear",
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelectorAll(".body-sun__lineup__item")
+          .forEach(function (listItem) {
+            // All color buttons inside this product
+            const colorButtons = listItem.querySelectorAll(
+              ".product__colors__list button img"
+            );
+            // All product images
+            const productImages = listItem.querySelectorAll(
+              ".product__images img"
+            );
+            // Model text
+            const model = listItem.getAttribute("data-model");
+
+            if (!colorButtons.length || !productImages.length || !model) return;
+
+            // Example: SUN2113X-5S C1 => SUN2113X-5S
+            const modelBase = model.split(" ")[0];
+
+            // Initially show first image and activate first color button
+            if (productImages.length > 0) {
+              productImages.forEach((img, index) => {
+                img.style.display = index === 0 ? "block" : "none";
+              });
+
+              // Activate first color button
+              const firstColorLi = listItem.querySelector(
+                ".product__colors__list li:first-child"
+              );
+              if (firstColorLi) {
+                firstColorLi.classList.add("active");
+              }
+            }
+
+            // Loop each color button
+            colorButtons.forEach(function (btnImg, index) {
+              const parentBtn = btnImg.closest("button");
+              const parentLi = parentBtn.closest("li");
+
+              parentBtn.addEventListener("click", function () {
+                // Remove active from all color buttons
+                listItem
+                  .querySelectorAll(".product__colors__list li")
+                  .forEach(function (li) {
+                    li.classList.remove("active");
+                  });
+
+                // Add active to clicked color button
+                parentLi.classList.add("active");
+
+                // Hide all images
+                productImages.forEach(function (img) {
+                  img.style.display = "none";
+                });
+
+                // Show corresponding image
+                if (productImages[index]) {
+                  productImages[index].style.display = "block";
+                }
+
+                // Extract SKU (like C1, C2, C3…)
+                const sku = btnImg.alt;
+
+                // Update model text
+                listItem.setAttribute("data-model", `${modelBase} ${sku}`);
+              });
+            });
+          });
+      });
+    </script>
+  </body>
+</html>
