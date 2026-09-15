@@ -53,6 +53,18 @@
   </script>
 
   <link rel="stylesheet" href="https://assets.lenskart.com/code/2026/09/09/familysale-sg-5ae58c02.css" />
+
+  <!-- Overrides CDN: `#familysale-sg { overflow-x: hidden }` turns the LP root into a scroll
+       container, which silently kills `position: sticky` on the store CTA below. `clip` clips
+       the same overflow without that side effect; Safari <=15 drops `clip`, so fall back to
+       `visible` - nothing on this page reaches the root anyway (the hero and the eyewear strip
+       each clip their own content). Delete once the bundle source stops setting `hidden`. -->
+  <style id="familysale-sg-sticky-fix">
+    #familysale-sg { overflow: clip visible !important; }
+    @supports not (overflow: clip visible) {
+      #familysale-sg { overflow: visible !important; }
+    }
+  </style>
 </head>
 <body>
 
@@ -196,15 +208,15 @@
     </div>
   </section>
 
-  <!-- sticky store CTA -->
-  <div class="fixed bottom-0 right-0 z-[99] flex justify-end lg:pr-[120px]">
+  <!-- sticky store CTA - `sticky`, not `fixed`, so it parks at the end of the LP instead of
+       floating over the CMS footer on production. `-mt` cancels its own height so parking it
+       costs no page height (same trick as `.sticky-btn` in css/specials-starwars.css). -->
   <a
-    class="flex h-[60px] w-[200px] items-center justify-center rounded-tl-[20px] bg-[#222] text-[16px] font-semibold leading-[24px] tracking-[0.48px] text-white transition-colors lg:w-[340px] lg:rounded-tr-[20px] lg:text-[18px] lg:tracking-[0.54px] lg:hover:bg-[#535353] lg:hover:text-white"
+    class="sticky bottom-0 z-[99] -mt-[60px] ml-auto flex h-[60px] w-[200px] items-center justify-center rounded-tl-[20px] bg-[#222] text-[16px] font-semibold leading-[24px] tracking-[0.48px] text-white transition-colors lg:mr-[120px] lg:w-[340px] lg:rounded-tr-[20px] lg:text-[18px] lg:tracking-[0.54px] lg:hover:bg-[#535353] lg:hover:text-white"
     href="https://www.owndays.com/stores/sg"
   >
     Search Nearby Stores
   </a>
-</div>
 </div>
 </div>
 
