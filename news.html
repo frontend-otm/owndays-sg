@@ -1,5 +1,4 @@
 <html lang="en-US" data-reactroot="">
-<plasmo-csui id="plasmo-inspector"></plasmo-csui>
 
 <head>
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" rel="stylesheet" />
@@ -47,6 +46,12 @@
                 }
 
             }
+        }
+
+        /* Remove the browser focus ring (blue outline) on clicked/focused items */
+        #content :focus,
+        #content :focus-visible {
+            outline: none;
         }
     </style>
 </head>
@@ -138,28 +143,47 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <script>
-        const baseImgUrl = "https://static.lenskart.com/media/owndays/img/news";
-        const baseNewImgUrl = "https://static.lenskart.com/owndays/img/news";
+        /* =====================================================================
+         * NEWS CATEGORIES (tabs above the list, shown in this order)
+         * ===================================================================== */
         const NEWS_CATEGORIES = [
-            {
-                name: "ALL",
-                hash: "#all",
-            },
-            {
-                name: "OWNDAYS MEETS",
-                hash: "#owndays-meets",
-            },
-            {
-                name: "Products",
-                hash: "#products",
-            },
-            {
-                name: "Campaign",
-                hash: "#campaign",
-            },
+            { name: "ALL", hash: "#all" },
+            { name: "OWNDAYS MEETS", hash: "#owndays-meets" },
+            { name: "Products", hash: "#products" },
+            { name: "Campaign", hash: "#campaign" },
         ];
 
+        /* =====================================================================
+         * NEWS ITEMS
+         * =====================================================================
+         * News appears on the page in the SAME ORDER as this list.
+         * The first visible item is also shown as the large featured news at the top.
+         *
+         * To add a news item:
+         *   1. Copy any existing { ... } block.
+         *   2. Paste it where it should appear
+         *      (top of the list = newest / featured, or between any two items).
+         *   3. Update the values.
+         *
+         * Required fields
+         *   slug         Link to the news page, e.g. "/sg/en/news/frozen"
+         *   title        News title (also used as image alt text)
+         *   image        Thumbnail image (full URL)
+         *   category     Must match a name in NEWS_CATEGORIES (except "ALL")
+         *   description  Short text, shown only when this item is featured
+         *
+         * Optional fields
+         *   startDate    Hidden until this time, e.g. "2026-03-02T10:00:00+08:00"
+         *   hidden       true = keep the data but do not show it
+         * ===================================================================== */
         const ITEMS_NEWS = [
+            {
+                slug: "/sg/en/news/popmart-molly",
+                title: "POP MART MOLLY | OWNDAYS",
+                image: "https://assets.lenskart.com/images/2026/10/09/popmart-molly_news.webp",
+                category: "Products",
+                description: "Step into MOLLY’s WonderWorld with the POP MART MOLLY | OWNDAYS eyewear collection.",
+            },
             {
                 slug: "/sg/en/news/pompompurin",
                 title: "OWNDAYS & POMPOMPURIN",
@@ -186,461 +210,434 @@
                 title: "STAR WARS | OWNDAYS",
                 image: "https://assets.lenskart.com/images/2026/05/18/news-starwar.webp",
                 category: "Products",
-                description:
-                    "A long time ago, in a galaxy far, far away….and beloved by fans across the universe comes the STAR WARS | OWNDAYS Accessories Collection. Featuring designs that are simple yet powerful, with colors and details that reflect the spirit of the STAR WARS universe.",
-                startdate: "2026-05-17T10:00:00+08:00",
+                description: "A long time ago, in a galaxy far, far away….and beloved by fans across the universe comes the STAR WARS | OWNDAYS Accessories Collection. Featuring designs that are simple yet powerful, with colors and details that reflect the spirit of the STAR WARS universe.",
+                startDate: "2026-05-17T10:00:00+08:00",
             },
             {
                 slug: "/sg/en/news/stranger-things",
                 title: "OWNDAYS × STRANGER THINGS",
                 image: "https://assets.lenskart.com/images/2026/02/17/stranger-things_news.webp",
                 category: "Products",
-                description:
-                    "The Netflix series STRANGER THINGS and OWNDAYS come together in a special collaboration. Iconic elements like the “UPSIDE DOWN” and “HELLFIRE CLUB” are woven into the frame designs, bringing the world of Hawkins to life through eyewear.",
-                startdate: "2026-03-02T10:00:00+08:00",
+                description: "The Netflix series STRANGER THINGS and OWNDAYS come together in a special collaboration. Iconic elements like the “UPSIDE DOWN” and “HELLFIRE CLUB” are woven into the frame designs, bringing the world of Hawkins to life through eyewear.",
+                startDate: "2026-03-02T10:00:00+08:00",
             },
             {
                 slug: "/sg/en/news/hellokitty",
                 title: "OWNDAYS & Hello Kitty",
                 image: "https://assets.lenskart.com/images/2026/01/06/news-kitty.jpg",
                 category: "Products",
-                description:
-                    "Make every day a little more special with OWNDAYS & Hello Kitty. HELLO KITTY, the adorable character created by Sanrio, has captured the hearts of many around the world.",
+                description: "Make every day a little more special with OWNDAYS & Hello Kitty. HELLO KITTY, the adorable character created by Sanrio, has captured the hearts of many around the world.",
             },
             {
                 slug: "/sg/en/news/frozen",
                 title: "FROZEN | OWNDAYS",
                 image: "https://assets.lenskart.com/images/2025/12/03/FROZEN_OWNDAYS_thumbnail.webp",
                 category: "Products",
-                description:
-                    "Experience the magic of winter with the latest FROZEN | OWNDAYS eyewear collection inspired by the enchanted world of Frozen.",
+                description: "Experience the magic of winter with the latest FROZEN | OWNDAYS eyewear collection inspired by the enchanted world of Frozen.",
             },
             {
                 slug: "/sg/en/news/harrypotter",
                 title: "Harry Potter × OWNDAYS",
                 image: "https://static.lenskart.com/owndays/img/news/harrypotter/2025/News.webp",
                 category: "Products",
-                description:
-                    "Discover the wizarding world with the second release of our exclusive Harry Potter collaboration, a tribute to the beloved story that has captured hearts around the world.",
+                description: "Discover the wizarding world with the second release of our exclusive Harry Potter collaboration, a tribute to the beloved story that has captured hearts around the world.",
             },
             {
                 slug: "/sg/en/news/back-in-black",
                 title: "BACK in BLACK | Black. The Clear Choice.",
-                image: `${baseNewImgUrl}/back-in-black.webp`,
+                image: "https://static.lenskart.com/owndays/img/news/back-in-black.webp",
                 category: "Products",
-                description: `A collection created with the aspiration of bringing back the iconic black frames. BACK in BLACK.`,
+                description: "A collection created with the aspiration of bringing back the iconic black frames. BACK in BLACK.",
             },
             {
                 slug: "/sg/en/news/move",
                 title: "OWNDAYS | MOVE | Eyewear for the active",
-                image: `${baseNewImgUrl}/owndays-move.webp`,
+                image: "https://static.lenskart.com/owndays/img/news/owndays-move.webp",
                 category: "Products",
-                description: `Designed for a secure fit that stays in place even during active movement. Perfect for everyday life and on-the-go moments.`,
+                description: "Designed for a secure fit that stays in place even during active movement. Perfect for everyday life and on-the-go moments.",
             },
             {
                 slug: "/sg/en/news/squid-game",
                 title: "SQUID GAME × OWNDAYS",
-                image: `${baseNewImgUrl}/squid-game/squid-game.webp`,
+                image: "https://static.lenskart.com/owndays/img/news/squid-game/squid-game.webp",
                 category: "Products",
                 description: `Netflix worldwide hit drama series "SQUID GAME", collaborated with OWNDAYS!`,
             },
             {
                 slug: "/sg/en/news/toystory",
                 title: "TOY STORY | OWNDAYS",
-                image: `${baseNewImgUrl}/toy-story.webp`,
+                image: "https://static.lenskart.com/owndays/img/news/toy-story.webp",
                 category: "Products",
-                description: `Do you remember your first toy? What about your favourite one? Step into the TOY STORY | OWNDAYS eyewear collection where imagination and childhood joy come to life once again.`,
+                description: "Do you remember your first toy? What about your favourite one? Step into the TOY STORY | OWNDAYS eyewear collection where imagination and childhood joy come to life once again.",
             },
-            /* {
+            {
                 slug: "/sg/en/news/freaks-store",
                 title: "OWNDAYS × FREAK'S STORE",
-                image: `${baseNewImgUrl}/freak-store.webp`,
+                image: "https://static.lenskart.com/owndays/img/news/freak-store.webp",
                 category: "Products",
-                description: `Back by popular demand, our 2nd collection is here! Featuring sunglasses in stylish design with functional lens options such as Transitions and Polarised lenses, this lineup blends functionality with trendiness to suit any scene.`,
-            }, */
+                description: "Back by popular demand, our 2nd collection is here! Featuring sunglasses in stylish design with functional lens options such as Transitions and Polarised lenses, this lineup blends functionality with trendiness to suit any scene.",
+                hidden: true,
+            },
             {
                 slug: "/sg/en/news/huawei2",
                 title: "OWNDAYS × HUAWEI Eyewear 2",
-                image: `${baseNewImgUrl}/huawei2/News.webp`,
+                image: "https://static.lenskart.com/owndays/img/news/huawei2/News.webp",
                 category: "Products",
-                description: `Introducing the Titanium Edition of the OWNDAYS × HUAWEI Eyewear 2 Smart Audio Glasses. With this addition, the collection now features six models, each available in two colour variations.`,
+                description: "Introducing the Titanium Edition of the OWNDAYS × HUAWEI Eyewear 2 Smart Audio Glasses. With this addition, the collection now features six models, each available in two colour variations.",
             },
             {
                 slug: "/sg/en/news/tomandjerry",
                 title: "TOM and JERRY × OWNDAYS",
-                image: `${baseNewImgUrl}/tomandjerry/News.webp`,
+                image: "https://static.lenskart.com/owndays/img/news/tomandjerry/News.webp",
                 category: "Products",
-                description: `Discover the collection inspired by Tom and Jerry, the beloved slapstick cartoon comedy starring the iconic duo in an endless game of cat-and-mouse!`,
+                description: "Discover the collection inspired by Tom and Jerry, the beloved slapstick cartoon comedy starring the iconic duo in an endless game of cat-and-mouse!",
             },
             {
                 slug: "/sg/en/news/sun",
                 title: "OWNDAYS | SUN",
-                image: `https://assets.lenskart.com/images/2026/08/27/news.webp`,
+                image: "https://assets.lenskart.com/images/2026/08/27/news.webp",
                 category: "Products",
-                description: `Where fashion meets function. With SUN by your side, every moment becomes extra special. `,
+                description: "Where fashion meets function. With SUN by your side, every moment becomes extra special.",
             },
             {
                 slug: "/sg/en/news/air",
                 title: "OWNDAYS | AIR",
-                image: `${baseImgUrl}/air.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/air.webp",
                 category: "Products",
-                description: `Engineered with ultra-lightweight and highly durable materials to deliver a wearing comfort that feels like air, these spectacle frames offer an impeccable fit and can be worn comfortably for long hours.`,
+                description: "Engineered with ultra-lightweight and highly durable materials to deliver a wearing comfort that feels like air, these spectacle frames offer an impeccable fit and can be worn comfortably for long hours.",
             },
             {
                 slug: "/sg/en/news/black-collection",
                 title: "BLACK COLLECTION",
-                image: `https://static1.lenskart.com/media/owndays/img/news/black-collection/news.webp`,
+                image: "https://static1.lenskart.com/media/owndays/img/news/black-collection/news.webp",
                 category: "Products",
-                description: `The Black Collection comprises approximately 30 frame designs, all centred around OWNDAYS' brand colour—black.`,
+                description: "The Black Collection comprises approximately 30 frame designs, all centred around OWNDAYS' brand colour—black.",
             },
             {
                 slug: "/sg/en/news/gundam5-zakuhead",
                 title: "【SOLD OUT】ZEON × OWNDAYS ZAKU HEAD CASE",
-                image: `${baseImgUrl}/zeon-owndays=zaku-head-case.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/zeon-owndays=zaku-head-case.webp",
                 category: "Products",
-                description:
-                    "From Mobile Suit Gundam, one of the most iconic Japanese anime series that has transcended generations, comes the Zaku Head Case, an eyewear storage case modelled after Char Aznable’s custom Zaku in the largest-ever 1:7 scale.",
+                description: "From Mobile Suit Gundam, one of the most iconic Japanese anime series that has transcended generations, comes the Zaku Head Case, an eyewear storage case modelled after Char Aznable’s custom Zaku in the largest-ever 1:7 scale.",
             },
             {
                 slug: "/sg/en/news/gundam5-zeon",
                 title: "【SOLD OUT】ZEON EXCLUSIVE EYEGLASSES & SUNGLASSES",
-                image: `${baseImgUrl}/zeon-owndays.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/zeon-owndays.webp",
                 category: "Products",
-                description:
-                    "From Mobile Suit Gundam, one of the most iconic Japanese anime series that has remained highly popular across generations, comes an eyewear collaboration focusing on the Principality of Zeon. The lineup consists of a spectacle model and a sunglass model.",
+                description: "From Mobile Suit Gundam, one of the most iconic Japanese anime series that has remained highly popular across generations, comes an eyewear collaboration focusing on the Principality of Zeon. The lineup consists of a spectacle model and a sunglass model.",
             },
             {
                 slug: "/sg/en/news/shingo-aiba",
                 title: "SHINGO AIBA × OWNDAYS EYEWEAR COLLECTION",
-                image: `${baseImgUrl}/shingo-aiba.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/shingo-aiba.webp",
                 category: "Products",
-                description:
-                    "A capsule collection created in collaboration with Japanese designer, Shingo Aiba whose credentials include a tenure in a global fashion house in Paris.",
+                description: "A capsule collection created in collaboration with Japanese designer, Shingo Aiba whose credentials include a tenure in a global fashion house in Paris.",
             },
             {
                 slug: "/sg/en/news/10th-anniversary-collection",
                 title: "10th Anniversary Collection",
-                image: `${baseImgUrl}/10th-anniversary.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/10th-anniversary.webp",
                 category: "Products",
-                description:
-                    "A commemorative collection to mark 10 amazing years in Singapore, featuring frame designs created specifically for the discerning local customers who manifest in the love for tasteful yet functional eyewear.",
+                description: "A commemorative collection to mark 10 amazing years in Singapore, featuring frame designs created specifically for the discerning local customers who manifest in the love for tasteful yet functional eyewear.",
             },
             {
                 slug: "/sg/en/news/500stores",
                 title: "Celebrating 500 stores worldwide",
-                image: `${baseImgUrl}/celebrating-500-stores-worldwide.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/celebrating-500-stores-worldwide.webp",
                 category: "Products",
-                description:
-                    "A commemorative collection to mark the 500-store milestone, featuring frames in lightweight resin material that makes them a great comfort to wear. These made-in-Japan frames come in the oversized rectangle style and the classic Boston style and are available at an unprecedented price so customers can enjoy quality eyewear at a fraction of the usual retail price. This is our way of saying Thank You to all our customers for making this 500-store milestone a dream come true.",
+                description: "A commemorative collection to mark the 500-store milestone, featuring frames in lightweight resin material that makes them a great comfort to wear. These made-in-Japan frames come in the oversized rectangle style and the classic Boston style and are available at an unprecedented price so customers can enjoy quality eyewear at a fraction of the usual retail price. This is our way of saying Thank You to all our customers for making this 500-store milestone a dream come true.",
             },
             {
                 slug: "/sg/en/news/kuromi",
                 title: "Kuromi × OWNDAYS",
-                image: `${baseImgUrl}/kuromi-owndays.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/kuromi-owndays.webp",
                 category: "Products",
-                description:
-                    "An OWNDAYS x Kuromi crossover in support of the #KUROMIfy the World project. Transform into the best self you can ever be with these cute, accessory-like eyewear that are inspired by Kuromi and Baku!",
+                description: "An OWNDAYS x Kuromi crossover in support of the #KUROMIfy the World project. Transform into the best self you can ever be with these cute, accessory-like eyewear that are inspired by Kuromi and Baku!",
             },
             {
                 slug: "/sg/en/news/senichisaku",
                 title: "千一作",
-                image: `${baseImgUrl}/senichisaku.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/senichisaku.webp",
                 category: "Products",
-                description:
-                    "Sabae, a city located in the Fukui Prefecture, Japan, is widely regarded as the City of Eyewear. This is where Senichisaku frames are crafted, with every pair carefully put together by hand.",
+                description: "Sabae, a city located in the Fukui Prefecture, Japan, is widely regarded as the City of Eyewear. This is where Senichisaku frames are crafted, with every pair carefully put together by hand.",
             },
             {
                 slug: "/sg/en/news/mi-mollet",
                 title: "mi-mollet × OWNDAYS",
-                image: `${baseImgUrl}/mi-mollet-owndays.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/mi-mollet-owndays.webp",
                 category: "Products",
-                description:
-                    "Explore the stylish spectacle frames by Naoko Okusa, a collaboration between mi-mollet and OWNDAYS, where fashion meets functionality effortlessly. Shop now.",
+                description: "Explore the stylish spectacle frames by Naoko Okusa, a collaboration between mi-mollet and OWNDAYS, where fashion meets functionality effortlessly. Shop now.",
             },
             {
                 slug: "/sg/en/news/kimetsu",
                 title: "[Demon Slayer: Kimetsu no Yaiba] Character Frame Collection",
-                image: `${baseImgUrl}/demon-slayer.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/demon-slayer.webp",
                 category: "Products",
-                description:
-                    "A collection featuring six spectacle frames inspired by the six characters, namely Tanjiro, Nezuko, Zenitsu, Inosuke, Giyu, Shinobu and Kyojuro from the anime television series Demon Slayer: Kimetsu no Yaiba. Each frame is a distinct representation of each of the six characters, with frame temples decorated in motifs depicting iconic patterns found on both the Nichirin Sword and the outfit of the respective character.",
+                description: "A collection featuring six spectacle frames inspired by the six characters, namely Tanjiro, Nezuko, Zenitsu, Inosuke, Giyu, Shinobu and Kyojuro from the anime television series Demon Slayer: Kimetsu no Yaiba. Each frame is a distinct representation of each of the six characters, with frame temples decorated in motifs depicting iconic patterns found on both the Nichirin Sword and the outfit of the respective character.",
             },
             {
                 slug: "/sg/en/news/gundam",
                 title: "GUNDAM × OWNDAYS",
-                image: `${baseImgUrl}/gundam-owndays.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/gundam-owndays.webp",
                 category: "Products",
-                description:
-                    "Mobile suit GUNDAM × OWNDAYS! Wear the GUNDAM. 40th Anniversary Collaboration Project.",
+                description: "Mobile suit GUNDAM × OWNDAYS! Wear the GUNDAM. 40th Anniversary Collaboration Project.",
             },
             {
                 slug: "/sg/en/news/owndayspc",
                 title: "OWNDAYS PC",
-                image: `${baseImgUrl}/owndays-pc.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/owndays-pc.webp",
                 category: "Products",
-                description:
-                    "OWNDAYS PC - SAVE YOUR EYES, SHIELD YOUR EYES! Reduce up to 25% blue light!",
+                description: "OWNDAYS PC - SAVE YOUR EYES, SHIELD YOUR EYES! Reduce up to 25% blue light!",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201905",
                 title: "#19 HIROTADA OTOTAKE",
-                image: `${baseImgUrl}/hirotada-ototake.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/hirotada-ototake.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "Our guest in Part 19 of OWNDAYS MEETS is Ototake Hirotada. We speak him about the “OTOTAKE PROJECT” in which he took up the challenge of walking with prosthetic legs developed using the latest technology. We also talk to him about his plans moving forward.",
+                description: "Our guest in Part 19 of OWNDAYS MEETS is Ototake Hirotada. We speak him about the “OTOTAKE PROJECT” in which he took up the challenge of walking with prosthetic legs developed using the latest technology. We also talk to him about his plans moving forward.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201807",
                 title: "#17 FUJIWARA KATSUAKI",
-                image: `${baseImgUrl}/fujiwara-katsuaki.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/fujiwara-katsuaki.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "Our guest in Part 17 of OWNDAYS MEETS is Fujiwara Katsuaki, a former professional motorcycle racer who is currently the coach of the Kawasaki Racing Team.",
+                description: "Our guest in Part 17 of OWNDAYS MEETS is Fujiwara Katsuaki, a former professional motorcycle racer who is currently the coach of the Kawasaki Racing Team.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201702-3",
                 title: "#16 Ham Tran",
-                image: `${baseImgUrl}/ham-tran.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/ham-tran.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "Our guest in part 16 of OWNDAYS MEETS is award-winning Vietnamese-American film director, Ham Tran. We speak to him about the path he has taken so far in his career.",
+                description: "Our guest in part 16 of OWNDAYS MEETS is award-winning Vietnamese-American film director, Ham Tran. We speak to him about the path he has taken so far in his career.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201702-2",
                 title: "#15 Yuni Hadi",
-                image: `${baseImgUrl}/yuni-hadi.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/yuni-hadi.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "Our guest in part 14 of OWNDAYS MEETS is Yuni Hadi, a Singaporean film producer who is known in the Singapore art scene for actively promoting independent Singapore films. We speak to her about her career and her views on the future of the film industry.",
+                description: "Our guest in part 14 of OWNDAYS MEETS is Yuni Hadi, a Singaporean film producer who is known in the Singapore art scene for actively promoting independent Singapore films. We speak to her about her career and her views on the future of the film industry.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201701",
                 title: "#14 Dawn Yeoh",
-                image: `${baseImgUrl}/dawn-yeoh.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/dawn-yeoh.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "Delve into the world of Dawn Yeoh, Singaporean artiste, in Part 14 of OWNDAYS MEETS. Uncover her career path, passion, and future aspirations in the arts and beyond.",
+                description: "Delve into the world of Dawn Yeoh, Singaporean artiste, in Part 14 of OWNDAYS MEETS. Uncover her career path, passion, and future aspirations in the arts and beyond.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201610",
                 title: "#13 Mike Havenaar",
-                image: `${baseImgUrl}/mike-havenaar.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/mike-havenaar.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "Our guest in part 13 of OWNDAYS MEETS is Mike Havenaar, a professional footballer who leads an active international career.",
+                description: "Our guest in part 13 of OWNDAYS MEETS is Mike Havenaar, a professional footballer who leads an active international career.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201506",
                 title: "#12 SABU",
-                image: `${baseImgUrl}/sabu.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/sabu.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "We have SABU, a film director, as the 12th guest for OWNDAYS MEETS. He is the director, author and scriptwriter of the film “Ama no Chasuke”",
+                description: "We have SABU, a film director, as the 12th guest for OWNDAYS MEETS. He is the director, author and scriptwriter of the film “Ama no Chasuke”",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201410",
                 title: "#11 KENSHI HIROKANE",
-                image: `${baseImgUrl}/kenshi-hirokane.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/kenshi-hirokane.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "#11 KENSHI HIROKANE -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
+                description: "#11 KENSHI HIROKANE -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201409",
                 title: "#10 Chocomoo",
-                image: `${baseImgUrl}/chocomoo.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/chocomoo.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "#10 Chocomoo -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
+                description: "#10 Chocomoo -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201408",
                 title: "#09 HITOSHI UEDA",
-                image: `${baseImgUrl}/hitoshi-ueda.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/hitoshi-ueda.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "#09 HITOSHI UEDA -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
+                description: "#09 HITOSHI UEDA -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201407",
                 title: "#08 SHUZO NAGUMO",
-                image: `${baseImgUrl}/shuzo-nagumo.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/shuzo-nagumo.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "#08 SHUZO NAGUMO -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
+                description: "#08 SHUZO NAGUMO -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201406",
                 title: "#07 KEITA SUZUKI",
-                image: `${baseImgUrl}/keita-suzuki.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/keita-suzuki.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "#07 KEITA SUZUKI -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
+                description: "#07 KEITA SUZUKI -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201405",
                 title: "#06 Ryu Koshino",
-                image: `${baseImgUrl}/ryu-koshino.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/ryu-koshino.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "#06 RYU KOSHINO -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
+                description: "#06 RYU KOSHINO -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201404",
                 title: "#05 Takanori Gomi",
-                image: `${baseImgUrl}/takanori-gomi.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/takanori-gomi.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "#05 TAKANORI GOMI -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
+                description: "#05 TAKANORI GOMI -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201403",
                 title: "#04 KEISUKE OKUNOYA",
-                image: `${baseImgUrl}/keisuke-okunoya.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/keisuke-okunoya.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "#04 KEISUKE OKUNOYA -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
+                description: "#04 KEISUKE OKUNOYA -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201402",
                 title: "#03 AKIYO NOGUCHI",
-                image: `${baseImgUrl}/akiyo-nogushi.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/akiyo-nogushi.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "#03 AKIYO NOGUCHI -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
+                description: "#03 AKIYO NOGUCHI -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201401",
                 title: "#02 YOHEI SHINOMIYA",
-                image: `${baseImgUrl}/yohei-shinomiya.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/yohei-shinomiya.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "#02 YOHEI SHINOMIYA -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
+                description: "#02 YOHEI SHINOMIYA -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
             },
             {
                 slug: "/sg/en/news/owndays-meets-201312",
                 title: "#01 JUN HAGAN",
-                image: `${baseImgUrl}/jun-hagan.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/jun-hagan.webp",
                 category: "OWNDAYS MEETS",
-                description:
-                    "#01 JUN HAGAN -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
+                description: "#01 JUN HAGAN -OWNDAYS MEETS- Own Days… Each day builds on the last, and eventually they from one path.",
             },
             {
                 slug: "/sg/en/news/progressive-cp",
                 title: "Free Enhanced Progressive Lenses",
-                image: `${baseImgUrl}/owndays-progressive-glasses-10-2024.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/owndays-progressive-glasses-10-2024.webp",
                 category: "Campaign",
-                description: `Free Enhanced Progressive Lens with spectacle purchase for all customers; just one pair of glasses to see far, intermediate and reading zones`,
+                description: "Free Enhanced Progressive Lens with spectacle purchase for all customers; just one pair of glasses to see far, intermediate and reading zones",
             },
             {
                 slug: "/sg/en/news/contact-lens-deal",
                 title: "1-for-1 Contact Lens Offer",
-                image: `${baseImgUrl}/owndays-1-for-1-contact-lens-deal.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/owndays-1-for-1-contact-lens-deal.webp",
                 category: "Campaign",
-                description: `Unlock incredible savings with our 1-for-1 clear contact lens deal. Exclusively for new contact lens customers.`,
+                description: "Unlock incredible savings with our 1-for-1 clear contact lens deal. Exclusively for new contact lens customers.",
             },
             {
                 slug: "/sg/en/news/bundle-sale",
                 title: "OWNDAYS Contact Lens Promotion",
-                image: `${baseImgUrl}/contact-lens-bundle-sale.webp`,
+                image: "https://static.lenskart.com/media/owndays/img/news/contact-lens-bundle-sale.webp",
                 category: "Campaign",
-                description: `Grab exclusive contact lens bundles: Get $10 off 4 boxes or $30 off 8 boxes of clear lenses and 1 box free for every 7 boxes of color lenses. While stocks last!`,
+                description: "Grab exclusive contact lens bundles: Get $10 off 4 boxes or $30 off 8 boxes of clear lenses and 1 box free for every 7 boxes of color lenses. While stocks last!",
             },
         ];
+    </script>
 
+    <script>
+        /* =====================================================================
+         * PAGE LOGIC — no changes needed here when adding news
+         * ===================================================================== */
         const categoriesEl = document.getElementById("newsCategories");
         const newsListEl = document.getElementById("newsList");
         const featuredNewsEl = document.getElementById("featuredNews");
 
         let selectedCategory = "ALL";
 
-        function renderCategories() {
-            categoriesEl.innerHTML = "";
-            NEWS_CATEGORIES.forEach((cat) => {
-                const li = document.createElement("li");
-                li.textContent = cat.name;
-                li.className =
-                    selectedCategory === cat.name ? "selected-new-category" : "";
-                li.addEventListener("click", () => {
-                    selectedCategory = cat.name;
-                    renderCategories();
-                    renderNews();
-                });
-                categoriesEl.appendChild(li);
-            });
-        }
-
-        function renderNews() {
-            newsListEl.innerHTML = "";
-            featuredNewsEl.innerHTML = "";
-            const now = new Date();
-
-            let filtered =
-                selectedCategory === "ALL"
-                    ? ITEMS_NEWS
-                    : ITEMS_NEWS.filter((item) => item.category === selectedCategory);
-
-            filtered = filtered.filter((item) => {
-                if (!item.startdate) return true;
-                const startDate = new Date(item.startdate);
-                return startDate <= now;
-            });
-
-            // Render featured news (first item)
-            if (filtered.length > 0) {
-                const featuredItem = filtered[0];
-                featuredNewsEl.innerHTML = `
-                    <a href="${featuredItem.slug}" style="display: flex;">
-                        <figure class="body-news__news__card">
-                            <div class="body-news__news-thumbnail">
-                                <img alt="${featuredItem.title}" src="${featuredItem.image}" />
-                            </div>
-                            <figcaption>
-                                <div class="body-news__news-details">
-                                    <div class="body-news__news-text">
-                                        <p class="body-news__news-category">${featuredItem.category}</p>
-                                        <h2 class="body-news__news-title">
-                                            ${featuredItem.title}
-                                        </h2>
-                                        <p class="body-news__news-description">
-                                            ${featuredItem.description}
-                                        </p>
-                                    </div>
-                                    <p class="body-news__news-link">VIEW MORE</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </a>
-                `;
+        const categoryNames = NEWS_CATEGORIES.map((cat) => cat.name);
+        ITEMS_NEWS.forEach((item) => {
+            if (!categoryNames.includes(item.category)) {
+                console.warn(`news: unknown category "${item.category}" for ${item.slug}`);
             }
+        });
 
-            // Render news list
-            filtered.forEach((item, index) => {
-                const li = document.createElement("li");
-                li.setAttribute("data-aos", "zoom-in");
-                li.setAttribute("data-aos-delay", index * 100);
-                li.innerHTML = `
-              <a href="${item.slug}">
-                <figure>
-                  <div class="blog-news__list-thumbnail">
-                    <img src="${item.image}" alt="${item.title}" loading="lazy">
-                  </div>
-                  <figcaption>
-                    <h4 class="blog-news__list-category">${item.category}</h4>
-                    <p class="blog-news__list-title">${item.title}</p>
-                    <p class="blog-news__list-view-more">VIEW MORE</p>
-                  </figcaption>
-                </figure>
-              </a>
-            `;
-                newsListEl.appendChild(li);
-            });
+        function isVisible(item) {
+            if (item.hidden) return false;
+            return !item.startDate || new Date() >= new Date(item.startDate);
         }
+
+        function getVisibleNews() {
+            return ITEMS_NEWS.filter(
+                (item) => isVisible(item) && (selectedCategory === "ALL" || item.category === selectedCategory)
+            );
+        }
+
+        function renderCategories() {
+            categoriesEl.innerHTML = NEWS_CATEGORIES
+                .map((cat) => {
+                    const className = cat.name === selectedCategory ? "selected-new-category" : "";
+                    return `<li class="${className}" data-category="${cat.name}">${cat.name}</li>`;
+                })
+                .join("");
+        }
+
+        function renderFeatured(item) {
+            featuredNewsEl.innerHTML = !item ? "" : `
+                <a href="${item.slug}" style="display: flex;">
+                    <figure class="body-news__news__card">
+                        <div class="body-news__news-thumbnail">
+                            <img alt="${item.title}" src="${item.image}" />
+                        </div>
+                        <figcaption>
+                            <div class="body-news__news-details">
+                                <div class="body-news__news-text">
+                                    <p class="body-news__news-category">${item.category}</p>
+                                    <h2 class="body-news__news-title">
+                                        ${item.title}
+                                    </h2>
+                                    <p class="body-news__news-description">
+                                        ${item.description}
+                                    </p>
+                                </div>
+                                <p class="body-news__news-link">VIEW MORE</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </a>`;
+        }
+
+        function renderList(items) {
+            newsListEl.innerHTML = items
+                .map((item, index) => `
+                    <li data-aos="zoom-in" data-aos-delay="${index * 100}">
+                        <a href="${item.slug}">
+                            <figure>
+                                <div class="blog-news__list-thumbnail">
+                                    <img src="${item.image}" alt="${item.title}" loading="lazy">
+                                </div>
+                                <figcaption>
+                                    <h4 class="blog-news__list-category">${item.category}</h4>
+                                    <p class="blog-news__list-title">${item.title}</p>
+                                    <p class="blog-news__list-view-more">VIEW MORE</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>`)
+                .join("");
+        }
+
+        function render() {
+            const items = getVisibleNews();
+            renderCategories();
+            renderFeatured(items[0]);
+            renderList(items);
+        }
+
+        categoriesEl.addEventListener("click", (e) => {
+            const tab = e.target.closest("li[data-category]");
+            if (!tab) return;
+            selectedCategory = tab.dataset.category;
+            render();
+        });
 
         document.addEventListener("DOMContentLoaded", function () {
-            console.log("DOM loaded, running scripts");
-            renderCategories();
-            renderNews();
+            render();
             AOS.init({
                 duration: 800,
                 once: true,
