@@ -654,7 +654,13 @@ body,
   transition-duration: 0s !important;
 }
 
-.l-footer {
+/*
+ * Keep the site footer above .page-bg (position: fixed inside .l-popmart-molly, z-index: 1).
+ * #footer = SG mobile footer (static by default), #footerContent = SG desktop footer.
+ */
+.l-footer,
+#footer,
+#footerContent {
   position: relative;
   z-index: 2;
 }
