@@ -14,6 +14,36 @@ if (window.tailwind) {
   }
 }
 
+/*
+ * On the CMS, this page's <link> stylesheets (global.css, AOS, Swiper, specials-popmart-molly.css)
+ * are rendered inside <body>, i.e. AFTER the Tailwind CDN <style> in <head>. They would then beat
+ * Tailwind utilities of equal specificity (e.g. Swiper's `.swiper-pagination { position: absolute }`
+ * over `static`). Move Tailwind's <style> to the end of <body> so the cascade order is the same as
+ * when the page is opened on its own. The CDN keeps updating the same element after it is moved.
+ */
+(function keepTailwindStyleLast() {
+  const isTailwindStyle = (node) => node.nodeName === 'STYLE' && node.textContent.indexOf('--tw-border-spacing-x') !== -1;
+  const moveToBody = (style) => {
+    if (style.parentNode !== document.body) {
+      document.body.appendChild(style);
+    }
+  };
+  const existing = [...document.querySelectorAll('head style')].find(isTailwindStyle);
+  if (existing) {
+    moveToBody(existing);
+    return;
+  }
+  // The CDN may inject its <style> later: catch it when it is added to <head> or first filled in.
+  const observer = new MutationObserver(() => {
+    const style = [...document.querySelectorAll('head style')].find(isTailwindStyle);
+    if (style) {
+      moveToBody(style);
+      observer.disconnect();
+    }
+  });
+  observer.observe(document.head, { childList: true, subtree: true, characterData: true });
+})();
+
 /* full-width helpers (was inline at the end of <body>) */
 function getBodyWidth() {
   document.documentElement.style.setProperty('--body-w', document.body.clientWidth + 'px');

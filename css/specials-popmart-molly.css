@@ -161,7 +161,14 @@ body,
   -webkit-font-smoothing: antialiased;
 }
 
-.l-popmart-molly * {
+/*
+ * Reset with specificity (0,0,1): beats plain tag rules from global.css, but always loses to
+ * Tailwind utilities (0,1,0). On the CMS this file is loaded inside <body>, i.e. AFTER the
+ * Tailwind CDN <style> in <head>, so a (0,1,0) selector like `.l-popmart-molly *` would win
+ * by source order and wipe out every mt-* / pt-* / leading-* utility.
+ * (`:not(_)` matches every element; it only adds the type-selector weight.)
+ */
+:where(.l-popmart-molly) :not(_) {
   margin: 0;
   padding: 0;
   line-height: inherit;
