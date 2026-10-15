@@ -1,0 +1,653 @@
+@font-face {
+  font-family: "Authentic Collection Serif";
+  src: url("https://storage.owndays.com/fonts/AuthenticCollectionSerif/AuthenticCollectionSerif-Regular.woff2") format("woff2"),
+    url("https://storage.owndays.com/fonts/AuthenticCollectionSerif/AuthenticCollectionSerif-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.l-popmart-molly.l-popmart-molly a {
+  display: flex !important;
+}
+
+/* sticky nav PC: image / label / arrow must stack vertically inside the stamp */
+.l-popmart-molly.l-popmart-molly [data-sticky-nav-pc] a {
+  display: block !important;
+}
+
+.l-popmart-molly.l-popmart-molly img {
+  margin-bottom: 0;
+}
+
+.l-popmart-molly.l-popmart-molly p {
+  margin-bottom: 0;
+}
+
+/* "20th": global.css resets <sup> to full size on the baseline; raise it without changing line spacing */
+.l-popmart-molly.l-popmart-molly sup {
+  font-size: 0.6em;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.6em;
+}
+
+/* page images & colors (were inline in the HTML <style>) */
+:root {
+  --page-bg-top: url(https://storage.owndays.com/images/specials/products/popmart-molly/page-bg-top-sp.webp);
+  --page-bg-mid: url(https://storage.owndays.com/images/specials/products/popmart-molly/page-bg-mid-sp.webp);
+  --page-bg-bottom: url(https://storage.owndays.com/images/specials/products/popmart-molly/page-bg-bottom-sp.webp);
+  --mask-section-top: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/mask-top-sp.svg);
+  --mask-section-bottom: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/mask-bottom-sp.svg);
+  --mask-section-bottom-2: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/mask-bottom-02.svg);
+  --lineup-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/bg-pc.webp);
+  --concept-border-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/concept/border-sp.webp);
+  --concept-flower-01-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/concept/flower-01.webp);
+  --concept-flower-02-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/concept/flower-02.webp);
+  --flower-01-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/flower-01.webp);
+  --flower-02-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/flower-02.webp);
+  --flower-03-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/flower-03.webp);
+  --flower-04-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/flower-04.webp);
+  --flower-05-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/flower-05.webp);
+  --flower-06-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/flower-06.webp);
+  --divider-flowers-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/divider-flowers-sp.webp);
+  --button-yellow-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/btn-bg-yellow.webp);
+  --button-red-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/btn-bg-red.webp);
+  --red-border-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/red-border-sp.webp);
+  --blue-border-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/blue-border-sp.webp);
+  --green-border-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/green-border-sp.webp);
+  --yellow-border-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/yellow-border-sp.webp);
+  --red-card-shadow: #b74040;
+  --blue-card-shadow: #84cdeb;
+  --green-card-shadow: #4eae98;
+  --yellow-card-shadow: #f1c44b;
+  --pagination-active-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/pagination-active.svg);
+  --pagination-inactive-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/pagination-inactive.svg);
+  --marquee-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/marquee.webp);
+  --for-kids-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/for-kids-bg.webp);
+  --sticky-nav-pc-inactive: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/sticky-nav-pc-inactive.webp);
+  --sticky-nav-pc-active: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/sticky-nav-pc-active.webp);
+  --footer-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/footer-bg-sp.webp);
+  --hero-reveal-mask: url(https://storage.owndays.com/images/specials/products/popmart-molly/transition-mask.webp);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --page-bg-bottom: url(https://storage.owndays.com/images/specials/products/popmart-molly/page-bg-bottom-pc.webp);
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --page-bg-top: url(https://storage.owndays.com/images/specials/products/popmart-molly/page-bg-top-pc.webp);
+    --page-bg-mid: url(https://storage.owndays.com/images/specials/products/popmart-molly/page-bg-mid-pc.webp);
+    --mask-section-top: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/mask-top-pc.svg);
+    --mask-section-bottom: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/mask-bottom-pc.svg);
+    --lineup-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/bg-pc.webp);
+    --divider-flowers-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/divider-flowers-pc.webp);
+    --concept-border-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/concept/border-pc.webp);
+    --red-border-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/red-border-pc.webp);
+    --blue-border-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/blue-border-pc.webp);
+    --green-border-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/green-border-pc.webp);
+    --yellow-border-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/lineup/yellow-border-pc.webp);
+    --footer-bg: url(https://storage.owndays.com/images/specials/products/popmart-molly/footer-bg-pc.webp);
+  }
+}
+
+/* utilities (were in <style type="text/tailwindcss">) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --pd: 20px;
+  --container-max-w: 1320px;
+  --edge: calc(var(--pd) * -1);
+  --edge-aw: var(--edge);
+  --font-base: 'Founders Grotesk', sans-serif;
+}
+
+@media (min-width: 1320px) {
+  :root {
+    --edge: calc((var(--container-max-w) - (var(--pd) * 2) - var(--body-w)) / 2);
+  }
+}
+
+@media (min-width: 2000px) {
+  :root {
+    --edge: calc(((2000px - var(--container-max-w)) / 2 + var(--pd)) * -1);
+    --edge-aw: calc((var(--container-max-w) - (var(--pd) * 2) - var(--body-w)) / 2);
+  }
+}
+
+html,
+body,
+.l-content {
+  overflow: visible;
+}
+
+.l-content,
+.l-popmart-molly {
+  background-color: #47bbc8;
+}
+
+.l-header__navbar,
+.l-footer {
+  overflow: hidden;
+}
+
+.l-content {
+  margin-bottom: 0 !important;
+}
+
+.l-popmart-molly {
+  font-family: var(--font-base);
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+.l-popmart-molly * {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+/* low specificity so Tailwind utilities (hidden, h-*, ml-auto...) still win */
+:where(.l-popmart-molly) img,
+:where(.l-popmart-molly) picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.l-popmart-molly h1,
+.l-popmart-molly h2,
+.l-popmart-molly h3,
+.l-popmart-molly h4,
+.l-popmart-molly h5,
+.l-popmart-molly h6 {
+  font-family: var(--font-base);
+}
+
+.l-popmart-molly h1 span,
+.l-popmart-molly h2 span,
+.l-popmart-molly h3 span,
+.l-popmart-molly h4 span,
+.l-popmart-molly h5 span,
+.l-popmart-molly h6 span {
+  font-weight: inherit;
+}
+
+.l-popmart-molly .font-authentic {
+  font-family: 'Authentic Collection Serif', serif;
+}
+
+.l-popmart-molly .font-handwriting {
+  font-family: "adobe-handwriting-ernie", sans-serif;
+}
+
+.l-popmart-molly .font-bulletin {
+  font-family: "bulletin-typewriter-mn", sans-serif;
+}
+
+.l-popmart-molly .container {
+  max-width: var(--container-max-w);
+  padding-left: var(--pd);
+  padding-right: var(--pd);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l-popmart-molly a {
+  text-decoration: none;
+}
+
+.l-popmart-molly a picture,
+.l-popmart-molly a img {
+  transition: opacity 0.5s;
+}
+
+.l-popmart-molly a:hover:not(.button) {
+  color: inherit;
+}
+
+.l-popmart-molly a:hover picture,
+.l-popmart-molly a:hover img {
+  opacity: 1;
+}
+
+.l-popmart-molly button {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.l-popmart-molly .button {
+  font-family: 'Authentic Collection Serif', serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.85px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  padding-top: 4px;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.l-popmart-molly .button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition: opacity 0.5s;
+}
+
+.l-popmart-molly .button--yellow::after {
+  background-image: var(--button-yellow-bg);
+}
+
+.l-popmart-molly .button--red {
+  color: #fff;
+}
+
+.l-popmart-molly .button--red::after {
+  background-image: var(--button-red-bg);
+}
+
+@media (min-width: 768px) {
+  .l-popmart-molly .button {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .l-popmart-molly .button:not(.button--no-hover):hover::after {
+    opacity: 0.6;
+  }
+}
+
+.l-popmart-molly .btn-text-slide {
+  display: block;
+  overflow: hidden;
+  line-height: 1;
+  height: 1em;
+}
+
+.l-popmart-molly .btn-text-slide__track {
+  display: block;
+  transition: transform 1.125s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.l-popmart-molly .btn-text-slide__track::after {
+  content: attr(data-text);
+  display: block;
+  text-align: center;
+  margin-top: 1px;
+}
+
+@media (min-width: 1024px) {
+  .l-popmart-molly .group:hover .btn-text-slide__track {
+    transform: translateY(-50%);
+  }
+}
+
+.l-popmart-molly .page-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: var(--page-bg-mid) center top / 100% 100% no-repeat;
+}
+
+.l-popmart-molly .page-bg::before {
+  content: '';
+  background: var(--page-bg-top) center top / auto 100% no-repeat;
+  height: calc(125 / 390 * 100vw);
+  position: absolute;
+  top: calc(var(--page-top-offset) - 13vw);
+  left: 0;
+  right: 0;
+}
+
+.l-popmart-molly .page-bg::after {
+  content: '';
+  background: var(--page-bg-bottom) center top / 100% auto no-repeat;
+  height: calc(210 / 390 * 100vw);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: var(--page-bg-bottom-pos, -25vh);
+}
+
+@media (min-height: 680px) {
+  .l-popmart-molly .page-bg::after {
+    background-position: center bottom;
+    bottom: -60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .l-popmart-molly .page-bg::before {
+    min-height: 232px;
+    height: calc(232 / 1440 * 100vw);
+    top: 0;
+  }
+
+  .l-popmart-molly .page-bg::after {
+    height: calc(435 / 1440 * 100vw);
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .l-popmart-molly .kv-layout {
+    display: grid;
+    grid-template-areas:
+      'title image'
+      'text image'
+      'bottom image';
+    grid-template-columns: 390px 1fr;
+    grid-template-rows: auto auto 1fr;
+  }
+}
+
+@media (min-width: 1296px) {
+  .l-popmart-molly .kv-layout {
+    grid-template-columns: calc(480 / 1440 * 100vw) 1fr;
+  }
+}
+
+.l-popmart-molly .svg-text-animation {
+  overflow: visible !important;
+}
+
+.l-popmart-molly .svg-text-animation path {
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955), transform 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translate3d(-20px, 0, 0);
+}
+
+.l-popmart-molly .svg-text-animation.aos-animate path {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.l-popmart-molly .text-animate {
+  transition: 0s !important;
+}
+
+.l-popmart-molly .text-animate .text-split {
+  display: inline;
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955), left 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  left: -20px;
+}
+
+.l-popmart-molly .text-animate.aos-animate .text-split {
+  opacity: 1;
+  left: 0;
+}
+
+.l-popmart-molly .mask-section {
+  --mask-top-h: calc(60 / 390 * 100vw);
+  --mask-bottom-h: var(--mask-top-h);
+  -webkit-mask-image: var(--mask-section-top), linear-gradient(#000, #000), var(--mask-section-bottom);
+  mask-image: var(--mask-section-top), linear-gradient(#000, #000), var(--mask-section-bottom);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% var(--mask-top-h), 100% calc(100% - var(--mask-top-h) - var(--mask-bottom-h) + 2px), 100% var(--mask-bottom-h);
+  mask-size: 100% var(--mask-top-h), 100% calc(100% - var(--mask-top-h) - var(--mask-bottom-h) + 2px), 100% var(--mask-bottom-h);
+  -webkit-mask-position: top, center, bottom;
+  mask-position: top, center, bottom;
+}
+
+@media (min-width: 768px) {
+  .l-popmart-molly .mask-section {
+    --mask-top-h: calc(60 / 1440 * 100vw);
+  }
+}
+
+.l-popmart-molly .mask-section-bottom {
+  --mask-bottom-h: calc(50 / 390 * 100vw);
+  width: 100%;
+  -webkit-mask-image: linear-gradient(#000, #000), var(--mask-section-bottom-2);
+  mask-image: linear-gradient(#000, #000), var(--mask-section-bottom-2);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% calc(100% - var(--mask-bottom-h) + 2px), 100% var(--mask-bottom-h);
+  mask-size: 100% calc(100% - var(--mask-bottom-h) + 2px), 100% var(--mask-bottom-h);
+  -webkit-mask-position: top, bottom;
+  mask-position: top, bottom;
+}
+
+@media (min-width: 768px) {
+  .l-popmart-molly .mask-section-bottom {
+    --mask-bottom-h: calc(100 / 768 * 100vw);
+  }
+}
+
+.l-popmart-molly .nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.l-popmart-molly .tab-content > .tab-pane {
+  display: block !important;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.l-popmart-molly .tab-content > .active {
+  height: unset;
+  overflow: unset;
+  pointer-events: unset;
+}
+
+.l-popmart-molly .product-color-select .nav-link {
+  border-radius: 14px;
+  border: 1px solid transparent;
+  transition: 0.1s;
+}
+
+.l-popmart-molly .product-color-select .nav-link.active {
+  border-color: #000;
+}
+
+.l-popmart-molly .product-slider {
+  --swiper-pagination-bullet-horizontal-gap: 0;
+  --swiper-pagination-bullet-width: 18px;
+  --swiper-pagination-bullet-height: 12px;
+}
+
+.l-popmart-molly .product-slider .swiper-pagination-bullet {
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0;
+  opacity: 1;
+  background-image: var(--pagination-inactive-bg);
+  transition-duration: 0.1s;
+}
+
+.l-popmart-molly .product-slider .swiper-pagination-bullet-active {
+  background-image: var(--pagination-active-bg);
+}
+
+.l-popmart-molly .marquee {
+  --marquee-duration: 4s;
+  --marquee-img-h: 24px;
+  /* tile width at --marquee-img-h (asset 777×102; step must match for seamless loop) */
+  --marquee-step: calc(777 / 102 * var(--marquee-img-h));
+  height: 40px;
+  margin-left: var(--edge-aw);
+  margin-right: var(--edge-aw);
+  background-color: #f1c44a;
+  background-image: var(--marquee-bg);
+  background-repeat: repeat-x;
+  background-position: 0 center;
+  background-size: auto var(--marquee-img-h);
+  animation: marquee-ltr var(--marquee-duration) linear infinite;
+}
+
+@media (min-width: 768px) {
+  .l-popmart-molly .marquee {
+    --marquee-img-h: 34px;
+    height: 50px;
+  }
+}
+
+.l-popmart-molly .marquee--ltr {
+  animation-name: marquee-ltr;
+}
+
+.l-popmart-molly .marquee--rtl {
+  animation-name: marquee-rtl;
+}
+
+.l-popmart-molly .bg-flower-01,
+.l-popmart-molly .bg-flower-02,
+.l-popmart-molly .bg-flower-03,
+.l-popmart-molly .bg-flower-04,
+.l-popmart-molly .bg-flower-05,
+.l-popmart-molly .bg-flower-06 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.l-popmart-molly .bg-flower-01 { background-image: var(--flower-01-bg); }
+.l-popmart-molly .bg-flower-02 { background-image: var(--flower-02-bg); }
+.l-popmart-molly .bg-flower-03 { background-image: var(--flower-03-bg); }
+.l-popmart-molly .bg-flower-04 { background-image: var(--flower-04-bg); }
+.l-popmart-molly .bg-flower-05 { background-image: var(--flower-05-bg); }
+.l-popmart-molly .bg-flower-06 { background-image: var(--flower-06-bg); }
+
+.l-popmart-molly .hero-reveal img {
+  visibility: hidden;
+}
+
+.l-popmart-molly .hero-reveal.aos-animate img,
+.l-popmart-molly .hero-reveal.is-revealed img {
+  visibility: visible;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 130.968622101% 1100%;
+  mask-size: 130.968622101% 1100%;
+  -webkit-mask-image: var(--hero-reveal-mask);
+  mask-image: var(--hero-reveal-mask);
+  -webkit-mask-composite: source-over;
+  mask-composite: add;
+  animation: anim_hero_reveal_in 0.6666666667s steps(1) 0s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes marquee-ltr {
+  from { background-position-x: 0; }
+  to { background-position-x: var(--marquee-step); }
+}
+
+@keyframes marquee-rtl {
+  from { background-position-x: 0; }
+  to { background-position-x: calc(var(--marquee-step) * -1); }
+}
+
+@keyframes anim_hero_reveal_in {
+  0%, 5.5555555556% {
+    -webkit-mask-position: center 0;
+    mask-position: center 0;
+  }
+  11.1111111111%, 16.6666666667% {
+    -webkit-mask-position: center 10%;
+    mask-position: center 10%;
+  }
+  22.2222222222% {
+    -webkit-mask-position: center 20%;
+    mask-position: center 20%;
+  }
+  27.7777777778%, 33.3333333333% {
+    -webkit-mask-position: center 30%;
+    mask-position: center 30%;
+  }
+  38.8888888889%, 44.4444444444% {
+    -webkit-mask-position: center 40%;
+    mask-position: center 40%;
+  }
+  50% {
+    -webkit-mask-position: center 50%;
+    mask-position: center 50%;
+  }
+  55.5555555556%, 61.1111111111% {
+    -webkit-mask-position: center 60%;
+    mask-position: center 60%;
+  }
+  66.6666666667%, 72.2222222222% {
+    -webkit-mask-position: center 70%;
+    mask-position: center 70%;
+  }
+  77.7777777778% {
+    -webkit-mask-position: center 80%;
+    mask-position: center 80%;
+  }
+  83.3333333333%, 88.8888888889% {
+    -webkit-mask-position: center 90%;
+    mask-position: center 90%;
+  }
+  94.4444444444%, to {
+    -webkit-mask-position: center 100%;
+    mask-position: center 100%;
+  }
+}
+
+.c-top-btn {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .c-top-btn {
+    bottom: 100px !important;
+  }
+}
+
+[data-aos-duration="0"] {
+  transition-duration: 0s !important;
+}
+
+.l-footer {
+  position: relative;
+  z-index: 2;
+}
