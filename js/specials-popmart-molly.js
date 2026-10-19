@@ -59,6 +59,10 @@ function setPageTopOffset() {
   return els;
 }
 
+const svhProbe = document.createElement('div');
+svhProbe.style.cssText = 'position:fixed;top:0;height:100svh;visibility:hidden;pointer-events:none;';
+document.documentElement.appendChild(svhProbe);
+
 function setKvSpPaddingTop() {
   const kv = document.getElementById('kv');
   const layout = kv?.querySelector('.kv-layout');
@@ -70,7 +74,7 @@ function setKvSpPaddingTop() {
   kv.style.setProperty('--kv-pt', '0px');
   const pageTop = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--page-top-offset')) || 0;
   const pb = parseFloat(getComputedStyle(kv).paddingBottom) || 0;
-  const pt = Math.max(0, (window.innerHeight - pageTop - pb - layout.offsetHeight) / 2) + 10;
+  const pt = Math.max(0, ((svhProbe.offsetHeight || window.innerHeight) - pageTop - pb - layout.offsetHeight) / 2) + 10;
   kv.style.setProperty('--kv-pt', `${pt}px`);
 }
 const pageTopEls = setPageTopOffset();
