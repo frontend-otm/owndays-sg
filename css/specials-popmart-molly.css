@@ -243,6 +243,8 @@ body,
   padding: 0;
   background: none;
   cursor: pointer;
+  /* iOS Safari gives <button> the system blue; the slider arrows use currentColor */
+  color: inherit;
 }
 
 .l-popmart-molly .button {
