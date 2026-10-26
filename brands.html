@@ -116,6 +116,14 @@
       overflow-y: visible;
     }
 
+    .brands__details-logo--mickey-and-friends img {
+      max-height: none;
+      width: 100%;
+      height: auto;
+      max-width: 365px;
+      margin: 0;
+    }
+
     @keyframes expandHeight {
       0% {
         max-height: 0;
@@ -190,6 +198,25 @@
      *   hidden            true = keep the data but do not show the card
      * ===================================================================== */
     const BRANDS = [
+    {
+        id: "mickey-and-friends",
+        title: "Disney MICKEY & FRIENDS | OWNDAYS",
+        thumbnail: "https://assets.lenskart.com/images/2026/10/22/mickey_and_friends_news.webp",
+        logo: "https://assets.lenskart.com/images/2026/10/22/mickey_and_friends_brand_logo.webp",
+        logoExtended: true,
+        slides: [
+          "https://assets.lenskart.com/images/2026/10/22/mickey_and_friends_brand_slider1.webp",
+          "https://assets.lenskart.com/images/2026/10/22/mickey_and_friends_brand_slider2.webp",
+          "https://assets.lenskart.com/images/2026/10/22/mickey_and_friends_brand_slider3.webp",
+          "https://assets.lenskart.com/images/2026/10/22/mickey_and_friends_brand_slider4.webp",
+          "https://assets.lenskart.com/images/2026/10/22/mickey_and_friends_brand_slider5.webp",
+          "https://assets.lenskart.com/images/2026/10/22/mickey_and_friends_brand_slider6.webp",
+        ],
+        description: "Discover the Disney MICKEY & FRIENDS | OWNDAYS eyewear collection, blending timeless classic style with playful details. Featuring 6 exclusive designs in prescription eyewear and sunglasses.",
+        recommended: "MEN・WOMEN",
+        productsLink: "/sg/en/eyeglasses/brands/mickey-and-friends.html",
+        detailsLink: "/sg/en/news/mickey-and-friends",
+      },
       {
         id: "popmartMolly",
         title: "POP MART MOLLY | OWNDAYS",

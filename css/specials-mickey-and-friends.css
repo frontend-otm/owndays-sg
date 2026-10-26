@@ -1,0 +1,171 @@
+/*
+ * specials.css sets `html, body { overflow: visible clip !important }`, i.e. overflow-x: visible / overflow-y: clip,
+ * which blocks vertical scrolling with the wheel / touch. Swap the axes: clip horizontally, scroll vertically.
+ * (This file loads after specials.css, so the same !important selector wins.)
+ */
+html,
+body {
+  overflow-x: clip !important;
+  overflow-y: visible !important;
+}
+
+/*
+ * Guard against the Base (Next.js) CMS wrapper styles, which beat plain selectors:
+ *   .MarginBottom a   { display: inherit !important }
+ *   .MarginBottom img { margin-bottom: -4px; max-width: 100% }
+ *   .MarginBottom p   { margin-bottom: 16px }  (max-width: 767px)
+ * The doubled class raises specificity above them and keeps the rules inside this page.
+ */
+.l-mickey-and-friends.l-mickey-and-friends a {
+  display: flex !important;
+}
+
+/* ...but keep FIND NEAREST STORE hidden below lg (max-lg:hidden in the markup) */
+@media (max-width: 1023px) {
+  .l-mickey-and-friends.l-mickey-and-friends a.max-lg\:hidden {
+    display: none !important;
+  }
+}
+
+.l-mickey-and-friends.l-mickey-and-friends img {
+  margin-bottom: 0;
+}
+
+/* the slider shadows and the case-set corner crops are wider than their box on purpose */
+.l-mickey-and-friends.l-mickey-and-friends img.max-w-none {
+  max-width: none;
+}
+
+.l-mickey-and-friends.l-mickey-and-friends p {
+  margin-bottom: 0;
+}
+
+/*
+ * Below: the page's <style type="text/tailwindcss"> from Renewal, as plain CSS.
+ * @keyframes for the Figma motion annotations (hero light sweep, per-character title flip, diagonal text reveal,
+ * plate glint) and the states toggled by the page script (.is-inview / .is-active).
+ */
+
+/*
+  Hero opening (drum-roll prototype): the light swings left and holds, swings right and holds, then returns to the
+  centre while widening; each element fades up as the light reaches it, and the logo + copyright come last.
+  The beam is the Figma "Polygon" triangle drawn in CSS and made far longer than the viewport, so its base never
+  shows while it swings. The light source is centred horizontally.
+*/
+@keyframes mf-beam {
+  0%, 4.21% { rotate: var(--mf-rot0); scale: 1 1; }
+  33.68%, 42.11% { rotate: var(--mf-rot-l); scale: 1 1; }
+  71.58%, 80% { rotate: var(--mf-rot-r); scale: 1 1; }
+  100% { rotate: 0deg; scale: var(--mf-spread) 1; }
+}
+
+@keyframes mf-fade-up {
+  from { opacity: 0; transform: translateY(var(--mf-fade-dist)); }
+  to { opacity: 1; transform: none; }
+}
+
+.mf-beam {
+  --mf-beam-dur: 3.61s; --mf-rot0: 4deg; --mf-rot-l: 22deg; --mf-rot-r: -22deg; --mf-spread: 1.25;
+  --mf-beam-len: calc(100vw + 100vh);
+  position: absolute;
+  left: 50%;
+  top: -20vw;
+  width: calc(var(--mf-beam-len) * 0.975);
+  height: var(--mf-beam-len);
+  translate: -50% 0;
+  transform-origin: 50% 0;
+  filter: blur(5.13vw);
+  mix-blend-mode: color-dodge;
+  will-change: rotate, scale, opacity;
+}
+
+.mf-beam > span { position: absolute; inset: 0; clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+
+.mf-hero-in { --mf-fade-dur: 0.9s; --mf-fade-dist: calc(min(100vw, 560px) * 0.04); }
+
+@media (min-width: 1024px) {
+  .mf-beam {
+    --mf-beam-dur: 4.75s; --mf-rot0: 4deg; --mf-rot-l: 17deg; --mf-rot-r: -17deg; --mf-spread: 1.35;
+    top: -26.46vw;
+    width: calc(var(--mf-beam-len) * 1.2508);
+    filter: blur(1.389vw);
+  }
+  .mf-hero-in { --mf-fade-dur: 1.1s; --mf-fade-dist: calc(min(100vw, 1440px) * 0.02); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mf-beam { animation: mf-beam var(--mf-beam-dur) cubic-bezier(0.65, 0, 0.35, 1) both, mf-fade 0.9s ease-out 0.2s both; }
+  .mf-hero-in { animation: mf-fade-up var(--mf-fade-dur) cubic-bezier(0.25, 0.1, 0.25, 1) var(--d) both; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mf-beam { scale: var(--mf-spread) 1; }
+}
+
+@keyframes mf-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes mf-flip {
+  from { opacity: 0; transform: rotateY(90deg); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes mf-diagonal {
+  from { -webkit-mask-position: 100% 100%; mask-position: 100% 100%; }
+  to { -webkit-mask-position: 0 0; mask-position: 0 0; }
+}
+
+@keyframes mf-glint {
+  from { background-position: 160% 0; }
+  to { background-position: -60% 0; }
+}
+
+.mf-inner-shadow, .mf-inner-shadow-soft { filter: url(#mf-inner-shadow-soft); }
+
+@media (min-width: 1024px) {
+  .mf-inner-shadow { filter: url(#mf-inner-shadow-strong); }
+}
+
+.mf-char { display: inline-block; white-space: pre; backface-visibility: hidden; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .mf-js .js-mf-chars:not(.is-inview) .mf-char,
+  .mf-js .js-mf-fade:not(.is-inview),
+  .mf-js .js-mf-diagonal:not(.is-inview) { opacity: 0; }
+  .js-mf-chars.is-inview .mf-char { animation: mf-flip 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: calc(var(--i) * 60ms); }
+  .js-mf-fade.is-inview { animation: mf-fade 1s ease-out 0.4s both; }
+  .js-mf-diagonal.is-inview {
+    -webkit-mask-image: linear-gradient(135deg, #000 40%, transparent 60%);
+    mask-image: linear-gradient(135deg, #000 40%, transparent 60%);
+    -webkit-mask-size: 300% 300%;
+    mask-size: 300% 300%;
+    animation: mf-diagonal 2.2s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+  }
+  .js-mf-panel.is-entering { position: relative; z-index: 1; animation: mf-fade 0.4s ease-in-out both; }
+  .js-mf-glint.is-inview::after { animation: mf-glint 1.4s ease-in-out 0.3s 1 both; }
+}
+
+.js-mf-glint::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 42%, rgba(255, 246, 214, 0.7) 50%, transparent 58%) 160% 0 / 250% 100% no-repeat;
+  -webkit-mask: var(--mf-plate) center / 100% 100% no-repeat;
+  mask: var(--mf-plate) center / 100% 100% no-repeat;
+}
+
+.js-mf-slide { transform: rotate(calc(var(--o) * 15deg)); transition: transform 0.9s cubic-bezier(0.68, -0.18, 0.27, 1.18), opacity 0.4s linear; }
+.js-mf-slide.is-far { opacity: 0; }
+.js-mf-slide.no-transition { transition: none; }
+.js-mf-photo { transition: opacity 1200ms ease-in-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js-mf-slide, .js-mf-photo { transition: none; }
+}
+
+/* the class is set by the page script before the hero is painted */
+.mf-opening-skip .mf-beam { animation: none; scale: var(--mf-spread) 1; }
+.mf-opening-skip .mf-hero-in { animation: none; }
