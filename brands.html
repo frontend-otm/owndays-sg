@@ -47,6 +47,61 @@
       margin-bottom: 0;
     }
 
+    /*
+     * Match the MY (Renewal) brands page, measured at 375px / 1440px.
+     * `.brands .x` so these win over brands.css whatever the load order is.
+     */
+    .brands {
+      color: #000;
+    }
+
+    .brands .brands__heading {
+      font-size: 23px;
+      line-height: 1;
+    }
+
+    @media (max-width: 767px) {
+      /* MY: 150px thumbnails with a 10px gap, grid starting 32px from the edge, 35px below the lead text */
+      .brands .brands__list {
+        margin-inline: 12px;
+      }
+
+      .brands .brands__heading--long {
+        padding-bottom: 35px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .brands .brands__heading {
+        font-size: 40px;
+        font-weight: 300;
+      }
+
+      .brands .brands__heading--long {
+        line-height: 1;
+        /* MY's grid items have 10px padding, so its thumbnails start 10px further down */
+        padding-bottom: 100px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .brands {
+        font-size: 15px;
+      }
+
+      .brands .brands__details {
+        padding: 60px 50px;
+      }
+
+      .brands .brands__details-recommended {
+        font-size: 15px;
+      }
+
+      .brands .brands__details-description {
+        font-size: 13px;
+      }
+    }
+
     /* Ensure slick slide height follows its image content */
     .brands__details-slider .slick-list,
     .brands__details-slider .slick-track,
