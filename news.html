@@ -48,6 +48,41 @@
             }
         }
 
+        /*
+         * Match the MY (Renewal) news page: its site base text is 15px / line-height 2 / letter-spacing 1px / black,
+         * headings use line-height 1.9 (1.6 on SP). Here the page otherwise inherits 13px / 1.43 / #333 from the site.
+         */
+        .body-news {
+            font-size: 15px;
+            line-height: 2;
+            letter-spacing: 1px;
+            color: #000;
+            h2,
+            h4 {
+                line-height: 1.9;
+                @media (max-width: 767px) {
+                    line-height: 1.6;
+                }
+            }
+            /* the "Latest news" badge is landscape; the square rule above is for the news thumbnails */
+            .body-news__news-latest img {
+                aspect-ratio: auto;
+                height: auto;
+            }
+        }
+        /* news.css adds `padding: 0 60px` to the featured card; MY has none (image flush with the content edge) */
+        @media (min-width: 768px) {
+            #featuredNews {
+                padding: 0;
+            }
+            /*
+             * Category tabs: news.css makes each li 20px tall (the selected underline is its border-bottom), MY's li is 14px
+             * (underline drawn 5px below). Take the extra 6px off the bottom padding so the list starts where MY's does.
+             */
+            .blog-news .blog-news__categories {
+                padding-bottom: 80px;
+            }
+        }
         /* Remove the browser focus ring (blue outline) on clicked/focused items */
         #content :focus,
         #content :focus-visible {
@@ -593,6 +628,9 @@
                         </div>
                         <figcaption>
                             <div class="body-news__news-details">
+                                <div class="body-news__news-latest">
+                                    <img alt="Owndays Latest news" src="https://storage.owndays.com/images/specials/latest-1.png" />
+                                </div>
                                 <div class="body-news__news-text">
                                     <p class="body-news__news-category">${item.category}</p>
                                     <h2 class="body-news__news-title">
