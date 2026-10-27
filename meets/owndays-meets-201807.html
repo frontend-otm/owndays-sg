@@ -1084,10 +1084,10 @@
                   <div class="l-content--inner">
                     <div class="interview__movie">
                       <a
-                        href=""
+                        href="https://www.youtube.com/watch?v=pp3ttaknnfY"
+                        target="_blank"
+                        rel="noopener"
                         data-video="https://www.youtube.com/embed/pp3ttaknnfY?loop=1&amp;playlist=pp3ttaknnfY"
-                        data-toggle="modal"
-                        data-target="#videoModal"
                       >
                         <img
                           src="https://www.owndays.com/images/specials/owndays-meets/201807/movie_imgcnv.webp"
@@ -1095,6 +1095,51 @@
                         />
                       </a>
                     </div>
+                    <style>
+                      .od-meets-video{display:none;position:fixed;inset:0;z-index:2147483000;background:rgba(0,0,0,.85);align-items:center;justify-content:center;padding:16px}
+                      .od-meets-video.is-open{display:flex}
+                      .od-meets-video__inner{position:relative;width:100%;max-width:960px}
+                      .od-meets-video__frame{position:relative;width:100%;padding-top:56.25%}
+                      .od-meets-video__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+                      .od-meets-video__close{position:absolute;top:-44px;right:0;width:40px;height:40px;border:0;background:none;color:#fff;font-size:36px;line-height:1;cursor:pointer}
+                    </style>
+                    <script>
+                      (function () {
+                        if (window.__odMeetsVideo) return;
+                        window.__odMeetsVideo = true;
+                        var modal, iframe;
+                        function close() {
+                          if (!modal) return;
+                          modal.classList.remove("is-open");
+                          iframe.src = "";
+                        }
+                        function open(src) {
+                          if (!modal) {
+                            modal = document.createElement("div");
+                            modal.className = "od-meets-video";
+                            modal.innerHTML =
+                              '<div class="od-meets-video__inner"><button type="button" class="od-meets-video__close" aria-label="Close">&times;</button>' +
+                              '<div class="od-meets-video__frame"><iframe allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>';
+                            iframe = modal.querySelector("iframe");
+                            modal.addEventListener("click", function (e) {
+                              if (e.target === modal || e.target.closest(".od-meets-video__close")) close();
+                            });
+                            document.body.appendChild(modal);
+                          }
+                          iframe.src = src + (src.indexOf("?") === -1 ? "?" : "&") + "autoplay=1";
+                          modal.classList.add("is-open");
+                        }
+                        document.addEventListener("click", function (e) {
+                          var link = e.target.closest && e.target.closest(".interview__movie a[data-video]");
+                          if (!link) return;
+                          e.preventDefault();
+                          open(link.getAttribute("data-video"));
+                        });
+                        document.addEventListener("keydown", function (e) {
+                          if (e.key === "Escape") close();
+                        });
+                      })();
+                    </script>
                     <h3 class="interview__question">
                       <span
                         ><span>Why led you into motorcycle racing?</span></span
