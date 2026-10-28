@@ -657,24 +657,9 @@
   <script type="text/javascript"
     src="https://eu1.clevertap-prod.com/a?t=96&amp;type=push&amp;d=N4IgLgngDgpiBcIYDcYDswgDROWAcgIYC2ciA7gF4BOA1gPoBmMYAxgBba5gAihYhBKEzwALAF8cASwAmCEADYAWqIC0o5aqUBOZVwDm8gEYBWbSaMBGQoW0wZAJlGjrADm0OHAdhg2HAZlZ%2Fa1YABi4oQ3hLHEJGIRAAGykjeXIYI1UAZxlaVWQHADoihwjqAHswctZyxPl2MDAoLJBJEAB1JQAlAGl6AGEAQQBZAAUE8iliKARQnEmwRNYEAG0AXXms5fg5kHJGbeA28mqhY7QZLdn5i4Ozm5lT%2BCPxcSAAA%3D%3D&amp;rn=3&amp;i=1757574852&amp;sn=1&amp;gc=b595b1aa9ed2441a89227eaa23c31ac0&amp;arp=N4IgVg%2BgdiBcIC0DuBeFIA0ICW04gE0AmAOQHMBTAQQFUBhK1dLAEwgBcBnOABlYAteWAG5wiWSN3jAAvphwt8ANgQAWALSqV6hAE4V8gE4cpARgDsAVlWqrADnM8ZQA&amp;tries=1&amp;origin=https%3A%2F%2Fwww.owndays.com&amp;useIP=false&amp;r=1757574852339"
     class="ct-jp-cb" rel="nofollow" async=""></script>
-  <script src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/main.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/common.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/util.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/map.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/marker.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/log.js"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/onion.js"></script>
   <link id="sa-css" rel="stylesheet" type="text/css" href="https://tags.srv.stackadapt.com/sa.css" media="all" />
   <script src="https://bat.bing.com/p/action/134598098.js" type="text/javascript" async=""
     data-ueto="ueto_97e138c63e"></script>
-  <script type="text/javascript" charset="UTF-8"
-    src="https://maps.googleapis.com/maps-api-v3/api/js/62/5d/intl/en_gb/controls.js"></script>
 </head>
 
 <body style="background-color: #fff" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
@@ -2991,6 +2976,7 @@
 
       function doInit() {
         if (window.__mapInitDone) return; // guard against double init
+        if (!window.google || !google.maps || typeof google.maps.Map !== 'function') return; // API not ready yet
         window.__mapInitDone = true;
         try {
           var container = mountMapIntoAccess();
@@ -3024,10 +3010,13 @@
       // Expose for Google callback
       window.initMap = doInit;
 
-      // If API already loaded, run immediately
-      if (window.google && google.maps) {
+      // If API already loaded (or its callback fired before initMap existed), retry until Map is ready
+      var initTries = 0;
+      (function waitForMaps() {
+        if (window.__mapInitDone) return;
         try { doInit(); } catch (_) { }
-      }
+        if (!window.__mapInitDone && ++initTries < 75) setTimeout(waitForMaps, 200);
+      })();
     })();
   </script>
 </body>
