@@ -3280,6 +3280,7 @@ html .l-photoshade p {
   }
 }
 
-.l-photoshade [data-aos="fade-up"][data-aos="fade-up"] {
+/* start 40px low instead of AOS's 100px; :not(.aos-animate) so it never outranks AOS's end state */
+.l-photoshade [data-aos="fade-up"]:not(.aos-animate) {
   transform: translate3d(0, 40px, 0);
 }

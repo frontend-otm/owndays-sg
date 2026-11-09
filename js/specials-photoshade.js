@@ -14,27 +14,29 @@ $(function () {
     rellax.refresh();
   });
 
-  AOS.init({
-    once: true,
-    duration: 1000,
-  });
-
-  document.querySelectorAll('.l-photoshade img').forEach((img) =>
-    img.addEventListener('load', () =>
-      AOS.refresh()
-    )
-  );
-
-  if (window.innerWidth < 1024) {
-    $('.recommends__list [data-aos-delay]').removeAttr('data-aos-delay');
-    AOS.refreshHard();
-  }
-
+  // Build the lens slider before AOS measures the page: until slick runs, its 6 slides are stacked (~4000px), so AOS
+  // would record the Lineup far below where it ends up and never fire it (until a resize, e.g. opening DevTools).
   handleSelectedColor();
   handleColorSwipe();
   setAnimationTitle();
   handleLensTabs();
   handleCollection();
+
+  if (window.innerWidth < 1024) {
+    $('.recommends__list [data-aos-delay]').removeAttr('data-aos-delay');
+  }
+
+  AOS.init({
+    once: true,
+    duration: 1000,
+  });
+
+  // Re-measure whenever the page height changes afterwards (images, fonts, the site header / footer loading)
+  let refreshTimer;
+  new ResizeObserver(() => {
+    clearTimeout(refreshTimer);
+    refreshTimer = setTimeout(() => AOS.refresh(), 100);
+  }).observe(document.querySelector('.l-photoshade'));
 });
 
 function handleSelectedColor() {
