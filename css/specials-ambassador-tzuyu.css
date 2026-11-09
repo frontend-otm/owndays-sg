@@ -1,0 +1,456 @@
+/*
+ * OWNDAYS Brand Ambassador TZUYU (SG).
+ * Based on resources/assets/web/sass/pages/specials-ambassador-tzuyu.scss (Renewal preview branch), MY version (lang en).
+ * The layout itself is Tailwind (Play CDN) in the markup, as in the Renewal blade.
+ */
+
+/*
+ * specials.css sets `html, body { overflow: visible clip !important }`, i.e. overflow-x: visible / overflow-y: clip,
+ * which blocks vertical scrolling and kills position: sticky (hero / lineup details / sticky buttons).
+ * Swap the axes: clip horizontally, scroll vertically. (This file loads after specials.css, so the same !important wins.)
+ */
+html,
+body {
+  overflow-x: clip !important;
+  overflow-y: visible !important;
+}
+
+/*
+ * Guard against the Base (Next.js) CMS wrapper styles, which beat plain selectors:
+ *   .MarginBottom a   { display: inherit !important }
+ *   .MarginBottom img { margin-bottom: -4px; max-width: 100% }
+ *   .MarginBottom p   { margin-bottom: 16px }  (max-width: 767px)
+ * The doubled class raises specificity above them and keeps the rules inside this page.
+ */
+.l-ambassador-tzuyu.l-ambassador-tzuyu a {
+  display: block !important;
+}
+
+.l-ambassador-tzuyu.l-ambassador-tzuyu a.button {
+  display: flex !important;
+}
+
+.l-ambassador-tzuyu.l-ambassador-tzuyu a.inline-block {
+  display: inline-block !important;
+}
+
+.l-ambassador-tzuyu.l-ambassador-tzuyu img {
+  margin-bottom: 0;
+}
+
+/* the frame / lens icons in the PhotoGlow block keep their gap above the label (mb-[10px]) */
+.l-ambassador-tzuyu.l-ambassador-tzuyu img.mb-\[10px\] {
+  margin-bottom: 10px;
+}
+
+.l-ambassador-tzuyu.l-ambassador-tzuyu p {
+  margin-bottom: 0;
+}
+
+/*
+ * Renewal base element styles the page relies on (foundation/base/_base.scss).
+ * :where() keeps them at zero specificity, so every Tailwind utility in the markup still wins.
+ */
+:where(.l-ambassador-tzuyu) img,
+:where(.l-ambassador-tzuyu) picture {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+:where(.l-ambassador-tzuyu) a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+:where(.l-ambassador-tzuyu) ul,
+:where(.l-ambassador-tzuyu) ol {
+  list-style-type: none;
+}
+
+:where(.l-ambassador-tzuyu) button {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+:where(.l-ambassador-tzuyu) button:focus {
+  outline: none;
+}
+
+/* Custom utilities from Renewal partials/tailwind (the <style type="text/tailwindcss"> block) */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.text-trim,
+.text-trim * {
+  text-box-trim: trim-both;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url("https://storage.owndays.com/fonts/FoundersGrotesk/v2/FoundersGrotesk-Bold.woff2") format("woff2"), url("https://storage.owndays.com/fonts/FoundersGrotesk/v2/FoundersGrotesk-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url("https://storage.owndays.com/fonts/FoundersGrotesk/v2/FoundersGrotesk-Light.woff2") format("woff2"), url("https://storage.owndays.com/fonts/FoundersGrotesk/v2/FoundersGrotesk-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url("https://storage.owndays.com/fonts/FoundersGrotesk/v2/FoundersGrotesk-Medium.woff2") format("woff2"), url("https://storage.owndays.com/fonts/FoundersGrotesk/v2/FoundersGrotesk-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url("https://storage.owndays.com/fonts/FoundersGrotesk/v2/FoundersGrotesk-Regular.woff2") format("woff2"), url("https://storage.owndays.com/fonts/FoundersGrotesk/v2/FoundersGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url("https://storage.owndays.com/fonts/FoundersGrotesk/v2/FoundersGrotesk-Semibold.woff2") format("woff2"), url("https://storage.owndays.com/fonts/FoundersGrotesk/v2/FoundersGrotesk-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- Page (from specials-ambassador-tzuyu.scss, MY / en values) ---- */
+:root {
+  --pd: 20px;
+  --container-max-w: 1360px;
+  --edge: calc(var(--pd) * -1);
+  --edge-aw: var(--edge);
+  --font-main: 'Founders Grotesk', sans-serif;
+  --font-title: 'Founders Grotesk', sans-serif;
+  --font-en: 'Founders Grotesk', sans-serif;
+  --text-pc: 14px;
+  --line-h-pc: 22px;
+  /* images used as CSS backgrounds (inline <style> in the blade) */
+  --bg-bokeh-blue: url("https://storage.owndays.com/images/specials/products/ambassador-tzuyu/bg-bokeh-blue.webp");
+  --bg-bokeh-brown: url("https://storage.owndays.com/images/specials/products/ambassador-tzuyu/bg-bokeh-brown.webp");
+  --share-bg: url("https://storage.owndays.com/images/specials/products/ambassador-tzuyu/share-bg-sp.webp");
+}
+
+@media (min-width: 768px) {
+  :root {
+    --share-bg: url("https://storage.owndays.com/images/specials/products/ambassador-tzuyu/share-bg-pc.webp");
+  }
+}
+
+@media (min-width: 1360px) {
+  :root {
+    --edge: calc((var(--container-max-w) - (var(--pd) * 2) - var(--body-w)) / 2);
+  }
+}
+
+@media (min-width: 2000px) {
+  :root {
+    --edge: calc(((2000px - var(--container-max-w)) / 2 + var(--pd)) * -1);
+    --edge-aw: calc((var(--container-max-w) - (var(--pd) * 2) - var(--body-w)) / 2);
+  }
+}
+
+.l-ambassador-tzuyu {
+  font-family: var(--font-main);
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1;
+  color: #fff;
+  background-color: #081023;
+  -webkit-font-smoothing: antialiased;
+}
+
+.l-ambassador-tzuyu * {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+.l-ambassador-tzuyu h1,
+.l-ambassador-tzuyu h2,
+.l-ambassador-tzuyu h3,
+.l-ambassador-tzuyu h4,
+.l-ambassador-tzuyu h5,
+.l-ambassador-tzuyu h6 {
+  font-family: var(--font-main);
+  color: inherit;
+}
+
+.l-ambassador-tzuyu .font-main {
+  font-family: var(--font-main);
+}
+
+.l-ambassador-tzuyu .font-title {
+  font-family: var(--font-title);
+}
+
+.l-ambassador-tzuyu .font-founders {
+  font-family: 'Founders Grotesk', sans-serif;
+}
+
+.l-ambassador-tzuyu .font-grandiflora-one {
+  font-family: 'Grandiflora One', sans-serif;
+}
+
+.l-ambassador-tzuyu .font-en {
+  font-family: var(--font-en) !important;
+}
+
+.l-ambassador-tzuyu .container {
+  width: auto;
+  max-width: var(--container-max-w);
+  padding-left: var(--pd);
+  padding-right: var(--pd);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Title: per-character reveal (spans built by the page script) */
+.l-ambassador-tzuyu .title {
+  color: #fff;
+  font-family: 'Grandiflora One', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: normal;
+}
+
+.l-ambassador-tzuyu .title .title__char {
+  display: inline-block;
+  transform: translateY(70%);
+  clip-path: inset(0 0 100% 0);
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1), clip-path 1s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--i) * 0.04s);
+}
+
+.l-ambassador-tzuyu .title.aos-animate .title__char {
+  transform: none;
+  clip-path: inset(0 0 0 0);
+}
+
+.l-ambassador-tzuyu .title--large {
+  font-size: 40px;
+}
+
+.l-ambassador-tzuyu .title--small {
+  font-size: 28px;
+}
+
+@media (min-width: 768px) {
+  .l-ambassador-tzuyu .title--large {
+    font-size: 60px;
+  }
+
+  .l-ambassador-tzuyu .title--small {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .l-ambassador-tzuyu .title--large {
+    font-size: 70px;
+  }
+
+  .l-ambassador-tzuyu .title--small {
+    font-size: 36px;
+  }
+}
+
+/* Buttons */
+.l-ambassador-tzuyu .button {
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  height: 48px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #000;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.5s;
+}
+
+.l-ambassador-tzuyu .button--primary {
+  color: #fff;
+  background-color: #000;
+}
+
+.l-ambassador-tzuyu .button--secondary {
+  color: #000;
+  background-color: #fff;
+}
+
+.l-ambassador-tzuyu .button--navy {
+  color: #fff;
+  background-color: #0e4368;
+  border-color: #fff;
+}
+
+.l-ambassador-tzuyu .button--white {
+  color: #0e4368;
+  background-color: #fff;
+  border-color: #0e4368;
+}
+
+@media (min-width: 768px) {
+  .l-ambassador-tzuyu .button {
+    font-size: 16px;
+    height: 54px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .l-ambassador-tzuyu .button:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+
+  .l-ambassador-tzuyu .button--navy:hover,
+  .l-ambassador-tzuyu .button--primary:hover {
+    color: #fff;
+  }
+
+  .l-ambassador-tzuyu .button--white:hover {
+    color: #0e4368;
+  }
+
+  .l-ambassador-tzuyu .button--secondary:hover {
+    color: #000;
+  }
+}
+
+/* Lineup title / description: per-word (per-line delay) or per-character fade rise */
+.l-ambassador-tzuyu .js-split .split-word {
+  display: inline-block;
+  white-space: nowrap;
+  clip-path: inset(-50% -10% 0 -10%);
+}
+
+.l-ambassador-tzuyu .js-split .split-char {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-delay: calc(var(--l, 0) * 0.15s);
+}
+
+.l-ambassador-tzuyu .js-split--fade .split-char {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 0.6s;
+  transition-delay: calc(var(--i) * 0.05s);
+}
+
+.l-ambassador-tzuyu .js-split.aos-animate .split-char {
+  transform: none;
+  opacity: 1;
+}
+
+/* KV logo / copy: fade in, then a left-to-right wipe */
+.l-ambassador-tzuyu .kv-reveal {
+  opacity: 0;
+}
+
+.l-ambassador-tzuyu .kv-reveal__base {
+  opacity: 0.3;
+}
+
+.l-ambassador-tzuyu .kv-reveal__fill {
+  clip-path: inset(0 100% 0 0);
+}
+
+.l-ambassador-tzuyu .kv-reveal.aos-animate {
+  animation: kv-reveal-fade 0.7s ease-out 0.2s both;
+}
+
+.l-ambassador-tzuyu .kv-reveal.aos-animate .kv-reveal__fill {
+  animation: kv-reveal-wipe 1s cubic-bezier(0.65, 0, 0.35, 1) 0.4s both;
+}
+
+.l-ambassador-tzuyu .kv-reveal.aos-animate .kv-reveal__fill--delay {
+  animation-delay: 0.6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .l-ambassador-tzuyu .js-split .split-char {
+    transform: none;
+    opacity: 1;
+    transition: none;
+  }
+
+  .l-ambassador-tzuyu .kv-reveal,
+  .l-ambassador-tzuyu .kv-reveal.aos-animate {
+    opacity: 1;
+    animation: none;
+  }
+
+  .l-ambassador-tzuyu .kv-reveal__fill,
+  .l-ambassador-tzuyu .kv-reveal.aos-animate .kv-reveal__fill {
+    clip-path: none;
+    animation: none;
+  }
+
+  .l-ambassador-tzuyu .title .title__char {
+    transform: none;
+    clip-path: none;
+    transition: none;
+  }
+}
+
+.l-ambassador-tzuyu a picture,
+.l-ambassador-tzuyu a img {
+  transition: opacity 0.5s;
+}
+
+.l-ambassador-tzuyu a:hover:not(.button) {
+  color: inherit;
+}
+
+.l-ambassador-tzuyu a:hover picture,
+.l-ambassador-tzuyu a:hover img {
+  opacity: 1;
+}
+
+@keyframes kv-reveal-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes kv-reveal-wipe {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+/* the page wrapper only switches opacity 0 -> 1 once AOS is ready (no fade) */
+.l-ambassador-tzuyu[data-aos-duration="0"],
+.l-ambassador-tzuyu [data-aos-duration="0"] {
+  transition-duration: 0s !important;
+}
+
+/* video popup */
+.fancybox-slide {
+  padding: var(--pd);
+}
