@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test API Rankings</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    .ranking {
+      max-width: 640px;
+      margin: 40px auto;
+      padding: 24px 16px;
+      background: #fff;
+    }
+    .ranking__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .ranking__title { margin: 0; font-size: 22px; letter-spacing: .05em; }
+    .ranking__notice {
+      margin: 0 0 20px;
+      padding: 10px 12px;
+      background: #f9f6ec;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .ranking__list { list-style: none; margin: 0; padding: 0; }
+    .ranking__item { margin-bottom: 18px; }
+    .ranking__row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .ranking__no { font-size: 20px; font-weight: 700; min-width: 28px; }
+    .ranking__name { font-size: 16px; font-weight: 600; }
+    .ranking__name-ja { font-size: 12px; color: #888; }
+    .ranking__pct { margin-left: auto; font-weight: 700; }
+    .ranking__bar { height: 12px; background: #eee; overflow: hidden; }
+    .ranking__bar-fill {
+      height: 100%;
+      width: 0;
+      transition: width .8s ease;
+    }
+    .ranking__status { font-size: 12px; color: #888; margin-top: 16px; }
+    .ranking__status.is-error { color: #c00; }
+  </style>
+</head>
+<body>
+
+  <section class="ranking" id="ranking">
+    <div class="ranking__head">
+      <h1 class="ranking__title">RANKING</h1>
+    </div>
+
+    <p class="ranking__notice" id="ranking-notice" hidden></p>
+    <ol class="ranking__list" id="ranking-list"></ol>
+    <p class="ranking__status" id="ranking-status">Loading...</p>
+  </section>
+
+  <script>
+    (function () {
+      var API_BASE = 'https://e30df213-e28c-4250-a9d3-3659837c82c2.mock.pstmn.io/api/rankings';
+      var COUNTRY = 'SG';
+      var DEFAULT_REFRESH_SEC = 60;
+
+      var listEl = document.getElementById('ranking-list');
+      var noticeEl = document.getElementById('ranking-notice');
+      var statusEl = document.getElementById('ranking-status');
+      var timer = null;
+
+      function esc(s) {
+        return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+        });
+      }
+
+      // Only accept hex colors from the API so nothing else lands in style=""
+      function safeColor(c) {
+        return /^#[0-9a-fA-F]{3,8}$/.test(c) ? c : '#999';
+      }
+
+      function clampPct(n) {
+        n = Number(n);
+        return isFinite(n) ? Math.max(0, Math.min(100, n)) : 0;
+      }
+
+      function renderNotice(reservation) {
+        if (!reservation) { noticeEl.hidden = true; return; }
+        var parts = [];
+        if (reservation.daysRemaining != null) {
+          parts.push('Reservation closes in <strong>' + esc(reservation.daysRemaining) + '</strong> day(s)');
+        }
+        if (reservation.closesAt) {
+          parts.push('Closes at: ' + esc(reservation.closesAt));
+        }
+        if (reservation.noticeJa) {
+          parts.push(esc(reservation.noticeJa));
+        }
+        noticeEl.innerHTML = parts.join('<br>');
+        noticeEl.hidden = parts.length === 0;
+      }
+
+      function renderRankings(rankings) {
+        var items = (rankings || []).slice().sort(function (a, b) { return a.rank - b.rank; });
+        listEl.innerHTML = items.map(function (item) {
+          var pct = clampPct(item.percentage);
+          return (
+            '<li class="ranking__item">' +
+              '<div class="ranking__row">' +
+                '<span class="ranking__no">' + esc(item.rank) + '</span>' +
+                '<span class="ranking__name">' + esc(item.name) + '</span>' +
+                '<span class="ranking__name-ja">' + esc(item.nameJa) + '</span>' +
+                '<span class="ranking__pct">' + pct + '%</span>' +
+              '</div>' +
+              '<div class="ranking__bar">' +
+                '<div class="ranking__bar-fill" data-pct="' + pct + '" style="background:' + safeColor(item.color) + '"></div>' +
+              '</div>' +
+            '</li>'
+          );
+        }).join('');
+
+        // Animate bars after paint
+        requestAnimationFrame(function () {
+          listEl.querySelectorAll('.ranking__bar-fill').forEach(function (el) {
+            el.style.width = el.getAttribute('data-pct') + '%';
+          });
+        });
+      }
+
+      function schedule(sec) {
+        clearTimeout(timer);
+        timer = setTimeout(load, (sec || DEFAULT_REFRESH_SEC) * 1000);
+      }
+
+      function load() {
+        var url = API_BASE + '?country=' + encodeURIComponent(COUNTRY);
+
+        fetch(url)
+          .then(function (res) {
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            return res.json();
+          })
+          .then(function (json) {
+            var data = json.data || {};
+            var meta = json.meta || {};
+
+            renderNotice(data.reservation);
+            renderRankings(data.rankings);
+
+            statusEl.classList.remove('is-error');
+            statusEl.textContent =
+              'Updated ' + new Date().toLocaleTimeString() +
+              ' · country=' + (data.country || COUNTRY) +
+              (meta.isMock ? ' · MOCK DATA' : '');
+
+            schedule(meta.refreshIntervalSeconds);
+          })
+          .catch(function (err) {
+            console.error('Ranking load failed:', err);
+            statusEl.classList.add('is-error');
+            statusEl.textContent = 'Failed to load rankings (' + err.message + '). Retrying...';
+            schedule(DEFAULT_REFRESH_SEC);
+          });
+      }
+
+      load();
+    })();
+  </script>
+</body>
+</html>
